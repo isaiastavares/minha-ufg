@@ -14,19 +14,19 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
     * 2.1 [Identificação e missão do Sistema](#21-identificação-e-missão-do-sistema)	
     * 2.2 [Domínio do problema e contexto de sua aplicação](#22-domínio-do-problema-e-contexto-de-sua-aplicação)	
     * 2.3 [Descrição dos interessados do sistema](#23-descrição-dos-interessados-do-sistema)
-* 3. [Casos de Uso e Requisitos Funcionais](#4-casos-de-uso-e-requisitos-funcionais)
-    * 3.1 [Transporte](#31)
-    * 3.1.1 [Diagramas de Caso de Uso e Lista de casos de uso](#311-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)	
+* 3. [Casos de Uso e Requisitos Funcionais](#3-casos-de-uso-e-requisitos-funcionais)
+    * 3.1 [Transporte](#31-transporte)
+    * 3.1.1 [Diagramas de Caso de Uso e Lista de casos de uso](#311-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.1.2 [Descrição de Casos de Uso](#312-descrição-de-casos-de-uso)
-    * 3.1 [Oportunidades](#32)
-    * 3.2.1 [Diagramas de Caso de Uso e Lista de casos de uso](#321-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)	
+    * 3.2 [Oportunidades](#32-oportunidades)
+    * 3.2.1 [Diagramas de Caso de Uso e Lista de casos de uso](#321-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.2.2 [Descrição de Casos de Uso](#322-descrição-de-casos-de-uso)
-    * 3.3 [Calendário](#33)
-    * 3.3.1 [Diagramas de Caso de Uso e Lista de casos de uso](#331-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)	
+    * 3.3 [Calendário](#33-calendário)  
+    * 3.3.1 [Diagramas de Caso de Uso e Lista de casos de uso](#331-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.3.2 [Descrição de Casos de Uso](#332-descrição-de-casos-de-uso)
 * 4. [Requisitos e restrições não funcionais](#4-requisitos-e-restrições-não-funcionais)
-    * 4.1 [Requisitos e Restrições de Usabilidade (RUS)](#41-requisitos-e-restrições-de-usabilidade-rus)	
-    * 4.2 [Requisitos e Restrições de Interface Homem-Computador (RHIC)](#42-requisitos-e-restrições-de-interface-homem-computador-rhic)	
+    * 4.1 [Requisitos e Restrições de Usabilidade (RUS)](#41-requisitos-e-restrições-de-usabilidade-rus)
+    * 4.2 [Requisitos e Restrições de Interface Homem Computador (RHIC)](#42-requisitos-e-restrições-de-interface-homem-computador-rhic)  
     * 4.3 [Requisitos e Restrições de Interface Externa (RIEX)](#43-requisitos-e-restrições-de-interface-externa-riex)	
     * 4.4 [Requisitos e Restrições de Plataforma de Hardware (RPHW)](#44-requisitos-e-restrições-de-plataforma-de-hardware-rphw)	
     * 4.5 [Requisitos e Restrições de Plataforma de Software (RPSW)](#45-requisitos-e-restrições-de-plataforma-de-software-rpsw)	
@@ -200,7 +200,7 @@ Exemplo:
 
 Estes requisitos de informação são importantes para verificar a qualidade da modelagem de dados que for feita.       
 
-### 4.2	Requisitos e Restrições de Interface Homem-Computador (RHIC)
+### 4.2	Requisitos e Restrições de Interface Homem Computador (RHIC)
 
 Definir os aspectos de Interface Homem Computador (IHC) como: conteúdo de informações, fatores ergonômicos, dispositivos de interação, formato de apresentação, tipo de diálogo, e mecanismos de ajuda alocados a cada perfil/grupo/tarefa de usuário. Descrever, em particular, os requisitos de usabilidade para cada perfil/grupo/tarefa de usuário. Por exemplo, pode-se definir como requisito que as opções de menu do sistema tenham teclas de atalho associadas. 
 Exemplo:
