@@ -1,4 +1,4 @@
-DroidMetronome
+Minha UFG
 ===================
 
 Índice Analítico
@@ -13,24 +13,32 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
 * 2. [Descrição do problema e do sistema](#2-descrição-do-problema-e-do-sistema)
     * 2.1 [Identificação e missão do Sistema](#21-identificação-e-missão-do-sistema)	
     * 2.2 [Domínio do problema e contexto de sua aplicação](#22-domínio-do-problema-e-contexto-de-sua-aplicação)	
-    * 2.3 [Descrição dos interessados do sistema](#23-descrição-dos-interessados-do-sistema)	
-* 3. [Requisitos e restrições não funcionais](#3-requisitos-e-restrições-não-funcionais)
-    * 3.1 [Requisitos e Restrições de Usabilidade (RUS)](#31-requisitos-e-restrições-de-usabilidade-rus)	
-    * 3.2 [Requisitos e Restrições de Interface Homem-Computador (RHIC)](#32-requisitos-e-restrições-de-interface-homem-computador-rhic)	
-    * 3.3 [Requisitos e Restrições de Interface Externa (RIEX)](#33-requisitos-e-restrições-de-interface-externa-riex)	
-    * 3.4 [Requisitos e Restrições de Plataforma de Hardware (RPHW)](#34-requisitos-e-restrições-de-plataforma-de-hardware-rphw)	
-    * 3.5 [Requisitos e Restrições de Plataforma de Software (RPSW)](#35-requisitos-e-restrições-de-plataforma-de-software-rpsw)	
-    * 3.6 [Requisitos e Restrições de Desempenho (RDES)](#36-requisitos-e-restrições-de-desempenho-rdes)	
-    * 3.7 [Requisitos e restrições de disponibilidade (RDIS)](#37-requisitos-e-restrições-de-disponibilidade-rdis)	
-    * 3.8 [Requisitos e Restrições de Segurança (RSEG)](#38-requisitos-e-restrições-de-segurança-rseg)	
-    * 3.9 [Requisitos e Restrições de Manutenibilidade (RMAN)](#39-requisitos-e-restrições-de-manutenibilidade-rman)	
-    * 3.10 [Requisitos e Restrições de Documentação (RDOC)](#310-requisitos-e-restrições-de-documentação-rdoc)
-* 4. [Casos de Uso e Requisitos Funcionais](#4-casos-de-uso-e-requisitos-funcionais)	
-    * 4.1 [Diagramas de Caso de Uso e Lista de casos de uso](#41-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)	
-    * 4.2 [Descrição de Casos de Uso](#42-descrição-de-casos-de-uso)	
+    * 2.3 [Descrição dos interessados do sistema](#23-descrição-dos-interessados-do-sistema)
+* 3. [Casos de Uso e Requisitos Funcionais](#4-casos-de-uso-e-requisitos-funcionais)
+    * 3.1 [Transporte](#31)
+    * 3.1.1 [Diagramas de Caso de Uso e Lista de casos de uso](#311-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)	
+    * 3.1.2 [Descrição de Casos de Uso](#312-descrição-de-casos-de-uso)
+    * 3.1 [Oportunidades](#32)
+    * 3.2.1 [Diagramas de Caso de Uso e Lista de casos de uso](#321-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)	
+    * 3.2.2 [Descrição de Casos de Uso](#322-descrição-de-casos-de-uso)
+    * 3.3 [Calendário](#33)
+    * 3.3.1 [Diagramas de Caso de Uso e Lista de casos de uso](#331-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)	
+    * 3.3.2 [Descrição de Casos de Uso](#332-descrição-de-casos-de-uso)
+* 4. [Requisitos e restrições não funcionais](#4-requisitos-e-restrições-não-funcionais)
+    * 4.1 [Requisitos e Restrições de Usabilidade (RUS)](#41-requisitos-e-restrições-de-usabilidade-rus)	
+    * 4.2 [Requisitos e Restrições de Interface Homem-Computador (RHIC)](#42-requisitos-e-restrições-de-interface-homem-computador-rhic)	
+    * 4.3 [Requisitos e Restrições de Interface Externa (RIEX)](#43-requisitos-e-restrições-de-interface-externa-riex)	
+    * 4.4 [Requisitos e Restrições de Plataforma de Hardware (RPHW)](#44-requisitos-e-restrições-de-plataforma-de-hardware-rphw)	
+    * 4.5 [Requisitos e Restrições de Plataforma de Software (RPSW)](#45-requisitos-e-restrições-de-plataforma-de-software-rpsw)	
+    * 4.6 [Requisitos e Restrições de Desempenho (RDES)](#46-requisitos-e-restrições-de-desempenho-rdes)	
+    * 4.7 [Requisitos e restrições de disponibilidade (RDIS)](#47-requisitos-e-restrições-de-disponibilidade-rdis)	
+    * 4.8 [Requisitos e Restrições de Segurança (RSEG)](#48-requisitos-e-restrições-de-segurança-rseg)	
+    * 4.9 [Requisitos e Restrições de Manutenibilidade (RMAN)](#49-requisitos-e-restrições-de-manutenibilidade-rman)	
+    * 4.10 [Requisitos e Restrições de Documentação (RDOC)](#410-requisitos-e-restrições-de-documentação-rdoc)	
 * 5. [Requisitos Futuros (RFUT)](#5-requisitos-futuros-rfut)	
-* 6. [Referências cruzadas complementares](#6-referências-cruzadas-complementares)	
-* 7. [Aprovação Formal](#7-aprovação-formal)	
+* 6. [Referências cruzadas complementares](#6-referências-cruzadas-complementares)
+* 7. [Modelo de domínio](#7-modelo-de-dominio)
+* 8. [Aprovação Formal](#8-aprovação-formal)	
 
 ## 1. Introdução
 
@@ -102,14 +110,19 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 #### 3.1.2 Descrição de Casos de Uso
 
 **TR-CSU1**- Título do caso de uso
-	Ator(es): 
-	Descrição: 
-	Pré-Condições:
-	Pós-Condições:
-	Cenário Principal:
-	Cenário Secundário:
-	Protótipo de Tela:
-	Requisitos Funcionais:
+  * Identificador: Um identificador único.
+
+  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
+  
+  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
+
+  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
+
+  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
+
+  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -124,14 +137,19 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 #### 3.2.2 Descrição de Casos de Uso
 
 **OP-CSU1**- Título do caso de uso
-	Ator(es): 
-	Descrição: 
-	Pré-Condições:
-	Pós-Condições:
-	Cenário Principal:
-	Cenário Secundário:
-	Protótipo de Tela:
-	Requisitos Funcionais:
+  * Identificador: Um identificador único.
+
+  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
+  
+  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
+
+  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
+
+  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
+
+  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -147,14 +165,20 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 #### 3.3.2 Descrição de Casos de Uso
 
 **CA-CSU1**- Título do caso de uso
-	Ator(es): 
-	Descrição: 
-	Pré-Condições:
-	Pós-Condições:
-	Cenário Principal:
-	Cenário Secundário:
-	Protótipo de Tela:
-	Requisitos Funcionais:
+  * Identificador: Um identificador único.
+
+  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
+  
+  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
+
+  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
+
+  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
+
+  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
