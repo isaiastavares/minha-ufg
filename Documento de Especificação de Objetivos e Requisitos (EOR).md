@@ -21,7 +21,7 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
     * 3.1 [Oportunidades](#32)
     * 3.2.1 [Diagramas de Caso de Uso e Lista de casos de uso](#321-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.2.2 [Descrição de Casos de Uso](#322-descrição-de-casos-de-uso)
-    * 3.3 [Calendário](#33)
+    * 3.3 [Calendário](#33)
     * 3.3.1 [Diagramas de Caso de Uso e Lista de casos de uso](#331-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.3.2 [Descrição de Casos de Uso](#332-descrição-de-casos-de-uso)
 * 4. [Requisitos e restrições não funcionais](#4-requisitos-e-restrições-não-funcionais)
@@ -196,29 +196,34 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](http://postimg.org/image/skrz04i6x/)
+* OP-CSU1: Cadastrar Oportunidade
 
 #### 3.2.2 Descrição de Casos de Uso
 
-**OP-CSU1**- Título do caso de uso
-  * Identificador: Um identificador único.
+**OP-CSU1**- Cadastrar Oportunidade
 
-  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
+  * Identificador: OP-CSU1
 
-  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
-  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
+  * Pré-condições: Usuário deve estar conectado à internet.
 
-  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
+  * Pós-condições: Não possui pós-condições.
 
-  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica no botão para cadastrar oportunidade.
+      * Usuário informa as seguintes informações: Título, Descrição, Horário, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato, Local, Cursos Relacionados.
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| OP-RFUN 1.1 | descricao | Evidente |Alta  |
-
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Evidente |Alta |
 
 ### 3.3 Calendário
 
