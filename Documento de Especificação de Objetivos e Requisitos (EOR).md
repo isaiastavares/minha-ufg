@@ -208,13 +208,14 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
   * Pré-condições: Usuário deve estar conectado à internet.
 
-  * Pós-condições: Não possui pós-condições.
+  * Pós-condições: 
+	  * Os campos Título, Descrição, Contato,  e Cursos Relacionados deve ser obrigatórios.
 
   * Cenário principal:
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
       * Usuário clica no botão para cadastrar oportunidade.
-      * Usuário informa as seguintes informações: Título, Descrição, Horário, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato, Local, Cursos Relacionados.
+      * Usuário informa as seguintes informações: Título, Empresa, Descrição, Horário, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato, Local, Cursos Relacionados.
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
@@ -223,7 +224,7 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Evidente |Alta |
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidade' | Evidente |Alta |
 
 ### 3.3 Calendário
 
