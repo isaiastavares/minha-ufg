@@ -109,24 +109,33 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 #### 3.1.2 Descrição de Casos de Uso
 
-**TR-CSU1**- Título do caso de uso
-  * Identificador: Um identificador único.
-
-  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
+**TR-CSU1**- Selecionar local de origem/destino em uma lista
+  * Identificador: TR-CSU1
   
-  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
+  * Atores envolvidos: Usuário
+  
+  * Pré-condições: Usuário deve estar conectado à internet. Habilitar o GPS (opcional)
 
-  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
+  * Pós-condições: O aplicativo seleciona corretamente os pontos de origem e destino do usuário, mostrando uma lista dos pontos disponíveis no campus da UFG para auxiliar o usuário.
 
-  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
+  * Cenário principal: 
+      * Usuário abre o aplicativo.
+      * Usuário seleciona aba de transportes.
+      * Usuário define o ponto de origem, caso seja na UFG, mostrar lista dos pontos disponíveis mais próximos da posição     atual do usuário.
+      * Usuário define o ponto de destino, caso seja na UFG, mostrar lista dos pontos disponíveis no campus.
 
-  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
+      * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
+
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| TR-RFUN 1.1 | descricao | Evidente |Alta  |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 1.1 | Mostrar lista de pontos disponíveis no campus Samambaia e Universitário | Evidente |Alta |
+| TR-RFUN 1.2 | Mostrar pontos mais próximos do local atual do usuário (caso GPS esteja ativado) | Evidente |Média |
+| TR-RFUN 1.3 |  Definir automaticamente um dos locais (origem ou destino) sendo somente pontos disponíveis nos câmpus da UFG | Evidente |Alta |
 
 ### 3.2 Oportunidades
 
