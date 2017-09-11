@@ -46,13 +46,16 @@ Esta seção deverá apresentar o documento ao leitor. O objetivo principal da i
 
 ### 1.1 Objetivos
 
+Definir os objetivos do documento.
+Exemplo:
 Este documento tem os seguintes objetivos:
-* Definir os interessados no sistema e as suas necessidades que devem ser satisfeitas pelo sistema a ser desenvolvido;
-* Definir casos de uso, requisitos funcionais e não-funcionais do sistema e diagramas de caso de uso de forma a orientar a equipe de que será responsável pelo seu desenvolvimento;
-* Estabelecer um contrato para negociação e concordância entre todos os interessados;
-* Reduzir retrabalho com projeto, codificação e teste através da especificação completa dos requisitos;
-* Facilitar a transferência dos produtos do desenvolvimento para novos usuários, novos clientes e novas equipes de desenvolvimento e manutenção;
-* Prover uma base para a evolução futura do sistema a partir de uma versão aprovada (linha de base) deste documento.
+•	Definir os interessados no sistema e as suas necessidades que devem ser satisfeitas pelo sistema a ser desenvolvido;
+•	Derivar os casos de uso e requisitos do sistema de forma a orientar a equipe de que será responsável pelo seu desenvolvimento;
+•	Estabelecer um contrato para negociação e concordância entre todos os interessados;
+•	Reduzir retrabalho com projeto, codificação e teste através da especificação rigorosa e completa dos requisitos;
+•	Prover uma base para avaliação de prazos e custos de desenvolvimento;
+•	Facilitar a transferência dos produtos do desenvolvimento para novos usuários, novos clientes, novos ambientes operacionais e novas equipes de desenvolvimento e manutenção;
+•	Prover uma base para a evolução futura do sistema a partir de uma versão aprovada (linha de base) deste documento.
 
 ### 1.2 Público Alvo
 
@@ -104,8 +107,8 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 * TR-CSU1: Selecionar local de destino em uma lista;
 * TR-CSU2: Visualizar Rota;
-* TR-CSU3: Visualizar pontos mais próximos da origem/destino;
-* TR-CSU4: Ver linhas e horários dos pontos dos campus;
+* TR-CSU3: Ver linhas e horários dos pontos dos campus;
+* TR-CSU4: Visualizar ponto mais próximo da origem/destino;
 
 
 #### 3.1.2 Descrição de Casos de Uso
@@ -163,8 +166,8 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 2.1 | Validar posição de GPS do usuário | Oculta |Média |
 | TR-RFUN 2.2 | Validar local de destino | Oculta |Média |
-| TR-RFUN 2.3 |  Buscar rota de acordo com ponto de origem e destino | Oculta |Alta |
-| TR-RFUN 2.4 |  Mostrar uma ou mais rotas possíveis | Evidente |Alta |
+| TR-RFUN 2.3 | Buscar rota de acordo com ponto de origem e destino | Oculta |Alta |
+| TR-RFUN 2.4 | Mostrar uma ou mais rotas possíveis | Evidente |Alta |
 
 **TR-CSU3**- Visualizar Linhas e Horários
   * Identificador: TR-CSU3
@@ -191,6 +194,32 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 | TR-RFUN 3.1 | Buscar informações de rotas e horários de determinado ponto | Oculta |Alta |
 | TR-RFUN 3.2 | Exibir informações de rotas e horários de determinado ponto | Evidente |Alta |
 
+**TR-CSU4**- Visualizar ponto mais próximo da origem/destino
+  * Identificador: TR-CSU4
+
+  * Atores envolvidos: Usuário, Sistema.
+
+  * Pré-condições: Usuário deve ter selecionado a origem ou o destino.
+
+  * Pós-condições: O sistema retorna a localização do ponto de ônibus mais próximo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário seleciona a origem ou destino.
+      * Sistema verifica pontos ao redor.
+      * Usuário visualiza o ponto de ônibus mais próximo.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
+      * Usuário não seta a origem ou destino como locais válidos.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 4.1 | Validar ponto de origem ou destino selecionado | Oculta |Alta |
+| TR-RFUN 4.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
+| TR-RFUN 4.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
 
 ### 3.2 Oportunidades
 
