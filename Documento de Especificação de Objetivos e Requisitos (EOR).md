@@ -46,16 +46,13 @@ Esta seção deverá apresentar o documento ao leitor. O objetivo principal da i
 
 ### 1.1 Objetivos
 
-Definir os objetivos do documento.
-Exemplo:
 Este documento tem os seguintes objetivos:
-•	Definir os interessados no sistema e as suas necessidades que devem ser satisfeitas pelo sistema a ser desenvolvido;
-•	Derivar os casos de uso e requisitos do sistema de forma a orientar a equipe de que será responsável pelo seu desenvolvimento;
-•	Estabelecer um contrato para negociação e concordância entre todos os interessados;
-•	Reduzir retrabalho com projeto, codificação e teste através da especificação rigorosa e completa dos requisitos;
-•	Prover uma base para avaliação de prazos e custos de desenvolvimento;
-•	Facilitar a transferência dos produtos do desenvolvimento para novos usuários, novos clientes, novos ambientes operacionais e novas equipes de desenvolvimento e manutenção;
-•	Prover uma base para a evolução futura do sistema a partir de uma versão aprovada (linha de base) deste documento.
+* Definir os interessados no sistema e as suas necessidades que devem ser satisfeitas pelo sistema a ser desenvolvido;
+* Definir casos de uso, requisitos funcionais e não-funcionais do sistema e diagramas de caso de uso de forma a orientar a equipe de que será responsável pelo seu desenvolvimento;
+* Estabelecer um contrato para negociação e concordância entre todos os interessados;
+* Reduzir retrabalho com projeto, codificação e teste através da especificação completa dos requisitos;
+* Facilitar a transferência dos produtos do desenvolvimento para novos usuários, novos clientes e novas equipes de desenvolvimento e manutenção;
+* Prover uma base para a evolução futura do sistema a partir de uma versão aprovada (linha de base) deste documento.
 
 ### 1.2 Público Alvo
 
