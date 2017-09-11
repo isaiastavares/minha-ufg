@@ -180,26 +180,57 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
+  **CA-CSU1**- Regionais
+  * Identificador: CA-CSU1
 
-**CA-CSU1**- Regionais
-	Ator(es): Administrador, alunos, servidores e comunidade em geral.
-	Descrição: O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás.
-	Pré-Condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
-	Pós-Condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
-	Cenário Principal:
-	1. Usuário acessa ao sistema com seu login e senha;
-	2. Usuário seleciona a opção Calendário;
-	3. Usuário entra no Calendário em sua regional de escolha.
-	4. Usuário pode alterar regional e acessar informações.
-	Cenário Secundário:
-	1. Administrador pode inserir novas notícias que correspodem ao calendário.
-	Protótipo de Tela:
-	Requisitos Funcionais:
+  * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
+  
+  * Pré-condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
+
+  * Pós-condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
+
+  * Cenário principal: 
+  1. Usuário acessa ao sistema com seu login e senha;
+  2. Usuário seleciona a opção Calendário;
+  3. Usuário entra no Calendário em sua regional de escolha.
+  4. Usuário pode alterar regional e acessar informações.
+
+  * Cenários secundários: 
+  1. Administrador pode inserir novas notícias que correspodem ao calendário.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 1.1 | descricao | Evidente |Alta  |
+| CA-RFUN 1.1 | O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás. | Evidente |Alta  |
+| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades. | Evidente |Alta  |
+
+**CA-CSU2**- Visualizar Calendário offline
+  * Identificador: CA-CSU2
+
+  * Atores envolvidos: Administrador, Usuário
+  
+  * Pré-condições: O usuário deve estar logado no Minha UFG para acessar a função Calendário.
+
+  * Pós-condições: O Sistema apresenta o calendário offline.
+
+  * Cenário principal: 
+  1. O usuário está sem acesso à internet.
+  2. O Usuário já está logado no aplicativo Minha UFG.
+  3. O Usuário acessa a função Calendário.
+  4. O Usuário consegue acessar o calendário offline.
+
+  * Cenários secundários: 
+  1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
+  2.O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
+ 
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
 
 ## 4. Requisitos e restrições não funcionais 
 --------------------------------------------
