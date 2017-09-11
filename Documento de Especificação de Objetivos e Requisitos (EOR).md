@@ -77,6 +77,19 @@ Definir e explicar sucintamente siglas e nomencalturas utilizadas neste document
 * TR: Transporte
 * OP: Oportunidade
 * CA: Calendário
+* CSU: Caso de Uso
+* RFUN: Requisito Funcional
+* RUS: Requisito de Usabilidade
+* RHIC: Requisito de Interface Homem-Computador
+* RIEX: Requisito de Interface Externa
+* RPHW: Requisito de Plataforma de Hardware
+* RPSW: Requisito de Plataforma de Software
+* RDES: Requisito de Desempenho
+* RDIS: Requisito de Dispponibilidade
+* RSEG: Requisito de Segurança
+* RMAN: Requisito de Manutenibilidade
+* RDOC: Requisito de Documentação
+* RFUT: Requisitos Futuros
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
