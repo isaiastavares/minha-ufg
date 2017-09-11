@@ -56,7 +56,11 @@ Este documento tem os seguintes objetivos:
 
 ### 1.2 Público Alvo
 
-Identificar o público alvo do documento, isto é, todos os perfis de pessoas que terão interesse na sua leitura. Os interesses de cada perfil na leitura do documento também devem ser descritos.
+Este documento foi desenvolvido visando todos que utilizarão do sistema, tais como:
+
+* Equipe de desenvolvimento: Este documento explicitará quais requisitos deverão ser desenvolvidos bem como as interações entre os próprios requisitos de forma a auxiliar na manutenção (inserção de novos requisitos e/ou manutenção dos atuais).
+
+* Usuário-Final: Este documento explicitará quais requisitos deverão ser esperados, incluindo a instrução de como esses requisitos poderão ser acessados (por meio dos protótipos de tela).
 
 ### 1.3 Organização do documento
 
@@ -108,12 +112,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 ### 2.3 Descrição dos interessados do sistema
 
-Descrever os perfis de cada interessado envolvido com o sistema.
-
 | Interessado(s) 	| Descrição 	|
 |:----------------:	|---------	|
-| Nome do perfil do interessado. Por exemplo: (cliente, atendente, vendedor, gerente comercial, etc.) | Descrever o perfil do interessado e como se espera que seja sua interação com o sistema direta ou indiretamente. Por exemplo, o vendedor da loja é a pessoa que atende os clientes e registra as vendas que são feitas. |
-
+| Usuário-Final | Utilizará das facilidades que o sistema propõe, tais como, obter rotas e horários de pontos específicos nos campus, visualizar datas letivas e possiveis oportunidades.|
 
 
 ## 3. Casos de Uso e Requisitos Funcionais
