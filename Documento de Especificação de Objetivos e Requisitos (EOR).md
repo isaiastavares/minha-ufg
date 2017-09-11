@@ -169,6 +169,32 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 | TR-RFUN 2.3 |  Buscar rota de acordo com ponto de origem e destino | Oculta |Alta |
 | TR-RFUN 2.4 |  Mostrar uma ou mais rotas possíveis | Evidente |Alta |
 
+**TR-CSU3**- Visualizar Linhas e Horários
+  * Identificador: TR-CSU3
+
+  * Atores envolvidos: Usuário, Sistema.
+
+  * Pré-condições: Usuário deve ter selecionado o ponto de ônibus em questão.
+
+  * Pós-condições: O sistema retorna uma lista contendo as linhas de ônibus bem como os horários referentes ao ponto selecionado.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário seleciona aba de transportes.
+      * Usuário seleciona o número do ponto desejado.
+      * Sistema lista as rotas e os horários referentes ao ponto definido pelo usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 3.1 | Buscar informações de rotas e horários de determinado ponto | Oculta |Alta |
+| TR-RFUN 3.2 | Exibir informações de rotas e horários de determinado ponto | Evidente |Alta |
+
+
 ### 3.2 Oportunidades
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
