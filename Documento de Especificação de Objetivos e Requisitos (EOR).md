@@ -210,21 +210,23 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 3.1 | Buscar informações de rotas e horários de determinado ponto | Oculta |Alta |
-| TR-RFUN 3.2 | Exibir informações de rotas e horários de determinado ponto | Evidente |Alta |
+| TR-RFUN 3.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 3.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 3.3 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 3.4 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
 
-**TR-CSU4**- Visualizar ponto mais próximo da origem/destino
+**TR-CSU4**- Visualizar ponto mais próximo da origem
   * Identificador: TR-CSU4
 
   * Atores envolvidos: Usuário, Sistema.
 
-  * Pré-condições: Usuário deve ter selecionado a origem ou o destino.
+  * Pré-condições: Usuário deve ter selecionado a origem.
 
   * Pós-condições: O sistema retorna a localização do ponto de ônibus mais próximo.
 
   * Cenário principal:
       * Usuário abre o aplicativo.
-      * Usuário seleciona a origem ou destino.
+      * Usuário seleciona a origem.
       * Sistema verifica pontos ao redor.
       * Usuário visualiza o ponto de ônibus mais próximo.
 
@@ -236,7 +238,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 4.1 | Validar ponto de origem ou destino selecionado | Oculta |Alta |
+| TR-RFUN 4.1 | Validar ponto de origem selecionado | Oculta |Alta |
 | TR-RFUN 4.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
 | TR-RFUN 4.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
 
