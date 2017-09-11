@@ -164,6 +164,7 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 #### 3.3.2 Descrição de Casos de Uso
 
+
 **CA-CSU1**- Título do caso de uso
   * Identificador: Um identificador único.
 
@@ -179,6 +180,22 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
+
+**CA-CSU1**- Regionais
+	Ator(es): Administrador, alunos, servidores e comunidade em geral.
+	Descrição: O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás.
+	Pré-Condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
+	Pós-Condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
+	Cenário Principal:
+	1. Usuário acessa ao sistema com seu login e senha;
+	2. Usuário seleciona a opção Calendário;
+	3. Usuário entra no Calendário em sua regional de escolha.
+	4. Usuário pode alterar regional e acessar informações.
+	Cenário Secundário:
+	1. Administrador pode inserir novas notícias que correspodem ao calendário.
+	Protótipo de Tela:
+	Requisitos Funcionais:
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
