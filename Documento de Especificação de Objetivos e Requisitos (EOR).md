@@ -210,8 +210,10 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 3.1 | Buscar informações de rotas e horários de determinado ponto | Oculta |Alta |
-| TR-RFUN 3.2 | Exibir informações de rotas e horários de determinado ponto | Evidente |Alta |
+| TR-RFUN 3.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 3.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 3.3 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 3.4 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
 
 **TR-CSU4**- Visualizar ponto mais próximo da origem/destino
   * Identificador: TR-CSU4
