@@ -105,7 +105,11 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 #### 3.1.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](http://postimg.org/image/skrz04i6x/)
+* TR-CSU1: Selecionar local de destino em uma lista;
+* TR-CSU2: Visualizar Rota;
+* TR-CSU3: Visualizar pontos mais próximos da origem/destino;
+* TR-CSU4: Ver linhas e horários dos pontos dos campus;
+
 
 #### 3.1.2 Descrição de Casos de Uso
 
