@@ -42,8 +42,6 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
 
 ## 1. Introdução
 
-Esta seção deverá apresentar o documento ao leitor. O objetivo principal da introdução é descrever o documento e não o sistema, embora deva ser mencionado qual é o sistema e para qual empresa ou mercado ele será construído. O conteúdo a ser coberto na introdução está descrito nas subseções seguintes.
-
 ### 1.1 Objetivos
 
 Este documento tem os seguintes objetivos:
