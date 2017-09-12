@@ -288,6 +288,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
 
+
   * Cenários secundários:
       * Usuário filtra oportunidades exibidas através do campo de busca.
 
@@ -306,26 +307,176 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 ![](http://postimg.org/image/skrz04i6x/)
 
-
 **CA-CSU1**- Regionais
-	Ator(es): Administrador, alunos, servidores e comunidade em geral.
-	Descrição: O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás.
-	Pré-Condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
-	Pós-Condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
-	Cenário Principal:
-	1. Usuário acessa ao sistema com seu login e senha;
-	2. Usuário seleciona a opção Calendário;
-	3. Usuário entra no Calendário em sua regional de escolha.
-	4. Usuário pode alterar regional e acessar informações.
-	Cenário Secundário:
-	1. Administrador pode inserir novas notícias que correspodem ao calendário.
-	Protótipo de Tela:
-	Requisitos Funcionais:
+  * Identificador: CA-CSU1
+
+  * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
+  
+  * Pré-condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
+
+  * Pós-condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
+
+  * Cenário principal: 
+1. Usuário acessa ao sistema com seu login e senha;
+2. Usuário seleciona a opção Calendário;
+3. Usuário entra no Calendário em sua regional de escolha.
+4. Usuário pode alterar regional e acessar informações.
+
+  * Cenários secundários: 
+1. Administrador pode inserir novas notícias que correspodem ao calendário.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 1.1 | descricao | Evidente |Alta  |
+| CA-RFUN 1.1 | O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás. | Evidente |Alta  |
+| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades. | Evidente |Alta  |
+
+**CA-CSU2**- Visualizar Calendário offline
+  * Identificador: CA-CSU2
+
+  * Atores envolvidos: Administrador, Usuário
+  
+  * Pré-condições: O usuário deve estar logado no Minha UFG para acessar a função Calendário.
+
+  * Pós-condições: O Sistema apresenta o calendário offline.
+
+  * Cenário principal: 
+1. O usuário está sem acesso à internet.
+2. O Usuário já está logado no aplicativo Minha UFG.
+3. O Usuário acessa a função Calendário.
+4. O Usuário consegue acessar o calendário offline.
+
+  * Cenários secundários: 
+1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
+2. O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
+ 
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
+
+**CA-CSU3**- Fazer consulta de evento
+
+* Identificador:CA-CSU3
+* Atores envolvidos: Usuário	
+* Pré-condições: 
+  	
+1. O usuário está no contexto de pesquisa de eventos do calendário
+2. O usuário seleciona a regional que deseja fazer a pesquisa
+3. O sistema sincroniza o calendário
+
+* Pós-condições: O Sistema apresenta os eventos
+* Cenário principal:O resultado é retornado
+  		
+1. O usuário abre a tela de pesquisa de eventos		
+2. Usuário seleciona a regional		
+3. O usuário digita o texto da pesquisa	
+4. A pesquisa é executada quando o usuário para de digitar
+5. O resultado da consulta é retornada para o usuário
+		
+* Cenários secundários: Nenhum resultado encontrado	     
+	
+1. O usuário abre a tela de filtro de eventos
+2. Usuário seleciona a regional
+3. O usuário digita o texto da pesquisa
+4. A pesquisa é executada quando o usuário para de digitar
+5. Nenhum resultado é retornado
+6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa		
+        
+Erro ao fazer pesquisa
+	
+1. O usuário abre a tela de filtro de eventos
+2. O usuário digita o texto da pesquisa
+3. Usuário seleciona a regional
+4. A pesquisa é executada quando o usuário para de digitar
+5. A pesquisa retorna um erro inesperado 
+6. Uma mensagem é mostrada para o usuário mostrando que um erro ocorreu
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 3.1 | descricao | Evidente |Alta  |
+
+**CA-CSU4**- Pesquisar eventos offline
+  * Identificador: CA-CSU4.
+
+  * Atores envolvidos: Administrador, Usuário.
+  
+  * Pré-condições: 
+	* Usuário não deve estar conectado à internet.
+    * O usuário deve ter feito login no aplicativo pelo menos uma vez.
+
+  * Pós-condições: O aplicativo apresenta o calendário.
+
+  * Cenário principal: 
+    * O Usuário não possui internet.
+    * O Usuário abre o aplicativo Minha UFG.
+    * O Usuário seleciona o ícone do calendário.
+    * O Usuário pesquisa o evento desejado.
+    * O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
+  * Cenários secundários: 
+	* O aplicativo avisa que não tem nenhum evento disponível.
+	* O aplicativo pede que para efetuar conexão com a internet para atualizar.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
+
+**CA-CSU5**- Postagem de Eventos
+  * Identificador: CA-CSU5
+
+  * Atores envolvidos: Administrador
+  
+  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
+
+  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
+
+  * Cenário principal: 
+  1. O administrador acessa o aplicativo minha UFG.
+  2. O administrador entra dentro da função minha UFG.
+  3. O administrador insere a postagem.
+  4. Postagem realizada com sucesso.
+
+  * Cenários secundários: 
+  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
+  2. O usuário pode ter acesso às postagens offline.
+  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
+  
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
+**CA-CSU6**- Notificações de eventos
+  * Identificador: CA-CSU6.
+
+  * Atores envolvidos: Usuários.
+  
+  * Pré-condições: Os usuários devem estar inscritos para receberem as notificações.
+
+  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos usuários.
+
+  * Cenário principal:
+  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
+  2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
+  3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
+  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao usuário.
+  
+  * Cenários secundários: 
+  1. Duas ou mais notificações foram recebidas pelo usuário e não foram visualizadas
+  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o usuário seleciona a que deseja abrir.
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+ 
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
 ## 4. Requisitos e restrições não funcionais
 --------------------------------------------
