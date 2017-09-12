@@ -303,6 +303,32 @@ Erro ao fazer pesquisa
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
 
+**CA-CSU5**- Postagem de Eventos
+  * Identificador: CA-CSU5
+
+  * Atores envolvidos: Administrador
+  
+  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
+
+  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
+
+  * Cenário principal: 
+  1. O administrador acessa o aplicativo minha UFG.
+  2. O administrador entra dentro da função minha UFG.
+  3. O administrador insere a postagem.
+  4. Postagem realizada com sucesso.
+
+  * Cenários secundários: 
+  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
+  2. O usuário pode ter acesso às postagens offline.
+  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
+  
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
+ 
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 5.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
 ## 4. Requisitos e restrições não funcionais 
 --------------------------------------------
