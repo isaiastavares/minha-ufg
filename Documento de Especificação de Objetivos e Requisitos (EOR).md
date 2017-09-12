@@ -21,7 +21,7 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
     * 3.2 [Oportunidades](#32)
     * 3.2.1 [Diagramas de Caso de Uso e Lista de casos de uso](#321-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.2.2 [Descrição de Casos de Uso](#322-descrição-de-casos-de-uso)
-    * 3.3 [Calendário](#33)
+    * 3.3 [Calendário](#33)
     * 3.3.1 [Diagramas de Caso de Uso e Lista de casos de uso](#331-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.3.2 [Descrição de Casos de Uso](#332-descrição-de-casos-de-uso)
 * 4. [Requisitos e restrições não funcionais](#4-requisitos-e-restrições-não-funcionais)
@@ -244,53 +244,67 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](http://postimg.org/image/skrz04i6x/)
+* OP-CSU1: Cadastrar Oportunidade
 
 #### 3.2.2 Descrição de Casos de Uso
 
-**OP-CSU1**- Título do caso de uso
-  * Identificador: Um identificador único.
+**OP-CSU1**- Cadastrar Oportunidade (Web)
 
-  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
+  * Identificador: OP-CSU1
 
-  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
-  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
+  * Pré-condições: Usuário deve estar conectado à internet.
 
-  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
+  * Pós-condições: 
+	  * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
 
-  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica no botão para cadastrar oportunidade.
+      * Usuário informa as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| OP-RFUN 1.1 | descricao | Evidente |Alta  |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 
+**OP-CSU2**- Listar Oportunidades (Web)
+
+  * Identificador: OP-CSU2
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: Não possui pós-condições.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+
+  * Cenários secundários:
+      * Usuário filtra oportunidades exibidas através do campo de busca.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
+| OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades.  | Evidente |Média|
+| OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade.  | Evidente |Alta |
+| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca tanto para o ID, Título ou Categoria de cada oportunidade.  | Evidente |Alta |
 
 ### 3.3 Calendário
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
 ![](http://postimg.org/image/skrz04i6x/)
-
-#### 3.3.2 Descrição de Casos de Uso
-
-
-**CA-CSU1**- Título do caso de uso
-  * Identificador: Um identificador único.
-
-  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
-
-  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
-
-  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
-
-  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
-
-  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 
 **CA-CSU1**- Regionais
