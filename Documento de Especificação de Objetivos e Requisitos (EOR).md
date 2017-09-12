@@ -42,8 +42,6 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
 
 ## 1. Introdução
 
-Esta seção deverá apresentar o documento ao leitor. O objetivo principal da introdução é descrever o documento e não o sistema, embora deva ser mencionado qual é o sistema e para qual empresa ou mercado ele será construído. O conteúdo a ser coberto na introdução está descrito nas subseções seguintes.
-
 ### 1.1 Objetivos
 
 Este documento tem os seguintes objetivos:
@@ -56,11 +54,23 @@ Este documento tem os seguintes objetivos:
 
 ### 1.2 Público Alvo
 
-Identificar o público alvo do documento, isto é, todos os perfis de pessoas que terão interesse na sua leitura. Os interesses de cada perfil na leitura do documento também devem ser descritos.
+Este documento foi desenvolvido visando todos que utilizarão do sistema, tais como:
+
+* Equipe de desenvolvimento: Este documento explicitará quais requisitos deverão ser desenvolvidos bem como as interações entre os próprios requisitos de forma a auxiliar na manutenção (inserção de novos requisitos e/ou manutenção dos atuais).
+
+* Usuário-Final: Este documento explicitará quais requisitos deverão ser esperados, incluindo a instrução de como esses requisitos poderão ser acessados (por meio dos protótipos de tela).
 
 ### 1.3 Organização do documento
 
-Descrever suscintamente a organização do documento em seções e o conteúdo de cada seção. Não há necessidade de descer ao nível de subseções.
+   1.	Introdução – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
+   2.	Descrição do problema e do sistema – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
+   3.	Casos de Uso e Requisitos Funcionais – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
+   4.	Requisitos e Restrições não funcionais – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
+   5.	Requisitos Futuros – Citação dos requisitos planejados pra futuras versões do produto.
+   6.	Referência Cruzadas Complementares – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
+   7. Modelo de domínio - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
+   8.	Aprovação Formal – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
+
 
 ### 1.4 Definição de Siglas e Nomenclaturas
 
@@ -69,6 +79,19 @@ Definir e explicar sucintamente siglas e nomencalturas utilizadas neste document
 * TR: Transporte
 * OP: Oportunidade
 * CA: Calendário
+* CSU: Caso de Uso
+* RFUN: Requisito Funcional
+* RUS: Requisito de Usabilidade
+* RHIC: Requisito de Interface Homem-Computador
+* RIEX: Requisito de Interface Externa
+* RPHW: Requisito de Plataforma de Hardware
+* RPSW: Requisito de Plataforma de Software
+* RDES: Requisito de Desempenho
+* RDIS: Requisito de Dispponibilidade
+* RSEG: Requisito de Segurança
+* RMAN: Requisito de Manutenibilidade
+* RDOC: Requisito de Documentação
+* RFUT: Requisitos Futuros
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
@@ -87,12 +110,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 ### 2.3 Descrição dos interessados do sistema
 
-Descrever os perfis de cada interessado envolvido com o sistema.
-
 | Interessado(s) 	| Descrição 	|
 |:----------------:	|---------	|
-| Nome do perfil do interessado. Por exemplo: (cliente, atendente, vendedor, gerente comercial, etc.) | Descrever o perfil do interessado e como se espera que seja sua interação com o sistema direta ou indiretamente. Por exemplo, o vendedor da loja é a pessoa que atende os clientes e registra as vendas que são feitas. |
-
+| Usuário-Final | Utilizará das facilidades que o sistema propõe, tais como, obter rotas e horários de pontos específicos nos campus, visualizar datas letivas e possiveis oportunidades.|
 
 
 ## 3. Casos de Uso e Requisitos Funcionais
@@ -104,8 +124,8 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 * TR-CSU1: Selecionar local de destino em uma lista;
 * TR-CSU2: Visualizar Rota;
-* TR-CSU3: Visualizar pontos mais próximos da origem/destino;
-* TR-CSU4: Ver linhas e horários dos pontos dos campus;
+* TR-CSU3: Ver linhas e horários dos pontos dos campus;
+* TR-CSU4: Visualizar pontos mais próximos da origem/destino;
 
 
 #### 3.1.2 Descrição de Casos de Uso
@@ -188,9 +208,37 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 3.1 | Buscar informações de rotas e horários de determinado ponto | Oculta |Alta |
-| TR-RFUN 3.2 | Exibir informações de rotas e horários de determinado ponto | Evidente |Alta |
+| TR-RFUN 3.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 3.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 3.3 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 3.4 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
 
+**TR-CSU4**- Visualizar ponto mais próximo da origem
+  * Identificador: TR-CSU4
+
+  * Atores envolvidos: Usuário, Sistema.
+
+  * Pré-condições: Usuário deve ter selecionado a origem.
+
+  * Pós-condições: O sistema retorna a localização do ponto de ônibus mais próximo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário seleciona a origem.
+      * Sistema verifica pontos ao redor.
+      * Usuário visualiza o ponto de ônibus mais próximo.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
+      * Usuário não seta a origem ou destino como locais válidos.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 4.1 | Validar ponto de origem selecionado | Oculta |Alta |
+| TR-RFUN 4.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
+| TR-RFUN 4.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
 
 ### 3.2 Oportunidades
 
