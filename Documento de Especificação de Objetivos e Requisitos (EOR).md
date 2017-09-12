@@ -325,6 +325,26 @@ Erro ao fazer pesquisa
   
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
+**CA-CSU6**- Notificações de eventos
+  * Identificador: CA-CSU6.
+
+  * Atores envolvidos: Usuários.
+  
+  * Pré-condições: Os usuários devem estar inscritos para receberem as notificações.
+
+  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos usuários.
+
+  * Cenário principal:
+  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
+  2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
+  3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
+  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao usuário.
+  
+  * Cenários secundários: 
+  1. Duas ou mais notificações foram recebidas pelo usuário e não foram visualizadas
+  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o usuário seleciona a que deseja abrir.
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
