@@ -190,13 +190,13 @@ Descrever os perfis de cada interessado envolvido com o sistema.
   * Pós-condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
 
   * Cenário principal: 
-  1. Usuário acessa ao sistema com seu login e senha;
-  2. Usuário seleciona a opção Calendário;
-  3. Usuário entra no Calendário em sua regional de escolha.
-  4. Usuário pode alterar regional e acessar informações.
+1. Usuário acessa ao sistema com seu login e senha;
+2. Usuário seleciona a opção Calendário;
+3. Usuário entra no Calendário em sua regional de escolha.
+4. Usuário pode alterar regional e acessar informações.
 
   * Cenários secundários: 
-  1. Administrador pode inserir novas notícias que correspodem ao calendário.
+1. Administrador pode inserir novas notícias que correspodem ao calendário.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
@@ -216,14 +216,14 @@ Descrever os perfis de cada interessado envolvido com o sistema.
   * Pós-condições: O Sistema apresenta o calendário offline.
 
   * Cenário principal: 
-  1. O usuário está sem acesso à internet.
-  2. O Usuário já está logado no aplicativo Minha UFG.
-  3. O Usuário acessa a função Calendário.
-  4. O Usuário consegue acessar o calendário offline.
+1. O usuário está sem acesso à internet.
+2. O Usuário já está logado no aplicativo Minha UFG.
+3. O Usuário acessa a função Calendário.
+4. O Usuário consegue acessar o calendário offline.
 
   * Cenários secundários: 
-  1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
-  2.O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
+1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
+2. O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
@@ -273,7 +273,36 @@ Erro ao fazer pesquisa
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| TR-CSU3 | descricao | Evidente |Alta  |
+| CA-RFUN 3.1 | descricao | Evidente |Alta  |
+
+**CA-CSU4**- Pesquisar eventos offline
+  * Identificador: CA-CSU6.
+
+  * Atores envolvidos: Administrador, Usuário.
+  
+  * Pré-condições: 
+	* Usuário não deve estar conectado à internet.
+    * O usuário deve ter feito login no aplicativo pelo menos uma vez.
+
+  * Pós-condições: O aplicativo apresenta o calendário.
+
+  * Cenário principal: 
+    * O Usuário não possui internet.
+    * O Usuário abre o aplicativo Minha UFG.
+    * O Usuário seleciona o ícone do calendário.
+    * O Usuário pesquisa o evento desejado.
+    * O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
+  * Cenários secundários: 
+	* O aplicativo avisa que não tem nenhum evento disponível.
+	* O aplicativo pede que para efetuar conexão com a internet para atualizar.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
+
 
 ## 4. Requisitos e restrições não funcionais 
 --------------------------------------------
