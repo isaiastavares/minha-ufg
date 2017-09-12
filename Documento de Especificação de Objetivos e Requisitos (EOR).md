@@ -276,7 +276,7 @@ Erro ao fazer pesquisa
 | CA-RFUN 3.1 | descricao | Evidente |Alta  |
 
 **CA-CSU4**- Pesquisar eventos offline
-  * Identificador: CA-CSU6.
+  * Identificador: CA-CSU4.
 
   * Atores envolvidos: Administrador, Usuário.
   
@@ -348,7 +348,7 @@ Erro ao fazer pesquisa
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 5.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+| CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
 ## 4. Requisitos e restrições não funcionais 
 --------------------------------------------
