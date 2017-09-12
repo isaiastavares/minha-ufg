@@ -200,7 +200,7 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 #### 3.2.2 Descrição de Casos de Uso
 
-**OP-CSU1**- Cadastrar Oportunidade
+**OP-CSU1**- Cadastrar Oportunidade (Web)
 
   * Identificador: OP-CSU1
 
@@ -224,7 +224,7 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Evidente |Alta |
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 
 **OP-CSU2**- Listar Oportunidades (Web)
 
