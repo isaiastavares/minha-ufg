@@ -232,9 +232,9 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
 
-**TR-CSU3**- Fazer consulta de evento
+**CA-CSU3**- Fazer consulta de evento
 
-* Identificador:CL-CSU3
+* Identificador:CA-CSU3
 * Atores envolvidos: Usuário	
 * Pré-condições: 
   	
