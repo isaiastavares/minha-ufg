@@ -164,23 +164,7 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 
 #### 3.3.2 Descrição de Casos de Uso
 
-
-**CA-CSU1**- Título do caso de uso
-  * Identificador: Um identificador único.
-
-  * Atores envolvidos: Nome dos atores que estejam envolvidos neste caso de uso.
-  
-  * Pré-condições: O que deve ser verdade antes que o procedimento seja chamado.
-
-  * Pós-condições: O que deve ser verdade depois que o procedimento seja chamado.
-
-  * Cenário principal: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso.
-
-  * Cenários secundários: Lista/fluxo de atividades que devem ser realizadas pelos atores durante o caso de uso no caso de exceções às atividades do cenário principal.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-  
-  **CA-CSU1**- Regionais
+**CA-CSU1**- Regionais
   * Identificador: CA-CSU1
 
   * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
