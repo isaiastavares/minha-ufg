@@ -232,6 +232,49 @@ Descrever os perfis de cada interessado envolvido com o sistema.
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
 
+**TR-CSU3**- Fazer consulta de evento
+
+* Identificador:CL-CSU3
+* Atores envolvidos: Usuário	
+* Pré-condições: 
+  	
+1. O usuário está no contexto de pesquisa de eventos do calendário
+2. O usuário seleciona a regional que deseja fazer a pesquisa
+3. O sistema sincroniza o calendário
+
+* Pós-condições: O Sistema apresenta os eventos
+* Cenário principal:O resultado é retornado
+  		
+1. O usuário abre a tela de pesquisa de eventos		
+2. Usuário seleciona a regional		
+3. O usuário digita o texto da pesquisa	
+4. A pesquisa é executada quando o usuário para de digitar
+5. O resultado da consulta é retornada para o usuário
+		
+* Cenários secundários: Nenhum resultado encontrado	     
+	
+1. O usuário abre a tela de filtro de eventos
+2. Usuário seleciona a regional
+3. O usuário digita o texto da pesquisa
+4. A pesquisa é executada quando o usuário para de digitar
+5. Nenhum resultado é retornado
+6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa		
+        
+Erro ao fazer pesquisa
+	
+1. O usuário abre a tela de filtro de eventos
+2. O usuário digita o texto da pesquisa
+3. Usuário seleciona a regional
+4. A pesquisa é executada quando o usuário para de digitar
+5. A pesquisa retorna um erro inesperado 
+6. Uma mensagem é mostrada para o usuário mostrando que um erro ocorreu
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| TR-CSU3 | descricao | Evidente |Alta  |
+
 ## 4. Requisitos e restrições não funcionais 
 --------------------------------------------
 
