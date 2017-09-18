@@ -508,16 +508,16 @@ Erro ao fazer pesquisa
 
   * Cenários secundários: 
   1. Não exibe botão para configuração 
-    1.1 O usuário tenta acessar botão de configuração
-    1.2 O sistema sempre verifica privilégios de categoria por usuário
-    1.3 Cada categoria de usuário possui tipos de privilégios distintos
+  : 1.1 O usuário tenta acessar botão de configuração
+  : 1.2 O sistema sempre verifica privilégios de categoria por usuário
+  : 1.3 Cada categoria de usuário possui tipos de privilégios distintos
   2. Ação de inserção não permitida
-    2.1 O usuário (administrador) tenta inserir informação no calendário
-    2.2 O sistema bloqueia ação:
-      2.2.1 O sistema exibe uma mensagem, “Informações inseridas incorretas” (data e/ou regional)
-      2.2.2 O sistema exibe uma mensagem, “Campos não foram preenchidos” (data e/ou regional e/ou informações)
-      2.2.3 O sistema exibe uma mensagem “Não existe essa regional”
-      2.2.4 O sistema exibe uma mensagem “Temporariamente fora do ar”
+  : 2.1 O usuário (administrador) tenta inserir informação no calendário
+  : 2.2 O sistema bloqueia ação:
+  :  :  2.2.1 O sistema exibe uma mensagem, “Informações inseridas incorretas” (data e/ou regional)
+  :  :  2.2.2 O sistema exibe uma mensagem, “Campos não foram preenchidos” (data e/ou regional e/ou informações)
+  :  :  2.2.3 O sistema exibe uma mensagem “Não existe essa regional”
+  :  :  2.2.4 O sistema exibe uma mensagem “Temporariamente fora do ar”
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
