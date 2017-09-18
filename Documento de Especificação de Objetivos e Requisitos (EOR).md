@@ -310,7 +310,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Atores envolvidos: Usuários App
 
-  * Pré-condições: Usuário deve estar conectado à internet.
+  * Pré-condições:
+  	* Usuário deve estar conectado à internet.
+	* O usuário não deve estar logado no aplicativo.
 
   * Pós-condições: 
 	  * O usuário abre o aplicativo.
@@ -327,7 +329,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 3.1 | Listar oportunidades  por ordem decrescente de data de inserção e sem filtro.	| Evidente |Alta |
+| OP-RFUN 3.1 | Listar todas oportunidades  por ordem decrescente de data de inserção e sem filtro.	| Evidente |Alta |
 | OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
 
 **OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
