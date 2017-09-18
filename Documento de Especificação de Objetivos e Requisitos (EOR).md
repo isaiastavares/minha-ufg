@@ -246,7 +246,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 * OP-CSU1: Cadastrar Oportunidade (Web)
 * OP-CSU2: Listar Oportunidades (Web)
-* OP-CSU3: Listar Oportunidades App
+* OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
 
 #### 3.2.2 Descrição de Casos de Uso
 
@@ -303,7 +303,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade.  | Evidente |Alta |
 | OP-RFUN 2.4 | Filtrar de acordo com o campo de busca tanto para o ID, Título ou Categoria de cada oportunidade.  | Evidente |Alta |
 
-**OP-CSU3**- Listar Oportunidades App
+**OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
 
   * Identificador: OP-CSU3
 
