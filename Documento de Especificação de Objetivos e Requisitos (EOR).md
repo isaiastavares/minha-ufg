@@ -305,7 +305,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](http://postimg.org/image/skrz04i6x/)
+* CA-CSU1: Regionais
+* CA-CSU2: Visualizar Calendário Offline
+* CA-CSU3: Fazer consulta de Evento
+* CA-CSU4: Pesquisar Eventos Offline
+* CA-CSU5: Postagem de Eventos
+* CA-CSU6: Notificações de Eventos
+* CA-CSU7: Inserir Informação no Calendário
+* CA-CSU8: Excluir Informação no Calendário
 
 **CA-CSU1**- Regionais
   * Identificador: CA-CSU1
