@@ -478,6 +478,47 @@ Erro ao fazer pesquisa
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
+**CA-CSU7**- Inserir Informação no Calendário
+  * Identificador: CA-CSU7
+
+  * Atores envolvidos: Administrador.
+  
+  * Pré-condições: 
+  1. O usuário (Administrador) está no contexto de configuração do calendário
+  2. O sistema exibe uma tela com as opções de configurações  
+  3. O usuário (Administrador) seleciona a opção “Inserir Informação” 
+  4. O sistema exibe uma tela com um formulário para inserção 
+  5. O usuário (Administrador) seleciona a data (dia/mês/ano) desejada para inserir a informação 
+  6. O usuário (Administrador) seleciona a regional para que adicione a informação
+  7. O usuário (Administrador) descreve a informação a ser inserida (opção de inserir imagem)
+
+  * Pós-condições: O Sistema apresenta os resultados.
+
+  * Cenário principal: 
+  1. O sistema exibe uma mensagem “Informação adicionada com sucesso”
+  2. O usuário acessa a informação com a data e regional selecionada
+  3. O sistema exibe as informações inseridas por um administrador
+
+  * Cenários secundários: 
+  1. Não exibe botão para configuração 
+    1.1 O usuário tenta acessar botão de configuração
+    1.2 O sistema sempre verifica privilégios de categoria por usuário
+    1.3 Cada categoria de usuário possui tipos de privilégios distintos
+  2. Ação de inserção não permitida
+    2.1 O usuário (administrador) tenta inserir informação no calendário
+    2.2 O sistema bloqueia ação:
+      2.2.1 O sistema exibe uma mensagem, “Informações inseridas incorretas” (data e/ou regional)
+      2.2.2 O sistema exibe uma mensagem, “Campos não foram preenchidos” (data e/ou regional e/ou informações)
+      2.2.3 O sistema exibe uma mensagem “Não existe essa regional”
+      2.2.4 O sistema exibe uma mensagem “Temporariamente fora do ar”
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 7.1 | Somente quem tem o perfil de administrador pode inserir ou retirar informações do calendário. | Evidente |Alta  |
+
 ## 4. Requisitos e restrições não funcionais
 --------------------------------------------
 
