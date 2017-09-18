@@ -519,6 +519,42 @@ Erro ao fazer pesquisa
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 7.1 | Somente quem tem o perfil de administrador pode inserir ou retirar informações do calendário. | Evidente |Alta  |
 
+**CA-CSU8**- Excluir Informação no Calendário
+  * Identificador: CA-CSU8
+  
+  * Atores envolvidos: Administrador.
+  
+  * Pré-condições: 
+  1. O usuário (Administrador) está no contexto de configuração do calendário
+  2. O sistema exibe uma tela com as opções de configurações  
+  3. O usuário (Administrador) seleciona a opção “Excluir Informação”
+  4. O sistema exibe uma tela com um campo de pesquisa (data, regional e informação)
+  5. O usuário (Administrador) faz a pesquisa (de acordo com os campos fornecidos) de onde está a informação que deseja excluir
+
+  * Pós-condições: O Sistema apresenta os resultados.
+
+  * Cenário principal: 
+  1. O sistema exibe uma mensagem “Informação excluída com sucesso”
+  2. O usuário acessa a informação com a data e regional selecionada
+  3. O sistema não exibe mais as informações 
+
+  * Cenários secundários: 
+  1. Não exibe botão para configuração 
+    1.1 O usuário tenta acessar botão de configuração
+    1.2 O sistema sempre verifica privilégios de categoria por usuário
+    1.3 Cada categoria de usuário possui tipos de privilégios distintos
+  2. Ação de exclusão não permitida
+    2.1 O usuário (administrador) tenta excluir informação no calendário
+    2.2 O sistema bloqueia ação:
+    2.3 O sistema exibe uma mensagem “Temporariamente fora do ar”
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 8.1 | Somente quem tem o perfil de administrador pode inserir ou retirar informações do calendário. | Evidente |Alta  |
+
 ## 4. Requisitos e restrições não funcionais
 --------------------------------------------
 
