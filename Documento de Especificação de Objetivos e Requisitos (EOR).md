@@ -305,16 +305,16 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-* CA-CSU1: Regionais
+* CA-CSU1: Visualiar Regionais
 * CA-CSU2: Visualizar Calendário Offline
 * CA-CSU3: Fazer consulta de Evento
 * CA-CSU4: Pesquisar Eventos Offline
-* CA-CSU5: Postagem de Eventos
-* CA-CSU6: Notificações de Eventos
+* CA-CSU5: Postar Eventos
+* CA-CSU6: Notificar Eventos
 * CA-CSU7: Inserir Informação no Calendário
 * CA-CSU8: Excluir Informação no Calendário
 
-**CA-CSU1**- Regionais
+**CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
 
   * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
@@ -438,7 +438,7 @@ Erro ao fazer pesquisa
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
 
-**CA-CSU5**- Postagem de Eventos
+**CA-CSU5**- Postar Eventos
   * Identificador: CA-CSU5
 
   * Atores envolvidos: Administrador
@@ -460,7 +460,7 @@ Erro ao fazer pesquisa
   
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
-**CA-CSU6**- Notificações de eventos
+**CA-CSU6**- Notificar Eventos
   * Identificador: CA-CSU6.
 
   * Atores envolvidos: Usuários.
