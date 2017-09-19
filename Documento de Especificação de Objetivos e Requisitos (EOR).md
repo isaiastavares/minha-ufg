@@ -514,24 +514,19 @@ Exemplo:
 
 ### 4.4 Requisitos e Restrições de Plataforma de Hardware (RPHW)
 
-Identificar e descrever requisitos e restrições relacionadas com a plataforma de hardware que será utilizada pelo software:
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RPHWx	| Descrição do requisito RPHWx | CSUy, CSUm ... |
+| RPHW1	| Hardware de GPS integrado | Todos do Transporte |
+| RPHW2	| Hardware para acesso á internet | Todos |
+| RPHW3	| Processador mínimo de 1 GHz | Todos |
 
 ### 4.5 Requisitos e Restrições de Plataforma de Software (RPSW)
 
-Se o software tiver que ser executado em plataformas de software específicas, essas plataformas de software deverão ser definidas:
-1. Sistema Operacional: identificar e descrever o sistema operacional em que o software deverá ser executado;
-2. Softwares Básicos: identificar SGBD, linguagem de programação, ferramentas CASE e outros.
-Se houver mais de uma plataforma de software, deve-se especificar qual a plataforma principal e em que situações as outras plataformas podem ser utilizadas.
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RPSWx | Descrição do requisito RSPWx | CSUy, CSUm ... |
+| RPSW1 | Android versão 4.1 ou superior | Todos |
+| RPSW2 | Deverá possuir uma aplicação externa de mapas | Todos do Transporte |
+| RPSW3 | Uso do Firebase como serviço | Todos |
 
 ### 4.6 Requisitos e Restrições de Desempenho (RDES)
 
