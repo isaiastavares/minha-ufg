@@ -305,14 +305,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-* CA-CSU1: Visualiar Regionais
-* CA-CSU2: Visualizar Calendário Offline
-* CA-CSU3: Fazer consulta de Evento
-* CA-CSU4: Pesquisar Eventos Offline
-* CA-CSU5: Postar Eventos
-* CA-CSU6: Notificar Eventos
-* CA-CSU7: Inserir Informação no Calendário
-* CA-CSU8: Excluir Informação no Calendário
+* CA-CSU1: Escolher Regionais - Consulente(Usuário app)
+* CA-CSU2: Criar Eventos - Administrador(WEB)
+* CA-CSU3: Editar Eventos - Administrador(WEB)
+* CA-CSU4: Ver Notificação - Consulente(Usuário app) *Prototipo
+* CA-CSU5: Excluir Eventos - Administrador(WEB)
+* CA-CSU6: Pesquisar Eventos - Consulente(Usuário app) - Listar Campos de Pesquisa
+* CA-CSU7: Filtrar Eventos - Administrador(WEB)
+* CA-CSU8: 
 
 **CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
