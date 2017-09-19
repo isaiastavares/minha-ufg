@@ -249,7 +249,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
 * OP-CSU4: Listar Oportunidades - Usuário Logado (App)
 
-![Diagrama de Caso de Uso - Oportunidades](https://github.com/isaiastavares/minha-ufg/blob/master/DCU-Oportunidades.png)
+![Diagrama de Caso de Uso - Oportunidades](DCU-Oportunidades.png)
 
 #### 3.2.2 Descrição de Casos de Uso
 
