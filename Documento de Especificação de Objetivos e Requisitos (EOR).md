@@ -122,6 +122,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.1.1 Diagramas de Caso de Uso e Lista de casos de uso
 
+<img src="https://user-images.githubusercontent.com/9218555/30570420-9bd858a0-9cb7-11e7-9c0f-198b0008365a.png" width="550" height="500"/>
+
 * TR-CSU1: Selecionar local de destino em uma lista;
 * TR-CSU2: Visualizar Rota;
 * TR-CSU3: Ver linhas e horários dos pontos dos campus;
