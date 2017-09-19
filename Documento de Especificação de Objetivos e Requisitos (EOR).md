@@ -247,6 +247,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * OP-CSU1: Cadastrar Oportunidade (Web)
 * OP-CSU2: Listar Oportunidades (Web)
 * OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
+* OP-CSU4: Listar Oportunidades - Usuário Logado (App)
 
 ![Diagrama de Caso de Uso - Oportunidades](https://github.com/isaiastavares/minha-ufg/blob/master/DCU-Oportunidades.png)
 
@@ -311,7 +312,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Atores envolvidos: Usuários App
 
-  * Pré-condições: Usuário deve estar conectado à internet.
+  * Pré-condições:
+  	* Usuário deve estar conectado à internet.
+	* O usuário não deve estar logado no aplicativo.
 
   * Pós-condições: 
 	  * O usuário abre o aplicativo.
@@ -328,8 +331,36 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 3.1 | Listar oportunidades  por ordem decrescente de data de inserção e sem filtro.	| Evidente |Alta |
+| OP-RFUN 3.1 | Listar todas oportunidades  por ordem decrescente de data de inserção e sem filtro.	| Evidente |Alta |
 | OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
+
+**OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
+
+  * Identificador: OP-CSU4
+
+  * Atores envolvidos: Usuários App
+
+  * Pré-condições:
+	  * Usuário deve estar conectado à internet.
+	  * Usuário deve estar logado no app
+
+  * Pós-condições: 
+	  * O usuário abre o aplicativo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário clica no menu Oportunidades.
+      * Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
+
+  * Cenários secundários:
+      * Usuário utiliza o filtro para visualizar outras oportunidades.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 4.1 | Listar oportunidades  por ordem decrescente de data de inserção de acordo com perfil do usuário.	| Evidente |Alta |
+| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
 
 ### 3.3 Calendário
 
