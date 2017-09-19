@@ -248,6 +248,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * OP-CSU2: Listar Oportunidades (Web)
 * OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
 
+![Diagrama de Caso de Uso - Oportunidades](https://github.com/isaiastavares/minha-ufg/blob/master/DCU-Oportunidades.png)
+
 #### 3.2.2 Descrição de Casos de Uso
 
 **OP-CSU1**- Cadastrar Oportunidade (Web)
@@ -265,7 +267,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
       * Usuário clica no botão para cadastrar oportunidade.
-      * Usuário informa as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+      * Usuário preenche as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
