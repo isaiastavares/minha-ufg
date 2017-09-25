@@ -374,10 +374,15 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   	
 1. O usuário está no contexto de pesquisa de eventos do calendário
 2. O usuário seleciona a regional que deseja fazer a pesquisa
-3. O sistema sincroniza o calendário
+3. O calendário deverá ter sido sincronizado
 
-* Pós-condições: O Sistema apresenta os eventos
-* Cenário principal:O resultado é retornado
+* Pós-condições: 
+
+1. O Sistema apresenta os eventos
+2. O usuário seleciona o evento que estava procurando
+
+* Cenário principal: 
+  * O resultado é retornado
   		
 1. O usuário abre a tela de pesquisa de eventos		
 2. Usuário seleciona a regional		
@@ -387,20 +392,27 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 		
 * Cenários secundários: Nenhum resultado encontrado	     
 	
-1. O usuário abre a tela de filtro de eventos
+1. O usuário abre a tela de pesquisa de eventos
 2. Usuário seleciona a regional
 3. O usuário digita o texto da pesquisa
 4. A pesquisa é executada quando o usuário para de digitar
 5. Nenhum resultado é retornado
 6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa		
-        
-Erro ao fazer pesquisa
+
+* Usuário não possui internet (Offline):
+ 
+1. O Usuário abre o aplicativo Minha UFG.
+2. O Usuário seleciona a opção de calendário.
+3. O Usuário pesquisa o evento desejado.
+4. O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
+            
+* Erro ao fazer pesquisa
 	
-1. O usuário abre a tela de filtro de eventos
-2. O usuário digita o texto da pesquisa
-3. Usuário seleciona a regional
+1. O usuário abre a tela de pesquisa de eventos
+2. Usuário seleciona a regional
+3. O usuário digita o texto da pesquisa
 4. A pesquisa é executada quando o usuário para de digitar
-5. A pesquisa retorna um erro inesperado 
+5. A pesquisa não é concluída
 6. Uma mensagem é mostrada para o usuário mostrando que um erro ocorreu
 
 
@@ -410,35 +422,7 @@ Erro ao fazer pesquisa
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 3.1 | descricao | Evidente |Alta  |
 
-**CA-CSU4**- Pesquisar eventos offline
-  * Identificador: CA-CSU4.
-
-  * Atores envolvidos: Administrador, Usuário.
-  
-  * Pré-condições: 
-	* Usuário não deve estar conectado à internet.
-    * O usuário deve ter feito login no aplicativo pelo menos uma vez.
-
-  * Pós-condições: O aplicativo apresenta o calendário.
-
-  * Cenário principal: 
-    * O Usuário não possui internet.
-    * O Usuário abre o aplicativo Minha UFG.
-    * O Usuário seleciona o ícone do calendário.
-    * O Usuário pesquisa o evento desejado.
-    * O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
-  * Cenários secundários: 
-	* O aplicativo avisa que não tem nenhum evento disponível.
-	* O aplicativo pede que para efetuar conexão com a internet para atualizar.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
-
-**CA-CSU5**- Postar Eventos
+**CA-CSU4**- Postar Eventos
   * Identificador: CA-CSU5
 
   * Atores envolvidos: Administrador
@@ -460,7 +444,7 @@ Erro ao fazer pesquisa
   
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
-**CA-CSU6**- Notificar Eventos
+**CA-CSU5**- Notificar Eventos
   * Identificador: CA-CSU6.
 
   * Atores envolvidos: Usuários.
@@ -485,7 +469,7 @@ Erro ao fazer pesquisa
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
-**CA-CSU7**- Inserir Informação no Calendário
+**CA-CSU6**- Inserir Informação no Calendário
   * Identificador: CA-CSU7
 
   * Atores envolvidos: Administrador.
@@ -526,7 +510,7 @@ Erro ao fazer pesquisa
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 7.1 | Somente quem tem o perfil de administrador pode inserir ou retirar informações do calendário. | Evidente |Alta  |
 
-**CA-CSU8**- Excluir Informação no Calendário
+**CA-CSU7**- Excluir Informação no Calendário
   * Identificador: CA-CSU8
   
   * Atores envolvidos: Administrador.
