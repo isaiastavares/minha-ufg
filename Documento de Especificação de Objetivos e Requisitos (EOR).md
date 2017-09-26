@@ -305,14 +305,13 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-* CA-CSU1: Escolher Regionais - Consulente(Usuário app)
-* CA-CSU2: Criar Eventos - Administrador(WEB)
-* CA-CSU3: Editar Eventos - Administrador(WEB)
-* CA-CSU4: Ver Notificação - Consulente(Usuário app) *Prototipo
-* CA-CSU5: Excluir Eventos - Administrador(WEB)
-* CA-CSU6: Pesquisar Eventos - Consulente(Usuário app) - Listar Campos de Pesquisa
-* CA-CSU7: Filtrar Eventos - Administrador(WEB)
-* CA-CSU8: 
+* CA-CSU1: Visualizar Regionais - Todos
+* CA-CSU2: Visualizar Calendário offline - Todos
+* CA-CSU3: Fazer consulta de evento - Todos
+* CA-CSU4: Postar Eventos - Administrador(WEB)
+* CA-CSU5: Notificar Eventos - Consulente(Usuário app)
+* CA-CSU6: Inserir Informação no Calendário - Administrador(WEB)
+* CA-CSU7: Excluir Informação no Calendário - Administrador(WEB)
 
 **CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
@@ -423,7 +422,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RFUN 3.1 | descricao | Evidente |Alta  |
 
 **CA-CSU4**- Postar Eventos
-  * Identificador: CA-CSU5
+  * Identificador: CA-CSU4
 
   * Atores envolvidos: Administrador
   
@@ -445,23 +444,23 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
 **CA-CSU5**- Notificar Eventos
-  * Identificador: CA-CSU6.
+  * Identificador: CA-CSU5.
 
-  * Atores envolvidos: Usuários.
+  * Atores envolvidos: Consulente.
   
-  * Pré-condições: Os usuários devem estar inscritos para receberem as notificações.
+  * Pré-condições: Os consulentes devem estar inscritos para receberem as notificações.
 
-  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos usuários.
+  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos consulentes.
 
   * Cenário principal:
   1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
   2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
   3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
-  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao usuário.
+  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao consulente.
   
   * Cenários secundários: 
-  1. Duas ou mais notificações foram recebidas pelo usuário e não foram visualizadas
-  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o usuário seleciona a que deseja abrir.
+  1. Duas ou mais notificações foram recebidas pelo consulente e não foram visualizadas
+  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o consulente seleciona a que deseja abrir.
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
  
@@ -470,7 +469,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
 **CA-CSU6**- Inserir Informação no Calendário
-  * Identificador: CA-CSU7
+  * Identificador: CA-CSU6
 
   * Atores envolvidos: Administrador.
   
@@ -511,7 +510,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RFUN 7.1 | Somente quem tem o perfil de administrador pode inserir ou retirar informações do calendário. | Evidente |Alta  |
 
 **CA-CSU7**- Excluir Informação no Calendário
-  * Identificador: CA-CSU8
+  * Identificador: CA-CSU7
   
   * Atores envolvidos: Administrador.
   
