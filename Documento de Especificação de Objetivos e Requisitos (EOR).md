@@ -129,6 +129,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * TR-CSU3: Manter Rota;
 * TR-CSU4: Ver linhas e horários dos pontos dos campus;
 * TR-CSU5: Visualizar pontos mais próximos da origem;
+* TR-CSU6: Criar 'Meu Local';
+* TR-CSU7: Manter 'Meu Local';
+* TR-CSU8: Deletar 'Meu Local';
 
 
 #### 3.1.2 Descrição de Casos de Uso
@@ -269,6 +272,84 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 5.1 | Validar ponto de origem selecionado | Oculta |Alta |
 | TR-RFUN 5.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
 | TR-RFUN 5.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
+
+**TR-CSU6**- Criar 'Meu Local'
+  * Identificador: TR-CSU6
+
+  * Atores envolvidos: Usuário
+
+  * Pré-condições: Usuário deve ter aberto o aplicativo na aba 'Meus Locais'.
+
+  * Pós-condições: Usuário cadastra um local pré-definido para rotas.
+
+  * Cenário principal:
+      * Usuário seleciona o local no mapa que deseja adicionar.
+      * Usuário classifica o local com nome e salva.
+      * Aplicativo grava e mostra o local salvo pelo usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 6.1 | Validar posição selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 6.2 | Gravar no banco a posição e nome do local | Oculta |Média |
+| TR-RFUN 6.3 | Retornar erro ou sucesso na adição do local | Evidente |Média |
+
+**TR-CSU7**- Manter 'Meu Local'
+  * Identificador: TR-CSU7
+
+  * Atores envolvidos: Usuário, Sistema
+
+  * Pré-condições: Usuário deve ter cadastrado um ou mais locais em 'Meus Locais'.
+
+  * Pós-condições: Usuário atualiza a lista de locais pré-definidos.
+
+  * Cenário principal:
+      * Usuário seleciona o local que deseja editar.
+      * Usuário edita o local no mapa ou troca a classificação do mesmo.
+      * Aplicativo atualiza no banco e mostra o local atualizado salvo pelo usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a atualização.
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 7.1 | Validar posição nova selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 7.2 | Validar a classificação nova selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 7.3 | Atualizar no banco de dados o local | Oculta |Média |
+| TR-RFUN 7.4 | Retornar erro ou sucesso na atualização | Evidente |Média |
+
+**TR-CSU8**- Deletar 'Meu Local'
+  * Identificador: TR-CSU8
+
+  * Atores envolvidos: Usuário
+
+  * Pré-condições: Usuário deve ter cadastrado um ou mais locais em 'Meus Locais'.
+
+  * Pós-condições: Usuário recebe lista atualizada de locais.
+
+  * Cenário principal:
+      * Usuário seleciona o local que deseja deletar.
+      * Aplicativo deleta no banco e mostra a lista de locais atualizadas para o usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a operação.
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 8.1 | Validar local selecionado pelo usuário | Oculta |Média |
+| TR-RFUN 8.2 | Deletar no banco de dados o local selecionado | Oculta |Média |
+| TR-RFUN 8.3 | Retornar erro ou sucesso na operação | Evidente |Média |
 
 ### 3.2 Oportunidades
 
