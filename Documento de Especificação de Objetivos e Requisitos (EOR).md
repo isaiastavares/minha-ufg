@@ -122,10 +122,16 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.1.1 Diagramas de Caso de Uso e Lista de casos de uso
 
+<img src="https://user-images.githubusercontent.com/9218555/30995360-04533f50-a490-11e7-9515-3f0eab591ff4.png" width="550" height="500"/>
+
 * TR-CSU1: Selecionar local de destino em uma lista;
 * TR-CSU2: Visualizar Rota;
-* TR-CSU3: Ver linhas e horários dos pontos dos campus;
-* TR-CSU4: Visualizar pontos mais próximos da origem/destino;
+* TR-CSU3: Manter Rota;
+* TR-CSU4: Ver linhas e horários dos pontos dos campus;
+* TR-CSU5: Visualizar pontos mais próximos da origem;
+* TR-CSU6: Criar 'Meu Local';
+* TR-CSU7: Manter 'Meu Local';
+* TR-CSU8: Deletar 'Meu Local';
 
 
 #### 3.1.2 Descrição de Casos de Uso
@@ -183,11 +189,38 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 2.1 | Validar posição de GPS do usuário | Oculta |Média |
 | TR-RFUN 2.2 | Validar local de destino | Oculta |Média |
-| TR-RFUN 2.3 |  Buscar rota de acordo com ponto de origem e destino | Oculta |Alta |
-| TR-RFUN 2.4 |  Mostrar uma ou mais rotas possíveis | Evidente |Alta |
+| TR-RFUN 2.3 | Buscar rota de acordo com ponto de origem e destino | Oculta |Alta |
+| TR-RFUN 2.4 | Mostrar uma ou mais rotas possíveis | Evidente |Alta |
 
-**TR-CSU3**- Visualizar Linhas e Horários
+**TR-CSU3**- Manter Rota
   * Identificador: TR-CSU3
+
+  * Atores envolvidos: Usuário, Sistema
+
+  * Pré-condições: Usuário deve ter recebido a rota do sistema.
+
+  * Pós-condições: O aplicativo sugere uma nova rota para o usuário seguir e chegar ao destino.
+
+  * Cenário principal:
+      * Usuário recebe a rota no aplicativo.
+      * Usuário edita a rota em tempo real.
+      * Aplicativo sugere uma nova rota a ser seguida pelo usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
+      * Usuário não seleciona um novo local válido ou o sistema mostra que o usuário está fora da área de alcance.
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 3.1 | Validar novo local selecionado | Oculta |Média |
+| TR-RFUN 3.2 | Buscar rota de acordo com novo ponto de origem ou destino | Oculta |Alta |
+| TR-RFUN 3.3 | Mostrar uma ou mais novas rotas possíveis | Evidente |Alta |
+
+**TR-CSU4**- Visualizar Linhas e Horários
+  * Identificador: TR-CSU4
 
   * Atores envolvidos: Usuário, Sistema.
 
@@ -208,13 +241,13 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 3.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
-| TR-RFUN 3.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
-| TR-RFUN 3.3 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
-| TR-RFUN 3.4 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 4.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 4.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 4.3 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 4.4 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
 
-**TR-CSU4**- Visualizar ponto mais próximo da origem
-  * Identificador: TR-CSU4
+**TR-CSU5**- Visualizar ponto mais próximo da origem
+  * Identificador: TR-CSU5
 
   * Atores envolvidos: Usuário, Sistema.
 
@@ -236,9 +269,87 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 4.1 | Validar ponto de origem selecionado | Oculta |Alta |
-| TR-RFUN 4.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
-| TR-RFUN 4.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
+| TR-RFUN 5.1 | Validar ponto de origem selecionado | Oculta |Alta |
+| TR-RFUN 5.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
+| TR-RFUN 5.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
+
+**TR-CSU6**- Criar 'Meu Local'
+  * Identificador: TR-CSU6
+
+  * Atores envolvidos: Usuário
+
+  * Pré-condições: Usuário deve ter aberto o aplicativo na aba 'Meus Locais'.
+
+  * Pós-condições: Usuário cadastra um local pré-definido para rotas.
+
+  * Cenário principal:
+      * Usuário seleciona o local no mapa que deseja adicionar.
+      * Usuário classifica o local com nome e salva.
+      * Aplicativo grava e mostra o local salvo pelo usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 6.1 | Validar posição selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 6.2 | Gravar no banco a posição e nome do local | Oculta |Média |
+| TR-RFUN 6.3 | Retornar erro ou sucesso na adição do local | Evidente |Média |
+
+**TR-CSU7**- Manter 'Meu Local'
+  * Identificador: TR-CSU7
+
+  * Atores envolvidos: Usuário, Sistema
+
+  * Pré-condições: Usuário deve ter cadastrado um ou mais locais em 'Meus Locais'.
+
+  * Pós-condições: Usuário atualiza a lista de locais pré-definidos.
+
+  * Cenário principal:
+      * Usuário seleciona o local que deseja editar.
+      * Usuário edita o local no mapa ou troca a classificação do mesmo.
+      * Aplicativo atualiza no banco e mostra o local atualizado salvo pelo usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a atualização.
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 7.1 | Validar posição nova selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 7.2 | Validar a classificação nova selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 7.3 | Atualizar no banco de dados o local | Oculta |Média |
+| TR-RFUN 7.4 | Retornar erro ou sucesso na atualização | Evidente |Média |
+
+**TR-CSU8**- Deletar 'Meu Local'
+  * Identificador: TR-CSU8
+
+  * Atores envolvidos: Usuário
+
+  * Pré-condições: Usuário deve ter cadastrado um ou mais locais em 'Meus Locais'.
+
+  * Pós-condições: Usuário recebe lista atualizada de locais.
+
+  * Cenário principal:
+      * Usuário seleciona o local que deseja deletar.
+      * Aplicativo deleta no banco e mostra a lista de locais atualizadas para o usuário.
+
+  * Cenários secundários:
+      * Usuário não possui internet e o sistema mostra que não é possível realizar a operação.
+
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 8.1 | Validar local selecionado pelo usuário | Oculta |Média |
+| TR-RFUN 8.2 | Deletar no banco de dados o local selecionado | Oculta |Média |
+| TR-RFUN 8.3 | Retornar erro ou sucesso na operação | Evidente |Média |
 
 ### 3.2 Oportunidades
 
@@ -256,7 +367,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Pré-condições: Usuário deve estar conectado à internet.
 
-  * Pós-condições: 
+  * Pós-condições:
 	  * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
 
   * Cenário principal:
@@ -311,18 +422,18 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Identificador: CA-CSU1
 
   * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
-  
+
   * Pré-condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
 
   * Pós-condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
 
-  * Cenário principal: 
+  * Cenário principal:
 1. Usuário acessa ao sistema com seu login e senha;
 2. Usuário seleciona a opção Calendário;
 3. Usuário entra no Calendário em sua regional de escolha.
 4. Usuário pode alterar regional e acessar informações.
 
-  * Cenários secundários: 
+  * Cenários secundários:
 1. Administrador pode inserir novas notícias que correspodem ao calendário.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
@@ -337,24 +448,24 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Identificador: CA-CSU2
 
   * Atores envolvidos: Administrador, Usuário
-  
+
   * Pré-condições: O usuário deve estar logado no Minha UFG para acessar a função Calendário.
 
   * Pós-condições: O Sistema apresenta o calendário offline.
 
-  * Cenário principal: 
+  * Cenário principal:
 1. O usuário está sem acesso à internet.
 2. O Usuário já está logado no aplicativo Minha UFG.
 3. O Usuário acessa a função Calendário.
 4. O Usuário consegue acessar o calendário offline.
 
-  * Cenários secundários: 
+  * Cenários secundários:
 1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
 2. O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-  
- 
+
+
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
@@ -362,38 +473,38 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 **CA-CSU3**- Fazer consulta de evento
 
 * Identificador:CA-CSU3
-* Atores envolvidos: Usuário	
-* Pré-condições: 
-  	
+* Atores envolvidos: Usuário
+* Pré-condições:
+
 1. O usuário está no contexto de pesquisa de eventos do calendário
 2. O usuário seleciona a regional que deseja fazer a pesquisa
 3. O sistema sincroniza o calendário
 
 * Pós-condições: O Sistema apresenta os eventos
 * Cenário principal:O resultado é retornado
-  		
+
 1. O usuário abre a tela de pesquisa de eventos		
 2. Usuário seleciona a regional		
-3. O usuário digita o texto da pesquisa	
+3. O usuário digita o texto da pesquisa
 4. A pesquisa é executada quando o usuário para de digitar
 5. O resultado da consulta é retornada para o usuário
-		
+
 * Cenários secundários: Nenhum resultado encontrado	     
-	
+
 1. O usuário abre a tela de filtro de eventos
 2. Usuário seleciona a regional
 3. O usuário digita o texto da pesquisa
 4. A pesquisa é executada quando o usuário para de digitar
 5. Nenhum resultado é retornado
 6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa		
-        
+
 Erro ao fazer pesquisa
-	
+
 1. O usuário abre a tela de filtro de eventos
 2. O usuário digita o texto da pesquisa
 3. Usuário seleciona a regional
 4. A pesquisa é executada quando o usuário para de digitar
-5. A pesquisa retorna um erro inesperado 
+5. A pesquisa retorna um erro inesperado
 6. Uma mensagem é mostrada para o usuário mostrando que um erro ocorreu
 
 
@@ -407,20 +518,20 @@ Erro ao fazer pesquisa
   * Identificador: CA-CSU4.
 
   * Atores envolvidos: Administrador, Usuário.
-  
-  * Pré-condições: 
+
+  * Pré-condições:
 	* Usuário não deve estar conectado à internet.
     * O usuário deve ter feito login no aplicativo pelo menos uma vez.
 
   * Pós-condições: O aplicativo apresenta o calendário.
 
-  * Cenário principal: 
+  * Cenário principal:
     * O Usuário não possui internet.
     * O Usuário abre o aplicativo Minha UFG.
     * O Usuário seleciona o ícone do calendário.
     * O Usuário pesquisa o evento desejado.
     * O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
-  * Cenários secundários: 
+  * Cenários secundários:
 	* O aplicativo avisa que não tem nenhum evento disponível.
 	* O aplicativo pede que para efetuar conexão com a internet para atualizar.
 
@@ -435,45 +546,45 @@ Erro ao fazer pesquisa
   * Identificador: CA-CSU5
 
   * Atores envolvidos: Administrador
-  
+
   * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
 
   * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
 
-  * Cenário principal: 
+  * Cenário principal:
   1. O administrador acessa o aplicativo minha UFG.
   2. O administrador entra dentro da função minha UFG.
   3. O administrador insere a postagem.
   4. Postagem realizada com sucesso.
 
-  * Cenários secundários: 
+  * Cenários secundários:
   1. As atualizações devem aparecer para o usuário após ter acesso à internet.
   2. O usuário pode ter acesso às postagens offline.
   3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
-  
+
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-  
+
 **CA-CSU6**- Notificações de eventos
   * Identificador: CA-CSU6.
 
   * Atores envolvidos: Usuários.
-  
+
   * Pré-condições: Os usuários devem estar inscritos para receberem as notificações.
 
   * Pós-condições: Essas notificações disparadas não serão mais enviadas aos usuários.
 
   * Cenário principal:
-  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
+  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG.
   2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
   3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
   4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao usuário.
-  
-  * Cenários secundários: 
+
+  * Cenários secundários:
   1. Duas ou mais notificações foram recebidas pelo usuário e não foram visualizadas
   2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o usuário seleciona a que deseja abrir.
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
- 
+
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
@@ -514,24 +625,19 @@ Exemplo:
 
 ### 4.4 Requisitos e Restrições de Plataforma de Hardware (RPHW)
 
-Identificar e descrever requisitos e restrições relacionadas com a plataforma de hardware que será utilizada pelo software:
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RPHWx	| Descrição do requisito RPHWx | CSUy, CSUm ... |
+| RPHW1	| Hardware de GPS integrado | Todos do Transporte |
+| RPHW2	| Hardware para acesso á internet | Todos |
+| RPHW3	| Processador mínimo de 1 GHz | Todos |
 
 ### 4.5 Requisitos e Restrições de Plataforma de Software (RPSW)
 
-Se o software tiver que ser executado em plataformas de software específicas, essas plataformas de software deverão ser definidas:
-1. Sistema Operacional: identificar e descrever o sistema operacional em que o software deverá ser executado;
-2. Softwares Básicos: identificar SGBD, linguagem de programação, ferramentas CASE e outros.
-Se houver mais de uma plataforma de software, deve-se especificar qual a plataforma principal e em que situações as outras plataformas podem ser utilizadas.
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RPSWx | Descrição do requisito RSPWx | CSUy, CSUm ... |
+| RPSW1 | Android versão 4.1 ou superior | Todos |
+| RPSW2 | Deverá possuir uma aplicação externa de mapas | Todos do Transporte |
+| RPSW3 | Uso do Firebase como serviço | Todos |
 
 ### 4.6 Requisitos e Restrições de Desempenho (RDES)
 
