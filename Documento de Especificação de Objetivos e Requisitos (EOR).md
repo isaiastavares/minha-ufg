@@ -305,31 +305,31 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-* CA-CSU1: Visualizar Regionais - Todos
-* CA-CSU2: Visualizar Calendário offline - Todos
-* CA-CSU3: Fazer consulta de evento - Todos
-* CA-CSU4: Postar Eventos - Administrador(WEB)
-* CA-CSU5: Notificar Eventos - Consulente(Usuário app)
-* CA-CSU6: Inserir Informação no Calendário - Administrador(WEB)
-* CA-CSU7: Excluir Informação no Calendário - Administrador(WEB)
+* CA-CSU1: Visualizar Regionais 
+* CA-CSU2: Criar Eventos
+* CA-CSU3: Fazer consulta de evento 
+* CA-CSU4: Postar Eventos 
+* CA-CSU5: Notificar Eventos 
+* CA-CSU6: Inserir Informação no Calendário 
+* CA-CSU7: Excluir Informação no Calendário 
 
 **CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
 
-  * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
+  * Atores envolvidos: Consulentes.
   
-  * Pré-condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
+  * Pré-condições: Os consulentes devem visualizar os calendário de acordo com a regional de escolha. Cada consulente tem sua regional favorita, mas também pode mudar para qualquer outra.
 
-  * Pós-condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
+  * Pós-condições: O consulente escolhe sua regional e realiza qualquer busca desejada no calendário acadêmico.
 
   * Cenário principal: 
-1. Usuário acessa ao sistema com seu login e senha;
-2. Usuário seleciona a opção Calendário;
-3. Usuário entra no Calendário em sua regional de escolha.
-4. Usuário pode alterar regional e acessar informações.
+1. Consulente acessa o aplicativo Minha UFG;
+2. Consulente seleciona a opção Calendário;
+3. Consulente entra no Calendário e escolhe sua regional de interesse.
+4. Consulente seleciona a data que deseja consultar.
 
   * Cenários secundários: 
-1. Administrador pode inserir novas notícias que correspodem ao calendário.
+1. O consulente pode acessar as funções do calendário offline.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
@@ -337,33 +337,45 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 1.1 | O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás. | Evidente |Alta  |
-| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades. | Evidente |Alta  |
+| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades.| Evidente |Alta  |
 
-**CA-CSU2**- Visualizar Calendário offline
+**CA-CSU2**- Criar Eventos
   * Identificador: CA-CSU2
 
-  * Atores envolvidos: Administrador, Usuário
+  * Atores envolvidos: Administrador.
   
-  * Pré-condições: O usuário deve estar logado no Minha UFG para acessar a função Calendário.
+  * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
 
-  * Pós-condições: O Sistema apresenta o calendário offline.
+  * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
 
   * Cenário principal: 
-1. O usuário está sem acesso à internet.
-2. O Usuário já está logado no aplicativo Minha UFG.
-3. O Usuário acessa a função Calendário.
-4. O Usuário consegue acessar o calendário offline.
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Criar (eventos).
+   a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
+   b. O Administrador deve inserir o nome do evento;
+   c. O Administrador deve inserir o local onde será realizado;
+   d. O Administrador deve selecionar o período que vai ser o evento;
+   e. O Administrador tem a possibilidade de inserir observações sobre o evento;
+   f. O Administrador pode limpar todo o cadastro e começar do zero inserindo novos dados, apertando o botão Limpar Cadastro;
+   g. O Administrador, após inserir todos os dados, deve clicar em Criar Evento para salvar os dados e, consequentemente, criar um novo evento;
+   h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
+5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
 
   * Cenários secundários: 
-1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
-2. O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
+1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
+2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
+| CA-RFUN 2.1 | Criar um novo evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 2.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Limpar todo o cadastro e outro para Criar Evento.| Evidente |Alta  |
+| CA-RNFUN 2.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RNFUN 2.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
 
 **CA-CSU3**- Fazer consulta de evento
 
