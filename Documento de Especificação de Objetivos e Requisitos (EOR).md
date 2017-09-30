@@ -380,53 +380,60 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 **CA-CSU3**- Fazer consulta de evento
 
 * Identificador:CA-CSU3
-* Atores envolvidos: Usuário	
-* Pré-condições: 
-  	
-1. O usuário está no contexto de pesquisa de eventos do calendário
-2. O usuário seleciona a regional que deseja fazer a pesquisa
-3. O calendário deverá ter sido sincronizado
+* Atores envolvidos: Usuário
+* Pré-condições
 
-* Pós-condições: 
+1. O usuário está no contexto de pesquisa de eventos do calendário
+2. O calendário é baixado 
+* Pós-condições:
 
 1. O Sistema apresenta os eventos
 2. O usuário seleciona o evento que estava procurando
 
-* Cenário principal: 
-  * O resultado é retornado
-  		
-1. O usuário abre a tela de pesquisa de eventos		
-2. Usuário seleciona a regional		
-3. O usuário digita o texto da pesquisa	
-4. A pesquisa é executada quando o usuário para de digitar
-5. O resultado da consulta é retornada para o usuário
-		
-* Cenários secundários: Nenhum resultado encontrado	     
-	
+* Fluxo principal: 
 1. O usuário abre a tela de pesquisa de eventos
-2. Usuário seleciona a regional
-3. O usuário digita o texto da pesquisa
-4. A pesquisa é executada quando o usuário para de digitar
-5. Nenhum resultado é retornado
-6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa		
+2. O usuário digita o texto da pesquisa
+3. A pesquisa é executada quando o usuário parar de digitar
+4. O resultado da consulta é retornada para o usuário
 
-* Usuário não possui internet (Offline):
+ RN01: Os eventos são apresentados pela data mais atual
+
+* Fluxo secundários:
  
-1. O Usuário abre o aplicativo Minha UFG.
-2. O Usuário seleciona a opção de calendário.
-3. O Usuário pesquisa o evento desejado.
-4. O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
-            
-* Erro ao fazer pesquisa
+  1 - Pesquisa por regional 
+
+	O usuário abre a tela de pesquisa de eventos
+	O usuário seleciona o filtro de Regional
+	A pesquisa é executada
+	O resultado da consulta é retornada para o usuário
 	
-1. O usuário abre a tela de pesquisa de eventos
-2. Usuário seleciona a regional
-3. O usuário digita o texto da pesquisa
-4. A pesquisa é executada quando o usuário para de digitar
-5. A pesquisa não é concluída
-6. Uma mensagem é mostrada para o usuário mostrando que um erro ocorreu
+      RN02: Os eventos são apresentados pela data mais atual  	
+	
+2 - Pesquisa por Interessado  	
+	
+	O usuário abre a tela de pesquisa de eventos
+	O usuário seleciona o filtro por interessado
+	A pesquisa é executada
+	O resultado da consulta é retornada para o usuário
+	O usuário seleciona o resultado de um determinado interessado
 
+3 - Pesquisa por Periodo 
 
+	O usuário abre a tela de pesquisa de eventos
+	O usuário seleciona o filtro por periodo
+	O usuário seleciona a data inicial e a data final
+	A pesquisa é executada
+
+RN03: A pesquisa só é executada após o usuário selecionar as duas datas
+
+* Fluxo alternativo 
+    
+    O usuário abre a tela de pesquisa de eventos
+    O usuário digita o texto da pesquisa
+    A pesquisa é executada quando o usuário para de digitar
+    Nenhum resultado é retornado
+    Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
+  
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
