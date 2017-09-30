@@ -156,7 +156,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+   <img src="https://user-images.githubusercontent.com/11222413/31042741-13367a00-a585-11e7-937f-d26e01b46ded.png" width="700" height="350"/>
+  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -183,7 +185,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+   <img src="https://user-images.githubusercontent.com/11222413/31042546-1428ab6c-a581-11e7-88a1-a26317e1b186.png" width="200" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -237,7 +240,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenários secundários:
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+   <img src="https://user-images.githubusercontent.com/11222413/31042789-5874687e-a586-11e7-8244-e83a6e74d547.png" width="600" height="350"/>
+  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -265,7 +270,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
       * Usuário não seta a origem ou destino como locais válidos.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+  <img src="https://user-images.githubusercontent.com/11222413/31042512-5dd01dfa-a580-11e7-804c-2180d1f00c60.png" width="200" height="350"/>
+  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -291,7 +298,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+  <img src="https://user-images.githubusercontent.com/11222413/31042715-920c30e6-a584-11e7-8d17-12ff5de34d0b.png" width="700" height="350"/>
+  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -317,7 +326,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a atualização.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+  <img src="https://user-images.githubusercontent.com/11222413/31042717-94cd8e7e-a584-11e7-8756-d5666fad290b.png" width="550" height="350"/>
+  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -344,7 +355,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 
   * Protótipos de tela: 
-  <img src="https://user-images.githubusercontent.com/11222413/31042349-290ce2a0-a57c-11e7-8a90-0e571cac2a93.png" width="550" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31042718-9a73d108-a584-11e7-8ed0-5d59c8141502.png" width="550" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
