@@ -343,7 +343,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a operação.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+  <img src="https://user-images.githubusercontent.com/11222413/31042349-290ce2a0-a57c-11e7-8a90-0e571cac2a93.png" width="550" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
