@@ -129,9 +129,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * TR-CSU3: Manter Rota;
 * TR-CSU4: Ver linhas e horários dos pontos dos campus;
 * TR-CSU5: Visualizar pontos mais próximos da origem;
-* TR-CSU6: Criar 'Meu Local';
-* TR-CSU7: Manter 'Meu Local';
-* TR-CSU8: Deletar 'Meu Local';
+* TR-CSU6: Criar 'Meus Locais';
+* TR-CSU7: Manter 'Meus Locais';
+* TR-CSU8: Deletar 'Meus Locais';
 
 
 #### 3.1.2 Descrição de Casos de Uso
@@ -156,9 +156,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
    <img src="https://user-images.githubusercontent.com/11222413/31042741-13367a00-a585-11e7-937f-d26e01b46ded.png" width="700" height="350"/>
-  
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -185,7 +185,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
    <img src="https://user-images.githubusercontent.com/11222413/31042546-1428ab6c-a581-11e7-88a1-a26317e1b186.png" width="200" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -240,9 +240,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenários secundários:
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
    <img src="https://user-images.githubusercontent.com/11222413/31042789-5874687e-a586-11e7-8244-e83a6e74d547.png" width="600" height="350"/>
-  
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -270,9 +270,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
       * Usuário não seta a origem ou destino como locais válidos.
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
   <img src="https://user-images.githubusercontent.com/11222413/31042512-5dd01dfa-a580-11e7-804c-2180d1f00c60.png" width="200" height="350"/>
-  
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -280,7 +280,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 5.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
 | TR-RFUN 5.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
 
-**TR-CSU6**- Criar 'Meu Local'
+**TR-CSU6**- Criar 'Meus Locais'
   * Identificador: TR-CSU6
 
   * Atores envolvidos: Usuário
@@ -298,9 +298,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
 
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
   <img src="https://user-images.githubusercontent.com/11222413/31042715-920c30e6-a584-11e7-8d17-12ff5de34d0b.png" width="700" height="350"/>
-  
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -308,7 +308,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 6.2 | Gravar no banco a posição e nome do local | Oculta |Média |
 | TR-RFUN 6.3 | Retornar erro ou sucesso na adição do local | Evidente |Média |
 
-**TR-CSU7**- Manter 'Meu Local'
+**TR-CSU7**- Manter 'Meus Locais'
   * Identificador: TR-CSU7
 
   * Atores envolvidos: Usuário, Sistema
@@ -326,9 +326,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a atualização.
 
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
   <img src="https://user-images.githubusercontent.com/11222413/31042717-94cd8e7e-a584-11e7-8756-d5666fad290b.png" width="550" height="350"/>
-  
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -337,7 +337,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 7.3 | Atualizar no banco de dados o local | Oculta |Média |
 | TR-RFUN 7.4 | Retornar erro ou sucesso na atualização | Evidente |Média |
 
-**TR-CSU8**- Deletar 'Meu Local'
+**TR-CSU8**- Deletar 'Meus Locais'
   * Identificador: TR-CSU8
 
   * Atores envolvidos: Usuário
@@ -354,7 +354,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a operação.
 
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
   <img src="https://user-images.githubusercontent.com/11222413/31042718-9a73d108-a584-11e7-8ed0-5d59c8141502.png" width="550" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
