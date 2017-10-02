@@ -443,14 +443,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
-**CA-CSU5**- Postar Eventos
+**CA-CSU5**- Excluir Eventos
   * Identificador: CA-CSU5
 
   * Atores envolvidos: Administrador
   
-  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
+  * Pré-condições: 
 
-  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
+  * Pós-condições: 
 
   * Cenário principal: 
   1. O administrador acessa o aplicativo minha UFG.
