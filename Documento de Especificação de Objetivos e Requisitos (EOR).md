@@ -234,7 +234,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenário principal:
       * Usuário abre o aplicativo.
       * Usuário seleciona aba de transportes.
-      * Usuário seleciona o número do ponto desejado.
+      * Usuário seleciona o ponto desejado no mapa.
       * Sistema lista as rotas e os horários referentes ao ponto definido pelo usuário.
 
   * Cenários secundários:
