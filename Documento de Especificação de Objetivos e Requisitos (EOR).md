@@ -418,30 +418,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RNFUN 3.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
 | CA-RNFUN 3.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
 
-**CA-CSU4**- Postar Eventos
-  * Identificador: CA-CSU4
-
-  * Atores envolvidos: Administrador
-  
-  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
-
-  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
-
-  * Cenário principal: 
-  1. O administrador acessa o aplicativo minha UFG.
-  2. O administrador entra dentro da função minha UFG.
-  3. O administrador insere a postagem.
-  4. Postagem realizada com sucesso.
-
-  * Cenários secundários: 
-  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
-  2. O usuário pode ter acesso às postagens offline.
-  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
-  
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-  
-**CA-CSU5**- Notificar Eventos
-  * Identificador: CA-CSU5.
+**CA-CSU4**- Notificar Eventos
+  * Identificador: CA-CSU4.
 
   * Atores envolvidos: Consulente.
   
@@ -463,7 +441,30 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 5.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+| CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+
+**CA-CSU5**- Postar Eventos
+  * Identificador: CA-CSU5
+
+  * Atores envolvidos: Administrador
+  
+  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
+
+  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
+
+  * Cenário principal: 
+  1. O administrador acessa o aplicativo minha UFG.
+  2. O administrador entra dentro da função minha UFG.
+  3. O administrador insere a postagem.
+  4. Postagem realizada com sucesso.
+
+  * Cenários secundários: 
+  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
+  2. O usuário pode ter acesso às postagens offline.
+  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
+  
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
 
 **CA-CSU6**- Fazer consulta de evento
 
