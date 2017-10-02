@@ -473,7 +473,11 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenários secundários: 
   1. Duas ou mais notificações foram recebidas pelo consulente e não foram visualizadas
   2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o consulente seleciona a que deseja abrir.
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04%20.1-%20Notificar%20Eventos.png"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04.2%20-%20Notificar%20Eventos.png"/>
 
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
