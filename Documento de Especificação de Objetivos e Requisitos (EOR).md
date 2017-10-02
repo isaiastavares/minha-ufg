@@ -332,8 +332,11 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenários secundários: 
 1. O consulente pode acessar as funções do calendário offline.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%201.png" width="550" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%202.png" width="550" height="500"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -368,7 +371,21 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
 2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%201-Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%202-Tela%20Calend%C3%A1rio.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%203-Tela%20de%20Eventos.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png" width="1100" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%205-Preencher%20todos%20os%20campos.png" width="1100" height="500"/>
+  
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%206-Cadastro%20realizado.png" width="1100" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%207-Erro%20ao%20realizar%20cadastro.png" width="1100" height="500"/>
   
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
