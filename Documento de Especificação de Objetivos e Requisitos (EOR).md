@@ -384,7 +384,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   
   * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Editar Evento, deve escolher o evento para ter a possibilidade de alterar os dados e depois salvar as alterações do evento.
 
-  * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
+  * Pós-condições: O Administrador consegue alterar o evento desejado.
 
   * Cenário principal: 
 1. O Administrador acessa a parte web com seu login e senha.
