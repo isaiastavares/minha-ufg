@@ -353,14 +353,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
 4. O Administrador seleciona a opção Criar (eventos).
-   a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
-   b. O Administrador deve inserir o nome do evento;
-   c. O Administrador deve inserir o local onde será realizado;
-   d. O Administrador deve selecionar o período que vai ser o evento;
-   e. O Administrador tem a possibilidade de inserir observações sobre o evento;
-   f. O Administrador pode limpar todo o cadastro e começar do zero inserindo novos dados, apertando o botão Limpar Cadastro;
-   g. O Administrador, após inserir todos os dados, deve clicar em Criar Evento para salvar os dados e, consequentemente, criar um novo evento;
-   h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
+   * a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
+   * b. O Administrador deve inserir o nome do evento;
+   * c. O Administrador deve inserir o local onde será realizado;
+   * d. O Administrador deve selecionar o período que vai ser o evento;
+   * e. O Administrador tem a possibilidade de inserir observações sobre o evento;
+   * f. O Administrador pode limpar todo o cadastro e começar do zero inserindo novos dados, apertando o botão Limpar Cadastro;
+   * g. O Administrador, após inserir todos os dados, deve clicar em Criar Evento para salvar os dados e, consequentemente, criar um novo evento;
+   * h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
 5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
 
   * Cenários secundários: 
@@ -376,6 +376,48 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RFUN 2.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Limpar todo o cadastro e outro para Criar Evento.| Evidente |Alta  |
 | CA-RNFUN 2.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
 | CA-RNFUN 2.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
+
+**CA-CSU3**- Editar Eventos
+  * Identificador: CA-CSU3
+
+  * Atores envolvidos: Administrador.
+  
+  * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Editar Evento, deve escolher o evento para ter a possibilidade de alterar os dados e depois salvar as alterações do evento.
+
+  * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
+
+  * Cenário principal: 
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Editar (eventos).
+5. O Administrador seleciona o evento entre os Listados e clica em Editar:
+   * a. O Administrador pode selecionar outra Regional, onde o evento vai acontecer;
+   * b. O Administrador pode alterar o nome do evento;
+   * c. O Administrador pode alterar o local do onde será realizado;
+   * d. O Administrador pode alterar o período que vai ser o evento;
+   * e. O Administrador tem a possibilidade de alterar as observações sobre o evento;
+   * f. O Administrador pode cancelar as alterações, apertando o botão Cancelar, voltando para a página anterior;
+   * g. O Administrador, após alterar todos os dados, deve clicar em Salvar Alerações para salvar os dados e, consequentemente, editar o evento que foi selecionado;
+   * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos.
+6. Após editar um evento, o Administrador volta para a página anterior com um retorno de que as alterações sobre o evento foram salvas com sucesso.
+
+  * Cenários secundários: 
+5. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
+    * O Administrador seleciona o filtro de pesquisa de evento. Exemplo: Pesquisar por Regional;
+5. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
+5. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
+ 
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 3.1 | Editar um evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 3.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Candelar as alterações e outro para Salvar Alterações.| Evidente |Alta  |
+| CA-RNFUN 3.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RNFUN 3.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
+
 
 **CA-CSU3**- Fazer consulta de evento
 
