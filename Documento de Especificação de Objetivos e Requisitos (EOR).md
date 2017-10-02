@@ -568,17 +568,17 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
        * Nenhum resultado é retornado
        * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
   
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 6.1 | descricao | Evidente |Alta  |
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 6.1 | descricao | Evidente |Alta  |
+   * Protótipos de tela
+  
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20Default.png" />
+  
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20interessado.png" />
+    
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20per%C3%ADodo.png" />
+      
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20regional.png" />
+	
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Nenhum%20resultado.png"/>
 
 ## 4. Requisitos e restrições não funcionais
 --------------------------------------------
