@@ -466,64 +466,58 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
-
 **CA-CSU6**- Fazer consulta de evento
 
-* Identificador:CA-CSU6
-* Atores envolvidos: Usuário
-* Pré-condições
+   * Identificador:CA-CSU6
 
-1. O usuário está no contexto de pesquisa de eventos do calendário
-2. O calendário é baixado 
-* Pós-condições:
+   * Atores envolvidos: Usuário
 
-1. O Sistema apresenta os eventos
-2. O usuário seleciona o evento que estava procurando
+   * Pré-condições: 
+       * O usuário está no contexto de pesquisa de eventos do calendário. 
+       * O calendário deverá estar baixado.
+     
+   * Pós-condições:
+       * O Sistema apresenta os eventos
+       * O usuário seleciona o evento que estava procurando
 
-* Fluxo principal: 
-1. O usuário abre a tela de pesquisa de eventos
-2. O usuário digita o texto da pesquisa
-3. A pesquisa é executada quando o usuário parar de digitar
-4. O resultado da consulta é retornada para o usuário
+   * Fluxo principal:
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário digita o texto da pesquisa
+       * A pesquisa é executada quando o usuário parar de digitar
+       * O resultado da consulta é retornada para o usuário
 
- RN01: Os eventos são apresentados pela data mais atual
+   * Fluxo secundário: Pesquisa por regional 
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro de Regional
+       * A pesquisa é executada
+       * O resultado da consulta é retornada para o usuário
+   
+   * Fluxo secundário: Pesquisa por Interessado
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro por interessado
+       * A pesquisa é executada
+       * O resultado da consulta é retornada para o usuário
+       * O usuário seleciona o resultado de um determinado interessado
 
-* Fluxo secundários:
- 
-  1 - Pesquisa por regional 
+   * Fluxo secundário: Pesquisa por Periodo
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro por periodo
+       * O usuário seleciona a data inicial e a data final
+       * A pesquisa é executada
 
-	O usuário abre a tela de pesquisa de eventos
-	O usuário seleciona o filtro de Regional
-	A pesquisa é executada
-	O resultado da consulta é retornada para o usuário
-	
-      RN02: Os eventos são apresentados pela data mais atual  	
-	
-2 - Pesquisa por Interessado  	
-	
-	O usuário abre a tela de pesquisa de eventos
-	O usuário seleciona o filtro por interessado
-	A pesquisa é executada
-	O resultado da consulta é retornada para o usuário
-	O usuário seleciona o resultado de um determinado interessado
-
-3 - Pesquisa por Periodo 
-
-	O usuário abre a tela de pesquisa de eventos
-	O usuário seleciona o filtro por periodo
-	O usuário seleciona a data inicial e a data final
-	A pesquisa é executada
-
-RN03: A pesquisa só é executada após o usuário selecionar as duas datas
-
-* Fluxo alternativo 
-    
-    O usuário abre a tela de pesquisa de eventos
-    O usuário digita o texto da pesquisa
-    A pesquisa é executada quando o usuário para de digitar
-    Nenhum resultado é retornado
-    Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
+   * Fluxo alternativo 
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário digita o texto da pesquisa
+       * A pesquisa é executada quando o usuário para de digitar
+       * Nenhum resultado é retornado
+       * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
   
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 6.1 | descricao | Evidente |Alta  |
+
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
