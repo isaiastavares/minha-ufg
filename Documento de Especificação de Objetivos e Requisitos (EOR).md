@@ -449,22 +449,42 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Atores envolvidos: Administrador
   
-  * Pré-condições: 
-
-  * Pós-condições: 
+  * Pré-condições: O Administrador deve conseguir excluir um Evento no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Excluir Evento, deve escolher o(s) evento(s) para excluir e depois salvar as alterações feitas.
+  
+  * Pós-condições:  O Administrador consegue excluir o evento desejado.
 
   * Cenário principal: 
-  1. O administrador acessa o aplicativo minha UFG.
-  2. O administrador entra dentro da função minha UFG.
-  3. O administrador insere a postagem.
-  4. Postagem realizada com sucesso.
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Excluir (eventos).
+5. O Sistema exibe uma tela com opções de filtro, lista de eventos e um botão salvar:
+   * a. O Administrador pode selecionar uma regional para filtrar;
+   * b. O Administrador pode selecionar uma data para filtrar;
+   * c. O Administrador pode selecionar um nome do evento para filtrar;
+   * d. O Administrador pode excluir um evento de cada vez ou todos ao mesmo tempo caso estejam selecionados estando filtrados ou não.
+6. Após excluir um ou vários eventos, o Administrador clica em "Salvar" e volta para a página anterior com um retorno de que as alterações feitas foram salvas com sucesso.
 
   * Cenários secundários: 
-  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
-  2. O usuário pode ter acesso às postagens offline.
-  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
-  
+1. Não exibe botão “Excluir”; 
+   * a. O usuário tenta acessar botão de “Excluir”;
+   * b. O sistema sempre verifica privilégios de categoria por usuário;
+   * c. Cada categoria de usuário possui tipos de privilégios distintos.
+2. Ação de exclusão não permitida;
+   * a. O usuário (administrador) tenta excluir um evento no calendário; 
+   * b. O sistema bloqueia ação;
+   * c. O sistema exibe uma mensagem “Erro ao excluir evento. Contate o programador ou tente criar outro evento.”.
+
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
+    
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 5.1 | Excluir um evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 5.2 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RFUN 5.3 | Deve ter no mínimo um evento cadastrado.| Evidente |Alta  |
+| CA-RFUN 5.4 | Administrador deve conseguir filtrar eventos através de um nome, data ou regional. Obs: deve ter um botão de filtrar e limpar filtro sendo que é opcional essas ações. | Evidente |Média  |
+| CA-RFUN 5.5 | Administrador deve conseguir excluir qualquer evento um a um ou vários de uma vez (caso tenha selecionado os desejados). | Evidente |Alta  |
   
 **CA-CSU6**- Fazer consulta de evento
 
