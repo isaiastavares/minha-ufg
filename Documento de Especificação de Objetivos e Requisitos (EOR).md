@@ -418,10 +418,56 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RNFUN 3.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
 | CA-RNFUN 3.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
 
+**CA-CSU4**- Postar Eventos
+  * Identificador: CA-CSU4
 
-**CA-CSU3**- Fazer consulta de evento
+  * Atores envolvidos: Administrador
+  
+  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
 
-* Identificador:CA-CSU3
+  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
+
+  * Cenário principal: 
+  1. O administrador acessa o aplicativo minha UFG.
+  2. O administrador entra dentro da função minha UFG.
+  3. O administrador insere a postagem.
+  4. Postagem realizada com sucesso.
+
+  * Cenários secundários: 
+  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
+  2. O usuário pode ter acesso às postagens offline.
+  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
+  
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  
+**CA-CSU5**- Notificar Eventos
+  * Identificador: CA-CSU5.
+
+  * Atores envolvidos: Consulente.
+  
+  * Pré-condições: Os consulentes devem estar inscritos para receberem as notificações.
+
+  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos consulentes.
+
+  * Cenário principal:
+  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
+  2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
+  3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
+  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao consulente.
+  
+  * Cenários secundários: 
+  1. Duas ou mais notificações foram recebidas pelo consulente e não foram visualizadas
+  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o consulente seleciona a que deseja abrir.
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
+ 
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 5.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+
+**CA-CSU6**- Fazer consulta de evento
+
+* Identificador:CA-CSU6
 * Atores envolvidos: Usuário
 * Pré-condições
 
@@ -480,54 +526,7 @@ RN03: A pesquisa só é executada após o usuário selecionar as duas datas
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 3.1 | descricao | Evidente |Alta  |
-
-**CA-CSU4**- Postar Eventos
-  * Identificador: CA-CSU4
-
-  * Atores envolvidos: Administrador
-  
-  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
-
-  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
-
-  * Cenário principal: 
-  1. O administrador acessa o aplicativo minha UFG.
-  2. O administrador entra dentro da função minha UFG.
-  3. O administrador insere a postagem.
-  4. Postagem realizada com sucesso.
-
-  * Cenários secundários: 
-  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
-  2. O usuário pode ter acesso às postagens offline.
-  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
-  
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-  
-**CA-CSU5**- Notificar Eventos
-  * Identificador: CA-CSU5.
-
-  * Atores envolvidos: Consulente.
-  
-  * Pré-condições: Os consulentes devem estar inscritos para receberem as notificações.
-
-  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos consulentes.
-
-  * Cenário principal:
-  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
-  2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
-  3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
-  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao consulente.
-  
-  * Cenários secundários: 
-  1. Duas ou mais notificações foram recebidas pelo consulente e não foram visualizadas
-  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o consulente seleciona a que deseja abrir.
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
- 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+| CA-RFUN 6.1 | descricao | Evidente |Alta  |
 
 **CA-CSU6**- Inserir Informação no Calendário
   * Identificador: CA-CSU6
