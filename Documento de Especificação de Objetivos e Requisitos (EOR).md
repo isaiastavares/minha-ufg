@@ -214,8 +214,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não seleciona um novo local válido ou o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
+  * Protótipos de tela: 
+   <img src="https://user-images.githubusercontent.com/11222413/31101501-55573e76-a7a4-11e7-96b6-4f4554723b7f.png" width="700" height="350"/>
+  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 3.1 | Validar novo local selecionado | Oculta |Média |
