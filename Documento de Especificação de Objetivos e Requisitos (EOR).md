@@ -444,7 +444,26 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+      
+**OP-CSU4**- Deletar Oportunidade (Web)
 
+  * Identificador: OP-CSU4
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: Não possui pós-condições.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar.
+      * Usuário confirma o desejo de deletar a oportunidade.
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+      
 
 ### 3.3 Calendário
 
