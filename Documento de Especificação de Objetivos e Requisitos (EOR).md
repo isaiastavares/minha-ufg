@@ -425,6 +425,27 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade.  | Evidente |Alta |
 | OP-RFUN 2.4 | Filtrar de acordo com o campo de busca tanto para o ID, Título ou Categoria de cada oportunidade.  | Evidente |Alta |
 
+**OP-CSU3**- Editar Oportunidade (Web)
+
+  * Identificador: OP-CSU3
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições:
+	  * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados}) devem ser obrigatórios.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção editar.
+      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+
 ### 3.3 Calendário
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
