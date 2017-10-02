@@ -129,9 +129,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * TR-CSU3: Manter Rota;
 * TR-CSU4: Ver linhas e horários dos pontos dos campus;
 * TR-CSU5: Visualizar pontos mais próximos da origem;
-* TR-CSU6: Criar 'Meu Local';
-* TR-CSU7: Manter 'Meu Local';
-* TR-CSU8: Deletar 'Meu Local';
+* TR-CSU6: Criar 'Meus Locais';
+* TR-CSU7: Manter 'Meus Locais';
+* TR-CSU8: Deletar 'Meus Locais';
 
 
 #### 3.1.2 Descrição de Casos de Uso
@@ -156,7 +156,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+   <img src="https://user-images.githubusercontent.com/11222413/31042741-13367a00-a585-11e7-937f-d26e01b46ded.png" width="700" height="350"/>
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -183,7 +185,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+   <img src="https://user-images.githubusercontent.com/11222413/31042546-1428ab6c-a581-11e7-88a1-a26317e1b186.png" width="200" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -211,8 +214,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não seleciona um novo local válido ou o sistema mostra que o usuário está fora da área de alcance.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
+  * Protótipos de tela: 
+   <img src="https://user-images.githubusercontent.com/11222413/31101501-55573e76-a7a4-11e7-96b6-4f4554723b7f.png" width="700" height="350"/>
+  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 3.1 | Validar novo local selecionado | Oculta |Média |
@@ -231,13 +235,15 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenário principal:
       * Usuário abre o aplicativo.
       * Usuário seleciona aba de transportes.
-      * Usuário seleciona o número do ponto desejado.
+      * Usuário seleciona o ponto desejado no mapa.
       * Sistema lista as rotas e os horários referentes ao ponto definido pelo usuário.
 
   * Cenários secundários:
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+   <img src="https://user-images.githubusercontent.com/11222413/31042789-5874687e-a586-11e7-8244-e83a6e74d547.png" width="600" height="350"/>
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -265,7 +271,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
       * Usuário não seta a origem ou destino como locais válidos.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31042512-5dd01dfa-a580-11e7-804c-2180d1f00c60.png" width="200" height="350"/>
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -273,7 +281,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 5.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
 | TR-RFUN 5.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
 
-**TR-CSU6**- Criar 'Meu Local'
+**TR-CSU6**- Criar 'Meus Locais'
   * Identificador: TR-CSU6
 
   * Atores envolvidos: Usuário
@@ -291,7 +299,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31042715-920c30e6-a584-11e7-8d17-12ff5de34d0b.png" width="700" height="350"/>
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -299,7 +309,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 6.2 | Gravar no banco a posição e nome do local | Oculta |Média |
 | TR-RFUN 6.3 | Retornar erro ou sucesso na adição do local | Evidente |Média |
 
-**TR-CSU7**- Manter 'Meu Local'
+**TR-CSU7**- Manter 'Meus Locais'
   * Identificador: TR-CSU7
 
   * Atores envolvidos: Usuário, Sistema
@@ -317,7 +327,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a atualização.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31042717-94cd8e7e-a584-11e7-8756-d5666fad290b.png" width="550" height="350"/>
+
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -326,7 +338,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 7.3 | Atualizar no banco de dados o local | Oculta |Média |
 | TR-RFUN 7.4 | Retornar erro ou sucesso na atualização | Evidente |Média |
 
-**TR-CSU8**- Deletar 'Meu Local'
+**TR-CSU8**- Deletar 'Meus Locais'
   * Identificador: TR-CSU8
 
   * Atores envolvidos: Usuário
@@ -343,7 +355,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário não possui internet e o sistema mostra que não é possível realizar a operação.
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31042718-9a73d108-a584-11e7-8ed0-5d59c8141502.png" width="550" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -596,32 +609,24 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 
 ### 4.1 Requisitos e Restrições de Usabilidade (RUS)
 
-Elaborar uma lista de todas as necessidades de informação que o software não pode deixar de atender. Esta lista deverá ser classificada em informações cadastrais e informações gerenciais. Por exemplo, para um software de vendas existem, entre outras, as seguintes necessidades de informação:
-Exemplo:
-
 | Ref. 	|              Descrição                                               	| Caso de Uso     	|
 |------	|-------------------------------------------------------------------	|-----------------	|
-| RINFx | Descrição do requisito RINFx  | CSUy, CSUm ...  |
-
-Estes requisitos de informação são importantes para verificar a qualidade da modelagem de dados que for feita.       
+| RINF1 | O usuário deve estar localizado dentro da região metropolitana de goiânia  | Todos de transporte  |
+| RINF2 | Obrigatóriamente um dos pontos de origem / destino deverá ser a UFG  | TR-CSU1  |
 
 ### 4.2	Requisitos e Restrições de Interface Homem Computador (RHIC)
 
-Definir os aspectos de Interface Homem Computador (IHC) como: conteúdo de informações, fatores ergonômicos, dispositivos de interação, formato de apresentação, tipo de diálogo, e mecanismos de ajuda alocados a cada perfil/grupo/tarefa de usuário. Descrever, em particular, os requisitos de usabilidade para cada perfil/grupo/tarefa de usuário. Por exemplo, pode-se definir como requisito que as opções de menu do sistema tenham teclas de atalho associadas.
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RIHCx 	| Descrição do requisito RIHCx | CSUy, CSUm ... |
+| RIHC1 	| Deve ser utilizado “Google Material Design” para a interface. | Todos |
+| RIHC2 	| A área do mapa deverá ser restringida apenas para a região metropolitana de goiânia. | Todos de Transporte |
 
 ### 4.3 Requisitos e Restrições de Interface Externa (RIEX)
 
-Identificar e descrever as interfaces com outros softwares/sistemas que o software deverá prover. Por exemplo, um software comercial deve gerar informações para o Sistema de Arrecadação da Secretaria da Fazenda Estadual. O formato dessas informações e o protocolo de envio são definidos pela própria secretaria, e atender essas definições é um requisito do software.
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RIEXx 	| Descrição do requisito RIEXx | CSUy, CSUm ...	|
+| RIEX1 	| O software realizará interação com o sistema Firebase. | TR-CSU1, TR-CSU6, TR-CSU7, TR-CSU8	|
+| RIEX2 	| O software realizará interação com o sistema Google Maps. | TR-CSU1, TR-CSU2, TR-CSU3, TR-CSU4, TR-CSU5	|
 
 ### 4.4 Requisitos e Restrições de Plataforma de Hardware (RPHW)
 
@@ -641,71 +646,42 @@ Exemplo:
 
 ### 4.6 Requisitos e Restrições de Desempenho (RDES)
 
-Identificar e descrever os requisitos e restrições de desempenho do software.
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RDESx | Descrição do requisito RDESx | CSUy, CSUm ... |
+| RDES1 | O aplicativo não pode travar/encerrar o processo com frequência. | Todos |
 
 ### 4.7 Requisitos e restrições de disponibilidade (RDIS).
 
-Especificar os requisitos de disponibilidade necessários para o software de uma forma global:
-1. Período de disponibilidade: horário comercial, 24 horas por dia, etc.
-2. Período máximo para recuperação do software em caso de falha.
-Devem ser definidos os tipos de falha e a tolerância aceitável para cada tipo de falha. Os tipos de falha podem ser definidos em função dos requisitos funcionais e de dados, mas não se restringem a estes. Por exemplo: a função “Registrar Venda” deve ter um tempo para recuperação de falha de no máximo uma hora (o que significa que esta função não poderá ficar mais do que uma hora indisponível para o usuário em nenhuma circunstância).
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RDISx	| Descrição do requisito RDISx | CSUy, CSUm ... |
+| RDIS1	| O aplicativo deve inicializar por completo em até 3 segundos. | Todos |
+| RDIS2	| O aplicativo deve estar disponível e funcional 24/7.  | Todos |
 
 ### 4.8 Requisitos e Restrições de Segurança (RSEG)
 
-Especificar os requisitos de segurança necessários para controle de acesso ao software. Definir a necessidade, por exemplo, de:
-1. Verificação de senha;
-2. Criptografia de dados;
-3. Registro das operações efetuadas;
-4. Habilitação de funções por perfil de usuário;
-5. Acesso seletivo aos dados e funções.
-Exemplo:
-
 | Ref.  	|              Descrição                      	| Caso de Uso 	|
 |-------	|------------------------------------------	|-------------	|
-| RSEGx | Descrição do requisito RSEGx | CSUy, CSUm ... |
+| RSEG1 | O aplicativo não deverá compartilhar a posição do usuário. | Todos de transporte |
+| RSEG2 | O aplicativo deverá informar ao usuário que utilizará de sua localização. | Todos de transporte |
+| RSEG3 | O aplicativo deverá informar ao usuário que utilizará dados de internet. | Todos |
 
 ### 4.9 Requisitos e Restrições de Manutenibilidade (RMAN)
 
-Especificar os requisitos que visam facilitar a manutenção posterior do software, tais como:
-1. Requisitos de reutilização (exemplo: uso de implementação orientada a objetos; bibliotecas de classes e padrões de projeto);
-2. Requisitos de modularização (exemplo: valores para métricas de acoplamento entre módulos; máximo de pontos de função por módulo);
-3. Requisitos de configuração (exemplo: regras para controle de versões);
-4. Requisitos de documentação (exemplo: documentação de programa)
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RMANx	| Descrição do requisito RMANx | CSUy, CSUm ... |
+| RMAN1	| Será utilizado a ferramenta Javadoc para padronizar e facilitar o entendimento do código-fonte | Todos |
+| RMAN2	| Todos os commits serão ser em inglês | Todos |
 
 ### 4.10 Requisitos e Restrições de Documentação (RDOC)
 
-Especificar os requisitos de documentação do produto de software que será desenvolvido.
-Exemplo:
-
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
-| RDOCx | Descrição do requisito RDOCx | CSUy, CSUm ... |
-
-
+| RDOC1 | Devem ser lançadas as notas de release a cada nova baseline. | Não se aplica |
 
 ## 5. Requisitos Futuros (RFUT)
 ---------------------------------
 
-Este espaço é reservado para o surgimento de futuros requisitos.
-
-| Ref.|   Descrição | Caso de Uso |
-|-------|------------|---------------|
-|  | |   |
+No momento não há requisitos futuros.
 
 ## 6. Referências cruzadas complementares
 ---------------------------------------------
