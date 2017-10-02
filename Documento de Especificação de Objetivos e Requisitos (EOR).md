@@ -536,7 +536,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RFUN 5.4 | Administrador deve conseguir filtrar eventos através de um nome, data ou regional. Obs: deve ter um botão de filtrar e limpar filtro sendo que é opcional essas ações. | Evidente |Média  |
 | CA-RFUN 5.5 | Administrador deve conseguir excluir qualquer evento um a um ou vários de uma vez (caso tenha selecionado os desejados). | Evidente |Alta  |
   
-**CA-CSU6**- Fazer consulta de evento
+**CA-CSU6**- Pesquisar eventos
 
    * Identificador:CA-CSU6
 
