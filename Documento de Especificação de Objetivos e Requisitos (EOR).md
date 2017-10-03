@@ -62,14 +62,14 @@ Este documento foi desenvolvido visando todos que utilizarão do sistema, tais c
 
 ### 1.3 Organização do documento
 
-   1.	Introdução – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
-   2.	Descrição do problema e do sistema – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
-   3.	Casos de Uso e Requisitos Funcionais – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
-   4.	Requisitos e Restrições não funcionais – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
-   5.	Requisitos Futuros – Citação dos requisitos planejados pra futuras versões do produto.
-   6.	Referência Cruzadas Complementares – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
+   1. Introdução – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
+   2. Descrição do problema e do sistema – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
+   3. Casos de Uso e Requisitos Funcionais – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
+   4. Requisitos e Restrições não funcionais – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
+   5. Requisitos Futuros – Citação dos requisitos planejados pra futuras versões do produto.
+   6. Referência Cruzadas Complementares – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
    7. Modelo de domínio - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
-   8.	Aprovação Formal – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
+   8. Aprovação Formal – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
 
 
 ### 1.4 Definição de Siglas e Nomenclaturas
@@ -110,8 +110,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 ### 2.3 Descrição dos interessados do sistema
 
-| Interessado(s) 	| Descrição 	|
-|:----------------:	|---------	|
+| Interessado(s)  | Descrição   |
+|:----------------: |---------  |
 | Usuário-Final | Utilizará das facilidades que o sistema propõe, tais como, obter rotas e horários de pontos específicos nos campus, visualizar datas letivas e possiveis oportunidades.|
 
 
@@ -152,7 +152,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 1.1 | Mostrar lista de pontos disponíveis no campus Samambaia e Universitário | Evidente |Alta |
 | TR-RFUN 1.2 | Mostrar pontos mais próximos do local atual do usuário (caso GPS esteja ativado) | Evidente |Média |
@@ -179,7 +179,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 2.1 | Validar posição de GPS do usuário | Oculta |Média |
 | TR-RFUN 2.2 | Validar local de destino | Oculta |Média |
@@ -206,7 +206,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 3.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
 | TR-RFUN 3.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
@@ -234,7 +234,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 4.1 | Validar ponto de origem selecionado | Oculta |Alta |
 | TR-RFUN 4.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
@@ -262,7 +262,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Pré-condições: Usuário deve estar conectado à internet.
 
   * Pós-condições: 
-	  * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
+    * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
 
   * Cenário principal:
       * Usuário acessa o sistema.
@@ -275,7 +275,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 
@@ -299,7 +299,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 | OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades.  | Evidente |Média|
@@ -313,11 +313,11 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuários App
 
   * Pré-condições:
-  	* Usuário deve estar conectado à internet.
-	* O usuário não deve estar logado no aplicativo.
+    * Usuário deve estar conectado à internet.
+  * O usuário não deve estar logado no aplicativo.
 
   * Pós-condições: 
-	  * O usuário abre o aplicativo.
+    * O usuário abre o aplicativo.
 
   * Cenário principal:
       * Usuário abre o aplicativo.
@@ -328,10 +328,11 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png" width="500" height="430"/>
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 3.1 | Listar todas oportunidades  por ordem decrescente de data de inserção e sem filtro.	| Evidente |Alta |
+| OP-RFUN 3.1 | Listar todas oportunidades  por ordem decrescente de data de inserção e sem filtro. | Evidente |Alta |
 | OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
 
 **OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
@@ -341,11 +342,11 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuários App
 
   * Pré-condições:
-	  * Usuário deve estar conectado à internet.
-	  * Usuário deve estar logado no app
+    * Usuário deve estar conectado à internet.
+    * Usuário deve estar logado no app
 
   * Pós-condições: 
-	  * O usuário abre o aplicativo.
+    * O usuário abre o aplicativo.
 
   * Cenário principal:
       * Usuário abre o aplicativo.
@@ -356,10 +357,12 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário utiliza o filtro para visualizar outras oportunidades.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png" width="500" height="430"/>
+  
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 4.1 | Listar oportunidades  por ordem decrescente de data de inserção de acordo com perfil do usuário.	| Evidente |Alta |
+| OP-RFUN 4.1 | Listar oportunidades  por ordem decrescente de data de inserção de acordo com perfil do usuário.  | Evidente |Alta |
 | OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
 
 ### 3.3 Calendário
@@ -389,7 +392,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 1.1 | O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás. | Evidente |Alta  |
 | CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades. | Evidente |Alta  |
@@ -416,40 +419,40 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
   
  
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
 
 **CA-CSU3**- Fazer consulta de evento
 
 * Identificador:CA-CSU3
-* Atores envolvidos: Usuário	
+* Atores envolvidos: Usuário  
 * Pré-condições: 
-  	
+    
 1. O usuário está no contexto de pesquisa de eventos do calendário
 2. O usuário seleciona a regional que deseja fazer a pesquisa
 3. O sistema sincroniza o calendário
 
 * Pós-condições: O Sistema apresenta os eventos
 * Cenário principal:O resultado é retornado
-  		
-1. O usuário abre a tela de pesquisa de eventos		
-2. Usuário seleciona a regional		
-3. O usuário digita o texto da pesquisa	
+      
+1. O usuário abre a tela de pesquisa de eventos   
+2. Usuário seleciona a regional   
+3. O usuário digita o texto da pesquisa 
 4. A pesquisa é executada quando o usuário para de digitar
 5. O resultado da consulta é retornada para o usuário
-		
-* Cenários secundários: Nenhum resultado encontrado	     
-	
+    
+* Cenários secundários: Nenhum resultado encontrado      
+  
 1. O usuário abre a tela de filtro de eventos
 2. Usuário seleciona a regional
 3. O usuário digita o texto da pesquisa
 4. A pesquisa é executada quando o usuário para de digitar
 5. Nenhum resultado é retornado
-6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa		
+6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa   
         
 Erro ao fazer pesquisa
-	
+  
 1. O usuário abre a tela de filtro de eventos
 2. O usuário digita o texto da pesquisa
 3. Usuário seleciona a regional
@@ -460,7 +463,7 @@ Erro ao fazer pesquisa
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 3.1 | descricao | Evidente |Alta  |
 
@@ -470,7 +473,7 @@ Erro ao fazer pesquisa
   * Atores envolvidos: Administrador, Usuário.
   
   * Pré-condições: 
-	* Usuário não deve estar conectado à internet.
+  * Usuário não deve estar conectado à internet.
     * O usuário deve ter feito login no aplicativo pelo menos uma vez.
 
   * Pós-condições: O aplicativo apresenta o calendário.
@@ -482,13 +485,13 @@ Erro ao fazer pesquisa
     * O Usuário pesquisa o evento desejado.
     * O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
   * Cenários secundários: 
-	* O aplicativo avisa que não tem nenhum evento disponível.
-	* O aplicativo pede que para efetuar conexão com a internet para atualizar.
+  * O aplicativo avisa que não tem nenhum evento disponível.
+  * O aplicativo pede que para efetuar conexão com a internet para atualizar.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
 
@@ -535,7 +538,7 @@ Erro ao fazer pesquisa
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
  
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
@@ -549,38 +552,38 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 Elaborar uma lista de todas as necessidades de informação que o software não pode deixar de atender. Esta lista deverá ser classificada em informações cadastrais e informações gerenciais. Por exemplo, para um software de vendas existem, entre outras, as seguintes necessidades de informação:
 Exemplo:
 
-| Ref. 	|              Descrição                                               	| Caso de Uso     	|
-|------	|-------------------------------------------------------------------	|-----------------	|
+| Ref.  |              Descrição                                                | Caso de Uso       |
+|------ |-------------------------------------------------------------------  |-----------------  |
 | RINFx | Descrição do requisito RINFx  | CSUy, CSUm ...  |
 
 Estes requisitos de informação são importantes para verificar a qualidade da modelagem de dados que for feita.       
 
-### 4.2	Requisitos e Restrições de Interface Homem Computador (RHIC)
+### 4.2 Requisitos e Restrições de Interface Homem Computador (RHIC)
 
 Definir os aspectos de Interface Homem Computador (IHC) como: conteúdo de informações, fatores ergonômicos, dispositivos de interação, formato de apresentação, tipo de diálogo, e mecanismos de ajuda alocados a cada perfil/grupo/tarefa de usuário. Descrever, em particular, os requisitos de usabilidade para cada perfil/grupo/tarefa de usuário. Por exemplo, pode-se definir como requisito que as opções de menu do sistema tenham teclas de atalho associadas.
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
-| RIHCx 	| Descrição do requisito RIHCx | CSUy, CSUm ... |
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
+| RIHCx   | Descrição do requisito RIHCx | CSUy, CSUm ... |
 
 ### 4.3 Requisitos e Restrições de Interface Externa (RIEX)
 
 Identificar e descrever as interfaces com outros softwares/sistemas que o software deverá prover. Por exemplo, um software comercial deve gerar informações para o Sistema de Arrecadação da Secretaria da Fazenda Estadual. O formato dessas informações e o protocolo de envio são definidos pela própria secretaria, e atender essas definições é um requisito do software.
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
-| RIEXx 	| Descrição do requisito RIEXx | CSUy, CSUm ...	|
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
+| RIEXx   | Descrição do requisito RIEXx | CSUy, CSUm ... |
 
 ### 4.4 Requisitos e Restrições de Plataforma de Hardware (RPHW)
 
 Identificar e descrever requisitos e restrições relacionadas com a plataforma de hardware que será utilizada pelo software:
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
-| RPHWx	| Descrição do requisito RPHWx | CSUy, CSUm ... |
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
+| RPHWx | Descrição do requisito RPHWx | CSUy, CSUm ... |
 
 ### 4.5 Requisitos e Restrições de Plataforma de Software (RPSW)
 
@@ -590,8 +593,8 @@ Se o software tiver que ser executado em plataformas de software específicas, e
 Se houver mais de uma plataforma de software, deve-se especificar qual a plataforma principal e em que situações as outras plataformas podem ser utilizadas.
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
 | RPSWx | Descrição do requisito RSPWx | CSUy, CSUm ... |
 
 ### 4.6 Requisitos e Restrições de Desempenho (RDES)
@@ -599,8 +602,8 @@ Exemplo:
 Identificar e descrever os requisitos e restrições de desempenho do software.
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
 | RDESx | Descrição do requisito RDESx | CSUy, CSUm ... |
 
 ### 4.7 Requisitos e restrições de disponibilidade (RDIS).
@@ -611,9 +614,9 @@ Especificar os requisitos de disponibilidade necessários para o software de uma
 Devem ser definidos os tipos de falha e a tolerância aceitável para cada tipo de falha. Os tipos de falha podem ser definidos em função dos requisitos funcionais e de dados, mas não se restringem a estes. Por exemplo: a função “Registrar Venda” deve ter um tempo para recuperação de falha de no máximo uma hora (o que significa que esta função não poderá ficar mais do que uma hora indisponível para o usuário em nenhuma circunstância).
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
-| RDISx	| Descrição do requisito RDISx | CSUy, CSUm ... |
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
+| RDISx | Descrição do requisito RDISx | CSUy, CSUm ... |
 
 ### 4.8 Requisitos e Restrições de Segurança (RSEG)
 
@@ -625,8 +628,8 @@ Especificar os requisitos de segurança necessários para controle de acesso ao 
 5. Acesso seletivo aos dados e funções.
 Exemplo:
 
-| Ref.  	|              Descrição                      	| Caso de Uso 	|
-|-------	|------------------------------------------	|-------------	|
+| Ref.    |              Descrição                        | Caso de Uso   |
+|-------  |------------------------------------------ |-------------  |
 | RSEGx | Descrição do requisito RSEGx | CSUy, CSUm ... |
 
 ### 4.9 Requisitos e Restrições de Manutenibilidade (RMAN)
@@ -638,17 +641,17 @@ Especificar os requisitos que visam facilitar a manutenção posterior do softwa
 4. Requisitos de documentação (exemplo: documentação de programa)
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
-| RMANx	| Descrição do requisito RMANx | CSUy, CSUm ... |
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
+| RMANx | Descrição do requisito RMANx | CSUy, CSUm ... |
 
 ### 4.10 Requisitos e Restrições de Documentação (RDOC)
 
 Especificar os requisitos de documentação do produto de software que será desenvolvido.
 Exemplo:
 
-| Ref.  	|                          Descrição                       	| Caso de Uso |
-|-------	|----------------------------------------------------------	|---------------|
+| Ref.    |                          Descrição                        | Caso de Uso |
+|-------  |---------------------------------------------------------- |---------------|
 | RDOCx | Descrição do requisito RDOCx | CSUy, CSUm ... |
 
 
