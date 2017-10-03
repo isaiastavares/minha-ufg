@@ -298,13 +298,15 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário filtra oportunidades exibidas através do campo de busca.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" >
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Filtrar%20-%20Excluir.png" >
 
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 | OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades.  | Evidente |Média|
 | OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade.  | Evidente |Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca tanto para o ID, Título ou Categoria de cada oportunidade.  | Evidente |Alta |
+| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade.  | Evidente |Alta |
 
 **OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
 
