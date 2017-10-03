@@ -365,6 +365,45 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | OP-RFUN 4.1 | Listar oportunidades  por ordem decrescente de data de inserção de acordo com perfil do usuário.  | Evidente |Alta |
 | OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
 
+**OP-CSU5**- Editar Oportunidade (Web)
+
+  * Identificador: OP-CSU5
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: 
+    * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados) devem ser obrigatórios.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção editar. 
+      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer). 
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+**OP-CSU6**- Deletar Oportunidade (Web)
+
+  * Identificador: OP-CSU6
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: Não possui pós condições.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar. 
+      * Usuário confirma o desejo de deletar a oportunidade.
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
 ### 3.3 Calendário
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
