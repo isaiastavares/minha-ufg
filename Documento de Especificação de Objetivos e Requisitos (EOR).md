@@ -694,6 +694,10 @@ Nesta seção são colocadas algumas referências cruzadas que podem ajudar o ra
 
 ## 7. Modelo de dominio
 
+### 7.1 Modelo de domínio Transporte
+
+<img src="https://user-images.githubusercontent.com/9218555/31204209-1ebc51a0-a941-11e7-9524-7f74ff76192a.png" width="700" height="450"/>
+
 ## 8. Aprovação Formal
 ---------------------------------------------
 
