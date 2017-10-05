@@ -92,6 +92,7 @@ Definir e explicar sucintamente siglas e nomencalturas utilizadas neste document
 * RMAN: Requisito de Manutenibilidade
 * RDOC: Requisito de Documentação
 * RFUT: Requisitos Futuros
+* Região metropolitana: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás. 
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
@@ -617,9 +618,7 @@ Erro ao fazer pesquisa
 | CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
 ## 4. Requisitos e restrições não funcionais
---------------------------------------------
-
-Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos de informação, de interface, de projeto, de arquitetura de software, de plataforma de hardware, de plataforma de software, de plataforma de comunicação, de desempenho, de disponibilidade, de segurança, de manutenibilidade, de portabilidade e de documentação. A lista poderá ser dividida por tipo de requisito, mas é importante que os requisitos tenham uma identificação única para que possam ser referenciados sem ambigüidades no futuro.
+-----------------------------------------
 
 ### 4.1 Requisitos e Restrições de Usabilidade (RUS)
 
@@ -644,7 +643,7 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
 | RIEX1 	| O software realizará interação com o sistema Firebase. | TR-CSU1, TR-CSU6, TR-CSU7, TR-CSU8	|
-| RIEX2 	| O software realizará interação com o sistema Google Maps. | TR-CSU1, TR-CSU2, TR-CSU3, TR-CSU4, TR-CSU5	|
+| RIEX2 	| O software realizará interação com o sistema Google Maps. | TR-CSU1, TR-CSU2, TR-CSU3, TR-CSU4, TR-CSU6, TR-CSU7	|
 
 ### 4.4 Requisitos e Restrições de Plataforma de Hardware (RPHW)
 
@@ -652,7 +651,7 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 |-------	|----------------------------------------------------------	|---------------|
 | RPHW1	| Hardware de GPS integrado | Todos do Transporte |
 | RPHW2	| Hardware para acesso á internet | Todos |
-| RPHW3	| Processador mínimo de 1 GHz | Todos |
+| RPHW3	| Processador mínimo de 2 GHz | Todos |
 
 ### 4.5 Requisitos e Restrições de Plataforma de Software (RPSW)
 
@@ -704,11 +703,18 @@ No momento não há requisitos futuros.
 ## 6. Referências cruzadas complementares
 ---------------------------------------------
 
-Nesta seção são colocadas algumas referências cruzadas que podem ajudar o rastreamento futuro dos requisitos. Estes mapeamentos podem ser feitos em forma de matrizes de rastreabilidade como mostram os exemplos a seguir:
+### 6.1 Transporte
 
 |Requisitos Funcionais | Requisitos Funcionais|
 |---------------------|--------------------------|
-|Colocar identificação do requisito funcional|Colocar a identificação do requisito funcional vinculado|
+|TR-CSU1|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU2|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU3|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU4|TR-CSU4|
+|TR-CSU5|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU6|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU7|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU8|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
 
 ## 7. Modelo de dominio
 
