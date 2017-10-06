@@ -163,7 +163,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     7. Usuário seleciona o local de destino desejado com base na lista disponível.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31042741-13367a00-a585-11e7-937f-d26e01b46ded.png" width="700" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31261360-219811a4-aa2a-11e7-87b9-007701e89324.png" width="1400" height="700"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -191,7 +191,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     4. Sistema exibe uma ou mais rotas para transporte coletivo partindo do ponto de origem do usuário até o destino definido pelo mesmo.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31042546-1428ab6c-a581-11e7-88a1-a26317e1b186.png" width="200" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31261362-219d01f0-aa2a-11e7-9dde-366ae5595a31.png" width="800" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -219,7 +219,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
   * Protótipos de tela: 
-   <img src="https://user-images.githubusercontent.com/11222413/31101501-55573e76-a7a4-11e7-96b6-4f4554723b7f.png" width="700" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31261361-219c2f64-aa2a-11e7-8788-92ef06f2f266.png" width="900" height="350"/>
   
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -249,7 +249,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31042789-5874687e-a586-11e7-8244-e83a6e74d547.png" width="600" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31261363-219e5c80-aa2a-11e7-946e-250062dea481.png" width="600" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -277,7 +277,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
             * O sistema exibe uma tela "vazia".
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042512-5dd01dfa-a580-11e7-804c-2180d1f00c60.png" width="200" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31261364-21a19760-aa2a-11e7-95f5-7934386e8fbc.png" width="700" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -304,7 +304,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     6. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042715-920c30e6-a584-11e7-8d17-12ff5de34d0b.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31261365-21a34e16-aa2a-11e7-9b6a-b4c7337a63bd.png" width="900" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -335,7 +335,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     8. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042717-94cd8e7e-a584-11e7-8756-d5666fad290b.png" width="550" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31261366-21c06578-aa2a-11e7-8fdb-ae754e320f3a.png" width="700" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -362,7 +362,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     5. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042718-9a73d108-a584-11e7-8ed0-5d59c8141502.png" width="550" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31261367-21c3fce2-aa2a-11e7-833c-f3250612effb.png" width="700" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
