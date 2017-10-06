@@ -131,37 +131,36 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * TR-CSU4: Visualizar linhas e horários;
 * TR-CSU5: Visualizar locais Pré-definidos;
 * TR-CSU6: Criar local Pré-definido;
-* TR-CSU7: Atualizar local Pré-definido;
+* TR-CSU7: Modificar local Pré-definido;
 * TR-CSU8: Remover local Pré-definido;
 
 #### 3.1.2 Descrição de Casos de Uso
 
-**TR-CSU1**- Selecionar local de origem e local de destino com base em uma lista
+**TR-CSU1**- Selecionar local de origem e local de destino.
   * Identificador: TR-CSU1
 
-  * Atores envolvidos: Usuário e Sistema
+  * Atores envolvidos: Usuário(Fernanda) e Sistema
 
   * Pré-condições:
     * Usuário deverá estar localizado na região Metropolitana de Goiânia.
-    * Usuário deverá estar conectado á internet.
+    * Usuário deverá estar conectado à internet.
     * Usuário deverá estar com o GPS habilitado (opcional).
 
   * Pós-condições: 
-    * A lista com os lugares deverá estar disponível ao usuário.
+    * O aplicativo sleciona corretamente local de origem e destino.
 
   * Cenário:
-    1. Usuário abre o aplicativo.
-    2. Usuário seleciona aba de transportes.
-        * Se o usuário estiver fora da região metropoliana de Goiâna.
+    1. Usuário seleciona aba de mapa.
+        * Se o usuário estiver fora da região metropoliana de Goiâna:
             * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
-        * Se o usuário não possuir acesso a internet.
+        * Se o usuário não possuir acesso a internet:
             * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não possui acesso a internet no momento.  
-    3. Usuário define o seu local de origem.
-    4. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
-    5. Usuário seleciona o local de origem desejado com base na lista disponível.
-    6. Usuário define o seu local de destino.
-    7. Sistema exibe uma lista contendo os possiveis locais de destino conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
-    8. Usuário seleciona o local de destino desejado com base na lista disponível.
+    2. Usuário aperta no campo de origem.
+    3. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    4. Usuário seleciona o local de origem desejado com base na lista disponível.
+    5. Usuário aperta no campo de destino.
+    6. Sistema exibe uma lista contendo os possiveis locais de destino conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    7. Usuário seleciona o local de destino desejado com base na lista disponível.
 
   * Protótipos de tela:
    <img src="https://user-images.githubusercontent.com/11222413/31042741-13367a00-a585-11e7-937f-d26e01b46ded.png" width="700" height="350"/>
@@ -177,19 +176,19 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 **TR-CSU2**- Visualizar rota entre a origem e o destino definidos pelo usuário
   * Identificador: TR-CSU2
 
-  * Atores envolvidos: Usuário e Sistema
+  * Atores envolvidos: Usuário(Fernanda) e Sistema
 
   * Pré-condições: 
     * As mesmas definidas em TR-CSU1.
 
   * Pós-condições:
-    * As mesmas definidas em TR-CSU1.
+    * O aplicativo mostra as opções de rotas entre os locais definidos pelo usuário.
 
   * Cenário:
     1. Usuário executa TR-CSU1.
-    2. Usuário clica no botão para confirmar a origem e o destino selecionados.
+    2. Usuário clica no botão de confirmação de locais de origem e destino.
     3. Sistema verifica o ponto mais próixmo do usuário.
-    4. Sistema exibe uma rota para transporte coletivo partindo do ponto de origem do usuário até o destino definido pelo usuário.
+    4. Sistema exibe uma ou mais rotas para transporte coletivo partindo do ponto de origem do usuário até o destino definido pelo mesmo.
 
   * Protótipos de tela:
    <img src="https://user-images.githubusercontent.com/11222413/31042546-1428ab6c-a581-11e7-88a1-a26317e1b186.png" width="200" height="350"/>
@@ -202,22 +201,22 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 **TR-CSU3**- Modificar destino durante a rota
   * Identificador: TR-CSU3
 
-  * Atores envolvidos: Usuário, Sistema
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
     * As mesmas definidas em TR-CSU1.
 
   * Pós-condições:
-    * As mesmas definidas em TR-CSU1.
+    * As mesmas definidas em TR-CSU2.
 
   * Cenário:
     1. Usuário executa TR-CSU2.
-    2. Usuário define um novo destino com base durante a rota.
-    3. Sistema exibe uma lista de lugares conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
-    4. Usuário seleciona um lugar.
-    5. Sistema exibe um popup para validar a modificação do destino da rota.
+    2. Usuário aperta no campo destino.
+    3. Sistema exibe um popup para validar a modificação do destino da rota.
+    4. Sistema exibe uma lista de lugares conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    5. Usuário seleciona um novo local.
     6. Usuário confirma a modificação do destino da rota.
-    7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o destino definido pelo usuário.
+    7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
   * Protótipos de tela: 
    <img src="https://user-images.githubusercontent.com/11222413/31101501-55573e76-a7a4-11e7-96b6-4f4554723b7f.png" width="700" height="350"/>
@@ -231,25 +230,22 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 **TR-CSU4**- Visualizar linhas e horários
   * Identificador: TR-CSU4
 
-  * Atores envolvidos: Usuário, Sistema.
+  * Atores envolvidos: Usuário(Fernanda), Sistema.
 
   * Pré-condição:
-    * Usuário deverá estar localizado na região metropolitana de Goiânia.
-    * Usuário deverá estar conectado á internet.
-    * Usuário deverá estar com o GPS habilitado (opcional).
+    * As mesmas definidas em TR-CSU1.
   
   * Pós-condições:
-    * Não há. 
+    * O aplicativo mostra as linhas e horários de acordo com o ponto selecionado pelo usuário.
 
   * Cenário:
-    1. Usuário abre o aplicativo.
-    2. Usuário seleciona aba de transportes.
+    1. Usuário seleciona aba de mapa.
         *  Se o usuário estiver fora da região metropoliana de Goiâna.
             *  Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
         * Se o usuário não possuir acesso a internet.
             * Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não possui acesso a internet no momento.
-    3. Usuário seleciona o ponto de ônibus desejado.
-    4. Sistema exibe uma tela contendo as informações a respeito das linhas que passam no ponto selecionado.
+    2. Usuário seleciona no mapa o ponto de ônibus desejado.
+    3. Sistema exibe uma tela contendo as informações a respeito das linhas e horários dos ônibus que passam no ponto selecionado.
 
 
   * Protótipos de tela:
@@ -263,29 +259,22 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 10 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
 | TR-RFUN 11 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
 
-**TR-CSU5**- Visualizar locais Pré-definidos
+**TR-CSU5**- Visualizar locais pré-definidos
   * Identificador: TR-CSU5
 
-  * Atores envolvidos: Usuário, Sistema.
+  * Atores envolvidos: Usuário(Fernanda), Sistema.
 
   * Pré-condição: 
-    * Usuário deverá estar localizado na região Metropolitana de Goiânia.
-    * Usuário deverá estar com o GPS habilitado (opcional).
-
-  * Pós-condições: 
     * O banco de dados deverá estar disponível e funcional.
 
+  * Pós-condições: 
+    * O aplicativo mostra os locais pré-definidos cadastrados.
+
   * Cenário:
-    1. Usuário abre o aplicativo.
-    2. Usuário seleciona aba de transportes.
-        * Se o usuário estiver fora da região metropoliana de Goiâna.
-            * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
-        * Se o usuário não possuir acesso a internet.
-            * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não possui acesso a internet no momento.
-    3. Usuário seleciona o botão "Meus locais".
-    4. Sistema exibe uma tela contendo os locais pré-definidos cadastrados.
-        * Se o usuário não houver cadastrado local algum antes.
-            * O sistema exibe uma tela "vazia", sem os locais cadastrados.
+    1. Usuário seleciona o botão "Meus locais".
+    2. Sistema exibe uma tela contendo os locais pré-definidos cadastrados.
+        * Se não houver nenhum local cadastrado:
+            * O sistema exibe uma tela "vazia".
 
   * Protótipos de tela:
   <img src="https://user-images.githubusercontent.com/11222413/31042512-5dd01dfa-a580-11e7-804c-2180d1f00c60.png" width="200" height="350"/>
@@ -295,10 +284,10 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 12 | Exibir lista de locais pré-definidos do usuário | Evidente |Média |
 
-**TR-CSU6**- Criar local Pré-definido
+**TR-CSU6**- Criar local pré-definido
   * Identificador: TR-CSU6
 
-  * Atores envolvidos: Usuário, Sistema
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
     * As mesmas definidas em TR-CSU5.
@@ -309,11 +298,10 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenário:
     1. Usuário executa TR-CSU5.
     2. Usuário seleciona o botão de adicionar novo local.
-    3. Sistema exibe uma tela contendo um mapa com os locais adicionados.
-    4. Usuário seleciona um ponto no mapa, podendo selecionar sua própria posição segundo o GPS, referente ao novo local.
-    5. Usuário nomeia o novo local.
-    6. Usuário confirma os dados da nova localização.
-    7. Sistema retorna para a tela de locais pré-definidos cadastrados.
+    3. Usuário seleciona um ponto no mapa, podendo selecionar sua própria posição segundo o GPS, referente ao novo local.
+    4. Usuário nomeia o novo local.
+    5. Usuário confirma os dados da nova localização.
+    6. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
   <img src="https://user-images.githubusercontent.com/11222413/31042715-920c30e6-a584-11e7-8d17-12ff5de34d0b.png" width="700" height="350"/>
@@ -324,22 +312,22 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | TR-RFUN 13 | Validar posição de "Meus locais" selecionada pelo usuário | Oculta |Média |
 | TR-RFUN 14 | Gravar no banco a posição e nome do local | Oculta |Média 
 
-**TR-CSU7**- Atualizar local Pré-definido
+**TR-CSU7**- Modificar local pré-definido
   * Identificador: TR-CSU7
 
-  * Atores envolvidos: Usuário, Sistema
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
     * As mesmas definidas em TR-CSU5.
-    * Deverá existir um local Pré-definido cadastrado no banco de dados.
+    * Deverá existir um local pré-definido cadastrado no banco de dados.
 
   * Pós-condições:
-    * As mesmas definidas em TR-CSU5.
+    * O local selecionado deve ter sido modificado com sucesso.
 
   * Cenário:
     1. Usuário executa TR-CSU5.
-    2. Usuário seleciona o botão de editar novo local.
-    3. Sistema exibe uma tela contendo um mapa com os locais adicionados.
+    2. Usuário seleciona o botão de editar no local.
+    3. Sistema exibe uma tela contendo um mapa com o local selecionado.
     4. Usuário seleciona um ponto no mapa (podendo selecionar sua própria posição segundo o GPS) referente á atualização do local.
     5. Usuário renomeia o local.
     6. Usuário confirma os dados da localização atualizada.
@@ -354,23 +342,24 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 15 | Atualizar no banco a posição e nome do local | Oculta |Média 
 
-**TR-CSU8**- Remover local Pré-definido
+**TR-CSU8**- Remover local pré-definido
   * Identificador: TR-CSU8
 
-  * Atores envolvidos: Usuário, Sistema
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
     * As mesmas definidas em TR-CSU5.
-    * Deverá existir um local Pré-definido cadastrado no banco de dados.
+    * Deverá existir um local pré-definido cadastrado no banco de dados.
 
   * Pós-condições:
-    * As mesmas definidas em TR-CSU5.
+    * O local selecionado deve ter sido removido da lista de meus locais.
 
   * Cenário:
     1. Usuário executa TR-CSU5.
-    2. Usuário seleciona o botão de remover novo local.
-    3. Sistema remove o local pré-definido selecionado do banco de dados.
-    4. Sistema retorna para a tela de locais pré-definidos cadastrados.
+    2. Usuário seleciona o botão de remover no local que deseja remover.
+    3. Usuário confirma o local a ser removido.
+    4. Sistema remove o local pré-definido selecionado do banco de dados.
+    5. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
   <img src="https://user-images.githubusercontent.com/11222413/31042718-9a73d108-a584-11e7-8ed0-5d59c8141502.png" width="550" height="350"/>
