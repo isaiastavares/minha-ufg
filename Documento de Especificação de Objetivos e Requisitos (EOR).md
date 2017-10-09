@@ -92,7 +92,7 @@ Definir e explicar sucintamente siglas e nomencalturas utilizadas neste document
 * RMAN: Requisito de Manutenibilidade
 * RDOC: Requisito de Documentação
 * RFUT: Requisitos Futuros
-* Região metropolitana: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás. 
+* Região metropolitana: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás.
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
@@ -146,7 +146,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     * Usuário deverá estar conectado à internet.
     * Usuário deverá estar com o GPS habilitado (opcional).
 
-  * Pós-condições: 
+  * Pós-condições:
     * O aplicativo sleciona corretamente local de origem e destino.
 
   * Cenário:
@@ -178,7 +178,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Atores envolvidos: Usuário(Fernanda) e Sistema
 
-  * Pré-condições: 
+  * Pré-condições:
     * As mesmas definidas em TR-CSU1.
 
   * Pós-condições:
@@ -203,7 +203,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: 
+  * Pré-condições:
     * As mesmas definidas em TR-CSU1.
 
   * Pós-condições:
@@ -218,9 +218,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     6. Usuário confirma a modificação do destino da rota.
     7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
-  * Protótipos de tela: 
+  * Protótipos de tela:
    <img src="https://user-images.githubusercontent.com/11222413/31261361-219c2f64-aa2a-11e7-8788-92ef06f2f266.png" width="900" height="350"/>
-  
+
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 4 | Validar local de destino | Oculta |Média |
@@ -234,7 +234,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Pré-condição:
     * As mesmas definidas em TR-CSU1.
-  
+
   * Pós-condições:
     * O aplicativo mostra as linhas e horários de acordo com o ponto selecionado pelo usuário.
 
@@ -264,10 +264,10 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Atores envolvidos: Usuário(Fernanda), Sistema.
 
-  * Pré-condição: 
+  * Pré-condição:
     * O banco de dados deverá estar disponível e funcional.
 
-  * Pós-condições: 
+  * Pós-condições:
     * O aplicativo mostra os locais pré-definidos cadastrados.
 
   * Cenário:
@@ -289,7 +289,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: 
+  * Pré-condições:
     * As mesmas definidas em TR-CSU5.
 
   * Pós-condições:
@@ -310,14 +310,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 13 | Validar posição de "Meus locais" selecionada pelo usuário | Oculta |Média |
-| TR-RFUN 14 | Gravar no banco a posição e nome do local | Oculta |Média 
+| TR-RFUN 14 | Gravar no banco a posição e nome do local | Oculta |Média
 
 **TR-CSU7**- Modificar local pré-definido
   * Identificador: TR-CSU7
 
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: 
+  * Pré-condições:
     * As mesmas definidas em TR-CSU5.
     * Deverá existir um local pré-definido cadastrado no banco de dados.
 
@@ -340,14 +340,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 15 | Atualizar no banco a posição e nome do local | Oculta |Média 
+| TR-RFUN 15 | Atualizar no banco a posição e nome do local | Oculta |Média
 
 **TR-CSU8**- Remover local pré-definido
   * Identificador: TR-CSU8
 
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: 
+  * Pré-condições:
     * As mesmas definidas em TR-CSU5.
     * Deverá existir um local pré-definido cadastrado no banco de dados.
 
@@ -366,7 +366,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 15 | Remover do banco a posição e nome do local | Oculta |Média 
+| TR-RFUN 15 | Remover do banco a posição e nome do local | Oculta |Média
 
 ### 3.2 Oportunidades
 
@@ -449,7 +449,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     * Usuário deve estar conectado à internet.
   * O usuário não deve estar logado no aplicativo.
 
-  * Pós-condições: 
+  * Pós-condições:
     * O usuário abre o aplicativo.
 
   * Cenário principal:
@@ -478,7 +478,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     * Usuário deve estar conectado à internet.
     * Usuário deve estar logado no app
 
-  * Pós-condições: 
+  * Pós-condições:
     * O usuário abre o aplicativo.
 
   * Cenário principal:
@@ -491,7 +491,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
      <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png" width="500" height="430"/>
-  
+
 
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -506,14 +506,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Pré-condições: Usuário deve estar conectado à internet.
 
-  * Pós-condições: 
+  * Pós-condições:
     * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados) devem ser obrigatórios.
 
   * Cenário principal:
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
-      * Usuário clica na oportunidade cadastrada e seleciona a opção editar. 
-      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer). 
+      * Usuário clica na oportunidade cadastrada e seleciona a opção editar.
+      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
@@ -531,11 +531,31 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Cenário principal:
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
-      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar. 
+      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar.
       * Usuário confirma o desejo de deletar a oportunidade.
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+**OP-CSU7**- Filtrar Oportunidades
+
+  * Identificador: OP-CSU7
+
+  * Atores envolvidos: Usuários App ou Web
+
+  * Pré-condições:
+    * Usuário deve estar conectado à internet.
+
+  * Pós-condições:
+    * O usuário abre o aplicativo ou sistema Web.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo ou sistema Web.
+      * Usuário clica no menu Oportunidades.
+      * Usuário pode filtrar as oportunidades por regional ou curso.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png" width="500" height="430"/>
 
 ### 3.3 Calendário
 
@@ -543,35 +563,35 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/%5BCA%5DUseCases.png" width="550" height="500"/>
 
-* CA-CSU1: Visualizar Regionais 
+* CA-CSU1: Visualizar Regionais
 * CA-CSU2: Criar Eventos
 * CA-CSU3: Editar Eventos
 * CA-CSU4: Ver Notificação
 * CA-CSU5: Excluir Eventos
-* CA-CSU6: Pesquisar Eventos 
+* CA-CSU6: Pesquisar Eventos
 
 **CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
 
   * Atores envolvidos: Consulentes.
-  
+
   * Pré-condições: Os consulentes devem visualizar os calendário de acordo com a regional de escolha. Cada consulente tem sua regional favorita, mas também pode mudar para qualquer outra.
 
   * Pós-condições: O consulente escolhe sua regional e realiza qualquer busca desejada no calendário acadêmico.
 
-  * Cenário principal: 
+  * Cenário principal:
 1. Consulente acessa o aplicativo Minha UFG;
 2. Consulente seleciona a opção Calendário;
 3. Consulente entra no Calendário e escolhe sua regional de interesse.
 4. Consulente seleciona a data que deseja consultar.
 
-  * Cenários secundários: 
+  * Cenários secundários:
 1. O consulente pode acessar as funções do calendário offline.
 
-  * Protótipos de tela: 
-  
+  * Protótipos de tela:
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%201.png" width="550" height="500"/>
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%202.png" width="550" height="500"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -583,12 +603,12 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Identificador: CA-CSU2
 
   * Atores envolvidos: Administrador.
-  
+
   * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
 
   * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
-  
-  * Cenário principal: 
+
+  * Cenário principal:
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
@@ -603,27 +623,27 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
    * h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
 5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
 
-  * Cenários secundários: 
+  * Cenários secundários:
 1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
 2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
-  * Protótipos de tela: 
-  
+  * Protótipos de tela:
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%201-Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" width="800" height="500"/>
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%202-Tela%20Calend%C3%A1rio.png" width="800" height="500"/>
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%203-Tela%20de%20Eventos.png" width="800" height="500"/>
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png" width="1100" height="500"/>
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%205-Preencher%20todos%20os%20campos.png" width="1100" height="500"/>
-  
+
   <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%206-Cadastro%20realizado.png" width="1100" height="500"/>
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%207-Erro%20ao%20realizar%20cadastro.png" width="1100" height="500"/>
-  
- 
+
+
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 2.1 | Criar um novo evento no Calendário Acadêmico. | Evidente |Alta  |
@@ -635,12 +655,12 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Identificador: CA-CSU3
 
   * Atores envolvidos: Administrador.
-  
+
   * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Editar Evento, deve escolher o evento para ter a possibilidade de alterar os dados e depois salvar as alterações do evento.
 
   * Pós-condições: O Administrador consegue alterar o evento desejado.
 
-  * Cenário principal: 
+  * Cenário principal:
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
@@ -656,7 +676,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
    * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos.
 6. Após editar um evento, o Administrador volta para a página anterior com um retorno de que as alterações sobre o evento foram salvas com sucesso.
 
-  * Cenários secundários: 
+  * Cenários secundários:
 5. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
     * O Administrador seleciona o filtro de pesquisa de evento. Exemplo: Pesquisar por Regional;
 5. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
@@ -674,7 +694,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1%20Pesquisar%20Eventos.png"/>
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1.1%20Pesquisar%20Eventos%20por%20Nome.png"/> 
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1.1%20Pesquisar%20Eventos%20por%20Nome.png"/>
 
 <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.%20Salvar%20Alteracoes%20no%20Evento.png"/>
 
@@ -682,8 +702,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%206.%20Alteracao%20de%20Evento%20realizado.png"/>
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%207.%20Erro%20ao%20Editar%20Eventos.png"/> 
- 
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%207.%20Erro%20ao%20Editar%20Eventos.png"/>
+
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 3.1 | Editar um evento no Calendário Acadêmico. | Evidente |Alta  |
@@ -695,26 +715,26 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Identificador: CA-CSU4.
 
   * Atores envolvidos: Consulente.
-  
+
   * Pré-condições: Os consulentes devem estar inscritos para receberem as notificações.
 
   * Pós-condições: Essas notificações disparadas não serão mais enviadas aos consulentes.
 
   * Cenário principal:
-  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
+  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG.
   2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
   3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
   4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao consulente.
-  
-  * Cenários secundários: 
+
+  * Cenários secundários:
   1. Duas ou mais notificações foram recebidas pelo consulente e não foram visualizadas
   2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o consulente seleciona a que deseja abrir.
   * Protótipos de tela:
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04%20.1-%20Notificar%20Eventos.png"/>
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04.2%20-%20Notificar%20Eventos.png"/>
- 
+
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
@@ -723,12 +743,12 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Identificador: CA-CSU5
 
   * Atores envolvidos: Administrador
-  
+
   * Pré-condições: O Administrador deve conseguir excluir um Evento no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Excluir Evento, deve escolher o(s) evento(s) para excluir e depois salvar as alterações feitas.
-  
+
   * Pós-condições:  O Administrador consegue excluir o evento desejado.
 
-  * Cenário principal: 
+  * Cenário principal:
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
@@ -740,30 +760,30 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
    * d. O Administrador pode excluir um evento de cada vez ou todos ao mesmo tempo caso estejam selecionados estando filtrados ou não.
 6. Após excluir um ou vários eventos, o Administrador clica em "Salvar" e volta para a página anterior com um retorno de que as alterações feitas foram salvas com sucesso.
 
-  * Cenários secundários: 
-1. Não exibe botão “Excluir”; 
+  * Cenários secundários:
+1. Não exibe botão “Excluir”;
    * a. O usuário tenta acessar botão de “Excluir”;
    * b. O sistema sempre verifica privilégios de categoria por usuário;
    * c. Cada categoria de usuário possui tipos de privilégios distintos.
 2. Ação de exclusão não permitida;
-   * a. O usuário (administrador) tenta excluir um evento no calendário; 
+   * a. O usuário (administrador) tenta excluir um evento no calendário;
    * b. O sistema bloqueia ação;
    * c. O sistema exibe uma mensagem “Erro ao excluir evento. Contate o programador ou tente criar outro evento.”.
 
-  * Protótipos de tela: 
-  
+  * Protótipos de tela:
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%201%20-%20Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png">
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%202%20-Tela%20Calend%C3%A1rio.png">
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%203%20-%20Tela%20de%20Eventos.png">
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%204%20-%20Excluir%20Evento.png">
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%205%20-%20Filtrar%20Informa%C3%A7%C3%A3o.png">
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%206%20-%20Erro%20ao%20excluir%20evento.png">
-  
+
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%207%20-%20Exclu%C3%ADdo%20com%20sucesso.png">  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -773,17 +793,17 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | CA-RFUN 5.3 | Deve ter no mínimo um evento cadastrado.| Evidente |Alta  |
 | CA-RFUN 5.4 | Administrador deve conseguir filtrar eventos através de um nome, data ou regional. Obs: deve ter um botão de filtrar e limpar filtro sendo que é opcional essas ações. | Evidente |Média  |
 | CA-RFUN 5.5 | Administrador deve conseguir excluir qualquer evento um a um ou vários de uma vez (caso tenha selecionado os desejados). | Evidente |Alta  |
-  
+
 **CA-CSU6**- Pesquisar eventos
 
    * Identificador:CA-CSU6
 
    * Atores envolvidos: Usuário
 
-   * Pré-condições: 
-       * O usuário está no contexto de pesquisa de eventos do calendário. 
+   * Pré-condições:
+       * O usuário está no contexto de pesquisa de eventos do calendário.
        * O calendário deverá estar baixado.
-     
+
    * Pós-condições:
        * O Sistema apresenta os eventos
        * O usuário seleciona o evento que estava procurando
@@ -794,12 +814,12 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
        * A pesquisa é executada quando o usuário parar de digitar
        * O resultado da consulta é retornada para o usuário
 
-   * Fluxo secundário: Pesquisa por regional 
+   * Fluxo secundário: Pesquisa por regional
        * O usuário abre a tela de pesquisa de eventos
        * O usuário seleciona o filtro de Regional
        * A pesquisa é executada
        * O resultado da consulta é retornada para o usuário
-   
+
    * Fluxo secundário: Pesquisa por Interessado
        * O usuário abre a tela de pesquisa de eventos
        * O usuário seleciona o filtro por interessado
@@ -813,23 +833,23 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
        * O usuário seleciona a data inicial e a data final
        * A pesquisa é executada
 
-   * Fluxo alternativo 
+   * Fluxo alternativo
        * O usuário abre a tela de pesquisa de eventos
        * O usuário digita o texto da pesquisa
        * A pesquisa é executada quando o usuário para de digitar
        * Nenhum resultado é retornado
        * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
-  
+
    * Protótipos de tela
-  
+
 <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20Default.png" />
-  
+
 <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20interessado.png" />
-    
+
 <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20per%C3%ADodo.png" />
-      
+
 <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20regional.png" />
-	
+
 <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Nenhum%20resultado.png"/>
 
 ## 4. Requisitos e restrições não funcionais
