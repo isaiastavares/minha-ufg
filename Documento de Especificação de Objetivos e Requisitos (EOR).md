@@ -62,14 +62,14 @@ Este documento foi desenvolvido visando todos que utilizarão do sistema, tais c
 
 ### 1.3 Organização do documento
 
-   1.	Introdução – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
-   2.	Descrição do problema e do sistema – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
-   3.	Casos de Uso e Requisitos Funcionais – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
-   4.	Requisitos e Restrições não funcionais – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
-   5.	Requisitos Futuros – Citação dos requisitos planejados pra futuras versões do produto.
-   6.	Referência Cruzadas Complementares – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
+   1. Introdução – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
+   2. Descrição do problema e do sistema – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
+   3. Casos de Uso e Requisitos Funcionais – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
+   4. Requisitos e Restrições não funcionais – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
+   5. Requisitos Futuros – Citação dos requisitos planejados pra futuras versões do produto.
+   6. Referência Cruzadas Complementares – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
    7. Modelo de domínio - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
-   8.	Aprovação Formal – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
+   8. Aprovação Formal – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
 
 
 ### 1.4 Definição de Siglas e Nomenclaturas
@@ -111,8 +111,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 ### 2.3 Descrição dos interessados do sistema
 
-| Interessado(s) 	| Descrição 	|
-|:----------------:	|---------	|
+| Interessado(s)  | Descrição   |
+|:----------------: |---------  |
 | Usuário-Final | Utilizará das facilidades que o sistema propõe, tais como, obter rotas e horários de pontos específicos nos campus, visualizar datas letivas e possiveis oportunidades.|
 
 
@@ -252,7 +252,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
    <img src="https://user-images.githubusercontent.com/11222413/31261363-219e5c80-aa2a-11e7-946e-250062dea481.png" width="600" height="350"/>
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 8 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
 | TR-RFUN 9 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
@@ -280,7 +280,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   <img src="https://user-images.githubusercontent.com/11222413/31261364-21a19760-aa2a-11e7-95f5-7934386e8fbc.png" width="700" height="350"/>
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 12 | Exibir lista de locais pré-definidos do usuário | Evidente |Média |
 
@@ -372,7 +372,12 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-* OP-CSU1: Cadastrar Oportunidade
+* OP-CSU1: Cadastrar Oportunidade (Web)
+* OP-CSU2: Listar Oportunidades (Web)
+* OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
+* OP-CSU4: Listar Oportunidades - Usuário Logado (App)
+
+![Diagrama de Caso de Uso - Oportunidades](DCU-Oportunidades.png)
 
 #### 3.2.2 Descrição de Casos de Uso
 
@@ -391,14 +396,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
       * Usuário clica no botão para cadastrar oportunidade.
-      * Usuário informa as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+      * Usuário preenche as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 
@@ -421,53 +426,113 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário filtra oportunidades exibidas através do campo de busca.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" >
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Filtrar%20-%20Excluir.png" >
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 | OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades.  | Evidente |Média|
 | OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade.  | Evidente |Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca tanto para o ID, Título ou Categoria de cada oportunidade.  | Evidente |Alta |
+| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade.  | Evidente |Alta |
 
-**OP-CSU3**- Editar Oportunidade (Web)
+**OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
 
   * Identificador: OP-CSU3
 
-  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+  * Atores envolvidos: Usuários App
 
-  * Pré-condições: Usuário deve estar conectado à internet.
+  * Pré-condições:
+    * Usuário deve estar conectado à internet.
+  * O usuário não deve estar logado no aplicativo.
 
-  * Pós-condições:
-	  * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados}) devem ser obrigatórios.
+  * Pós-condições: 
+    * O usuário abre o aplicativo.
 
   * Cenário principal:
-      * Usuário acessa o sistema.
+      * Usuário abre o aplicativo.
       * Usuário clica no menu Oportunidades.
-      * Usuário clica na oportunidade cadastrada e seleciona a opção editar.
-      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+      * Usuário visualiza as oportunidades cadastradas.
 
   * Cenários secundários:
-      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
-      
-**OP-CSU4**- Deletar Oportunidade (Web)
+      * Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png" width="500" height="430"/>
+
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 3.1 | Listar todas oportunidades  por ordem decrescente de data de inserção e sem filtro. | Evidente |Alta |
+| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
+
+**OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
 
   * Identificador: OP-CSU4
 
+  * Atores envolvidos: Usuários App
+
+  * Pré-condições:
+    * Usuário deve estar conectado à internet.
+    * Usuário deve estar logado no app
+
+  * Pós-condições: 
+    * O usuário abre o aplicativo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário clica no menu Oportunidades.
+      * Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
+
+  * Cenários secundários:
+      * Usuário utiliza o filtro para visualizar outras oportunidades.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png" width="500" height="430"/>
+  
+
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 4.1 | Listar oportunidades  por ordem decrescente de data de inserção de acordo com perfil do usuário.  | Evidente |Alta |
+| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
+
+**OP-CSU5**- Editar Oportunidade (Web)
+
+  * Identificador: OP-CSU5
+
   * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
   * Pré-condições: Usuário deve estar conectado à internet.
 
-  * Pós-condições: Não possui pós-condições.
+  * Pós-condições: 
+    * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados) devem ser obrigatórios.
 
   * Cenário principal:
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
-      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção editar. 
+      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer). 
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+**OP-CSU6**- Deletar Oportunidade (Web)
+
+  * Identificador: OP-CSU6
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: Não possui pós condições.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar. 
       * Usuário confirma o desejo de deletar a oportunidade.
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
-      
 
 ### 3.3 Calendário
 
@@ -556,7 +621,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%207-Erro%20ao%20realizar%20cadastro.png" width="1100" height="500"/>
   
  
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 2.1 | Criar um novo evento no Calendário Acadêmico. | Evidente |Alta  |
 | CA-RFUN 2.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Limpar todo o cadastro e outro para Criar Evento.| Evidente |Alta  |
