@@ -69,14 +69,14 @@ Este documento foi desenvolvido visando todos que utilizarão do sistema, tais c
 
 ### 1.3 Organização do documento
 
-   1.**Introdução** – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
-   2.**Descrição do problema e do sistema** – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
-   3.**Casos de Uso e Requisitos Funcionais** – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
-   4.**Requisitos e Restrições não funcionais** – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
-   5.**Requisitos Futuros** – Citação dos requisitos planejados pra futuras versões do produto.
-   6.**Referência Cruzadas Complementares** – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
-   7.**Modelo de domínio** - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
-   8.**Aprovação Formal** – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
+   1. **Introdução** – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
+   2. **Descrição do problema e do sistema** – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
+   3. **Casos de Uso e Requisitos Funcionais** – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
+   4. **Requisitos e Restrições não funcionais** – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
+   5. **Requisitos Futuros** – Citação dos requisitos planejados pra futuras versões do produto.
+   6. **Referência Cruzadas Complementares** – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
+   7. **Modelo de domínio** - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
+   8. **Aprovação Formal** – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
 
 
 ### 1.4 Definição de Siglas e Nomenclaturas
