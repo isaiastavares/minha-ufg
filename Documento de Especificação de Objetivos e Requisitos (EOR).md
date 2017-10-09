@@ -79,7 +79,6 @@ Este documento foi desenvolvido visando todos que utilizarão do sistema, tais c
    7. **Modelo de domínio** - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
    8. **Aprovação Formal** – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
 
-
 ### 1.4 Definição de Siglas e Nomenclaturas
 
 * **TR**: Transporte
@@ -256,7 +255,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
    <img src="https://user-images.githubusercontent.com/11222413/31261363-219e5c80-aa2a-11e7-946e-250062dea481.png" width="600" height="350"/>
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 8 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
 | TR-RFUN 9 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
@@ -284,7 +283,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   <img src="https://user-images.githubusercontent.com/11222413/31261364-21a19760-aa2a-11e7-95f5-7934386e8fbc.png" width="700" height="350"/>
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | TR-RFUN 12 | Exibir lista de locais pré-definidos do usuário | Evidente |Média |
 
@@ -376,8 +375,12 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
+![Diagrama de Caso de Uso - Oportunidades](DCU-Oportunidades.png)
+
 * **OP-CSU1**: Cadastrar Oportunidade (Web)
 * **OP-CSU2**: Listar Oportunidades (Web)
+* **OP-CSU3**: Listar Oportunidades - Usuário Deslogado (App)
+* **OP-CSU4**: Listar Oportunidades - Usuário Logado (App)
 
 #### 3.2.2 Descrição de Casos de Uso
 
@@ -396,14 +399,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
       * Usuário clica no botão para cadastrar oportunidade.
-      * Usuário informa as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+      * Usuário preenche as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 
@@ -426,199 +429,410 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário filtra oportunidades exibidas através do campo de busca.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" >
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Filtrar%20-%20Excluir.png" >
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 | OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades.  | Evidente |Média|
 | OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade.  | Evidente |Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca tanto para o ID, Título ou Categoria de cada oportunidade.  | Evidente |Alta |
+| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade.  | Evidente |Alta |
+
+**OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
+
+  * Identificador: OP-CSU3
+
+  * Atores envolvidos: Usuários App
+  
+  * Pré-condições:
+    * Usuário deve estar conectado à internet.
+    * O usuário não deve estar logado no aplicativo.
+
+  * Pós-condições: 
+    * O usuário abre o aplicativo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário clica no menu Oportunidades.
+      * Usuário visualiza as oportunidades cadastradas.
+
+  * Cenários secundários:
+      * Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png" width="500" height="430"/>
+
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 3.1 | Listar todas oportunidades  por ordem decrescente de data de inserção e sem filtro. | Evidente |Alta |
+| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
+
+**OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
+
+  * Identificador: OP-CSU4
+
+  * Atores envolvidos: Usuários App
+
+  * Pré-condições:
+    * Usuário deve estar conectado à internet.
+    * Usuário deve estar logado no app
+
+  * Pós-condições: 
+    * O usuário abre o aplicativo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário clica no menu Oportunidades.
+      * Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
+
+  * Cenários secundários:
+      * Usuário utiliza o filtro para visualizar outras oportunidades.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png" width="500" height="430"/>
+  
+
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 4.1 | Listar oportunidades  por ordem decrescente de data de inserção de acordo com perfil do usuário.  | Evidente |Alta |
+| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
+
+**OP-CSU5**- Editar Oportunidade (Web)
+
+  * Identificador: OP-CSU5
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: 
+    * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados) devem ser obrigatórios.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção editar. 
+      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer). 
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+**OP-CSU6**- Deletar Oportunidade (Web)
+
+  * Identificador: OP-CSU6
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: Não possui pós condições.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar. 
+      * Usuário confirma o desejo de deletar a oportunidade.
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
 ### 3.3 Calendário
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](http://postimg.org/image/skrz04i6x/)
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/%5BCA%5DUseCases.png" width="550" height="500"/>
 
-* **CA-CSU1**: Regionais
-* **CA-CSU2**: Visualizar Calendário offline
-* **CA-CSU3**: Fazer consulta de evento
-* **CA-CSU4**: Pesquisar eventos offline
-* **CA-CSU5**: Postagem de Eventos
-* **CA-CSU6**: Notificações de eventos
+* **CA-CSU1**: Visualizar Regionais
+* **CA-CSU2**: Criar Eventos
+* **CA-CSU3**: Editar Eventos
+* **CA-CSU4**: Notificar Eventos
+* **CA-CSU5**: Excluir Eventos
+* **CA-CSU6**: Pesquisar eventos
 
 #### 3.3.2 Descrição de Casos de Uso
 
-**CA-CSU1**- Regionais
+**CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
 
-  * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
+  * Atores envolvidos: Consulentes.
+  
+  * Pré-condições: Os consulentes devem visualizar os calendário de acordo com a regional de escolha. Cada consulente tem sua regional favorita, mas também pode mudar para qualquer outra.
 
-  * Pré-condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
+  * Pós-condições: O consulente escolhe sua regional e realiza qualquer busca desejada no calendário acadêmico.
 
-  * Pós-condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
+  * Cenário principal: 
+1. Consulente acessa o aplicativo Minha UFG;
+2. Consulente seleciona a opção Calendário;
+3. Consulente entra no Calendário e escolhe sua regional de interesse.
+4. Consulente seleciona a data que deseja consultar.
 
-  * Cenário principal:
-1. Usuário acessa ao sistema com seu login e senha;
-2. Usuário seleciona a opção Calendário;
-3. Usuário entra no Calendário em sua regional de escolha.
-4. Usuário pode alterar regional e acessar informações.
+  * Cenários secundários: 
+1. O consulente pode acessar as funções do calendário offline.
 
-  * Cenários secundários:
-1. Administrador pode inserir novas notícias que correspodem ao calendário.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%201.png" width="550" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%202.png" width="550" height="500"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 1.1 | O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás. | Evidente |Alta  |
-| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades. | Evidente |Alta  |
+| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades.| Evidente |Alta  |
 
-**CA-CSU2**- Visualizar Calendário offline
+**CA-CSU2**- Criar Eventos
   * Identificador: CA-CSU2
 
-  * Atores envolvidos: Administrador, Usuário
+  * Atores envolvidos: Administrador.
+  
+  * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
 
-  * Pré-condições: O usuário deve estar logado no Minha UFG para acessar a função Calendário.
+  * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
+  
+  * Cenário principal: 
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Criar (eventos).
+   * a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
+   * b. O Administrador deve inserir o nome do evento;
+   * c. O Administrador deve inserir o local onde será realizado;
+   * d. O Administrador deve selecionar o período que vai ser o evento;
+   * e. O Administrador tem a possibilidade de inserir observações sobre o evento;
+   * f. O Administrador pode limpar todo o cadastro e começar do zero inserindo novos dados, apertando o botão Limpar Cadastro;
+   * g. O Administrador, após inserir todos os dados, deve clicar em Criar Evento para salvar os dados e, consequentemente, criar um novo evento;
+   * h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
+5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
 
-  * Pós-condições: O Sistema apresenta o calendário offline.
+  * Cenários secundários: 
+1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
+2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
-  * Cenário principal:
-1. O usuário está sem acesso à internet.
-2. O Usuário já está logado no aplicativo Minha UFG.
-3. O Usuário acessa a função Calendário.
-4. O Usuário consegue acessar o calendário offline.
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%201-Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%202-Tela%20Calend%C3%A1rio.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%203-Tela%20de%20Eventos.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png" width="1100" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%205-Preencher%20todos%20os%20campos.png" width="1100" height="500"/>
+  
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%206-Cadastro%20realizado.png" width="1100" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%207-Erro%20ao%20realizar%20cadastro.png" width="1100" height="500"/>
+  
+ 
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 2.1 | Criar um novo evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 2.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Limpar todo o cadastro e outro para Criar Evento.| Evidente |Alta  |
+| CA-RNFUN 2.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RNFUN 2.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
 
-  * Cenários secundários:
-1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
-2. O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
+**CA-CSU3**- Editar Eventos
+  * Identificador: CA-CSU3
+
+  * Atores envolvidos: Administrador.
+  
+  * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Editar Evento, deve escolher o evento para ter a possibilidade de alterar os dados e depois salvar as alterações do evento.
+
+  * Pós-condições: O Administrador consegue alterar o evento desejado.
+
+  * Cenário principal: 
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Editar (eventos).
+5. O Administrador seleciona o evento entre os Listados e clica em Editar:
+   * a. O Administrador pode selecionar outra Regional, onde o evento vai acontecer;
+   * b. O Administrador pode alterar o nome do evento;
+   * c. O Administrador pode alterar o local do onde será realizado;
+   * d. O Administrador pode alterar o período que vai ser o evento;
+   * e. O Administrador tem a possibilidade de alterar as observações sobre o evento;
+   * f. O Administrador pode cancelar as alterações, apertando o botão Cancelar, voltando para a página anterior;
+   * g. O Administrador, após alterar todos os dados, deve clicar em Salvar Alerações para salvar os dados e, consequentemente, editar o evento que foi selecionado;
+   * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos.
+6. Após editar um evento, o Administrador volta para a página anterior com um retorno de que as alterações sobre o evento foram salvas com sucesso.
+
+  * Cenários secundários: 
+5. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
+    * O Administrador seleciona o filtro de pesquisa de evento. Exemplo: Pesquisar por Regional;
+5. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
+5. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%201.%20Tela%20inical%20com%20todos%20os%20Modulos.png"/>
 
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%202.%20Tela%20Calendario.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%203.%20Tela%20de%20Eventos.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.%20Listar%20Eventos.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1%20Pesquisar%20Eventos.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1.1%20Pesquisar%20Eventos%20por%20Nome.png"/> 
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.%20Salvar%20Alteracoes%20no%20Evento.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.1%20Erro%20ao%20Salvar%20Alteracoes%20no%20Evento.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%206.%20Alteracao%20de%20Evento%20realizado.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%207.%20Erro%20ao%20Editar%20Eventos.png"/> 
+ 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
+| CA-RFUN 3.1 | Editar um evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 3.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Candelar as alterações e outro para Salvar Alterações.| Evidente |Alta  |
+| CA-RNFUN 3.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RNFUN 3.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
 
-**CA-CSU3**- Fazer consulta de evento
-
-* Identificador:CA-CSU3
-* Atores envolvidos: Usuário
-* Pré-condições:
-
-1. O usuário está no contexto de pesquisa de eventos do calendário
-2. O usuário seleciona a regional que deseja fazer a pesquisa
-3. O sistema sincroniza o calendário
-
-* Pós-condições: O Sistema apresenta os eventos
-* Cenário principal:O resultado é retornado
-
-1. O usuário abre a tela de pesquisa de eventos		
-2. Usuário seleciona a regional		
-3. O usuário digita o texto da pesquisa
-4. A pesquisa é executada quando o usuário para de digitar
-5. O resultado da consulta é retornada para o usuário
-
-* Cenários secundários: Nenhum resultado encontrado	     
-
-1. O usuário abre a tela de filtro de eventos
-2. Usuário seleciona a regional
-3. O usuário digita o texto da pesquisa
-4. A pesquisa é executada quando o usuário para de digitar
-5. Nenhum resultado é retornado
-6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa		
-
-Erro ao fazer pesquisa
-
-1. O usuário abre a tela de filtro de eventos
-2. O usuário digita o texto da pesquisa
-3. Usuário seleciona a regional
-4. A pesquisa é executada quando o usuário para de digitar
-5. A pesquisa retorna um erro inesperado
-6. Uma mensagem é mostrada para o usuário mostrando que um erro ocorreu
-
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 3.1 | descricao | Evidente |Alta  |
-
-**CA-CSU4**- Pesquisar eventos offline
+**CA-CSU4**- Notificar Eventos
   * Identificador: CA-CSU4.
 
-  * Atores envolvidos: Administrador, Usuário.
+  * Atores envolvidos: Consulente.
+  
+  * Pré-condições: Os consulentes devem estar inscritos para receberem as notificações.
 
-  * Pré-condições:
-	* Usuário não deve estar conectado à internet.
-    * O usuário deve ter feito login no aplicativo pelo menos uma vez.
-
-  * Pós-condições: O aplicativo apresenta o calendário.
+  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos consulentes.
 
   * Cenário principal:
-    * O Usuário não possui internet.
-    * O Usuário abre o aplicativo Minha UFG.
-    * O Usuário seleciona o ícone do calendário.
-    * O Usuário pesquisa o evento desejado.
-    * O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
-  * Cenários secundários:
-	* O aplicativo avisa que não tem nenhum evento disponível.
-	* O aplicativo pede que para efetuar conexão com a internet para atualizar.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-
+  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
+  2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
+  3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
+  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao consulente.
+  
+  * Cenários secundários: 
+  1. Duas ou mais notificações foram recebidas pelo consulente e não foram visualizadas
+  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o consulente seleciona a que deseja abrir.
+  * Protótipos de tela:
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04%20.1-%20Notificar%20Eventos.png"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04.2%20-%20Notificar%20Eventos.png"/>
+ 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
+| CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
-**CA-CSU5**- Postagem de Eventos
+**CA-CSU5**- Excluir Eventos
   * Identificador: CA-CSU5
 
   * Atores envolvidos: Administrador
+  
+  * Pré-condições: O Administrador deve conseguir excluir um Evento no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Excluir Evento, deve escolher o(s) evento(s) para excluir e depois salvar as alterações feitas.
+  
+  * Pós-condições:  O Administrador consegue excluir o evento desejado.
 
-  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
+  * Cenário principal: 
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Excluir (eventos).
+5. O Sistema exibe uma tela com opções de filtro, lista de eventos e um botão salvar:
+   * a. O Administrador pode selecionar uma regional para filtrar;
+   * b. O Administrador pode selecionar uma data para filtrar;
+   * c. O Administrador pode selecionar um nome do evento para filtrar;
+   * d. O Administrador pode excluir um evento de cada vez ou todos ao mesmo tempo caso estejam selecionados estando filtrados ou não.
+6. Após excluir um ou vários eventos, o Administrador clica em "Salvar" e volta para a página anterior com um retorno de que as alterações feitas foram salvas com sucesso.
 
-  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
+  * Cenários secundários: 
+1. Não exibe botão “Excluir”; 
+   * a. O usuário tenta acessar botão de “Excluir”;
+   * b. O sistema sempre verifica privilégios de categoria por usuário;
+   * c. Cada categoria de usuário possui tipos de privilégios distintos.
+2. Ação de exclusão não permitida;
+   * a. O usuário (administrador) tenta excluir um evento no calendário; 
+   * b. O sistema bloqueia ação;
+   * c. O sistema exibe uma mensagem “Erro ao excluir evento. Contate o programador ou tente criar outro evento.”.
 
-  * Cenário principal:
-  1. O administrador acessa o aplicativo minha UFG.
-  2. O administrador entra dentro da função minha UFG.
-  3. O administrador insere a postagem.
-  4. Postagem realizada com sucesso.
-
-  * Cenários secundários:
-  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
-  2. O usuário pode ter acesso às postagens offline.
-  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-**CA-CSU6**- Notificações de eventos
-  * Identificador: CA-CSU6.
-
-  * Atores envolvidos: Usuários.
-
-  * Pré-condições: Os usuários devem estar inscritos para receberem as notificações.
-
-  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos usuários.
-
-  * Cenário principal:
-  1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG.
-  2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
-  3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
-  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao usuário.
-
-  * Cenários secundários:
-  1. Duas ou mais notificações foram recebidas pelo usuário e não foram visualizadas
-  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o usuário seleciona a que deseja abrir.
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%201%20-%20Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%202%20-Tela%20Calend%C3%A1rio.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%203%20-%20Tela%20de%20Eventos.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%204%20-%20Excluir%20Evento.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%205%20-%20Filtrar%20Informa%C3%A7%C3%A3o.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%206%20-%20Erro%20ao%20excluir%20evento.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%207%20-%20Exclu%C3%ADdo%20com%20sucesso.png">  
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+| CA-RFUN 5.1 | Excluir um evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 5.2 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RFUN 5.3 | Deve ter no mínimo um evento cadastrado.| Evidente |Alta  |
+| CA-RFUN 5.4 | Administrador deve conseguir filtrar eventos através de um nome, data ou regional. Obs: deve ter um botão de filtrar e limpar filtro sendo que é opcional essas ações. | Evidente |Média  |
+| CA-RFUN 5.5 | Administrador deve conseguir excluir qualquer evento um a um ou vários de uma vez (caso tenha selecionado os desejados). | Evidente |Alta  |
+  
+**CA-CSU6**- Pesquisar eventos
+
+   * Identificador:CA-CSU6
+
+   * Atores envolvidos: Usuário
+
+   * Pré-condições: 
+       * O usuário está no contexto de pesquisa de eventos do calendário. 
+       * O calendário deverá estar baixado.
+     
+   * Pós-condições:
+       * O Sistema apresenta os eventos
+       * O usuário seleciona o evento que estava procurando
+
+   * Fluxo principal:
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário digita o texto da pesquisa
+       * A pesquisa é executada quando o usuário parar de digitar
+       * O resultado da consulta é retornada para o usuário
+
+   * Fluxo secundário: Pesquisa por regional 
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro de Regional
+       * A pesquisa é executada
+       * O resultado da consulta é retornada para o usuário
+   
+   * Fluxo secundário: Pesquisa por Interessado
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro por interessado
+       * A pesquisa é executada
+       * O resultado da consulta é retornada para o usuário
+       * O usuário seleciona o resultado de um determinado interessado
+
+   * Fluxo secundário: Pesquisa por Periodo
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro por periodo
+       * O usuário seleciona a data inicial e a data final
+       * A pesquisa é executada
+
+   * Fluxo alternativo 
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário digita o texto da pesquisa
+       * A pesquisa é executada quando o usuário para de digitar
+       * Nenhum resultado é retornado
+       * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
+  
+   * Protótipos de tela
+  
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20Default.png" />
+  
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20interessado.png" />
+    
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20per%C3%ADodo.png" />
+      
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20regional.png" />
+	
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Nenhum%20resultado.png"/>
 
 ## 4. Requisitos e restrições não funcionais
 -----------------------------------------
