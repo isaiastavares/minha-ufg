@@ -92,6 +92,7 @@ Definir e explicar sucintamente siglas e nomencalturas utilizadas neste document
 * RMAN: Requisito de Manutenibilidade
 * RDOC: Requisito de Documentação
 * RFUT: Requisitos Futuros
+* Região metropolitana: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás. 
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
@@ -122,123 +123,250 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.1.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-* TR-CSU1: Selecionar local de destino em uma lista;
-* TR-CSU2: Visualizar Rota;
-* TR-CSU3: Ver linhas e horários dos pontos dos campus;
-* TR-CSU4: Visualizar pontos mais próximos da origem/destino;
+<img src="https://user-images.githubusercontent.com/9218555/30995360-04533f50-a490-11e7-9515-3f0eab591ff4.png" width="550" height="500"/>
 
+* TR-CSU1: Selecionar local de origem e local de destino com base em uma lista;
+* TR-CSU2: Visualizar rota entre a origem e o destino definidos pelo usuário;
+* TR-CSU3: Modificar destino durante a rota;
+* TR-CSU4: Visualizar linhas e horários;
+* TR-CSU5: Visualizar locais Pré-definidos;
+* TR-CSU6: Criar local Pré-definido;
+* TR-CSU7: Modificar local Pré-definido;
+* TR-CSU8: Remover local Pré-definido;
 
 #### 3.1.2 Descrição de Casos de Uso
 
-**TR-CSU1**- Selecionar local de origem/destino em uma lista
+**TR-CSU1**- Selecionar local de origem e local de destino.
   * Identificador: TR-CSU1
 
-  * Atores envolvidos: Usuário
+  * Atores envolvidos: Usuário(Fernanda) e Sistema
 
-  * Pré-condições: Usuário deve estar conectado à internet. Habilitar o GPS (opcional)
+  * Pré-condições:
+    * Usuário deverá estar localizado na região Metropolitana de Goiânia.
+    * Usuário deverá estar conectado à internet.
+    * Usuário deverá estar com o GPS habilitado (opcional).
 
-  * Pós-condições: O aplicativo seleciona corretamente os pontos de origem e destino do usuário, mostrando uma lista dos pontos disponíveis no campus da UFG para auxiliar o usuário.
+  * Pós-condições: 
+    * O aplicativo sleciona corretamente local de origem e destino.
 
-  * Cenário principal:
-      * Usuário abre o aplicativo.
-      * Usuário seleciona aba de transportes.
-      * Usuário define o ponto de origem, caso seja na UFG, mostrar lista dos pontos disponíveis mais próximos da posição     atual do usuário.
-      * Usuário define o ponto de destino, caso seja na UFG, mostrar lista dos pontos disponíveis no campus.
+  * Cenário:
+    1. Usuário seleciona aba de mapa.
+        * Se o usuário estiver fora da região metropoliana de Goiâna:
+            * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
+        * Se o usuário não possuir acesso a internet:
+            * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não possui acesso a internet no momento.  
+    2. Usuário aperta no campo de origem.
+    3. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    4. Usuário seleciona o local de origem desejado com base na lista disponível.
+    5. Usuário aperta no campo de destino.
+    6. Sistema exibe uma lista contendo os possiveis locais de destino conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    7. Usuário seleciona o local de destino desejado com base na lista disponível.
 
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-      * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
+  * Protótipos de tela:
+   <img src="https://user-images.githubusercontent.com/11222413/31261360-219811a4-aa2a-11e7-87b9-007701e89324.png" width="1400" height="700"/>
 
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref.     |                          Descrição                         | Categoria | Prioridade |
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 1.1 | Mostrar lista de pontos disponíveis no campus Samambaia e Universitário | Evidente |Alta |
-| TR-RFUN 1.2 | Mostrar pontos mais próximos do local atual do usuário (caso GPS esteja ativado) | Evidente |Média |
-| TR-RFUN 1.3 |  Definir automaticamente um dos locais (origem ou destino) sendo somente pontos disponíveis nos câmpus da UFG | Evidente |Alta |
+| TR-RFUN 1 | Mostrar lista de possiveis locais de origem disponíveis cadastrados | Evidente |Alta |
+| TR-RFUN 2 | Mostrar lista de possiveis locais de destino disponíveis cadastrados | Evidente |Alta |
+| TR-RFUN 3 | Validar local de origem | Oculta |Média |
+| TR-RFUN 4 | Validar local de destino | Oculta |Média |
 
-**TR-CSU2**- Visualizar Rota
+**TR-CSU2**- Visualizar rota entre a origem e o destino definidos pelo usuário
   * Identificador: TR-CSU2
 
-  * Atores envolvidos: Usuário
+  * Atores envolvidos: Usuário(Fernanda) e Sistema
 
-  * Pré-condições: Usuário deve ter selecionado o destino da lista bem como confirmado sua posição de origem.
+  * Pré-condições: 
+    * As mesmas definidas em TR-CSU1.
 
-  * Pós-condições: O aplicativo sugere rotas para o usuário seguir e chegar ao destino.
+  * Pós-condições:
+    * O aplicativo mostra as opções de rotas entre os locais definidos pelo usuário.
 
-  * Cenário principal:
-      * Usuário confirma local de partida.
-      * Usuário seleciona local de destino.
-      * Aplicativo sugere rotas a serem seguidas pelo usuário.
+  * Cenário:
+    1. Usuário executa TR-CSU1.
+    2. Usuário clica no botão de confirmação de locais de origem e destino.
+    3. Sistema verifica o ponto mais próixmo do usuário.
+    4. Sistema exibe uma ou mais rotas para transporte coletivo partindo do ponto de origem do usuário até o destino definido pelo mesmo.
 
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-      * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
+  * Protótipos de tela:
+   <img src="https://user-images.githubusercontent.com/11222413/31261362-219d01f0-aa2a-11e7-9dde-366ae5595a31.png" width="800" height="350"/>
 
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref.     |                          Descrição                         | Categoria | Prioridade |
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 2.1 | Validar posição de GPS do usuário | Oculta |Média |
-| TR-RFUN 2.2 | Validar local de destino | Oculta |Média |
-| TR-RFUN 2.3 |  Buscar rota de acordo com ponto de origem e destino | Oculta |Alta |
-| TR-RFUN 2.4 |  Mostrar uma ou mais rotas possíveis | Evidente |Alta |
+| TR-RFUN 5 | Validar posição de GPS do usuário | Oculta |Média |
+| TR-RFUN 6 | Buscar rota de acordo com os pontos de origem e de destino definidos pelo usuário | Oculta |Alta |
 
-**TR-CSU3**- Visualizar Linhas e Horários
+**TR-CSU3**- Modificar destino durante a rota
   * Identificador: TR-CSU3
 
-  * Atores envolvidos: Usuário, Sistema.
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: Usuário deve ter selecionado o ponto de ônibus em questão.
+  * Pré-condições: 
+    * As mesmas definidas em TR-CSU1.
 
-  * Pós-condições: O sistema retorna uma lista contendo as linhas de ônibus bem como os horários referentes ao ponto selecionado.
+  * Pós-condições:
+    * As mesmas definidas em TR-CSU2.
 
-  * Cenário principal:
-      * Usuário abre o aplicativo.
-      * Usuário seleciona aba de transportes.
-      * Usuário seleciona o número do ponto desejado.
-      * Sistema lista as rotas e os horários referentes ao ponto definido pelo usuário.
+  * Cenário:
+    1. Usuário executa TR-CSU2.
+    2. Usuário aperta no campo destino.
+    3. Sistema exibe um popup para validar a modificação do destino da rota.
+    4. Sistema exibe uma lista de lugares conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    5. Usuário seleciona um novo local.
+    6. Usuário confirma a modificação do destino da rota.
+    7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref.     |                          Descrição                         | Categoria | Prioridade |
+  * Protótipos de tela: 
+   <img src="https://user-images.githubusercontent.com/11222413/31261361-219c2f64-aa2a-11e7-8788-92ef06f2f266.png" width="900" height="350"/>
+  
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 3.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
-| TR-RFUN 3.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
-| TR-RFUN 3.3 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
-| TR-RFUN 3.4 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 4 | Validar local de destino | Oculta |Média |
+| TR-RFUN 6 | Buscar rota de acordo com os pontos de origem e de destino definidos pelo usuário | Oculta |Alta |
+| TR-RFUN 7 | Validar com o usuário a mudança do local de destino | Evidente |Média |
 
-**TR-CSU4**- Visualizar ponto mais próximo da origem
+**TR-CSU4**- Visualizar linhas e horários
   * Identificador: TR-CSU4
 
-  * Atores envolvidos: Usuário, Sistema.
+  * Atores envolvidos: Usuário(Fernanda), Sistema.
 
-  * Pré-condições: Usuário deve ter selecionado a origem.
+  * Pré-condição:
+    * As mesmas definidas em TR-CSU1.
+  
+  * Pós-condições:
+    * O aplicativo mostra as linhas e horários de acordo com o ponto selecionado pelo usuário.
 
-  * Pós-condições: O sistema retorna a localização do ponto de ônibus mais próximo.
+  * Cenário:
+    1. Usuário seleciona aba de mapa.
+        *  Se o usuário estiver fora da região metropoliana de Goiâna.
+            *  Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
+        * Se o usuário não possuir acesso a internet.
+            * Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não possui acesso a internet no momento.
+    2. Usuário seleciona no mapa o ponto de ônibus desejado.
+    3. Sistema exibe uma tela contendo as informações a respeito das linhas e horários dos ônibus que passam no ponto selecionado.
 
-  * Cenário principal:
-      * Usuário abre o aplicativo.
-      * Usuário seleciona a origem.
-      * Sistema verifica pontos ao redor.
-      * Usuário visualiza o ponto de ônibus mais próximo.
 
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-      * Usuário não seta a origem ou destino como locais válidos.
+  * Protótipos de tela:
+   <img src="https://user-images.githubusercontent.com/11222413/31261363-219e5c80-aa2a-11e7-946e-250062dea481.png" width="600" height="350"/>
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 4.1 | Validar ponto de origem selecionado | Oculta |Alta |
-| TR-RFUN 4.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
-| TR-RFUN 4.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
+| TR-RFUN 8 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 9 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 10 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 11 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
+
+**TR-CSU5**- Visualizar locais pré-definidos
+  * Identificador: TR-CSU5
+
+  * Atores envolvidos: Usuário(Fernanda), Sistema.
+
+  * Pré-condição: 
+    * O banco de dados deverá estar disponível e funcional.
+
+  * Pós-condições: 
+    * O aplicativo mostra os locais pré-definidos cadastrados.
+
+  * Cenário:
+    1. Usuário seleciona o botão "Meus locais".
+    2. Sistema exibe uma tela contendo os locais pré-definidos cadastrados.
+        * Se não houver nenhum local cadastrado:
+            * O sistema exibe uma tela "vazia".
+
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31261364-21a19760-aa2a-11e7-95f5-7934386e8fbc.png" width="700" height="350"/>
+
+
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 12 | Exibir lista de locais pré-definidos do usuário | Evidente |Média |
+
+**TR-CSU6**- Criar local pré-definido
+  * Identificador: TR-CSU6
+
+  * Atores envolvidos: Usuário(Fernanda), Sistema
+
+  * Pré-condições: 
+    * As mesmas definidas em TR-CSU5.
+
+  * Pós-condições:
+    * As mesmas definidas em TR-CSU5.
+
+  * Cenário:
+    1. Usuário executa TR-CSU5.
+    2. Usuário seleciona o botão de adicionar novo local.
+    3. Usuário seleciona um ponto no mapa, podendo selecionar sua própria posição segundo o GPS, referente ao novo local.
+    4. Usuário nomeia o novo local.
+    5. Usuário confirma os dados da nova localização.
+    6. Sistema retorna para a tela de locais pré-definidos cadastrados.
+
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31261365-21a34e16-aa2a-11e7-9b6a-b4c7337a63bd.png" width="900" height="350"/>
+
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 13 | Validar posição de "Meus locais" selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 14 | Gravar no banco a posição e nome do local | Oculta |Média 
+
+**TR-CSU7**- Modificar local pré-definido
+  * Identificador: TR-CSU7
+
+  * Atores envolvidos: Usuário(Fernanda), Sistema
+
+  * Pré-condições: 
+    * As mesmas definidas em TR-CSU5.
+    * Deverá existir um local pré-definido cadastrado no banco de dados.
+
+  * Pós-condições:
+    * O local selecionado deve ter sido modificado com sucesso.
+
+  * Cenário:
+    1. Usuário executa TR-CSU5.
+    2. Usuário seleciona o botão de editar no local.
+    3. Sistema exibe uma tela contendo um mapa com o local selecionado.
+    4. Usuário seleciona um ponto no mapa (podendo selecionar sua própria posição segundo o GPS) referente á atualização do local.
+    5. Usuário renomeia o local.
+    6. Usuário confirma os dados da localização atualizada.
+    7. Sistema atualiza o local pré-definido selecionado no banco de dados.
+    8. Sistema retorna para a tela de locais pré-definidos cadastrados.
+
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31261366-21c06578-aa2a-11e7-8fdb-ae754e320f3a.png" width="700" height="350"/>
+
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 15 | Atualizar no banco a posição e nome do local | Oculta |Média 
+
+**TR-CSU8**- Remover local pré-definido
+  * Identificador: TR-CSU8
+
+  * Atores envolvidos: Usuário(Fernanda), Sistema
+
+  * Pré-condições: 
+    * As mesmas definidas em TR-CSU5.
+    * Deverá existir um local pré-definido cadastrado no banco de dados.
+
+  * Pós-condições:
+    * O local selecionado deve ter sido removido da lista de meus locais.
+
+  * Cenário:
+    1. Usuário executa TR-CSU5.
+    2. Usuário seleciona o botão de remover no local que deseja remover.
+    3. Usuário confirma o local a ser removido.
+    4. Sistema remove o local pré-definido selecionado do banco de dados.
+    5. Sistema retorna para a tela de locais pré-definidos cadastrados.
+
+  * Protótipos de tela:
+  <img src="https://user-images.githubusercontent.com/11222413/31261367-21c3fce2-aa2a-11e7-833c-f3250612effb.png" width="700" height="350"/>
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| TR-RFUN 15 | Remover do banco a posição e nome do local | Oculta |Média 
 
 ### 3.2 Oportunidades
 
@@ -261,8 +389,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Pré-condições: Usuário deve estar conectado à internet.
 
-  * Pós-condições: 
-    * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
+  * Pós-condições:
+	  * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
 
   * Cenário principal:
       * Usuário acessa o sistema.
@@ -410,312 +538,401 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](http://postimg.org/image/skrz04i6x/)
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/%5BCA%5DUseCases.png" width="550" height="500"/>
 
-**CA-CSU1**- Regionais
+* CA-CSU1: Visualizar Regionais 
+* CA-CSU2: Criar Eventos
+* CA-CSU3: Editar Eventos
+* CA-CSU4: Ver Notificação
+* CA-CSU5: Excluir Eventos
+* CA-CSU6: Pesquisar Eventos 
+
+**CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
 
-  * Atores envolvidos: Administrador, alunos, servidores e comunidade em geral.
+  * Atores envolvidos: Consulentes.
   
-  * Pré-condições: Os usuários devem visualizar os calendário de acordo com a regional de escolha. Cada usuário tem sua regional favorita, mas também pode mudar para qualquer outra.
+  * Pré-condições: Os consulentes devem visualizar os calendário de acordo com a regional de escolha. Cada consulente tem sua regional favorita, mas também pode mudar para qualquer outra.
 
-  * Pós-condições: O usuário escolhe sua regional e realiza qualquer busca desejada.
+  * Pós-condições: O consulente escolhe sua regional e realiza qualquer busca desejada no calendário acadêmico.
 
   * Cenário principal: 
-1. Usuário acessa ao sistema com seu login e senha;
-2. Usuário seleciona a opção Calendário;
-3. Usuário entra no Calendário em sua regional de escolha.
-4. Usuário pode alterar regional e acessar informações.
+1. Consulente acessa o aplicativo Minha UFG;
+2. Consulente seleciona a opção Calendário;
+3. Consulente entra no Calendário e escolhe sua regional de interesse.
+4. Consulente seleciona a data que deseja consultar.
 
   * Cenários secundários: 
-1. Administrador pode inserir novas notícias que correspodem ao calendário.
+1. O consulente pode acessar as funções do calendário offline.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%201.png" width="550" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%202.png" width="550" height="500"/>
 
-
-| Ref.     |                          Descrição                         | Categoria | Prioridade |
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 1.1 | O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás. | Evidente |Alta  |
-| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades. | Evidente |Alta  |
+| CA-RFUN 1.2 | Cada regional possui sua própria resolução e datas, já que cada regional segue um calendário diferente por conta de greves e suas particularidades.| Evidente |Alta  |
 
-**CA-CSU2**- Visualizar Calendário offline
+**CA-CSU2**- Criar Eventos
   * Identificador: CA-CSU2
 
-  * Atores envolvidos: Administrador, Usuário
+  * Atores envolvidos: Administrador.
   
-  * Pré-condições: O usuário deve estar logado no Minha UFG para acessar a função Calendário.
+  * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
 
-  * Pós-condições: O Sistema apresenta o calendário offline.
-
+  * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
+  
   * Cenário principal: 
-1. O usuário está sem acesso à internet.
-2. O Usuário já está logado no aplicativo Minha UFG.
-3. O Usuário acessa a função Calendário.
-4. O Usuário consegue acessar o calendário offline.
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Criar (eventos).
+   * a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
+   * b. O Administrador deve inserir o nome do evento;
+   * c. O Administrador deve inserir o local onde será realizado;
+   * d. O Administrador deve selecionar o período que vai ser o evento;
+   * e. O Administrador tem a possibilidade de inserir observações sobre o evento;
+   * f. O Administrador pode limpar todo o cadastro e começar do zero inserindo novos dados, apertando o botão Limpar Cadastro;
+   * g. O Administrador, após inserir todos os dados, deve clicar em Criar Evento para salvar os dados e, consequentemente, criar um novo evento;
+   * h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
+5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
 
   * Cenários secundários: 
-1. O administrador pode inserir uma nova informação no calendário, no entanto não pode alterar datas fixas estipuladas pela Pró-reitoria de Graduação.
-2. O administrador, após realizar alguma alteração, deve alterar os dados e atualizar para que os usuários consigam acessar o Calendário offline.
+1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
+2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%201-Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%202-Tela%20Calend%C3%A1rio.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%203-Tela%20de%20Eventos.png" width="800" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png" width="1100" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%205-Preencher%20todos%20os%20campos.png" width="1100" height="500"/>
+  
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%206-Cadastro%20realizado.png" width="1100" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%207-Erro%20ao%20realizar%20cadastro.png" width="1100" height="500"/>
   
  
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 2.1 | O Calendário deve ser acessado offline por seus usuários. | Evidente |Alta  |
+| CA-RFUN 2.1 | Criar um novo evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 2.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Limpar todo o cadastro e outro para Criar Evento.| Evidente |Alta  |
+| CA-RNFUN 2.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RNFUN 2.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
 
-**CA-CSU3**- Fazer consulta de evento
+**CA-CSU3**- Editar Eventos
+  * Identificador: CA-CSU3
 
-* Identificador:CA-CSU3
-* Atores envolvidos: Usuário  
-* Pré-condições: 
-    
-1. O usuário está no contexto de pesquisa de eventos do calendário
-2. O usuário seleciona a regional que deseja fazer a pesquisa
-3. O sistema sincroniza o calendário
-
-* Pós-condições: O Sistema apresenta os eventos
-* Cenário principal:O resultado é retornado
-      
-1. O usuário abre a tela de pesquisa de eventos   
-2. Usuário seleciona a regional   
-3. O usuário digita o texto da pesquisa 
-4. A pesquisa é executada quando o usuário para de digitar
-5. O resultado da consulta é retornada para o usuário
-    
-* Cenários secundários: Nenhum resultado encontrado      
+  * Atores envolvidos: Administrador.
   
-1. O usuário abre a tela de filtro de eventos
-2. Usuário seleciona a regional
-3. O usuário digita o texto da pesquisa
-4. A pesquisa é executada quando o usuário para de digitar
-5. Nenhum resultado é retornado
-6. Uma mensagem é mostrada para o usuário mostrando que não há nenhum resultado com o termo da pesquisa   
-        
-Erro ao fazer pesquisa
-  
-1. O usuário abre a tela de filtro de eventos
-2. O usuário digita o texto da pesquisa
-3. Usuário seleciona a regional
-4. A pesquisa é executada quando o usuário para de digitar
-5. A pesquisa retorna um erro inesperado 
-6. Uma mensagem é mostrada para o usuário mostrando que um erro ocorreu
+  * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Editar Evento, deve escolher o evento para ter a possibilidade de alterar os dados e depois salvar as alterações do evento.
 
+  * Pós-condições: O Administrador consegue alterar o evento desejado.
+
+  * Cenário principal: 
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Editar (eventos).
+5. O Administrador seleciona o evento entre os Listados e clica em Editar:
+   * a. O Administrador pode selecionar outra Regional, onde o evento vai acontecer;
+   * b. O Administrador pode alterar o nome do evento;
+   * c. O Administrador pode alterar o local do onde será realizado;
+   * d. O Administrador pode alterar o período que vai ser o evento;
+   * e. O Administrador tem a possibilidade de alterar as observações sobre o evento;
+   * f. O Administrador pode cancelar as alterações, apertando o botão Cancelar, voltando para a página anterior;
+   * g. O Administrador, após alterar todos os dados, deve clicar em Salvar Alerações para salvar os dados e, consequentemente, editar o evento que foi selecionado;
+   * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos.
+6. Após editar um evento, o Administrador volta para a página anterior com um retorno de que as alterações sobre o evento foram salvas com sucesso.
+
+  * Cenários secundários: 
+5. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
+    * O Administrador seleciona o filtro de pesquisa de evento. Exemplo: Pesquisar por Regional;
+5. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
+5. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                         | Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 3.1 | descricao | Evidente |Alta  |
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%201.%20Tela%20inical%20com%20todos%20os%20Modulos.png"/>
 
-**CA-CSU4**- Pesquisar eventos offline
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%202.%20Tela%20Calendario.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%203.%20Tela%20de%20Eventos.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.%20Listar%20Eventos.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1%20Pesquisar%20Eventos.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1.1%20Pesquisar%20Eventos%20por%20Nome.png"/> 
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.%20Salvar%20Alteracoes%20no%20Evento.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.1%20Erro%20ao%20Salvar%20Alteracoes%20no%20Evento.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%206.%20Alteracao%20de%20Evento%20realizado.png"/>
+
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%207.%20Erro%20ao%20Editar%20Eventos.png"/> 
+ 
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 3.1 | Editar um evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 3.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Candelar as alterações e outro para Salvar Alterações.| Evidente |Alta  |
+| CA-RNFUN 3.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RNFUN 3.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta  |
+
+**CA-CSU4**- Notificar Eventos
   * Identificador: CA-CSU4.
 
-  * Atores envolvidos: Administrador, Usuário.
+  * Atores envolvidos: Consulente.
   
-  * Pré-condições: 
-  * Usuário não deve estar conectado à internet.
-    * O usuário deve ter feito login no aplicativo pelo menos uma vez.
+  * Pré-condições: Os consulentes devem estar inscritos para receberem as notificações.
 
-  * Pós-condições: O aplicativo apresenta o calendário.
-
-  * Cenário principal: 
-    * O Usuário não possui internet.
-    * O Usuário abre o aplicativo Minha UFG.
-    * O Usuário seleciona o ícone do calendário.
-    * O Usuário pesquisa o evento desejado.
-    * O aplicativo lista os eventos sugeridos conforme a pesquisa feita.
-  * Cenários secundários: 
-  * O aplicativo avisa que não tem nenhum evento disponível.
-  * O aplicativo pede que para efetuar conexão com a internet para atualizar.
-
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-
-| Ref.     |                          Descrição                         | Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 4.1 | As pesquisas devem funcionar no modo offline | Evidente |Alta  |
-
-**CA-CSU5**- Postagem de Eventos
-  * Identificador: CA-CSU5
-
-  * Atores envolvidos: Administrador
-  
-  * Pré-condições: O administrador deve acessar o modo administrador do aplicativo Minha UFG para realizar a postagem de eventos.
-
-  * Pós-condições: O sistema apresenta as postagens realizadas pelo administrador.
-
-  * Cenário principal: 
-  1. O administrador acessa o aplicativo minha UFG.
-  2. O administrador entra dentro da função minha UFG.
-  3. O administrador insere a postagem.
-  4. Postagem realizada com sucesso.
-
-  * Cenários secundários: 
-  1. As atualizações devem aparecer para o usuário após ter acesso à internet.
-  2. O usuário pode ter acesso às postagens offline.
-  3. A cada nova postagem, o usuário deve atualizar a função aplicativo.
-  
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-  
-**CA-CSU6**- Notificações de eventos
-  * Identificador: CA-CSU6.
-
-  * Atores envolvidos: Usuários.
-  
-  * Pré-condições: Os usuários devem estar inscritos para receberem as notificações.
-
-  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos usuários.
+  * Pós-condições: Essas notificações disparadas não serão mais enviadas aos consulentes.
 
   * Cenário principal:
   1. É cadastrado um evento exceptional, não previsto no calendário acadêmico, para uma regional ou para toda a UFG. 
   2. O sistema empacota essa informação e envia para todos os inscritos nessas regionais.
   3. Ao chegar a notificação no dispositivo a mesma fica visível na caixa de notificações do dispositivo.
-  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao usuário.
+  4. Ao selecionar a notificação, o aplicativo é invocado e a tela de descrição do evento é exibida ao consulente.
   
   * Cenários secundários: 
-  1. Duas ou mais notificações foram recebidas pelo usuário e não foram visualizadas
-  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o usuário seleciona a que deseja abrir.
-  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
+  1. Duas ou mais notificações foram recebidas pelo consulente e não foram visualizadas
+  2. Ao selecionar a notificação é exibida a lista de notificações pendentes recebidas, o consulente seleciona a que deseja abrir.
+  * Protótipos de tela:
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04%20.1-%20Notificar%20Eventos.png"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU04.2%20-%20Notificar%20Eventos.png"/>
  
-| Ref.     |                          Descrição                         | Categoria | Prioridade |
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 6.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+| CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
+
+**CA-CSU5**- Excluir Eventos
+  * Identificador: CA-CSU5
+
+  * Atores envolvidos: Administrador
+  
+  * Pré-condições: O Administrador deve conseguir excluir um Evento no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Excluir Evento, deve escolher o(s) evento(s) para excluir e depois salvar as alterações feitas.
+  
+  * Pós-condições:  O Administrador consegue excluir o evento desejado.
+
+  * Cenário principal: 
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona a opção Calendário.
+3. O Administrador seleciona a opção Eventos.
+4. O Administrador seleciona a opção Excluir (eventos).
+5. O Sistema exibe uma tela com opções de filtro, lista de eventos e um botão salvar:
+   * a. O Administrador pode selecionar uma regional para filtrar;
+   * b. O Administrador pode selecionar uma data para filtrar;
+   * c. O Administrador pode selecionar um nome do evento para filtrar;
+   * d. O Administrador pode excluir um evento de cada vez ou todos ao mesmo tempo caso estejam selecionados estando filtrados ou não.
+6. Após excluir um ou vários eventos, o Administrador clica em "Salvar" e volta para a página anterior com um retorno de que as alterações feitas foram salvas com sucesso.
+
+  * Cenários secundários: 
+1. Não exibe botão “Excluir”; 
+   * a. O usuário tenta acessar botão de “Excluir”;
+   * b. O sistema sempre verifica privilégios de categoria por usuário;
+   * c. Cada categoria de usuário possui tipos de privilégios distintos.
+2. Ação de exclusão não permitida;
+   * a. O usuário (administrador) tenta excluir um evento no calendário; 
+   * b. O sistema bloqueia ação;
+   * c. O sistema exibe uma mensagem “Erro ao excluir evento. Contate o programador ou tente criar outro evento.”.
+
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%201%20-%20Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%202%20-Tela%20Calend%C3%A1rio.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%203%20-%20Tela%20de%20Eventos.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%204%20-%20Excluir%20Evento.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%205%20-%20Filtrar%20Informa%C3%A7%C3%A3o.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%206%20-%20Erro%20ao%20excluir%20evento.png">
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%207%20-%20Exclu%C3%ADdo%20com%20sucesso.png">  
+
+| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+|-------|----------------------------------------------------------|---------------|---------------|
+| CA-RFUN 5.1 | Excluir um evento no Calendário Acadêmico. | Evidente |Alta  |
+| CA-RFUN 5.2 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
+| CA-RFUN 5.3 | Deve ter no mínimo um evento cadastrado.| Evidente |Alta  |
+| CA-RFUN 5.4 | Administrador deve conseguir filtrar eventos através de um nome, data ou regional. Obs: deve ter um botão de filtrar e limpar filtro sendo que é opcional essas ações. | Evidente |Média  |
+| CA-RFUN 5.5 | Administrador deve conseguir excluir qualquer evento um a um ou vários de uma vez (caso tenha selecionado os desejados). | Evidente |Alta  |
+  
+**CA-CSU6**- Pesquisar eventos
+
+   * Identificador:CA-CSU6
+
+   * Atores envolvidos: Usuário
+
+   * Pré-condições: 
+       * O usuário está no contexto de pesquisa de eventos do calendário. 
+       * O calendário deverá estar baixado.
+     
+   * Pós-condições:
+       * O Sistema apresenta os eventos
+       * O usuário seleciona o evento que estava procurando
+
+   * Fluxo principal:
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário digita o texto da pesquisa
+       * A pesquisa é executada quando o usuário parar de digitar
+       * O resultado da consulta é retornada para o usuário
+
+   * Fluxo secundário: Pesquisa por regional 
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro de Regional
+       * A pesquisa é executada
+       * O resultado da consulta é retornada para o usuário
+   
+   * Fluxo secundário: Pesquisa por Interessado
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro por interessado
+       * A pesquisa é executada
+       * O resultado da consulta é retornada para o usuário
+       * O usuário seleciona o resultado de um determinado interessado
+
+   * Fluxo secundário: Pesquisa por Periodo
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário seleciona o filtro por periodo
+       * O usuário seleciona a data inicial e a data final
+       * A pesquisa é executada
+
+   * Fluxo alternativo 
+       * O usuário abre a tela de pesquisa de eventos
+       * O usuário digita o texto da pesquisa
+       * A pesquisa é executada quando o usuário para de digitar
+       * Nenhum resultado é retornado
+       * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
+  
+   * Protótipos de tela
+  
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20Default.png" />
+  
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20interessado.png" />
+    
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20per%C3%ADodo.png" />
+      
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20regional.png" />
+	
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Nenhum%20resultado.png"/>
 
 ## 4. Requisitos e restrições não funcionais
---------------------------------------------
-
-Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos de informação, de interface, de projeto, de arquitetura de software, de plataforma de hardware, de plataforma de software, de plataforma de comunicação, de desempenho, de disponibilidade, de segurança, de manutenibilidade, de portabilidade e de documentação. A lista poderá ser dividida por tipo de requisito, mas é importante que os requisitos tenham uma identificação única para que possam ser referenciados sem ambigüidades no futuro.
+-----------------------------------------
 
 ### 4.1 Requisitos e Restrições de Usabilidade (RUS)
 
-Elaborar uma lista de todas as necessidades de informação que o software não pode deixar de atender. Esta lista deverá ser classificada em informações cadastrais e informações gerenciais. Por exemplo, para um software de vendas existem, entre outras, as seguintes necessidades de informação:
-Exemplo:
+| Ref. 	|              Descrição                                               	| Caso de Uso     	|
+|------	|-------------------------------------------------------------------	|-----------------	|
+| RINF1 | O usuário deve estar localizado dentro da região metropolitana de goiânia  | Todos de transporte  |
+| RINF2 | Obrigatóriamente um dos pontos de origem ou de destino deverá ser em um campus da UFG  | TR-CSU1 , TR-CSU3  |
+| RINF3 | Se a rota do usuário possuir **origem de dentro da UFG**, a lista de locais  exibidos deverá conter: As preferências definidas previamente pelo usuário, uma lista com os locais do campus em que está presente e a posição atual do usuário com base no GPS (Se habilitado). | TR-CSU1 , TR-CSU3 |
+| RINF4 | Se a rota do usuário possuir **origem de fora da UFG**, a lista de locais  exibidos deverá conter: As preferências definidas previamente pelo usuário, uma opção para inserir uma origem e a posição atual do usuário com base no GPS (Se habilitado). | TR-CSU1 , TR-CSU3 |
+| RINF5 | Se a rota do usuário possuir **destino de dentro da UFG**, a lista de locais  exibidos deverá conter: As preferências definidas previamente pelo usuário e uma lista com os locais do campus em que está presente. | TR-CSU1 , TR-CSU3 |
+| RINF6 | Se a rota do usuário possuir **destino de fora da UFG**, a lista de locais  exibidos deverá conter: As preferências definidas previamente pelo usuário e uma opção para inserir um destino. | TR-CSU1 , TR-CSU3 |
 
-| Ref.  |              Descrição                                                | Caso de Uso       |
-|------ |-------------------------------------------------------------------  |-----------------  |
-| RINFx | Descrição do requisito RINFx  | CSUy, CSUm ...  |
+### 4.2	Requisitos e Restrições de Interface Homem Computador (RHIC)
 
-Estes requisitos de informação são importantes para verificar a qualidade da modelagem de dados que for feita.       
-
-### 4.2 Requisitos e Restrições de Interface Homem Computador (RHIC)
-
-Definir os aspectos de Interface Homem Computador (IHC) como: conteúdo de informações, fatores ergonômicos, dispositivos de interação, formato de apresentação, tipo de diálogo, e mecanismos de ajuda alocados a cada perfil/grupo/tarefa de usuário. Descrever, em particular, os requisitos de usabilidade para cada perfil/grupo/tarefa de usuário. Por exemplo, pode-se definir como requisito que as opções de menu do sistema tenham teclas de atalho associadas.
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RIHCx   | Descrição do requisito RIHCx | CSUy, CSUm ... |
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RIHC1 	| Deve ser utilizado “Google Material Design” para a interface. | Todos |
+| RIHC2 	| A área do mapa deverá ser restringida apenas para a região metropolitana de goiânia. | Todos de Transporte |
 
 ### 4.3 Requisitos e Restrições de Interface Externa (RIEX)
 
-Identificar e descrever as interfaces com outros softwares/sistemas que o software deverá prover. Por exemplo, um software comercial deve gerar informações para o Sistema de Arrecadação da Secretaria da Fazenda Estadual. O formato dessas informações e o protocolo de envio são definidos pela própria secretaria, e atender essas definições é um requisito do software.
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RIEXx   | Descrição do requisito RIEXx | CSUy, CSUm ... |
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RIEX1 	| O software realizará interação com o sistema Firebase. | TR-CSU1, TR-CSU6, TR-CSU7, TR-CSU8	|
+| RIEX2 	| O software realizará interação com o sistema Google Maps. | TR-CSU1, TR-CSU2, TR-CSU3, TR-CSU4, TR-CSU6, TR-CSU7	|
 
 ### 4.4 Requisitos e Restrições de Plataforma de Hardware (RPHW)
 
-Identificar e descrever requisitos e restrições relacionadas com a plataforma de hardware que será utilizada pelo software:
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RPHWx | Descrição do requisito RPHWx | CSUy, CSUm ... |
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RPHW1	| Hardware de GPS integrado | Todos do Transporte |
+| RPHW2	| Hardware para acesso á internet | Todos |
+| RPHW3	| Processador mínimo de 2 GHz | Todos |
 
 ### 4.5 Requisitos e Restrições de Plataforma de Software (RPSW)
 
-Se o software tiver que ser executado em plataformas de software específicas, essas plataformas de software deverão ser definidas:
-1. Sistema Operacional: identificar e descrever o sistema operacional em que o software deverá ser executado;
-2. Softwares Básicos: identificar SGBD, linguagem de programação, ferramentas CASE e outros.
-Se houver mais de uma plataforma de software, deve-se especificar qual a plataforma principal e em que situações as outras plataformas podem ser utilizadas.
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RPSWx | Descrição do requisito RSPWx | CSUy, CSUm ... |
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RPSW1 | Android versão 4.1 ou superior | Todos |
+| RPSW2 | Deverá possuir uma aplicação externa de mapas | Todos do Transporte |
+| RPSW3 | Uso do Firebase como serviço | Todos |
 
 ### 4.6 Requisitos e Restrições de Desempenho (RDES)
 
-Identificar e descrever os requisitos e restrições de desempenho do software.
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RDESx | Descrição do requisito RDESx | CSUy, CSUm ... |
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RDES1 | O aplicativo não pode travar/encerrar o processo com frequência. | Todos |
 
 ### 4.7 Requisitos e restrições de disponibilidade (RDIS).
 
-Especificar os requisitos de disponibilidade necessários para o software de uma forma global:
-1. Período de disponibilidade: horário comercial, 24 horas por dia, etc.
-2. Período máximo para recuperação do software em caso de falha.
-Devem ser definidos os tipos de falha e a tolerância aceitável para cada tipo de falha. Os tipos de falha podem ser definidos em função dos requisitos funcionais e de dados, mas não se restringem a estes. Por exemplo: a função “Registrar Venda” deve ter um tempo para recuperação de falha de no máximo uma hora (o que significa que esta função não poderá ficar mais do que uma hora indisponível para o usuário em nenhuma circunstância).
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RDISx | Descrição do requisito RDISx | CSUy, CSUm ... |
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RDIS1	| O aplicativo deve inicializar por completo em até 3 segundos. | Todos |
+| RDIS2	| O aplicativo deve estar disponível e funcional 24/7.  | Todos |
 
 ### 4.8 Requisitos e Restrições de Segurança (RSEG)
 
-Especificar os requisitos de segurança necessários para controle de acesso ao software. Definir a necessidade, por exemplo, de:
-1. Verificação de senha;
-2. Criptografia de dados;
-3. Registro das operações efetuadas;
-4. Habilitação de funções por perfil de usuário;
-5. Acesso seletivo aos dados e funções.
-Exemplo:
-
-| Ref.    |              Descrição                        | Caso de Uso   |
-|-------  |------------------------------------------ |-------------  |
-| RSEGx | Descrição do requisito RSEGx | CSUy, CSUm ... |
+| Ref.  	|              Descrição                      	| Caso de Uso 	|
+|-------	|------------------------------------------	|-------------	|
+| RSEG1 | O aplicativo não deverá compartilhar a posição do usuário. | Todos de transporte |
+| RSEG2 | O aplicativo deverá informar ao usuário que utilizará de sua localização. | Todos de transporte |
+| RSEG3 | O aplicativo deverá informar ao usuário que utilizará dados de internet. | Todos |
 
 ### 4.9 Requisitos e Restrições de Manutenibilidade (RMAN)
 
-Especificar os requisitos que visam facilitar a manutenção posterior do software, tais como:
-1. Requisitos de reutilização (exemplo: uso de implementação orientada a objetos; bibliotecas de classes e padrões de projeto);
-2. Requisitos de modularização (exemplo: valores para métricas de acoplamento entre módulos; máximo de pontos de função por módulo);
-3. Requisitos de configuração (exemplo: regras para controle de versões);
-4. Requisitos de documentação (exemplo: documentação de programa)
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RMANx | Descrição do requisito RMANx | CSUy, CSUm ... |
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RMAN1	| Será utilizado a ferramenta Javadoc para padronizar e facilitar o entendimento do código-fonte | Todos |
+| RMAN2	| Todos os commits serão ser em inglês | Todos |
 
 ### 4.10 Requisitos e Restrições de Documentação (RDOC)
 
-Especificar os requisitos de documentação do produto de software que será desenvolvido.
-Exemplo:
-
-| Ref.    |                          Descrição                        | Caso de Uso |
-|-------  |---------------------------------------------------------- |---------------|
-| RDOCx | Descrição do requisito RDOCx | CSUy, CSUm ... |
-
-
+| Ref.  	|                          Descrição                       	| Caso de Uso |
+|-------	|----------------------------------------------------------	|---------------|
+| RDOC1 | Devem ser lançadas as notas de release a cada nova baseline. | Não se aplica |
 
 ## 5. Requisitos Futuros (RFUT)
 ---------------------------------
 
-Este espaço é reservado para o surgimento de futuros requisitos.
-
-| Ref.|   Descrição | Caso de Uso |
-|-------|------------|---------------|
-|  | |   |
+No momento não há requisitos futuros.
 
 ## 6. Referências cruzadas complementares
 ---------------------------------------------
 
-Nesta seção são colocadas algumas referências cruzadas que podem ajudar o rastreamento futuro dos requisitos. Estes mapeamentos podem ser feitos em forma de matrizes de rastreabilidade como mostram os exemplos a seguir:
+### 6.1 Transporte
 
 |Requisitos Funcionais | Requisitos Funcionais|
 |---------------------|--------------------------|
-|Colocar identificação do requisito funcional|Colocar a identificação do requisito funcional vinculado|
+|TR-CSU1|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU2|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU3|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU4|TR-CSU4|
+|TR-CSU5|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU6|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU7|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU8|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
 
 ## 7. Modelo de dominio
+
+### 7.1 Modelo de domínio Transporte
+
+<img src="https://user-images.githubusercontent.com/9218555/31204209-1ebc51a0-a941-11e7-9524-7f74ff76192a.png" width="700" height="450"/>
 
 ## 8. Aprovação Formal
 ---------------------------------------------
