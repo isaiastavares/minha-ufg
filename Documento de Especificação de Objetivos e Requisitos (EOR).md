@@ -376,6 +376,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * OP-CSU2: Listar Oportunidades (Web)
 * OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
 * OP-CSU4: Listar Oportunidades - Usuário Logado (App)
+* OP-CSU5- Editar Oportunidade (Web)
+* OP-CSU6- Deletar Oportunidade (Web)
+* OP-CSU7- Filtrar Oportunidades (Web)
 
 ![Diagrama de Caso de Uso - Oportunidades](DCU-Oportunidades.png)
 
