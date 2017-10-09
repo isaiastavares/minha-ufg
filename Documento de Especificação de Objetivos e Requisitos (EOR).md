@@ -364,6 +364,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
+![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/%5BOP%5DUseCases.png)
+
 * OP-CSU1: Cadastrar Oportunidade (Web)
 * OP-CSU2: Listar Oportunidades (Web)
 * OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
@@ -371,8 +373,6 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * OP-CSU5- Editar Oportunidade (Web)
 * OP-CSU6- Deletar Oportunidade (Web)
 * OP-CSU7- Filtrar Oportunidades
-
-![Diagrama de Caso de Uso - Oportunidades](DCU-Oportunidades.png)
 
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU%20-Tela%20inical%20com%20todos%20os%20Modulos.png)
 
