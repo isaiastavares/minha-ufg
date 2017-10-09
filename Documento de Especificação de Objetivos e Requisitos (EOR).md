@@ -42,6 +42,7 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
 * 5. [Requisitos Futuros (RFUT)](#5-requisitos-futuros-rfut)
 
 * 6. [Referências cruzadas complementares](#6-referências-cruzadas-complementares)
+    * 6.1 [Transporte](#61-transporte)
 
 * 7. [Modelo de domínio](#7-modelo-de-dominio)
 
@@ -104,17 +105,13 @@ Este documento foi desenvolvido visando todos que utilizarão do sistema, tais c
 
 ### 2.1 Identificação e missão do Sistema
 
-`[**TEMPLATE**]`
-
-`Identificar o sistema objeto da especificação de requisitos e definir em poucas palavras qual é a missão do sistema que está sendo considerado neste documento.`
+Identificar o sistema objeto da especificação de requisitos e definir em poucas palavras qual é a missão do sistema que está sendo considerado neste documento.
 
 ### 2.2 Domínio do problema e contexto de sua aplicação
 
-`[**TEMPLATE**]`
-
-`A descrição do domínio do problema deve complementar e detalhar a visão geral do domínio do problema identificando o contexto deste problema no ambiente alvo (ambiente do cliente alvo).
+A descrição do domínio do problema deve complementar e detalhar a visão geral do domínio do problema identificando o contexto deste problema no ambiente alvo (ambiente do cliente alvo).
 Exemplo:
-Suponha que o domínio do problema seja a venda de produtos em um comércio varejista. Esta seção deverá explicar em que consiste o problema de vender produtos em uma empresa que atua no comércio varejista, ou seja, descrever genericamente quais são os processos de negócio envolvidos e seus objetivos. Além disso, o problema deve ser contextualizado mostrando as características específicas do problema na empresa alvo.`
+Suponha que o domínio do problema seja a venda de produtos em um comércio varejista. Esta seção deverá explicar em que consiste o problema de vender produtos em uma empresa que atua no comércio varejista, ou seja, descrever genericamente quais são os processos de negócio envolvidos e seus objetivos. Além disso, o problema deve ser contextualizado mostrando as características específicas do problema na empresa alvo.
 
 ### 2.3 Descrição dos interessados do sistema
 
