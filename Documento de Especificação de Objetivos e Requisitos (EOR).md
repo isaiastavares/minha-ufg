@@ -166,7 +166,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     7. Usuário seleciona o local de destino desejado com base na lista disponível.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31261360-219811a4-aa2a-11e7-87b9-007701e89324.png" width="1400" height="700"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588100-bcb0f23e-b1cb-11e7-8ece-7e158e3bc9ad.png" width="700" height="700"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -194,7 +194,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     4. Sistema exibe uma ou mais rotas para transporte coletivo partindo do ponto de origem do usuário até o destino definido pelo mesmo.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31261362-219d01f0-aa2a-11e7-9dde-366ae5595a31.png" width="800" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588101-bced72fe-b1cb-11e7-8396-8ff7a5c49ab9.png" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -222,7 +222,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
   * Protótipos de tela: 
-   <img src="https://user-images.githubusercontent.com/11222413/31261361-219c2f64-aa2a-11e7-8788-92ef06f2f266.png" width="900" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588103-bd25686c-b1cb-11e7-8ff5-6365ecb5dc32.png" width="900" height="350"/>
   
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -280,7 +280,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
             * O sistema exibe uma tela "vazia".
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261364-21a19760-aa2a-11e7-95f5-7934386e8fbc.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588104-bd94c36a-b1cb-11e7-9de5-d9cc9e7f27b0.png" width="700" height="350"/>
 
 
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
@@ -307,7 +307,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     6. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261365-21a34e16-aa2a-11e7-9b6a-b4c7337a63bd.png" width="900" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588105-c3ec8a5e-b1cb-11e7-8430-323c74258e49.png" width="900" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -338,7 +338,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     8. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261366-21c06578-aa2a-11e7-8fdb-ae754e320f3a.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588106-c6889c9e-b1cb-11e7-8d5a-a5b57fa5a87b.png" width="700" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -365,7 +365,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     5. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261367-21c3fce2-aa2a-11e7-833c-f3250612effb.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588107-c7bf32e4-b1cb-11e7-8cd8-5461ac2b067f.png" width="700" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
