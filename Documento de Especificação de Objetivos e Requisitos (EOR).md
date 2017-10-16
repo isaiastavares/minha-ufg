@@ -429,14 +429,13 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/%5BCA%5DUseCases.png" width="550" height="500"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DUseCases%20UPDATE.png"/>
 
 * CA-CSU1: Visualizar Regionais 
 * CA-CSU2: Criar Eventos
 * CA-CSU3: Editar Eventos
 * CA-CSU4: Ver Notificação
-* CA-CSU5: Excluir Eventos
-* CA-CSU6: Pesquisar Eventos 
+* CA-CSU5: Pesquisar Eventos 
 
 **CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
