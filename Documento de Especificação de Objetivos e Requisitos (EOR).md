@@ -666,60 +666,34 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
    * Identificador:CA-CSU6
 
-   * Atores envolvidos: Usuário
+   * Atores envolvidos: Consulente
 
    * Pré-condições: 
-       * O usuário está no contexto de pesquisa de eventos do calendário. 
-       * O calendário deverá estar baixado.
+       * O usuário está no contexto de Eventos do calendário. 
+       * O usuário clica no botão de pesquisa de eventos
      
    * Pós-condições:
        * O Sistema apresenta os eventos
        * O usuário seleciona o evento que estava procurando
 
    * Fluxo principal:
-       * O usuário abre a tela de pesquisa de eventos
-       * O usuário digita o texto da pesquisa
-       * A pesquisa é executada quando o usuário parar de digitar
-       * O resultado da consulta é retornada para o usuário
-
-   * Fluxo secundário: Pesquisa por regional 
-       * O usuário abre a tela de pesquisa de eventos
-       * O usuário seleciona o filtro de Regional
-       * A pesquisa é executada
-       * O resultado da consulta é retornada para o usuário
-   
-   * Fluxo secundário: Pesquisa por Interessado
-       * O usuário abre a tela de pesquisa de eventos
-       * O usuário seleciona o filtro por interessado
-       * A pesquisa é executada
-       * O resultado da consulta é retornada para o usuário
-       * O usuário seleciona o resultado de um determinado interessado
-
-   * Fluxo secundário: Pesquisa por Periodo
-       * O usuário abre a tela de pesquisa de eventos
-       * O usuário seleciona o filtro por periodo
-       * O usuário seleciona a data inicial e a data final
-       * A pesquisa é executada
+       * Usuário clica no botão pesquisar       
+       * Usuário digita o texto da pesquisa no campo de texto
+       * A pesquisa é executada assim que o usuário parar de digitar
+       * O Resultado da pesquisa é apresentado
 
    * Fluxo alternativo 
-       * O usuário abre a tela de pesquisa de eventos
-       * O usuário digita o texto da pesquisa
-       * A pesquisa é executada quando o usuário para de digitar
-       * Nenhum resultado é retornado
+       * Usuário clica no botão de pesquisar
+       * O usuário digita o texto da pesquisa no campo de texto
+       * A pesquisa é executada assim que o usuário parar de digitar
+       * Nenhum resultado é encontrado
        * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
   
    * Protótipos de tela
-  
-<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20Default.png" />
-  
-<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20interessado.png" />
-    
-<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20per%C3%ADodo.png" />
-      
-<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20regional.png" />
-	
-<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Nenhum%20resultado.png"/>
 
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio.png">
+   
+       
 ## 4. Requisitos e restrições não funcionais
 --------------------------------------------
 
@@ -731,6 +705,9 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 |------	|-------------------------------------------------------------------	|-----------------	|
 | RINF1 | O usuário deve estar localizado dentro da região metropolitana de goiânia  | Todos de transporte  |
 | RINF2 | Obrigatóriamente um dos pontos de origem / destino deverá ser a UFG  | TR-CSU1  |
+| RINF3 | Campo de pesquisa aparece no lugar da regional                       | CA-CSU6  |
+| RINF4 | Calendário some enquanto o usuário está com campo de pesquisa aberto | CA-CSU6  |
+| RINF5 | Pesquisa é executada quando detectado que o usuário parou de digitar, após 0.8 segundos | CA-CSU6  |
 
 ### 4.2	Requisitos e Restrições de Interface Homem Computador (RHIC)
 
