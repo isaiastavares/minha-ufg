@@ -473,6 +473,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Administrador.
   
   * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
+ Além disso, o administrador tem a possibilidade de ver a Lista de Eventos selecionando o calendário desejado.
 
   * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
   
@@ -480,14 +481,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
-4. O Administrador seleciona a opção Criar (eventos).
+4. O Administrador seleciona a opção de Criar um novo evento.
    * a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
    * b. O Administrador deve inserir o nome do evento;
    * c. O Administrador deve inserir o local onde será realizado;
    * d. O Administrador deve selecionar o período que vai ser o evento;
    * e. O Administrador tem a possibilidade de inserir observações sobre o evento;
-   * f. O Administrador pode limpar todo o cadastro e começar do zero inserindo novos dados, apertando o botão Limpar Cadastro;
-   * g. O Administrador, após inserir todos os dados, deve clicar em Criar Evento para salvar os dados e, consequentemente, criar um novo evento;
+   * f. O Administrador pode cancelar o cadastro e começar do zero inserindo novos dados, apertando o botão cancelar;
+   * g. O Administrador, após inserir todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, criar um novo evento;
    * h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
 5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
 
@@ -495,22 +496,30 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
 2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
-  * Protótipos de tela: 
+  * Protótipos de tela: Criando um Novo Evento
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%201-Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" width="800" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1-Eventos.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%202-Tela%20Calend%C3%A1rio.png" width="800" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-2-Todos%20os%20Eventos.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%203-Tela%20de%20Eventos.png" width="800" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-3-Criar%20Evento.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png" width="1100" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%205-Preencher%20todos%20os%20campos.png" width="1100" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-4-Preencher%20todos%20os%20campos%20do%20Evento.png" />
   
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%206-Cadastro%20realizado.png" width="1100" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-5-Evento%20Salvo%20com%20sucesso.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%207-Erro%20ao%20realizar%20cadastro.png" width="1100" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-6-Erro%20ao%20criar%20novo%20evento.%20copy.png" />
   
+  Protótipos de tela: Lista de Eventos no Calendário
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.1-Tela%20inical.png"/> 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.2-Lista%20de%20Calend%C3%A1rios.png"/> 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.3-Calend%C3%A1rios.png"/> 
+    
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -532,45 +541,38 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
-4. O Administrador seleciona a opção Editar (eventos).
-5. O Administrador seleciona o evento entre os Listados e clica em Editar:
+4. O Administrador lista o dia que vai ser alterado e entra dentro da edição.
    * a. O Administrador pode selecionar outra Regional, onde o evento vai acontecer;
    * b. O Administrador pode alterar o nome do evento;
    * c. O Administrador pode alterar o local do onde será realizado;
    * d. O Administrador pode alterar o período que vai ser o evento;
    * e. O Administrador tem a possibilidade de alterar as observações sobre o evento;
    * f. O Administrador pode cancelar as alterações, apertando o botão Cancelar, voltando para a página anterior;
-   * g. O Administrador, após alterar todos os dados, deve clicar em Salvar Alerações para salvar os dados e, consequentemente, editar o evento que foi selecionado;
+   * g. O Administrador, após alterar todos os dados, deve clicar em Salvar  para salvar os dados e, consequentemente, editar o evento que foi selecionado;
    * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos.
 6. Após editar um evento, o Administrador volta para a página anterior com um retorno de que as alterações sobre o evento foram salvas com sucesso.
+7. O Administrador tem a possibilidade de excluir o evento na página onde está editando. Abaixo tem um botão chamado EXCLUIR, onde pode eliminar aquele evento.
 
   * Cenários secundários: 
-5. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
+1. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
     * O Administrador seleciona o filtro de pesquisa de evento. Exemplo: Pesquisar por Regional;
-5. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
-5. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
+2. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
+3. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%201.%20Tela%20inical%20com%20todos%20os%20Modulos.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-1-Editar%20Evento.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%202.%20Tela%20Calendario.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-2-Escolher%20Evento.png"/>
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%203.%20Tela%20de%20Eventos.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-3-Editar%20Evento%20Selecionado.png"/>
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.%20Listar%20Eventos.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-4-Evento%20Editado%20com%20sucesso.png"/>
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1%20Pesquisar%20Eventos.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-5-Evento%20exclu%C3%ADdo%20com%20sucesso.png"/>
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1.1%20Pesquisar%20Eventos%20por%20Nome.png"/> 
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-6-Erro%20ao%20editar%20evento.png"/> 
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.%20Salvar%20Alteracoes%20no%20Evento.png"/>
-
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.1%20Erro%20ao%20Salvar%20Alteracoes%20no%20Evento.png"/>
-
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%206.%20Alteracao%20de%20Evento%20realizado.png"/>
-
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%207.%20Erro%20ao%20Editar%20Eventos.png"/> 
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -607,62 +609,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
-**CA-CSU5**- Excluir Eventos
-  * Identificador: CA-CSU5
-
-  * Atores envolvidos: Administrador
   
-  * Pré-condições: O Administrador deve conseguir excluir um Evento no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Excluir Evento, deve escolher o(s) evento(s) para excluir e depois salvar as alterações feitas.
-  
-  * Pós-condições:  O Administrador consegue excluir o evento desejado.
-
-  * Cenário principal: 
-1. O Administrador acessa a parte web com seu login e senha.
-2. O Administrador seleciona a opção Calendário.
-3. O Administrador seleciona a opção Eventos.
-4. O Administrador seleciona a opção Excluir (eventos).
-5. O Sistema exibe uma tela com opções de filtro, lista de eventos e um botão salvar:
-   * a. O Administrador pode selecionar uma regional para filtrar;
-   * b. O Administrador pode selecionar uma data para filtrar;
-   * c. O Administrador pode selecionar um nome do evento para filtrar;
-   * d. O Administrador pode excluir um evento de cada vez ou todos ao mesmo tempo caso estejam selecionados estando filtrados ou não.
-6. Após excluir um ou vários eventos, o Administrador clica em "Salvar" e volta para a página anterior com um retorno de que as alterações feitas foram salvas com sucesso.
-
-  * Cenários secundários: 
-1. Não exibe botão “Excluir”; 
-   * a. O usuário tenta acessar botão de “Excluir”;
-   * b. O sistema sempre verifica privilégios de categoria por usuário;
-   * c. Cada categoria de usuário possui tipos de privilégios distintos.
-2. Ação de exclusão não permitida;
-   * a. O usuário (administrador) tenta excluir um evento no calendário; 
-   * b. O sistema bloqueia ação;
-   * c. O sistema exibe uma mensagem “Erro ao excluir evento. Contate o programador ou tente criar outro evento.”.
-
-  * Protótipos de tela: 
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%201%20-%20Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png">
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%202%20-Tela%20Calend%C3%A1rio.png">
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%203%20-%20Tela%20de%20Eventos.png">
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%204%20-%20Excluir%20Evento.png">
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%205%20-%20Filtrar%20Informa%C3%A7%C3%A3o.png">
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%206%20-%20Erro%20ao%20excluir%20evento.png">
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%207%20-%20Exclu%C3%ADdo%20com%20sucesso.png">  
-
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 5.1 | Excluir um evento no Calendário Acadêmico. | Evidente |Alta  |
-| CA-RFUN 5.2 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta  |
-| CA-RFUN 5.3 | Deve ter no mínimo um evento cadastrado.| Evidente |Alta  |
-| CA-RFUN 5.4 | Administrador deve conseguir filtrar eventos através de um nome, data ou regional. Obs: deve ter um botão de filtrar e limpar filtro sendo que é opcional essas ações. | Evidente |Média  |
-| CA-RFUN 5.5 | Administrador deve conseguir excluir qualquer evento um a um ou vários de uma vez (caso tenha selecionado os desejados). | Evidente |Alta  |
-  
-**CA-CSU6**- Pesquisar eventos
+**CA-CSU5**- Pesquisar eventos
 
    * Identificador:CA-CSU6
 
