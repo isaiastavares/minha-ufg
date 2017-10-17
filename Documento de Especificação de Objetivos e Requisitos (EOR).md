@@ -422,17 +422,13 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Usuário filtra oportunidades exibidas através do campo de busca.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Excluir%20-%20Cadastrar.png)
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Excluir%20-%20Mensagem%20de%20erro%20ao%20cadastrar.png)
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Excluir%20-%20Mensagem%20de%20erro%20ao%20excluir.png)
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Excluir%20-%20Mensagem%20de%20erro%20ao%20excluir.png)
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Excluir%20-Mensagem%20de%20sucesso%20ao%20excluir.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Detalhar%20-%20Cadastrar.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 | OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades. | Evidente |Média|
-| OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade. | Evidente |Alta |
+| OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o Título, a Categoria e descrição para cada oportunidade. | Evidente |Alta |
 | OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade. | Evidente |Alta |
 
 **OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
