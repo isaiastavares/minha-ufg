@@ -367,7 +367,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/%5BOP%5DUseCases.png)
 
 * OP-CSU1: Cadastrar Oportunidade (Web)
-* OP-CSU2: Listar Oportunidades (Web)
+* OP-CSU2: Listar/Filtrar Oportunidades (Web)
 * OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
 * OP-CSU4: Listar Oportunidades - Usuário Logado (App)
 * OP-CSU5- Editar Oportunidade (Web)
@@ -404,7 +404,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 
-**OP-CSU2**- Listar Oportunidades (Web)
+**OP-CSU2**- Listar/Filtrar Oportunidades (Web)
 
  * Identificador: OP-CSU2
 
@@ -415,11 +415,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Pós-condições: Não possui pós-condições.
 
  * Cenário principal:
- * Usuário acessa o sistema.
- * Usuário clica no menu Oportunidades.
+  1. Usuário seleciona o menu oportunidades, Lista de Oportunidades.
+  2. Exibir oportunidades cadastradas com Título, Descrição e Categoria.
+  3. Exibir campo de busca.
+  4. Exibir opção de cadastro de nova oportunidade.
 
  * Cenários secundários:
- * Usuário filtra oportunidades exibidas através do campo de busca.
+  2. Usuário filtra oportunidades exibidas através do campo de busca.
+  3. Usuário adiciona nova oportunidade (OP-CSU1).
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Detalhar%20-%20Cadastrar.png)
@@ -428,8 +431,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 | OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades. | Evidente |Média|
-| OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o Título, a Categoria e descrição para cada oportunidade. | Evidente |Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade. | Evidente |Alta |
+| OP-RFUN 2.3 | Exibir Título, Categoria e 200 caracteres da descrição de cada oportunidade. | Evidente |Alta |
+| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade (Título, Categoria e Descrição). | Evidente |Alta |
+| OP-RFUN 2.5 | Chamar tela de cadastro de um nova oportunidade. | Evidente |Alta |
 
 **OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
 
