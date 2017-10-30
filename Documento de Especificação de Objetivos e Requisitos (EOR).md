@@ -372,7 +372,8 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 * OP-CSU4: Listar Oportunidades - Usuário Logado (App)
 * OP-CSU5- Editar Oportunidade (Web)
 * OP-CSU6- Deletar Oportunidade (Web)
-* OP-CSU7- Filtrar Oportunidades
+* OP-CSU7- Filtrar Oportunidades (Web)
+* OP-CSU8- Filtrar Oportunidades (App)
 
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU%20-Tela%20inical%20com%20todos%20os%20Modulos.png)
 
@@ -534,22 +535,39 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Cenários secundários:
  * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
-**OP-CSU7**- Filtrar Oportunidades
+**OP-CSU7**- Filtrar Oportunidades (Web)
 
  * Identificador: OP-CSU7
 
- * Atores envolvidos: Usuários App ou Web
+ * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
  * Pré-condições:
  * Usuário deve estar conectado à internet.
 
  * Pós-condições:
- * O usuário abre o aplicativo ou sistema Web.
+ * O usuário abre o sistema Web.
 
  * Cenário principal:
- * Usuário abre o aplicativo ou sistema Web.
+ * Usuário abre o sistema Web.
  * Usuário clica no menu Oportunidades.
- * Usuário pode filtrar as oportunidades por regional ou curso.
+ * Usuário pode filtrar as oportunidades por título.
+
+**OP-CSU8**- Filtrar Oportunidades (App)
+
+ * Identificador: OP-CSU8
+
+ * Atores envolvidos: Usuários App
+
+ * Pré-condições:
+ * Usuário deve estar conectado à internet.
+
+ * Pós-condições:
+ * O usuário abre o aplicativo.
+
+ * Cenário principal:
+ * Usuário abre o aplicativo.
+ * Usuário clica no menu Oportunidades.
+ * Usuário pode filtrar as oportunidades por curso ou se estágio é curricular ou extra curricular.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png)
