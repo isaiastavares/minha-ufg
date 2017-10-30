@@ -552,6 +552,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Usuário clica no menu Oportunidades.
  * Usuário pode filtrar as oportunidades por título.
 
+ * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU7.png)
+
 **OP-CSU8**- Filtrar Oportunidades (App)
 
  * Identificador: OP-CSU8
