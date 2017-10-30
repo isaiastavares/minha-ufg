@@ -571,7 +571,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Cenário principal:
  * Usuário abre o aplicativo.
  * Usuário clica no menu Oportunidades.
- * Usuário pode filtrar as oportunidades por curso ou se estágio é curricular ou extra curricular.
+ * Usuário pode filtrar as oportunidades por curso.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
