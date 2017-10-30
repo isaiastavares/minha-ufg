@@ -943,7 +943,7 @@ No momento não há requisitos futuros.
 
 ### 7.1 Modelo de domínio Transporte
 
-<img src="https://user-images.githubusercontent.com/9218555/31204209-1ebc51a0-a941-11e7-9524-7f74ff76192a.png" width="700" height="450"/>
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Transporte/assets/Transporte/Modelo-de-dominio-TR.png" width="700" height="350"/>
 
 ## 8. Aprovação Formal
 ---------------------------------------------
