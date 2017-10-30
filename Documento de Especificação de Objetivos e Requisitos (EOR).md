@@ -553,6 +553,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Usuário pode filtrar as oportunidades por título.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+ 
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU7.png)
 
 **OP-CSU8**- Filtrar Oportunidades (App)
@@ -573,6 +574,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Usuário pode filtrar as oportunidades por curso ou se estágio é curricular ou extra curricular.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png)
 
 ### 3.3 Calendário
