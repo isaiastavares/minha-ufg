@@ -98,19 +98,18 @@ Este documento foi desenvolvido visando todos que utilizarão do sistema, tais c
 * **RDOC**: Requisito de Documentação
 * **RFUT**: Requisitos Futuros
 * **Região metropolitana**: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás. 
+* **UFG**: Universidade Federal de Goiás
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
 
 ### 2.1 Identificação e missão do Sistema
 
-Identificar o sistema objeto da especificação de requisitos e definir em poucas palavras qual é a missão do sistema que está sendo considerado neste documento.
+O aplicativo minha-ufg visa disponibilizar aos seus usuários acesso aos serviços online da Universidade Federal de Goiás.
 
 ### 2.2 Domínio do problema e contexto de sua aplicação
 
-A descrição do domínio do problema deve complementar e detalhar a visão geral do domínio do problema identificando o contexto deste problema no ambiente alvo (ambiente do cliente alvo).
-Exemplo:
-Suponha que o domínio do problema seja a venda de produtos em um comércio varejista. Esta seção deverá explicar em que consiste o problema de vender produtos em uma empresa que atua no comércio varejista, ou seja, descrever genericamente quais são os processos de negócio envolvidos e seus objetivos. Além disso, o problema deve ser contextualizado mostrando as características específicas do problema na empresa alvo.
+Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o aplicativo visa facilitar ao usuário os serviços mais básicos da universidade, dentro os quais estão: Segurança, Notícias, Rádio Universitária, Eventos, Restaurantes Universitários, Guia estudantil (estes já implementados). Como também os novos serviços discutidos neste documento: Oportunidades, Calendário e Transportes.
 
 ### 2.3 Descrição dos interessados do sistema
 
