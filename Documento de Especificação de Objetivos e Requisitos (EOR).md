@@ -6,27 +6,30 @@ Minha UFG
 
 Incluir índice de conteúdo do documento que estiver sendo elaborado
 * 1. [Introdução](#1-introdução)
-    * 1.1 [Objetivos](#11-objetivos)
-    * 1.2 [Público Alvo](#12-público-alvo)
-    * 1.3 [Organização do documento](#13-organização-do-documento)
-    * 1.4 [Definição de Siglas e Nomenclaturas](#14-definição-de-siglas-e-nomenclaturas)
+	* 1.1 [Objetivos](#11-objetivos)
+	* 1.2 [Público Alvo](#12-público-alvo)
+	* 1.3 [Organização do documento](#13-organização-do-documento)
+	* 1.4 [Definição de Siglas e Nomenclaturas](#14-definição-de-siglas-e-nomenclaturas)
+	
 * 2. [Descrição do problema e do sistema](#2-descrição-do-problema-e-do-sistema)
     * 2.1 [Identificação e missão do Sistema](#21-identificação-e-missão-do-sistema)
     * 2.2 [Domínio do problema e contexto de sua aplicação](#22-domínio-do-problema-e-contexto-de-sua-aplicação)
     * 2.3 [Descrição dos interessados do sistema](#23-descrição-dos-interessados-do-sistema)
-* 3. [Casos de Uso e Requisitos Funcionais](#4-casos-de-uso-e-requisitos-funcionais)
-    * 3.1 [Transporte](#31)
+    
+* 3. [Casos de Uso e Requisitos Funcionais](#3-casos-de-uso-e-requisitos-funcionais)
+    * 3.1 [Transporte](#31-transporte)
     * 3.1.1 [Diagramas de Caso de Uso e Lista de casos de uso](#311-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.1.2 [Descrição de Casos de Uso](#312-descrição-de-casos-de-uso)
-    * 3.2 [Oportunidades](#32)
+    * 3.2 [Oportunidades](#32-oportunidades)
     * 3.2.1 [Diagramas de Caso de Uso e Lista de casos de uso](#321-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.2.2 [Descrição de Casos de Uso](#322-descrição-de-casos-de-uso)
-    * 3.3 [Calendário](#33)
+    * 3.3 [Calendário](#33-calendário)
     * 3.3.1 [Diagramas de Caso de Uso e Lista de casos de uso](#331-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
     * 3.3.2 [Descrição de Casos de Uso](#332-descrição-de-casos-de-uso)
+
 * 4. [Requisitos e restrições não funcionais](#4-requisitos-e-restrições-não-funcionais)
     * 4.1 [Requisitos e Restrições de Usabilidade (RUS)](#41-requisitos-e-restrições-de-usabilidade-rus)
-    * 4.2 [Requisitos e Restrições de Interface Homem-Computador (RHIC)](#42-requisitos-e-restrições-de-interface-homem-computador-rhic)
+    * 4.2 [Requisitos e Restrições de Interface Homem-Computador (RHIC)](#42requisitos-e-restrições-de-interface-homem-computador-rhic)
     * 4.3 [Requisitos e Restrições de Interface Externa (RIEX)](#43-requisitos-e-restrições-de-interface-externa-riex)
     * 4.4 [Requisitos e Restrições de Plataforma de Hardware (RPHW)](#44-requisitos-e-restrições-de-plataforma-de-hardware-rphw)
     * 4.5 [Requisitos e Restrições de Plataforma de Software (RPSW)](#45-requisitos-e-restrições-de-plataforma-de-software-rpsw)
@@ -35,9 +38,14 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
     * 4.8 [Requisitos e Restrições de Segurança (RSEG)](#48-requisitos-e-restrições-de-segurança-rseg)
     * 4.9 [Requisitos e Restrições de Manutenibilidade (RMAN)](#49-requisitos-e-restrições-de-manutenibilidade-rman)
     * 4.10 [Requisitos e Restrições de Documentação (RDOC)](#410-requisitos-e-restrições-de-documentação-rdoc)
+
 * 5. [Requisitos Futuros (RFUT)](#5-requisitos-futuros-rfut)
+
 * 6. [Referências cruzadas complementares](#6-referências-cruzadas-complementares)
+    * 6.1 [Transporte](#61-transporte)
+
 * 7. [Modelo de domínio](#7-modelo-de-dominio)
+
 * 8. [Aprovação Formal](#8-aprovação-formal)
 
 ## 1. Introdução
@@ -56,62 +64,57 @@ Este documento tem os seguintes objetivos:
 
 Este documento foi desenvolvido visando todos que utilizarão do sistema, tais como:
 
-* Equipe de desenvolvimento: Este documento explicitará quais requisitos deverão ser desenvolvidos bem como as interações entre os próprios requisitos de forma a auxiliar na manutenção (inserção de novos requisitos e/ou manutenção dos atuais).
+* **Equipe de desenvolvimento**: Este documento explicitará quais requisitos deverão ser desenvolvidos bem como as interações entre os próprios requisitos de forma a auxiliar na manutenção (inserção de novos requisitos e/ou manutenção dos atuais).
 
-* Usuário-Final: Este documento explicitará quais requisitos deverão ser esperados, incluindo a instrução de como esses requisitos poderão ser acessados (por meio dos protótipos de tela).
+* **Usuário-Final**: Este documento explicitará quais requisitos deverão ser esperados, incluindo a instrução de como esses requisitos poderão ser acessados (por meio dos protótipos de tela).
 
 ### 1.3 Organização do documento
 
-   1.	Introdução – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
-   2.	Descrição do problema e do sistema – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
-   3.	Casos de Uso e Requisitos Funcionais – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
-   4.	Requisitos e Restrições não funcionais – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
-   5.	Requisitos Futuros – Citação dos requisitos planejados pra futuras versões do produto.
-   6.	Referência Cruzadas Complementares – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
-   7. Modelo de domínio - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
-   8.	Aprovação Formal – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
-
+   1. **Introdução** – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
+   2. **Descrição do problema e do sistema** – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
+   3. **Casos de Uso e Requisitos Funcionais** – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
+   4. **Requisitos e Restrições não funcionais** – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
+   5. **Requisitos Futuros** – Citação dos requisitos planejados pra futuras versões do produto.
+   6. **Referência Cruzadas Complementares** – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
+   7. **Modelo de domínio** - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
+   8. **Aprovação Formal** – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
 
 ### 1.4 Definição de Siglas e Nomenclaturas
 
-Definir e explicar sucintamente siglas e nomencalturas utilizadas neste documento.
-
-* TR: Transporte
-* OP: Oportunidade
-* CA: Calendário
-* CSU: Caso de Uso
-* RFUN: Requisito Funcional
-* RUS: Requisito de Usabilidade
-* RHIC: Requisito de Interface Homem-Computador
-* RIEX: Requisito de Interface Externa
-* RPHW: Requisito de Plataforma de Hardware
-* RPSW: Requisito de Plataforma de Software
-* RDES: Requisito de Desempenho
-* RDIS: Requisito de Dispponibilidade
-* RSEG: Requisito de Segurança
-* RMAN: Requisito de Manutenibilidade
-* RDOC: Requisito de Documentação
-* RFUT: Requisitos Futuros
+* **TR**: Transporte
+* **OP**: Oportunidade
+* **CA**: Calendário
+* **CSU**: Caso de Uso
+* **RFUN**: Requisito Funcional
+* **RUS**: Requisito de Usabilidade
+* **RHIC**: Requisito de Interface Homem-Computador
+* **RIEX**: Requisito de Interface Externa
+* **RPHW**: Requisito de Plataforma de Hardware
+* **RPSW**: Requisito de Plataforma de Software
+* **RDES**: Requisito de Desempenho
+* **RDIS**: Requisito de Dispponibilidade
+* **RSEG**: Requisito de Segurança
+* **RMAN**: Requisito de Manutenibilidade
+* **RDOC**: Requisito de Documentação
+* **RFUT**: Requisitos Futuros
+* **Região metropolitana**: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás. 
+* **UFG**: Universidade Federal de Goiás
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
 
-Nesta seção o sistema objeto da especificação de requisitos deve ser descrito. O domínio do problema que deverá ser resolvido pelo sistema deve ser explicado e também as características específicas do problema no contexto da empresa em que o sistema deverá ser utilizado. As subseções seguintes podem ser colocadas no documento EOR para separar cada conteúdo específico, mas também pode ser usado um estilo de texto sem separação de subseções desde que todo o conteúdo seja coberto.
-
 ### 2.1 Identificação e missão do Sistema
 
-Identificar o sistema objeto da especificação de requisitos e definir em poucas palavras qual é a missão do sistema que está sendo considerado neste documento.
+O aplicativo minha-ufg visa disponibilizar aos seus usuários acesso aos serviços online da Universidade Federal de Goiás.
 
 ### 2.2 Domínio do problema e contexto de sua aplicação
 
-A descrição do domínio do problema deve complementar e detalhar a visão geral do domínio do problema identificando o contexto deste problema no ambiente alvo (ambiente do cliente alvo).
-Exemplo:
-Suponha que o domínio do problema seja a venda de produtos em um comércio varejista. Esta seção deverá explicar em que consiste o problema de vender produtos em uma empresa que atua no comércio varejista, ou seja, descrever genericamente quais são os processos de negócio envolvidos e seus objetivos. Além disso, o problema deve ser contextualizado mostrando as características específicas do problema na empresa alvo.
+Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o aplicativo visa facilitar ao usuário os serviços mais básicos da universidade, dentro os quais estão: Segurança, Notícias, Rádio Universitária, Eventos, Restaurantes Universitários, Guia estudantil (estes já implementados). Como também os novos serviços discutidos neste documento: Oportunidades, Calendário e Transportes.
 
 ### 2.3 Descrição dos interessados do sistema
 
 | Interessado(s) 	| Descrição 	|
-|:----------------:	|---------	|
+|----------------|---------	|
 | Usuário-Final | Utilizará das facilidades que o sistema propõe, tais como, obter rotas e horários de pontos específicos nos campus, visualizar datas letivas e possiveis oportunidades.|
 
 
@@ -124,251 +127,265 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 <img src="https://user-images.githubusercontent.com/9218555/30995360-04533f50-a490-11e7-9515-3f0eab591ff4.png" width="550" height="500"/>
 
-* TR-CSU1: Selecionar local de destino em uma lista;
-* TR-CSU2: Visualizar Rota;
-* TR-CSU3: Manter Rota;
-* TR-CSU4: Ver linhas e horários dos pontos dos campus;
-* TR-CSU5: Visualizar pontos mais próximos da origem;
-* TR-CSU6: Criar 'Meus Locais';
-* TR-CSU7: Manter 'Meus Locais';
-* TR-CSU8: Deletar 'Meus Locais';
-
+* **TR-CSU1**: Selecionar local de origem e local de destino com base em uma lista;
+* **TR-CSU2**: Visualizar rota entre a origem e o destino definidos pelo usuário;
+* **TR-CSU3**: Modificar destino durante a rota;
+* **TR-CSU4**: Visualizar linhas e horários;
+* **TR-CSU5**: Visualizar locais Pré-definidos;
+* **TR-CSU6**: Criar local Pré-definido;
+* **TR-CSU7**: Modificar local Pré-definido;
+* **TR-CSU8**: Remover local Pré-definido;
 
 #### 3.1.2 Descrição de Casos de Uso
 
-**TR-CSU1**- Selecionar local de origem/destino em uma lista
+**TR-CSU1**- Selecionar local de origem e local de destino.
   * Identificador: TR-CSU1
 
-  * Atores envolvidos: Usuário
+  * Atores envolvidos: Usuário(Fernanda) e Sistema
 
-  * Pré-condições: Usuário deve estar conectado à internet. Habilitar o GPS (opcional)
+  * Pré-condições:
+    * Usuário deverá estar localizado na região Metropolitana de Goiânia.
+    * Usuário deverá estar conectado à internet.
+    * Usuário deverá estar com o GPS habilitado (opcional).
 
-  * Pós-condições: O aplicativo seleciona corretamente os pontos de origem e destino do usuário, mostrando uma lista dos pontos disponíveis no campus da UFG para auxiliar o usuário.
+  * Pós-condições: 
+    * O aplicativo seleciona corretamente local de origem e destino.
 
-  * Cenário principal:
-      * Usuário abre o aplicativo.
-      * Usuário seleciona aba de transportes.
-      * Usuário define o ponto de origem, caso seja na UFG, mostrar lista dos pontos disponíveis mais próximos da posição     atual do usuário.
-      * Usuário define o ponto de destino, caso seja na UFG, mostrar lista dos pontos disponíveis no campus.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-      * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
-
+  * Cenário:
+    1. Usuário seleciona Transporte na tela principal do app.
+        * Se o usuário estiver fora da região metropoliana de Goiâna:
+            * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
+        * Se o usuário não possuir acesso a internet:
+            * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não possui acesso a internet no momento.  
+    2. Usuário aperta no campo de origem.
+    3. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    4. Usuário seleciona o local de origem desejado com base na lista disponível ou no próprio mapa.
+    5. Usuário aperta no campo de destino.
+    6. Sistema exibe uma lista contendo os possiveis locais de destino conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    7. Usuário seleciona o local de destino desejado com base na lista disponível ou no próprio mapa.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31042741-13367a00-a585-11e7-937f-d26e01b46ded.png" width="700" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588100-bcb0f23e-b1cb-11e7-8ece-7e158e3bc9ad.png" width="700" height="700"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 1.1 | Mostrar lista de pontos disponíveis no campus Samambaia e Universitário | Evidente |Alta |
-| TR-RFUN 1.2 | Mostrar pontos mais próximos do local atual do usuário (caso GPS esteja ativado) | Evidente |Média |
-| TR-RFUN 1.3 |  Definir automaticamente um dos locais (origem ou destino) sendo somente pontos disponíveis nos câmpus da UFG | Evidente |Alta |
+| TR-RFUN 1 | Mostrar lista de possiveis locais de origem disponíveis cadastrados | Evidente |Alta |
+| TR-RFUN 2 | Mostrar lista de possiveis locais de destino disponíveis cadastrados | Evidente |Alta |
+| TR-RFUN 3 | Validar local de origem | Oculta |Média |
+| TR-RFUN 4 | Validar local de destino | Oculta |Média |
 
-**TR-CSU2**- Visualizar Rota
+**TR-CSU2**- Visualizar rota entre a origem e o destino definidos pelo usuário
   * Identificador: TR-CSU2
 
-  * Atores envolvidos: Usuário
+  * Atores envolvidos: Usuário(Fernanda) e Sistema
 
-  * Pré-condições: Usuário deve ter selecionado o destino da lista bem como confirmado sua posição de origem.
+  * Pré-condições: 
+    * TR-CSU1 deve ter sido executado.
 
-  * Pós-condições: O aplicativo sugere rotas para o usuário seguir e chegar ao destino.
+  * Pós-condições:
+    * O aplicativo mostra as opções de rotas entre os locais definidos pelo usuário.
 
-  * Cenário principal:
-      * Usuário confirma local de partida.
-      * Usuário seleciona local de destino.
-      * Aplicativo sugere rotas a serem seguidas pelo usuário.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-      * Usuário não está na grande Goiânia e o sistema mostra que o usuário está fora da área de alcance.
-
+  * Cenário:
+    1. Usuário executa TR-CSU1.
+    2. Usuário visualiza as possíveis rotas, no mapa e na parte inferior da tela.
+    3. Usuário arrasta a parte inferior para cima a fim de visualizar todas as opções de rotas e selecionar uma.
+    4. Sistema exibe apenas a rota selecionada pelo usuário.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31042546-1428ab6c-a581-11e7-88a1-a26317e1b186.png" width="200" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588101-bced72fe-b1cb-11e7-8396-8ff7a5c49ab9.png" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 2.1 | Validar posição de GPS do usuário | Oculta |Média |
-| TR-RFUN 2.2 | Validar local de destino | Oculta |Média |
-| TR-RFUN 2.3 | Buscar rota de acordo com ponto de origem e destino | Oculta |Alta |
-| TR-RFUN 2.4 | Mostrar uma ou mais rotas possíveis | Evidente |Alta |
+| TR-RFUN 5 | Validar posição de GPS do usuário | Oculta |Média |
+| TR-RFUN 6 | Buscar rota de acordo com os pontos de origem e de destino definidos pelo usuário | Oculta |Alta |
 
-**TR-CSU3**- Manter Rota
+**TR-CSU3**- Modificar destino durante a rota
   * Identificador: TR-CSU3
 
-  * Atores envolvidos: Usuário, Sistema
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: Usuário deve ter recebido a rota do sistema.
+  * Pré-condições: 
+    * TR-CSU1 e TR-CSU2 devem ter sido executados.
 
-  * Pós-condições: O aplicativo sugere uma nova rota para o usuário seguir e chegar ao destino.
+  * Pós-condições:
+    * O aplicativo mostra as novas opções de rotas entre os locais definidos pelo usuário.
 
-  * Cenário principal:
-      * Usuário recebe a rota no aplicativo.
-      * Usuário edita a rota em tempo real.
-      * Aplicativo sugere uma nova rota a ser seguida pelo usuário.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-      * Usuário não seleciona um novo local válido ou o sistema mostra que o usuário está fora da área de alcance.
-
+  * Cenário:
+    1. Usuário executa TR-CSU2.
+    2. Usuário aperta no campo destino para mudar o local.
+    3. Sistema exibe um popup para validar a modificação do destino da rota.
+    4. Sistema exibe uma lista de lugares conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    5. Usuário seleciona um novo local.
+    6. Usuário confirma a modificação do destino da rota.
+    7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
   * Protótipos de tela: 
-   <img src="https://user-images.githubusercontent.com/11222413/31101501-55573e76-a7a4-11e7-96b6-4f4554723b7f.png" width="700" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588103-bd25686c-b1cb-11e7-8ff5-6365ecb5dc32.png" width="900" height="350"/>
   
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 3.1 | Validar novo local selecionado | Oculta |Média |
-| TR-RFUN 3.2 | Buscar rota de acordo com novo ponto de origem ou destino | Oculta |Alta |
-| TR-RFUN 3.3 | Mostrar uma ou mais novas rotas possíveis | Evidente |Alta |
+| TR-RFUN 4 | Validar local de destino | Oculta |Média |
+| TR-RFUN 6 | Buscar rota de acordo com os pontos de origem e de destino definidos pelo usuário | Oculta |Alta |
+| TR-RFUN 7 | Validar com o usuário a mudança do local de destino | Evidente |Média |
 
-**TR-CSU4**- Visualizar Linhas e Horários
+**TR-CSU4**- Visualizar linhas e horários
   * Identificador: TR-CSU4
 
-  * Atores envolvidos: Usuário, Sistema.
+  * Atores envolvidos: Usuário(Fernanda), Sistema.
 
-  * Pré-condições: Usuário deve ter selecionado o ponto de ônibus em questão.
+  * Pré-condição:
+    * As mesmas definidas em TR-CSU1.
+  
+  * Pós-condições:
+    * O aplicativo mostra as linhas e horários de acordo com o ponto selecionado pelo usuário.
 
-  * Pós-condições: O sistema retorna uma lista contendo as linhas de ônibus bem como os horários referentes ao ponto selecionado.
+  * Cenário:
+    1. Usuário seleciona Transporte na tela principal do app.
+        *  Se o usuário estiver fora da região metropoliana de Goiâna.
+            *  Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
+        * Se o usuário não possuir acesso a internet.
+            * Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não possui acesso a internet no momento.
+    2. Usuário seleciona no mapa o ponto de ônibus desejado.
+    3. Sistema exibe uma tela contendo as informações a respeito das linhas e horários dos ônibus que passam no ponto selecionado.
 
-  * Cenário principal:
-      * Usuário abre o aplicativo.
-      * Usuário seleciona aba de transportes.
-      * Usuário seleciona o ponto desejado no mapa.
-      * Sistema lista as rotas e os horários referentes ao ponto definido pelo usuário.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31042789-5874687e-a586-11e7-8244-e83a6e74d547.png" width="600" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31261363-219e5c80-aa2a-11e7-946e-250062dea481.png" width="600" height="350"/>
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 4.1 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
-| TR-RFUN 4.2 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
-| TR-RFUN 4.3 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
-| TR-RFUN 4.4 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 8 | Buscar informações de rotas de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 9 | Exibir informações de rotas de determinado ponto de ônibus | Evidente |Alta |
+| TR-RFUN 10 | Buscar informações de horários de determinado ponto de ônibus | Oculta |Alta |
+| TR-RFUN 11 | Exibir informações de horários de determinado ponto de ônibus | Evidente |Alta |
 
-**TR-CSU5**- Visualizar ponto mais próximo da origem
+**TR-CSU5**- Visualizar locais pré-definidos
   * Identificador: TR-CSU5
 
-  * Atores envolvidos: Usuário, Sistema.
+  * Atores envolvidos: Usuário(Fernanda), Sistema.
 
-  * Pré-condições: Usuário deve ter selecionado a origem.
+  * Pré-condição: 
+    * AS mesmas definidas em TR-CSU1
+    * O banco de dados deverá estar disponível e funcional.
 
-  * Pós-condições: O sistema retorna a localização do ponto de ônibus mais próximo.
+  * Pós-condições: 
+    * O aplicativo mostra os locais pré-definidos cadastrados.
 
-  * Cenário principal:
-      * Usuário abre o aplicativo.
-      * Usuário seleciona a origem.
-      * Sistema verifica pontos ao redor.
-      * Usuário visualiza o ponto de ônibus mais próximo.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-      * Usuário não seta a origem ou destino como locais válidos.
+  * Cenário:
+    1. Usuário seleciona Transporte na tela principal do app.
+        *  Se o usuário estiver fora da região metropoliana de Goiâna.
+            *  Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
+        * Se o usuário não possuir acesso a internet.
+            * Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não possui acesso a internet no momento.
+    2. Usuário seleciona o ícone de "Meus Locais" no canto superior da tela.
+    3. Sistema exibe uma tela contendo os locais pré-definidos cadastrados.
+        * Se não houver nenhum local cadastrado:
+            * O sistema exibe uma tela "vazia".
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042512-5dd01dfa-a580-11e7-804c-2180d1f00c60.png" width="200" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588104-bd94c36a-b1cb-11e7-9de5-d9cc9e7f27b0.png" width="700" height="350"/>
 
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 5.1 | Validar ponto de origem selecionado | Oculta |Alta |
-| TR-RFUN 5.2 | Verificar distância de pontos a partir do selecionado | Oculta |Alta |
-| TR-RFUN 5.3 | Mostrar localização do ponto mais próximo | Evidente |Alta |
+| TR-RFUN 12 | Exibir lista de locais pré-definidos do usuário | Evidente |Média |
 
-**TR-CSU6**- Criar 'Meus Locais'
+**TR-CSU6**- Criar local pré-definido
   * Identificador: TR-CSU6
 
-  * Atores envolvidos: Usuário
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: Usuário deve ter aberto o aplicativo na aba 'Meus Locais'.
+  * Pré-condições: 
+    * TR-CSU5 deve ter sido executado.
 
-  * Pós-condições: Usuário cadastra um local pré-definido para rotas.
+  * Pós-condições:
+    * As mesmas definidas em TR-CSU5.
 
-  * Cenário principal:
-      * Usuário seleciona o local no mapa que deseja adicionar.
-      * Usuário classifica o local com nome e salva.
-      * Aplicativo grava e mostra o local salvo pelo usuário.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a busca.
-
+  * Cenário:
+    1. Usuário executa TR-CSU5.
+    2. Usuário seleciona o botão de adicionar novo local.
+    3. Usuário seleciona um ponto no mapa, podendo selecionar sua própria posição segundo o GPS, referente ao novo local.
+    4. Usuário nomeia o novo local.
+    5. Usuário confirma os dados da nova localização.
+    6. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042715-920c30e6-a584-11e7-8d17-12ff5de34d0b.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588105-c3ec8a5e-b1cb-11e7-8430-323c74258e49.png" width="900" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 6.1 | Validar posição selecionada pelo usuário | Oculta |Média |
-| TR-RFUN 6.2 | Gravar no banco a posição e nome do local | Oculta |Média |
-| TR-RFUN 6.3 | Retornar erro ou sucesso na adição do local | Evidente |Média |
+| TR-RFUN 13 | Validar posição de "Meus locais" selecionada pelo usuário | Oculta |Média |
+| TR-RFUN 14 | Gravar no banco a posição e nome do local | Oculta |Média 
 
-**TR-CSU7**- Manter 'Meus Locais'
+**TR-CSU7**- Modificar local pré-definido
   * Identificador: TR-CSU7
 
-  * Atores envolvidos: Usuário, Sistema
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: Usuário deve ter cadastrado um ou mais locais em 'Meus Locais'.
+  * Pré-condições: 
+    * TR-CSU5 deve ter sido executado.
+    * Deverá existir um local pré-definido cadastrado no banco de dados.
 
-  * Pós-condições: Usuário atualiza a lista de locais pré-definidos.
+  * Pós-condições:
+    * O local selecionado deve ter sido modificado com sucesso.
 
-  * Cenário principal:
-      * Usuário seleciona o local que deseja editar.
-      * Usuário edita o local no mapa ou troca a classificação do mesmo.
-      * Aplicativo atualiza no banco e mostra o local atualizado salvo pelo usuário.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a atualização.
-
+  * Cenário:
+    1. Usuário executa TR-CSU5.
+    2. Usuário seleciona o botão de editar no local desejado.
+    3. Sistema exibe uma tela contendo um mapa com o local selecionado.
+    4. Usuário seleciona um ponto no mapa (podendo selecionar sua própria posição segundo o GPS) referente á atualização do local.
+    5. Usuário renomeia o local.
+    6. Usuário confirma os dados da localização atualizada.
+    7. Sistema atualiza o local pré-definido selecionado no banco de dados.
+    8. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042717-94cd8e7e-a584-11e7-8756-d5666fad290b.png" width="550" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588106-c6889c9e-b1cb-11e7-8d5a-a5b57fa5a87b.png" width="700" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 7.1 | Validar posição nova selecionada pelo usuário | Oculta |Média |
-| TR-RFUN 7.2 | Validar a classificação nova selecionada pelo usuário | Oculta |Média |
-| TR-RFUN 7.3 | Atualizar no banco de dados o local | Oculta |Média |
-| TR-RFUN 7.4 | Retornar erro ou sucesso na atualização | Evidente |Média |
+| TR-RFUN 15 | Atualizar no banco a posição e nome do local | Oculta |Média 
 
-**TR-CSU8**- Deletar 'Meus Locais'
+**TR-CSU8**- Remover local pré-definido
   * Identificador: TR-CSU8
 
-  * Atores envolvidos: Usuário
+  * Atores envolvidos: Usuário(Fernanda), Sistema
 
-  * Pré-condições: Usuário deve ter cadastrado um ou mais locais em 'Meus Locais'.
+  * Pré-condições: 
+    * TR-CSU5 deve ter sido executado.
+    * Deverá existir um local pré-definido cadastrado no banco de dados.
 
-  * Pós-condições: Usuário recebe lista atualizada de locais.
+  * Pós-condições:
+    * O local selecionado deve ter sido removido da lista de meus locais.
 
-  * Cenário principal:
-      * Usuário seleciona o local que deseja deletar.
-      * Aplicativo deleta no banco e mostra a lista de locais atualizadas para o usuário.
-
-  * Cenários secundários:
-      * Usuário não possui internet e o sistema mostra que não é possível realizar a operação.
-
+  * Cenário:
+    1. Usuário executa TR-CSU5.
+    2. Usuário seleciona o botão de remover no local que deseja remover.
+    3. Usuário confirma o local a ser removido.
+    4. Sistema remove o local pré-definido selecionado do banco de dados.
+    5. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31042718-9a73d108-a584-11e7-8ed0-5d59c8141502.png" width="550" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588107-c7bf32e4-b1cb-11e7-8cd8-5461ac2b067f.png" width="700" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| TR-RFUN 8.1 | Validar local selecionado pelo usuário | Oculta |Média |
-| TR-RFUN 8.2 | Deletar no banco de dados o local selecionado | Oculta |Média |
-| TR-RFUN 8.3 | Retornar erro ou sucesso na operação | Evidente |Média |
+| TR-RFUN 15 | Remover do banco a posição e nome do local | Oculta |Média 
 
 ### 3.2 Oportunidades
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-* OP-CSU1: Cadastrar Oportunidade
+![Diagrama de Caso de Uso - Oportunidades](DCU-Oportunidades.png)
+
+* **OP-CSU1**: Cadastrar Oportunidade (Web)
+* **OP-CSU2**: Listar Oportunidades (Web)
+* **OP-CSU3**: Listar Oportunidades - Usuário Deslogado (App)
+* **OP-CSU4**: Listar Oportunidades - Usuário Logado (App)
 
 #### 3.2.2 Descrição de Casos de Uso
 
@@ -387,14 +404,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário acessa o sistema.
       * Usuário clica no menu Oportunidades.
       * Usuário clica no botão para cadastrar oportunidade.
-      * Usuário informa as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+      * Usuário preenche as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
 
   * Cenários secundários:
       * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 
@@ -417,13 +434,113 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
       * Usuário filtra oportunidades exibidas através do campo de busca.
 
   * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png" >
+	 <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Filtrar%20-%20Excluir.png" >
 
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
 | OP-RFUN 2.2 | Listar as primeiras 10(dez) oportunidades.  | Evidente |Média|
 | OP-RFUN 2.3 | Exibir 4 colunas na tabela de listagem das oportunidades, com o ID, o Título, a Categoria e também a coluna com ícones de ações (Alterar, Excluir) para cada oportunidade.  | Evidente |Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca tanto para o ID, Título ou Categoria de cada oportunidade.  | Evidente |Alta |
+| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade.  | Evidente |Alta |
+
+**OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
+
+  * Identificador: OP-CSU3
+
+  * Atores envolvidos: Usuários App
+  
+  * Pré-condições:
+    * Usuário deve estar conectado à internet.
+    * O usuário não deve estar logado no aplicativo.
+
+  * Pós-condições: 
+    * O usuário abre o aplicativo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário clica no menu Oportunidades.
+      * Usuário visualiza as oportunidades cadastradas.
+
+  * Cenários secundários:
+      * Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png" width="500" height="430"/>
+
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 3.1 | Listar todas oportunidades  por ordem decrescente de data de inserção e sem filtro. | Evidente |Alta |
+| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
+
+**OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
+
+  * Identificador: OP-CSU4
+
+  * Atores envolvidos: Usuários App
+
+  * Pré-condições:
+    * Usuário deve estar conectado à internet.
+    * Usuário deve estar logado no app
+
+  * Pós-condições: 
+    * O usuário abre o aplicativo.
+
+  * Cenário principal:
+      * Usuário abre o aplicativo.
+      * Usuário clica no menu Oportunidades.
+      * Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
+
+  * Cenários secundários:
+      * Usuário utiliza o filtro para visualizar outras oportunidades.
+
+  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+     <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png" width="500" height="430"/>
+  
+
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 4.1 | Listar oportunidades  por ordem decrescente de data de inserção de acordo com perfil do usuário.  | Evidente |Alta |
+| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade.   | Evidente |Alta |
+
+**OP-CSU5**- Editar Oportunidade (Web)
+
+  * Identificador: OP-CSU5
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: 
+    * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados) devem ser obrigatórios.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção editar. 
+      * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer). 
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+**OP-CSU6**- Deletar Oportunidade (Web)
+
+  * Identificador: OP-CSU6
+
+  * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+  * Pré-condições: Usuário deve estar conectado à internet.
+
+  * Pós-condições: Não possui pós condições.
+
+  * Cenário principal:
+      * Usuário acessa o sistema.
+      * Usuário clica no menu Oportunidades.
+      * Usuário clica na oportunidade cadastrada e seleciona a opção deletar. 
+      * Usuário confirma o desejo de deletar a oportunidade.
+
+  * Cenários secundários:
+      * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
 ### 3.3 Calendário
 
@@ -431,11 +548,16 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DUseCases%20UPDATE.png"/>
 
+
 * CA-CSU1: Visualizar Regionais 
 * CA-CSU2: Criar Eventos
 * CA-CSU3: Editar Eventos
 * CA-CSU4: Ver Notificação
 * CA-CSU5: Pesquisar Eventos 
+
+
+#### 3.3.2 Descrição de Casos de Uso
+
 
 **CA-CSU1**- Visualizar Regionais
   * Identificador: CA-CSU1
@@ -520,7 +642,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.3-Calend%C3%A1rios.png"/> 
     
  
-| Ref.     |                          Descrição                       	| Categoria | Prioridade |
+| Ref.     |                          Descrição                         | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 2.1 | Criar um novo evento no Calendário Acadêmico. | Evidente |Alta  |
 | CA-RFUN 2.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Limpar todo o cadastro e outro para Criar Evento.| Evidente |Alta  |
@@ -642,9 +764,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
    
        
 ## 4. Requisitos e restrições não funcionais
---------------------------------------------
-
-Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos de informação, de interface, de projeto, de arquitetura de software, de plataforma de hardware, de plataforma de software, de plataforma de comunicação, de desempenho, de disponibilidade, de segurança, de manutenibilidade, de portabilidade e de documentação. A lista poderá ser dividida por tipo de requisito, mas é importante que os requisitos tenham uma identificação única para que possam ser referenciados sem ambigüidades no futuro.
+-----------------------------------------
 
 ### 4.1 Requisitos e Restrições de Usabilidade (RUS)
 
@@ -655,6 +775,8 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 | RINF3 | Campo de pesquisa aparece no lugar da regional                       | CA-CSU6  |
 | RINF4 | Calendário some enquanto o usuário está com campo de pesquisa aberto | CA-CSU6  |
 | RINF5 | Pesquisa é executada quando detectado que o usuário parou de digitar, após 0.8 segundos | CA-CSU6  |
+
+
 
 ### 4.2	Requisitos e Restrições de Interface Homem Computador (RHIC)
 
@@ -668,7 +790,7 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 | Ref.  	|                          Descrição                       	| Caso de Uso |
 |-------	|----------------------------------------------------------	|---------------|
 | RIEX1 	| O software realizará interação com o sistema Firebase. | TR-CSU1, TR-CSU6, TR-CSU7, TR-CSU8	|
-| RIEX2 	| O software realizará interação com o sistema Google Maps. | TR-CSU1, TR-CSU2, TR-CSU3, TR-CSU4, TR-CSU5	|
+| RIEX2 	| O software realizará interação com o sistema Google Maps. | TR-CSU1, TR-CSU2, TR-CSU3, TR-CSU4, TR-CSU6, TR-CSU7	|
 
 ### 4.4 Requisitos e Restrições de Plataforma de Hardware (RPHW)
 
@@ -676,7 +798,7 @@ Elaborar uma lista de todos os requisitos não funcionais. Considerar requisitos
 |-------	|----------------------------------------------------------	|---------------|
 | RPHW1	| Hardware de GPS integrado | Todos do Transporte |
 | RPHW2	| Hardware para acesso á internet | Todos |
-| RPHW3	| Processador mínimo de 1 GHz | Todos |
+| RPHW3	| Processador mínimo de 2 GHz | Todos |
 
 ### 4.5 Requisitos e Restrições de Plataforma de Software (RPSW)
 
@@ -728,13 +850,24 @@ No momento não há requisitos futuros.
 ## 6. Referências cruzadas complementares
 ---------------------------------------------
 
-Nesta seção são colocadas algumas referências cruzadas que podem ajudar o rastreamento futuro dos requisitos. Estes mapeamentos podem ser feitos em forma de matrizes de rastreabilidade como mostram os exemplos a seguir:
+### 6.1 Transporte
 
 |Requisitos Funcionais | Requisitos Funcionais|
 |---------------------|--------------------------|
-|Colocar identificação do requisito funcional|Colocar a identificação do requisito funcional vinculado|
+|TR-CSU1|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU2|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU3|TR-CSU1, TR-CSU2, TR-CSU3|
+|TR-CSU4|TR-CSU4|
+|TR-CSU5|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU6|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU7|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
+|TR-CSU8|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
 
 ## 7. Modelo de dominio
+
+### 7.1 Modelo de domínio Transporte
+
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Transporte/assets/Transporte/Modelo-de-dominio-TR.png" width="700" height="350"/>
 
 ## 8. Aprovação Formal
 ---------------------------------------------
