@@ -98,19 +98,18 @@ Este documento foi desenvolvido visando todos que utilizarão do sistema, tais c
 * **RDOC**: Requisito de Documentação
 * **RFUT**: Requisitos Futuros
 * **Região metropolitana**: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás. 
+* **UFG**: Universidade Federal de Goiás
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
 
 ### 2.1 Identificação e missão do Sistema
 
-Identificar o sistema objeto da especificação de requisitos e definir em poucas palavras qual é a missão do sistema que está sendo considerado neste documento.
+O aplicativo minha-ufg visa disponibilizar aos seus usuários acesso aos serviços online da Universidade Federal de Goiás.
 
 ### 2.2 Domínio do problema e contexto de sua aplicação
 
-A descrição do domínio do problema deve complementar e detalhar a visão geral do domínio do problema identificando o contexto deste problema no ambiente alvo (ambiente do cliente alvo).
-Exemplo:
-Suponha que o domínio do problema seja a venda de produtos em um comércio varejista. Esta seção deverá explicar em que consiste o problema de vender produtos em uma empresa que atua no comércio varejista, ou seja, descrever genericamente quais são os processos de negócio envolvidos e seus objetivos. Além disso, o problema deve ser contextualizado mostrando as características específicas do problema na empresa alvo.
+Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o aplicativo visa facilitar ao usuário os serviços mais básicos da universidade, dentro os quais estão: Segurança, Notícias, Rádio Universitária, Eventos, Restaurantes Universitários, Guia estudantil (estes já implementados). Como também os novos serviços discutidos neste documento: Oportunidades, Calendário e Transportes.
 
 ### 2.3 Descrição dos interessados do sistema
 
@@ -150,23 +149,23 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     * Usuário deverá estar com o GPS habilitado (opcional).
 
   * Pós-condições: 
-    * O aplicativo sleciona corretamente local de origem e destino.
+    * O aplicativo seleciona corretamente local de origem e destino.
 
   * Cenário:
-    1. Usuário seleciona aba de mapa.
+    1. Usuário seleciona Transporte na tela principal do app.
         * Se o usuário estiver fora da região metropoliana de Goiâna:
             * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
         * Se o usuário não possuir acesso a internet:
             * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não possui acesso a internet no momento.  
     2. Usuário aperta no campo de origem.
     3. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
-    4. Usuário seleciona o local de origem desejado com base na lista disponível.
+    4. Usuário seleciona o local de origem desejado com base na lista disponível ou no próprio mapa.
     5. Usuário aperta no campo de destino.
     6. Sistema exibe uma lista contendo os possiveis locais de destino conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
-    7. Usuário seleciona o local de destino desejado com base na lista disponível.
+    7. Usuário seleciona o local de destino desejado com base na lista disponível ou no próprio mapa.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31261360-219811a4-aa2a-11e7-87b9-007701e89324.png" width="1400" height="700"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588100-bcb0f23e-b1cb-11e7-8ece-7e158e3bc9ad.png" width="700" height="700"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -182,19 +181,19 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuário(Fernanda) e Sistema
 
   * Pré-condições: 
-    * As mesmas definidas em TR-CSU1.
+    * TR-CSU1 deve ter sido executado.
 
   * Pós-condições:
     * O aplicativo mostra as opções de rotas entre os locais definidos pelo usuário.
 
   * Cenário:
     1. Usuário executa TR-CSU1.
-    2. Usuário clica no botão de confirmação de locais de origem e destino.
-    3. Sistema verifica o ponto mais próixmo do usuário.
-    4. Sistema exibe uma ou mais rotas para transporte coletivo partindo do ponto de origem do usuário até o destino definido pelo mesmo.
+    2. Usuário visualiza as possíveis rotas, no mapa e na parte inferior da tela.
+    3. Usuário arrasta a parte inferior para cima a fim de visualizar todas as opções de rotas e selecionar uma.
+    4. Sistema exibe apenas a rota selecionada pelo usuário.
 
   * Protótipos de tela:
-   <img src="https://user-images.githubusercontent.com/11222413/31261362-219d01f0-aa2a-11e7-9dde-366ae5595a31.png" width="800" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588101-bced72fe-b1cb-11e7-8396-8ff7a5c49ab9.png" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -207,14 +206,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
-    * As mesmas definidas em TR-CSU1.
+    * TR-CSU1 e TR-CSU2 devem ter sido executados.
 
   * Pós-condições:
-    * As mesmas definidas em TR-CSU2.
+    * O aplicativo mostra as novas opções de rotas entre os locais definidos pelo usuário.
 
   * Cenário:
     1. Usuário executa TR-CSU2.
-    2. Usuário aperta no campo destino.
+    2. Usuário aperta no campo destino para mudar o local.
     3. Sistema exibe um popup para validar a modificação do destino da rota.
     4. Sistema exibe uma lista de lugares conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
     5. Usuário seleciona um novo local.
@@ -222,7 +221,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
   * Protótipos de tela: 
-   <img src="https://user-images.githubusercontent.com/11222413/31261361-219c2f64-aa2a-11e7-8788-92ef06f2f266.png" width="900" height="350"/>
+   <img src="https://user-images.githubusercontent.com/11222413/31588103-bd25686c-b1cb-11e7-8ff5-6365ecb5dc32.png" width="900" height="350"/>
   
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -242,7 +241,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     * O aplicativo mostra as linhas e horários de acordo com o ponto selecionado pelo usuário.
 
   * Cenário:
-    1. Usuário seleciona aba de mapa.
+    1. Usuário seleciona Transporte na tela principal do app.
         *  Se o usuário estiver fora da região metropoliana de Goiâna.
             *  Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
         * Se o usuário não possuir acesso a internet.
@@ -268,19 +267,25 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuário(Fernanda), Sistema.
 
   * Pré-condição: 
+    * AS mesmas definidas em TR-CSU1
     * O banco de dados deverá estar disponível e funcional.
 
   * Pós-condições: 
     * O aplicativo mostra os locais pré-definidos cadastrados.
 
   * Cenário:
-    1. Usuário seleciona o botão "Meus locais".
-    2. Sistema exibe uma tela contendo os locais pré-definidos cadastrados.
+    1. Usuário seleciona Transporte na tela principal do app.
+        *  Se o usuário estiver fora da região metropoliana de Goiâna.
+            *  Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
+        * Se o usuário não possuir acesso a internet.
+            * Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não possui acesso a internet no momento.
+    2. Usuário seleciona o ícone de "Meus Locais" no canto superior da tela.
+    3. Sistema exibe uma tela contendo os locais pré-definidos cadastrados.
         * Se não houver nenhum local cadastrado:
             * O sistema exibe uma tela "vazia".
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261364-21a19760-aa2a-11e7-95f5-7934386e8fbc.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588104-bd94c36a-b1cb-11e7-9de5-d9cc9e7f27b0.png" width="700" height="350"/>
 
 
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
@@ -293,7 +298,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
-    * As mesmas definidas em TR-CSU5.
+    * TR-CSU5 deve ter sido executado.
 
   * Pós-condições:
     * As mesmas definidas em TR-CSU5.
@@ -307,7 +312,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     6. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261365-21a34e16-aa2a-11e7-9b6a-b4c7337a63bd.png" width="900" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588105-c3ec8a5e-b1cb-11e7-8430-323c74258e49.png" width="900" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -321,7 +326,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
-    * As mesmas definidas em TR-CSU5.
+    * TR-CSU5 deve ter sido executado.
     * Deverá existir um local pré-definido cadastrado no banco de dados.
 
   * Pós-condições:
@@ -329,7 +334,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
   * Cenário:
     1. Usuário executa TR-CSU5.
-    2. Usuário seleciona o botão de editar no local.
+    2. Usuário seleciona o botão de editar no local desejado.
     3. Sistema exibe uma tela contendo um mapa com o local selecionado.
     4. Usuário seleciona um ponto no mapa (podendo selecionar sua própria posição segundo o GPS) referente á atualização do local.
     5. Usuário renomeia o local.
@@ -338,7 +343,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     8. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261366-21c06578-aa2a-11e7-8fdb-ae754e320f3a.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588106-c6889c9e-b1cb-11e7-8d5a-a5b57fa5a87b.png" width="700" height="350"/>
 
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -351,7 +356,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
   * Atores envolvidos: Usuário(Fernanda), Sistema
 
   * Pré-condições: 
-    * As mesmas definidas em TR-CSU5.
+    * TR-CSU5 deve ter sido executado.
     * Deverá existir um local pré-definido cadastrado no banco de dados.
 
   * Pós-condições:
@@ -365,7 +370,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
     5. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
   * Protótipos de tela:
-  <img src="https://user-images.githubusercontent.com/11222413/31261367-21c3fce2-aa2a-11e7-833c-f3250612effb.png" width="700" height="350"/>
+  <img src="https://user-images.githubusercontent.com/11222413/31588107-c7bf32e4-b1cb-11e7-8cd8-5461ac2b067f.png" width="700" height="350"/>
 
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -937,7 +942,7 @@ No momento não há requisitos futuros.
 
 ### 7.1 Modelo de domínio Transporte
 
-<img src="https://user-images.githubusercontent.com/9218555/31204209-1ebc51a0-a941-11e7-9524-7f74ff76192a.png" width="700" height="450"/>
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Transporte/assets/Transporte/Modelo-de-dominio-TR.png" width="700" height="350"/>
 
 ## 8. Aprovação Formal
 ---------------------------------------------
