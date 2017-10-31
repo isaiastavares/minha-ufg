@@ -731,7 +731,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 | CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta  |
 
   
-**CA-CSU5**- Pesquisar eventos
+**CA-CSU6**- Pesquisar eventos
 
    * Identificador:CA-CSU6
 
@@ -751,6 +751,10 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
        * A pesquisa é executada assim que o usuário parar de digitar
        * O Resultado da pesquisa é apresentado
 
+   * Fluxo alternativo
+       * Usuário clica em uma data em destaque do calendário
+       * Os eventos da data selecionada são apresentados ao usuário
+   
    * Fluxo alternativo 
        * Usuário clica no botão de pesquisar
        * O usuário digita o texto da pesquisa no campo de texto
@@ -760,7 +764,9 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
   
    * Protótipos de tela
 
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20pesquisar%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20Eventos%20n%C3%A3o%20encontrados.png">
    
        
 ## 4. Requisitos e restrições não funcionais
