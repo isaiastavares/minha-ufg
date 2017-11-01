@@ -366,48 +366,22 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/%5BOP%5DUseCases.png)
 
-* OP-CSU1: Cadastrar Oportunidade (Web)
-* OP-CSU2: Listar/Filtrar Oportunidades (Web)
-* OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
-* OP-CSU4: Listar Oportunidades - Usuário Logado (App)
-* OP-CSU5- Editar Oportunidade (Web)
-* OP-CSU6- Deletar Oportunidade (Web)
-* OP-CSU7- Filtrar Oportunidades (Web)
-* OP-CSU8- Filtrar Oportunidades (App)
+* OP-CSU1 - Listar Oportunidades (Web)
+* OP-CSU2 - Filtrar Oportunidades (Web)
+* OP-CSU3 - Cadastrar Oportunidade (Web)
+* OP-CSU4 - Editar Oportunidade (Web)
+* OP-CSU5 - Excluir Oportunidade (Web)
+* OP-CSU6 - Listar Oportunidades - Usuário Deslogado (App)
+* OP-CSU7 - Listar Oportunidades - Usuário Logado (App)
+* OP-CSU8 - Filtrar Oportunidades (App)
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU%20-Tela%20inical%20com%20todos%20os%20Modulos.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU%20-%20Tela%20inicial%20com%20todos%20os%20Modulos.png)
 
 #### 3.2.2 Descrição de Casos de Uso
 
-**OP-CSU1**- Cadastrar Oportunidade (Web)
+**OP-CSU1**- Listar Oportunidades (Web)
 
  * Identificador: OP-CSU1
-
- * Atores envolvidos: Usuário com permissão 'Oportunidade'
-
- * Pré-condições: Usuário deve estar conectado à internet.
-
- * Pós-condições:
- * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
-
- * Cenário principal:
- * Usuário acessa o sistema.
- * Usuário clica no menu Oportunidades.
- * Usuário clica no botão para cadastrar oportunidade.
- * Usuário preenche as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
-
- * Cenários secundários:
- * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
-
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref. | Descrição | Categoria | Prioridade |
-|----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
-
-**OP-CSU2**- Listar/Filtrar Oportunidades (Web)
-
- * Identificador: OP-CSU2
 
  * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
@@ -416,109 +390,103 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Pós-condições: Não possui pós-condições.
 
  * Cenário principal:
- 1. Usuário seleciona o menu oportunidades, Lista de Oportunidades.
- 2. Exibir oportunidades cadastradas com Título, Descrição e Categoria.
- 3. Exibir campo de busca.
- 4. Exibir opção de cadastro de nova oportunidade.
+    1. Usuário seleciona o menu oportunidades, Lista de Oportunidades.
+    2. Exibir oportunidades cadastradas com Título, Descrição e Categoria.
+    3. Exibir campo de busca.
+    4. Exibir opção de cadastro de nova oportunidade.
 
  * Cenários secundários:
- 2. Usuário filtra oportunidades exibidas através do campo de busca.
- 3. Usuário adiciona nova oportunidade (OP-CSU1).
+    1. Usuário filtra oportunidades exibidas através do campo de busca.
+    2. Usuário adiciona nova oportunidade (OP-CSU3).
 
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Detalhar%20-%20Cadastrar.png)
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU1%20-%20Listar%20Oportunidades%20(Web).png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
-| OP-RFUN 2.2 | Listar as primeiras oportunidades em uma lista "infinita", que carrega outras oportunidades de acordo com a busca, ao "descer" na página. | Evidente |Média|
-| OP-RFUN 2.3 | Exibir Título, Categoria e 100 caracteres da descrição de cada oportunidade. | Evidente |Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade (Título, Categoria e Descrição). | Evidente |Alta |
-| OP-RFUN 2.5 | Chamar tela de cadastro de um nova oportunidade. | Evidente |Alta |
-| OP-RFUN 2.6 | Chamar tela de edição da oportunidade, ao clicar em alguma da lista. | Evidente |Alta |
+| OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta | Alta |
+| OP-RFUN 2.2 | Listar as primeiras oportunidades em uma lista "infinita", que carrega outras oportunidades de acordo com a busca, ao "descer" na página. | Evidente | Média|
+| OP-RFUN 2.3 | Exibir Título, Categoria e 100 caracteres da descrição de cada oportunidade. | Evidente | Alta |
+| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade (Título, Categoria e Descrição). | Evidente | Alta |
+| OP-RFUN 2.5 | Chamar tela de cadastro de uma nova oportunidade. | Evidente | Alta |
+| OP-RFUN 2.6 | Chamar tela de edição da oportunidade, ao clicar em alguma da lista. | Evidente | Alta |
 
+**OP-CSU2**- Filtrar Oportunidades (Web)
 
-**OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
+ * Identificador: OP-CSU2
+
+ * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+ * Pré-condições: Usuário deve estar conectado à internet.
+
+ * Pós-condições: O usuário abre o sistema Web.
+
+ * Cenário principal:
+    1. Usuário abre o sistema Web.
+    2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+    3. Usuário pode filtrar as oportunidades por título.
+
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU7.png)
+
+**OP-CSU3**- Cadastrar Oportunidade (Web)
 
  * Identificador: OP-CSU3
-
- * Atores envolvidos: Usuários App
-
- * Pré-condições:
- * Usuário deve estar conectado à internet.
- * O usuário não deve estar logado no aplicativo.
-
- * Pós-condições:
- * O usuário abre o aplicativo.
-
- * Cenário principal:
- * Usuário abre o aplicativo.
- * Usuário clica no menu Oportunidades.
- * Usuário visualiza as oportunidades cadastradas.
-
- * Cenários secundários:
- * Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
-
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png)
-
-| Ref. | Descrição | Categoria | Prioridade |
-|----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 3.1 | Listar todas oportunidades por ordem decrescente de data de inserção e sem filtro. | Evidente |Alta |
-| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente |Alta |
-
-**OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
-
- * Identificador: OP-CSU4
-
- * Atores envolvidos: Usuários App
-
- * Pré-condições:
- * Usuário deve estar conectado à internet.
- * Usuário deve estar logado no app
-
- * Pós-condições:
- * O usuário abre o aplicativo.
-
- * Cenário principal:
- * Usuário abre o aplicativo.
- * Usuário clica no menu Oportunidades.
- * Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
-
- * Cenários secundários:
- * Usuário utiliza o filtro para visualizar outras oportunidades.
-
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png)
-
-| Ref. | Descrição | Categoria | Prioridade |
-|----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 4.1 | Listar oportunidades por ordem decrescente de data de inserção de acordo com perfil do usuário. | Evidente |Alta |
-| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente |Alta |
-
-**OP-CSU5**- Editar Oportunidade (Web)
-
- * Identificador: OP-CSU5
 
  * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
  * Pré-condições: Usuário deve estar conectado à internet.
 
  * Pós-condições:
- * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados) devem ser obrigatórios.
+    1. Os campos Título, Descrição, Cursos, Categoria, Contratante e Contrato devem ser obrigatórios.
 
  * Cenário principal:
- * Usuário acessa o sistema.
- * Usuário clica no menu Oportunidades.
- * Usuário clica na oportunidade cadastrada e seleciona a opção editar.
- * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
+    1. Usuário acessa o sistema.
+    2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+    3. Usuário clica no botão com o sinal de + para cadastrar uma oportunidade.
+    4. Usuário preenche as informações necessárias no formulário.
+    5. Usuário clica em Salvar.
 
  * Cenários secundários:
- * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+    1. Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
-**OP-CSU6**- Deletar Oportunidade (Web)
+ * Protótipos de tela:
 
- * Identificador: OP-CSU6
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU3%20-%20Cadastrar%20Oportunidade%20(Web).png)
+
+| Ref. | Descrição | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta | Alta |
+
+**OP-CSU4**- Editar Oportunidade (Web)
+
+ * Identificador: OP-CSU4
+
+ * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+ * Pré-condições: Usuário deve estar conectado à internet.
+
+ * Pós-condições:
+     1. Os campos cadastrados inicialmente (Título, Descrição, Cursos, Categoria, Contratante e Contato) devem ser obrigatórios.
+
+ * Cenário principal:
+    1. Usuário acessa o sistema.
+    2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+    3. Usuário clica na oportunidade cadastrada que deseja editar.
+    4. Usuário edita as informações que deseja e clica em Salvar.
+
+ * Cenários secundários:
+    1. Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+* Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU4%20-%20Editar%20Oportunidade%20(Web).png)
+
+**OP-CSU5**- Excluir Oportunidade (Web)
+
+ * Identificador: OP-CSU5
 
  * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
@@ -527,34 +495,78 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Pós-condições: Não possui pós condições.
 
  * Cenário principal:
- * Usuário acessa o sistema.
- * Usuário clica no menu Oportunidades.
- * Usuário clica na oportunidade cadastrada e seleciona a opção deletar.
- * Usuário confirma o desejo de deletar a oportunidade.
+    1. Usuário acessa o sistema.
+    2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+    3. Usuário clica na oportunidade cadastrada que deseja deletar.
+    4. Usuário clica no botão excluir no final da página.
+    5. Usuário confirma o desejo de excluir a oportunidade.
 
  * Cenários secundários:
- * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+    1. Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
 
-**OP-CSU7**- Filtrar Oportunidades (Web)
+* Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU5%20-%20Excluir%20Oportunidade%20(Web).png)
+
+**OP-CSU6**- Listar Oportunidades - Usuário Deslogado (App)
+
+ * Identificador: OP-CSU6
+
+ * Atores envolvidos: Usuários App
+
+ * Pré-condições:
+    1. Usuário deve estar conectado à internet.
+    2. O usuário não deve estar logado no aplicativo.
+
+ * Pós-condições:
+    1. O usuário abre o aplicativo.
+
+ * Cenário principal:
+    1. Usuário abre o aplicativo.
+    2. Usuário clica no menu Oportunidades.
+    3. Usuário visualiza as oportunidades cadastradas.
+
+ * Cenários secundários:
+     1. Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
+
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png)
+
+| Ref. | Descrição | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 3.1 | Listar todas oportunidades por ordem decrescente de data de inserção e sem filtro. | Evidente | Alta |
+| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente | Alta |
+
+**OP-CSU7**- Listar Oportunidades - Usuário Logado (App)
 
  * Identificador: OP-CSU7
 
- * Atores envolvidos: Usuário com permissão 'Oportunidade'
+ * Atores envolvidos: Usuários App
 
  * Pré-condições:
- * Usuário deve estar conectado à internet.
+    1. Usuário deve estar conectado à internet.
+    2. Usuário deve estar logado no app
 
  * Pós-condições:
- * O usuário abre o sistema Web.
+    1. O usuário abre o aplicativo.
 
  * Cenário principal:
- * Usuário abre o sistema Web.
- * Usuário clica no menu Oportunidades.
- * Usuário pode filtrar as oportunidades por título.
+    1. Usuário abre o aplicativo.
+    2. Usuário clica no menu Oportunidades.
+    3. Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
 
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+ * Cenários secundários:
+    1. Usuário utiliza o filtro para visualizar outras oportunidades.
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU7.png)
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png)
+
+| Ref. | Descrição | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 4.1 | Listar oportunidades por ordem decrescente de data de inserção de acordo com perfil do usuário. | Evidente | Alta |
+| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente | Alta |
 
 **OP-CSU8**- Filtrar Oportunidades (App)
 
@@ -562,18 +574,16 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
  * Atores envolvidos: Usuários App
 
- * Pré-condições:
- * Usuário deve estar conectado à internet.
+ * Pré-condições: Usuário deve estar conectado à internet.
 
- * Pós-condições:
- * O usuário abre o aplicativo.
+ * Pós-condições: O usuário abre o aplicativo.
 
  * Cenário principal:
- * Usuário abre o aplicativo.
- * Usuário clica no menu Oportunidades.
- * Usuário pode filtrar as oportunidades por curso.
+    1. Usuário abre o aplicativo.
+    2. Usuário clica no menu Oportunidades.
+    3. Usuário pode filtrar as oportunidades por curso.
 
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+ * Protótipos de tela:
 
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU8.png)
 
