@@ -367,7 +367,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/%5BOP%5DUseCases.png)
+![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/%5BOP%5DUseCases.png)
 
 * **OP-CSU1**: Listar Oportunidades (Web)
 * **OP-CSU2**: Filtrar Oportunidades (Web)
@@ -378,7 +378,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 * **OP-CSU7**: Listar Oportunidades - Usuário Logado (App)
 * **OP-CSU8**: Filtrar Oportunidades (App)
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU%20-%20Tela%20inicial%20com%20todos%20os%20Modulos.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU%20-%20Tela%20inicial%20com%20todos%20os%20M%C3%B3dulos.png)
 
 #### 3.2.2 Descrição de Casos de Uso
 
