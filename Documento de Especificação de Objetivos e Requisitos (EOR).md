@@ -875,6 +875,10 @@ No momento não há requisitos futuros.
 
 <img src="https://github.com/isaiastavares/minha-ufg/blob/Transporte/assets/Transporte/Modelo-de-dominio-TR.png" width="700" height="350"/>
 
+### 7.2 Modelo de domínio Calendário
+
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BMCD%5DModelo%20de%20classe%20de%20dom%C3%ADnio%20-%20Minha%20UFG.png" width="700" height="350"/>
+
 ## 8. Aprovação Formal
 ---------------------------------------------
 
