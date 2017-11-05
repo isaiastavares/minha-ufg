@@ -877,7 +877,7 @@ No momento não há requisitos futuros.
 
 ### 7.2 Modelo de domínio Calendário
 
-<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BMCD%5DModelo%20de%20classe%20de%20dom%C3%ADnio%20-%20Minha%20UFG.png" width="700" height="350"/>
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BMCD%5DModelo%20de%20classe%20de%20dom%C3%ADnio%20-%20Minha%20UFG.png"/>
 
 ## 8. Aprovação Formal
 ---------------------------------------------
