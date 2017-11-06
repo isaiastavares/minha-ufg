@@ -406,7 +406,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Protótipos de tela:
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU1%20-%20Listar%20Sem%20Oportunidades.png)
- ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU1%20-%20Listar%20Oportunidades%20(Web).png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU1%20-%20Listar%20Oportunidades%20(Web).png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
