@@ -158,10 +158,10 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não possui acesso a internet no momento.
  2. Usuário aperta no campo de origem.
  3. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
-    4. Usuário seleciona o local de origem desejado com base na lista disponível ou no próprio mapa.
+    4. Usuário seleciona o local de origem desejado com base na lista disponível ou no próprio mapa.
  5. Usuário aperta no campo de destino.
  6. Sistema exibe uma lista contendo os possiveis locais de destino conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
-    7. Usuário seleciona o local de destino desejado com base na lista disponível ou no próprio mapa.
+    7. Usuário seleciona o local de destino desejado com base na lista disponível ou no próprio mapa.
 
  * Protótipos de tela:
  ![](https://user-images.githubusercontent.com/11222413/31588100-bcb0f23e-b1cb-11e7-8ece-7e158e3bc9ad.png)
@@ -186,9 +186,9 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Cenário:
  1. Usuário executa TR-CSU1.
-    2. Usuário visualiza as possíveis rotas, no mapa e na parte inferior da tela.
-    3. Usuário arrasta a parte inferior para cima a fim de visualizar todas as opções de rotas e selecionar uma.
-    4. Sistema exibe apenas a rota selecionada pelo usuário.
+    2. Usuário visualiza as possíveis rotas, no mapa e na parte inferior da tela.
+    3. Usuário arrasta a parte inferior para cima a fim de visualizar todas as opções de rotas e selecionar uma.
+    4. Sistema exibe apenas a rota selecionada pelo usuário.
 
  * Protótipos de tela:
  ![](https://user-images.githubusercontent.com/11222413/31588101-bced72fe-b1cb-11e7-8396-8ff7a5c49ab9.png)
@@ -266,7 +266,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * O banco de dados deverá estar disponível e funcional.
 
  * Pós-condições:
-    * O aplicativo mostra os locais pré-definidos cadastrados.
+    * O aplicativo mostra os locais pré-definidos cadastrados.
 
  * Cenário:
  1. Usuário seleciona o botão "Meus locais".
@@ -352,8 +352,8 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * Cenário:
  1. Usuário executa TR-CSU5.
  2. Usuário seleciona o botão de remover no local que deseja remover.
-    3. Usuário confirma o local a ser removido.
-    4. Sistema remove o local pré-definido selecionado do banco de dados.
+    3. Usuário confirma o local a ser removido.
+    4. Sistema remove o local pré-definido selecionado do banco de dados.
  5. Sistema retorna para a tela de locais pré-definidos cadastrados.
 
  * Protótipos de tela:
@@ -374,8 +374,8 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 * **OP-CSU3**: Cadastrar Oportunidade (Web)
 * **OP-CSU4**: Editar Oportunidade (Web)
 * **OP-CSU5**: Excluir Oportunidade (Web)
-* **OP-CSU6**: Listar Oportunidades - Usuário Deslogado (App)
-* **OP-CSU7**: Listar Oportunidades - Usuário Logado (App)
+* **OP-CSU6**: Listar Oportunidades (App)
+* **OP-CSU7**: Detalhes Oportunidade (App)
 * **OP-CSU8**: Filtrar Oportunidades (App)
 
  ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU%20-%20Tela%20inicial%20com%20todos%20os%20M%C3%B3dulos.png)
@@ -520,7 +520,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU5%20-%20Excluir%20Oportunidade%20(Web).png)
 
-**OP-CSU6**- Listar Oportunidades - Usuário Deslogado (App)
+**OP-CSU6**- Listar Oportunidades
 
  * Identificador: OP-CSU6
 
@@ -528,7 +528,6 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Pré-condições:
  * Usuário deve estar conectado à internet.
- * O usuário não deve estar logado no aplicativo.
 
  * Pós-condições:
  * O usuário abre o aplicativo.
@@ -536,14 +535,15 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * Cenário principal:
  1. Usuário abre o aplicativo.
  2. Usuário clica no menu Oportunidades.
- 3. Usuário visualiza as oportunidades cadastradas.
+ 3. Se logado, o usuário visualiza as oportunidades filtradas de acordo com o seu curso e regional. Se não estiver logado, o usuário visualiza todas as oportunidades em ordem decrescente por data de inserção.
 
  * Cenários secundários:
- 1. Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
-
+ 1. Usuário não está conectado a internet.
+ 2. Nenhum resultado é encontrado
+ 
  * Protótipos de tela:
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/Oportunidades.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
