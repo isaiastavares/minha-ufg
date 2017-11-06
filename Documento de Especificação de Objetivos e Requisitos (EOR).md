@@ -635,12 +635,13 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * Cenários secundários:
 1. O consulente pode acessar as funções do calendário offline.
 
- * Protótipos de tela:
+  * Protótipos de tela: 
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU1-UPDATE-1.1-Escolher%20Regionais%201.png" width="550" height="500"/>
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU1-UPDATE-1.2-Escolher%20Regionais%202.png" width="550" height="500"/>
 
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%201.png)
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU01%20-%20Escolher%20Regionais%202.png)
-
+ 
 | Ref. | Descrição | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 1.1 | O Calendário deve ser dividida em 4 Regionais: Goiânia, Jataí, Catalão e Cidade de Goiás. | Evidente |Alta |
@@ -679,27 +680,21 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
   * Protótipos de tela: Criando um Novo Evento
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1-Eventos.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.1-Tela%20inical.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-2-Todos%20os%20Eventos.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.2-Lista%20de%20Calend%C3%A1rios.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-3-Criar%20Evento.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.3-Todos%20os%20Eventos.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.4-Informa%C3%A7%C3%B5es.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-4-Preencher%20todos%20os%20campos%20do%20Evento.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.5-Criar%20Evento.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-5-Evento%20Salvo%20com%20sucesso.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.6-Preencher%20todos%20os%20campos%20do%20Evento.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-6-Erro%20ao%20criar%20novo%20evento.%20copy.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.7-Evento%20salvo%20com%20sucesso.png" />
   
-  Protótipos de tela: Lista de Eventos no Calendário
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.1-Tela%20inical.png"/> 
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.2-Lista%20de%20Calend%C3%A1rios.png"/> 
-  
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.3-Calend%C3%A1rios.png"/> 
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.8-Erro%20ao%20Salvar%20evento.png" />
     
  
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
@@ -742,17 +737,17 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-1-Editar%20Evento.png" />
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.1-Editar%20Evento.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-2-Escolher%20Evento.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.2-Selecionar%20Evento%20para%20Editar.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-3-Editar%20Evento%20Selecionado.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.3-Editar_Excluir%20Evento.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-4-Evento%20Editado%20com%20sucesso.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.4-Evento%20alterado%20com%20sucesso.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-5-Evento%20exclu%C3%ADdo%20com%20sucesso.png"/>
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.5-Evento%20Exclu%C3%ADdo%20com%20sucesso.png" />
 
-<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-6-Erro%20ao%20editar%20evento.png"/> 
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.6-Erro%20ao%20Editar%20evento.png" />
 
  
 | Ref.     |                          Descrição                       	| Categoria | Prioridade |
@@ -793,7 +788,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
   
 **CA-CSU5**- Pesquisar eventos
 
-   * Identificador:CA-CSU6
+   * Identificador:CA-CSU5
 
    * Atores envolvidos: Consulente
 
@@ -811,6 +806,10 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
        * A pesquisa é executada assim que o usuário parar de digitar
        * O Resultado da pesquisa é apresentado
 
+   * Fluxo alternativo
+       * Usuário clica em uma data em destaque do calendário
+       * Os eventos da data selecionada são apresentados ao usuário
+   
    * Fluxo alternativo 
        * Usuário clica no botão de pesquisar
        * O usuário digita o texto da pesquisa no campo de texto
@@ -820,7 +819,9 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
   
    * Protótipos de tela
 
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20pesquisar%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20Eventos%20n%C3%A3o%20encontrados.png">
    
        
 ## 4. Requisitos e restrições não funcionais
@@ -832,9 +833,9 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 |------	|-------------------------------------------------------------------	|-----------------	|
 | RINF1 | O usuário deve estar localizado dentro da região metropolitana de goiânia  | Todos de transporte  |
 | RINF2 | Obrigatóriamente um dos pontos de origem / destino deverá ser a UFG  | TR-CSU1  |
-| RINF3 | Campo de pesquisa aparece no lugar da regional                       | CA-CSU6  |
-| RINF4 | Calendário some enquanto o usuário está com campo de pesquisa aberto | CA-CSU6  |
-| RINF5 | Pesquisa é executada quando detectado que o usuário parou de digitar, após 0.8 segundos | CA-CSU6  |
+| RINF3 | Campo de pesquisa aparece no lugar da regional                       | CA-CSU5  |
+| RINF4 | Calendário some enquanto o usuário está com campo de pesquisa aberto | CA-CSU5  |
+| RINF5 | Pesquisa é executada quando detectado que o usuário parou de digitar, após 0.8 segundos | CA-CSU5  |
 
 
 
@@ -932,6 +933,11 @@ No momento não há requisitos futuros.
 ### 7.2 Modelo de domínio Oportunidades
 
 ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/%5BOP%5DOpportunities-ERD.png)
+
+### 7.2 Modelo de domínio Calendário
+
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BMCD%5DModelo%20de%20classe%20de%20dom%C3%ADnio%20-%20Minha%20UFG.png"/>
+
 
 ## 8. Aprovação Formal
 ---------------------------------------------
