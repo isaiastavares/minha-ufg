@@ -407,7 +407,6 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * Protótipos de tela:
  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU1%20-%20Listar%20Sem%20Oportunidades.png)
  ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU1%20-%20Listar%20Oportunidades%20(Web).png)
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU1%20-%20Alerta%20ao%20listar%20oportunidades.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -418,7 +417,6 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 | OP-RFUN 2.5 | Chamar tela de cadastro de uma nova oportunidade. | Evidente | Alta |
 | OP-RFUN 2.6 | Chamar tela de edição da oportunidade, ao clicar em alguma da lista. | Evidente | Alta |
 | OP-RFUN 2.7 | Mensagem de nenhuma oportunidade encontrada. Quando abrir a tela pela primeira vez ou quando a busca não retornar nenhuma oportunidade. | Evidente | Alta |
-| OP-RFUN 2.8 | Alerta ao não encontrar oportunidades. | Evidente | Alta |
 
 **OP-CSU2**- Filtrar Oportunidades (Web)
 
