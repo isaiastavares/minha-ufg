@@ -10,23 +10,26 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
  * 1.2 [Público Alvo](#12-público-alvo)
  * 1.3 [Organização do documento](#13-organização-do-documento)
  * 1.4 [Definição de Siglas e Nomenclaturas](#14-definição-de-siglas-e-nomenclaturas)
+
 * 2. [Descrição do problema e do sistema](#2-descrição-do-problema-e-do-sistema)
  * 2.1 [Identificação e missão do Sistema](#21-identificação-e-missão-do-sistema)
  * 2.2 [Domínio do problema e contexto de sua aplicação](#22-domínio-do-problema-e-contexto-de-sua-aplicação)
  * 2.3 [Descrição dos interessados do sistema](#23-descrição-dos-interessados-do-sistema)
-* 3. [Casos de Uso e Requisitos Funcionais](#4-casos-de-uso-e-requisitos-funcionais)
- * 3.1 [Transporte](#31)
+
+* 3. [Casos de Uso e Requisitos Funcionais](#3-casos-de-uso-e-requisitos-funcionais)
+ * 3.1 [Transporte](#31-transporte)
  * 3.1.1 [Diagramas de Caso de Uso e Lista de casos de uso](#311-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
  * 3.1.2 [Descrição de Casos de Uso](#312-descrição-de-casos-de-uso)
- * 3.2 [Oportunidades](#32)
+ * 3.2 [Oportunidades](#32-oportunidades)
  * 3.2.1 [Diagramas de Caso de Uso e Lista de casos de uso](#321-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
  * 3.2.2 [Descrição de Casos de Uso](#322-descrição-de-casos-de-uso)
- * 3.3 [Calendário](#33)
+ * 3.3 [Calendário](#33-calendário)
  * 3.3.1 [Diagramas de Caso de Uso e Lista de casos de uso](#331-diagramas-de-caso-de-uso-e-lista-de-casos-de-uso)
  * 3.3.2 [Descrição de Casos de Uso](#332-descrição-de-casos-de-uso)
+
 * 4. [Requisitos e restrições não funcionais](#4-requisitos-e-restrições-não-funcionais)
  * 4.1 [Requisitos e Restrições de Usabilidade (RUS)](#41-requisitos-e-restrições-de-usabilidade-rus)
- * 4.2 [Requisitos e Restrições de Interface Homem-Computador (RHIC)](#42-requisitos-e-restrições-de-interface-homem-computador-rhic)
+ * 4.2 [Requisitos e Restrições de Interface Homem-Computador (RHIC)](#42requisitos-e-restrições-de-interface-homem-computador-rhic)
  * 4.3 [Requisitos e Restrições de Interface Externa (RIEX)](#43-requisitos-e-restrições-de-interface-externa-riex)
  * 4.4 [Requisitos e Restrições de Plataforma de Hardware (RPHW)](#44-requisitos-e-restrições-de-plataforma-de-hardware-rphw)
  * 4.5 [Requisitos e Restrições de Plataforma de Software (RPSW)](#45-requisitos-e-restrições-de-plataforma-de-software-rpsw)
@@ -35,9 +38,14 @@ Incluir índice de conteúdo do documento que estiver sendo elaborado
  * 4.8 [Requisitos e Restrições de Segurança (RSEG)](#48-requisitos-e-restrições-de-segurança-rseg)
  * 4.9 [Requisitos e Restrições de Manutenibilidade (RMAN)](#49-requisitos-e-restrições-de-manutenibilidade-rman)
  * 4.10 [Requisitos e Restrições de Documentação (RDOC)](#410-requisitos-e-restrições-de-documentação-rdoc)
+
 * 5. [Requisitos Futuros (RFUT)](#5-requisitos-futuros-rfut)
+
 * 6. [Referências cruzadas complementares](#6-referências-cruzadas-complementares)
+ * 6.1 [Transporte](#61-transporte)
+
 * 7. [Modelo de domínio](#7-modelo-de-dominio)
+
 * 8. [Aprovação Formal](#8-aprovação-formal)
 
 ## 1. Introdução
@@ -56,62 +64,57 @@ Este documento tem os seguintes objetivos:
 
 Este documento foi desenvolvido visando todos que utilizarão do sistema, tais como:
 
-* Equipe de desenvolvimento: Este documento explicitará quais requisitos deverão ser desenvolvidos bem como as interações entre os próprios requisitos de forma a auxiliar na manutenção (inserção de novos requisitos e/ou manutenção dos atuais).
+* **Equipe de desenvolvimento**: Este documento explicitará quais requisitos deverão ser desenvolvidos bem como as interações entre os próprios requisitos de forma a auxiliar na manutenção (inserção de novos requisitos e/ou manutenção dos atuais).
 
-* Usuário-Final: Este documento explicitará quais requisitos deverão ser esperados, incluindo a instrução de como esses requisitos poderão ser acessados (por meio dos protótipos de tela).
+* **Usuário-Final**: Este documento explicitará quais requisitos deverão ser esperados, incluindo a instrução de como esses requisitos poderão ser acessados (por meio dos protótipos de tela).
 
 ### 1.3 Organização do documento
 
- 1. Introdução – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
- 2. Descrição do problema e do sistema – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
- 3. Casos de Uso e Requisitos Funcionais – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
- 4. Requisitos e Restrições não funcionais – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
- 5. Requisitos Futuros – Citação dos requisitos planejados pra futuras versões do produto.
- 6. Referência Cruzadas Complementares – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
- 7. Modelo de domínio - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
- 8. Aprovação Formal – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
+ 1. **Introdução** – Breve citação dos tópicos presentes neste artefato e o intuito dos mesmos.
+ 2. **Descrição do problema e do sistema** – Explanação sucinta do domínio do problema e como o sistema se propõe a atender as necessidades levantadas por ele.
+ 3. **Casos de Uso e Requisitos Funcionais** – Detalhamento dos cenários de uso funcionais relacionados ao software, com descrição por extenso e formalização dos requisitos funcionais em identificador único, categoria e prioridade de implementação.
+ 4. **Requisitos e Restrições não funcionais** – Elucidação dos atributos de qualidade e regras de negócio fundamentais para o sistema que não fazem parte do domínio do problema.
+ 5. **Requisitos Futuros** – Citação dos requisitos planejados pra futuras versões do produto.
+ 6. **Referência Cruzadas Complementares** – Relação entre os requisitos funcionais e não funcionais e referenciação das origens destes e dos casos de uso.
+ 7. **Modelo de domínio** - Representação visual das classes conceituais ou objetos domundo real no domínio de problema, representando a compreensão da informação que o sistema vai gerenciar
+ 8. **Aprovação Formal** – Prova formalizada de verificação e validação do conteúdo e integridade deste documento perante os interessados.
 
 ### 1.4 Definição de Siglas e Nomenclaturas
 
-Definir e explicar sucintamente siglas e nomencalturas utilizadas neste documento.
-
-* TR: Transporte
-* OP: Oportunidade
-* CA: Calendário
-* CSU: Caso de Uso
-* RFUN: Requisito Funcional
-* RUS: Requisito de Usabilidade
-* RHIC: Requisito de Interface Homem-Computador
-* RIEX: Requisito de Interface Externa
-* RPHW: Requisito de Plataforma de Hardware
-* RPSW: Requisito de Plataforma de Software
-* RDES: Requisito de Desempenho
-* RDIS: Requisito de Dispponibilidade
-* RSEG: Requisito de Segurança
-* RMAN: Requisito de Manutenibilidade
-* RDOC: Requisito de Documentação
-* RFUT: Requisitos Futuros
-* Região metropolitana: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás.
+* **TR**: Transporte
+* **OP**: Oportunidade
+* **CA**: Calendário
+* **CSU**: Caso de Uso
+* **RFUN**: Requisito Funcional
+* **RUS**: Requisito de Usabilidade
+* **RHIC**: Requisito de Interface Homem-Computador
+* **RIEX**: Requisito de Interface Externa
+* **RPHW**: Requisito de Plataforma de Hardware
+* **RPSW**: Requisito de Plataforma de Software
+* **RDES**: Requisito de Desempenho
+* **RDIS**: Requisito de Dispponibilidade
+* **RSEG**: Requisito de Segurança
+* **RMAN**: Requisito de Manutenibilidade
+* **RDOC**: Requisito de Documentação
+* **RFUT**: Requisitos Futuros
+* **Região metropolitana**: Conjunto de **[cidades](http://www.cidade-brasil.com.br/regiao-metropolitana-de-goiania.html)** do estado de goiás.
+* **UFG**: Universidade Federal de Goiás
 
 ## 2. Descrição do problema e do sistema
 -----------------------------------------
 
-Nesta seção o sistema objeto da especificação de requisitos deve ser descrito. O domínio do problema que deverá ser resolvido pelo sistema deve ser explicado e também as características específicas do problema no contexto da empresa em que o sistema deverá ser utilizado. As subseções seguintes podem ser colocadas no documento EOR para separar cada conteúdo específico, mas também pode ser usado um estilo de texto sem separação de subseções desde que todo o conteúdo seja coberto.
-
 ### 2.1 Identificação e missão do Sistema
 
-Identificar o sistema objeto da especificação de requisitos e definir em poucas palavras qual é a missão do sistema que está sendo considerado neste documento.
+O aplicativo minha-ufg visa disponibilizar aos seus usuários acesso aos serviços online da Universidade Federal de Goiás.
 
 ### 2.2 Domínio do problema e contexto de sua aplicação
 
-A descrição do domínio do problema deve complementar e detalhar a visão geral do domínio do problema identificando o contexto deste problema no ambiente alvo (ambiente do cliente alvo).
-Exemplo:
-Suponha que o domínio do problema seja a venda de produtos em um comércio varejista. Esta seção deverá explicar em que consiste o problema de vender produtos em uma empresa que atua no comércio varejista, ou seja, descrever genericamente quais são os processos de negócio envolvidos e seus objetivos. Além disso, o problema deve ser contextualizado mostrando as características específicas do problema na empresa alvo.
+Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o aplicativo visa facilitar ao usuário os serviços mais básicos da universidade, dentro os quais estão: Segurança, Notícias, Rádio Universitária, Eventos, Restaurantes Universitários, Guia estudantil (estes já implementados). Como também os novos serviços discutidos neste documento: Oportunidades, Calendário e Transportes.
 
 ### 2.3 Descrição dos interessados do sistema
 
 | Interessado(s) | Descrição |
-|:----------------: |--------- |
+|----------------|--------- |
 | Usuário-Final | Utilizará das facilidades que o sistema propõe, tais como, obter rotas e horários de pontos específicos nos campus, visualizar datas letivas e possiveis oportunidades.|
 
 ## 3. Casos de Uso e Requisitos Funcionais
@@ -123,14 +126,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 ![](https://user-images.githubusercontent.com/9218555/30995360-04533f50-a490-11e7-9515-3f0eab591ff4.png)
 
-* TR-CSU1: Selecionar local de origem e local de destino com base em uma lista;
-* TR-CSU2: Visualizar rota entre a origem e o destino definidos pelo usuário;
-* TR-CSU3: Modificar destino durante a rota;
-* TR-CSU4: Visualizar linhas e horários;
-* TR-CSU5: Visualizar locais Pré-definidos;
-* TR-CSU6: Criar local Pré-definido;
-* TR-CSU7: Modificar local Pré-definido;
-* TR-CSU8: Remover local Pré-definido;
+* **TR-CSU1**: Selecionar local de origem e local de destino com base em uma lista;
+* **TR-CSU2**: Visualizar rota entre a origem e o destino definidos pelo usuário;
+* **TR-CSU3**: Modificar destino durante a rota;
+* **TR-CSU4**: Visualizar linhas e horários;
+* **TR-CSU5**: Visualizar locais Pré-definidos;
+* **TR-CSU6**: Criar local Pré-definido;
+* **TR-CSU7**: Modificar local Pré-definido;
+* **TR-CSU8**: Remover local Pré-definido;
 
 #### 3.1.2 Descrição de Casos de Uso
 
@@ -141,27 +144,27 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
  * Pré-condições:
  * Usuário deverá estar localizado na região Metropolitana de Goiânia.
-    * Usuário deverá estar conectado à internet.
+ * Usuário deverá estar conectado à internet.
  * Usuário deverá estar com o GPS habilitado (opcional).
 
  * Pós-condições:
- * O aplicativo sleciona corretamente local de origem e destino.
+ * O aplicativo seleciona corretamente local de origem e destino.
 
  * Cenário:
- 1. Usuário seleciona aba de mapa.
+ 1. Usuário seleciona Transporte na tela principal do app.
  * Se o usuário estiver fora da região metropoliana de Goiâna:
  * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
  * Se o usuário não possuir acesso a internet:
  * Sistema exibe ao usuário uma tela de erro explicando que o mesmo não possui acesso a internet no momento.
  2. Usuário aperta no campo de origem.
-    3. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
- 4. Usuário seleciona o local de origem desejado com base na lista disponível.
+ 3. Sistema exibe uma lista contendo os possiveis locais de origem conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
+    4. Usuário seleciona o local de origem desejado com base na lista disponível ou no próprio mapa.
  5. Usuário aperta no campo de destino.
  6. Sistema exibe uma lista contendo os possiveis locais de destino conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
- 7. Usuário seleciona o local de destino desejado com base na lista disponível.
+    7. Usuário seleciona o local de destino desejado com base na lista disponível ou no próprio mapa.
 
  * Protótipos de tela:
- ![](https://user-images.githubusercontent.com/11222413/31261360-219811a4-aa2a-11e7-87b9-007701e89324.png)
+ ![](https://user-images.githubusercontent.com/11222413/31588100-bcb0f23e-b1cb-11e7-8ece-7e158e3bc9ad.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -176,19 +179,19 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Atores envolvidos: Usuário(Fernanda) e Sistema
 
  * Pré-condições:
- * As mesmas definidas em TR-CSU1.
+ * TR-CSU1 deve ter sido executado.
 
  * Pós-condições:
-    * O aplicativo mostra as opções de rotas entre os locais definidos pelo usuário.
+ * O aplicativo mostra as opções de rotas entre os locais definidos pelo usuário.
 
  * Cenário:
  1. Usuário executa TR-CSU1.
-    2. Usuário clica no botão de confirmação de locais de origem e destino.
- 3. Sistema verifica o ponto mais próixmo do usuário.
- 4. Sistema exibe uma ou mais rotas para transporte coletivo partindo do ponto de origem do usuário até o destino definido pelo mesmo.
+    2. Usuário visualiza as possíveis rotas, no mapa e na parte inferior da tela.
+    3. Usuário arrasta a parte inferior para cima a fim de visualizar todas as opções de rotas e selecionar uma.
+    4. Sistema exibe apenas a rota selecionada pelo usuário.
 
  * Protótipos de tela:
- ![](https://user-images.githubusercontent.com/11222413/31261362-219d01f0-aa2a-11e7-9dde-366ae5595a31.png)
+ ![](https://user-images.githubusercontent.com/11222413/31588101-bced72fe-b1cb-11e7-8396-8ff7a5c49ab9.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -201,14 +204,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Atores envolvidos: Usuário(Fernanda), Sistema
 
  * Pré-condições:
- * As mesmas definidas em TR-CSU1.
+ * TR-CSU1 e TR-CSU2 devem ter sido executados.
 
  * Pós-condições:
- * As mesmas definidas em TR-CSU2.
+ * O aplicativo mostra as novas opções de rotas entre os locais definidos pelo usuário.
 
  * Cenário:
  1. Usuário executa TR-CSU2.
-    2. Usuário aperta no campo destino.
+ 2. Usuário aperta no campo destino para mudar o local.
  3. Sistema exibe um popup para validar a modificação do destino da rota.
  4. Sistema exibe uma lista de lugares conforme as regras definidas (RINF3, RINF4, RINF5 e RINF6).
  5. Usuário seleciona um novo local.
@@ -216,7 +219,7 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  7. Sistema exibe uma nova rota partindo do ponto de transporte coletivo mais proximo do usuário até o novo destino definido pelo usuário.
 
  * Protótipos de tela:
- ![](https://user-images.githubusercontent.com/11222413/31261361-219c2f64-aa2a-11e7-8788-92ef06f2f266.png)
+ ![](https://user-images.githubusercontent.com/11222413/31588103-bd25686c-b1cb-11e7-8ff5-6365ecb5dc32.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -233,16 +236,16 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * As mesmas definidas em TR-CSU1.
 
  * Pós-condições:
-    * O aplicativo mostra as linhas e horários de acordo com o ponto selecionado pelo usuário.
+ * O aplicativo mostra as linhas e horários de acordo com o ponto selecionado pelo usuário.
 
  * Cenário:
- 1. Usuário seleciona aba de mapa.
+ 1. Usuário seleciona Transporte na tela principal do app.
  * Se o usuário estiver fora da região metropoliana de Goiâna.
  * Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não se encontra dentro da área de atuação do Aplicativo.
  * Se o usuário não possuir acesso a internet.
  * Sistema exibe ao usuário uma tela de Erro explicando que o mesmo não possui acesso a internet no momento.
  2. Usuário seleciona no mapa o ponto de ônibus desejado.
-    3. Sistema exibe uma tela contendo as informações a respeito das linhas e horários dos ônibus que passam no ponto selecionado.
+ 3. Sistema exibe uma tela contendo as informações a respeito das linhas e horários dos ônibus que passam no ponto selecionado.
 
  * Protótipos de tela:
  ![](https://user-images.githubusercontent.com/11222413/31261363-219e5c80-aa2a-11e7-946e-250062dea481.png)
@@ -364,56 +367,32 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 
 #### 3.2.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/%5BOP%5DUseCases.png)
+![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/%5BOP%5DUseCases.png)
 
-* OP-CSU1: Cadastrar Oportunidade (Web)
-* OP-CSU2: Listar/Filtrar Oportunidades (Web)
-* OP-CSU3: Listar Oportunidades - Usuário Deslogado (App)
-* OP-CSU4: Listar Oportunidades - Usuário Logado (App)
-* OP-CSU5- Editar Oportunidade (Web)
-* OP-CSU6- Deletar Oportunidade (Web)
-* OP-CSU7- Filtrar Oportunidades (Web)
-* OP-CSU8- Filtrar Oportunidades (App)
+* **OP-CSU1**: Listar Oportunidades (Web)
+* **OP-CSU2**: Filtrar Oportunidades (Web)
+* **OP-CSU3**: Cadastrar Oportunidade (Web)
+* **OP-CSU4**: Editar Oportunidade (Web)
+* **OP-CSU5**: Excluir Oportunidade (Web)
+* **OP-CSU6**: Listar Oportunidades - Usuário Deslogado (App)
+* **OP-CSU7**: Listar Oportunidades - Usuário Logado (App)
+* **OP-CSU8**: Filtrar Oportunidades (App)
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU%20-Tela%20inical%20com%20todos%20os%20Modulos.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU%20-%20Tela%20inicial%20com%20todos%20os%20M%C3%B3dulos.png)
 
 #### 3.2.2 Descrição de Casos de Uso
 
-**OP-CSU1**- Cadastrar Oportunidade (Web)
+**OP-CSU1**- Listar Oportunidades (Web)
 
  * Identificador: OP-CSU1
 
  * Atores envolvidos: Usuário com permissão 'Oportunidade'
 
- * Pré-condições: Usuário deve estar conectado à internet.
+ * Pré-condições:
+ * Usuário deve estar conectado à internet.
 
  * Pós-condições:
- * Os campos Título, Descrição, Categoria, Contato e Cursos Relacionados devem ser obrigatórios.
-
- * Cenário principal:
- * Usuário acessa o sistema.
- * Usuário clica no menu Oportunidades.
- * Usuário clica no botão para cadastrar oportunidade.
- * Usuário preenche as seguintes informações: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
-
- * Cenários secundários:
- * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
-
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
-| Ref. | Descrição | Categoria | Prioridade |
-|----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
-
-**OP-CSU2**- Listar/Filtrar Oportunidades (Web)
-
- * Identificador: OP-CSU2
-
- * Atores envolvidos: Usuário com permissão 'Oportunidade'
-
- * Pré-condições: Usuário deve estar conectado à internet.
-
- * Pós-condições: Não possui pós-condições.
+ * Não possui pós-condições.
 
  * Cenário principal:
  1. Usuário seleciona o menu oportunidades, Lista de Oportunidades.
@@ -422,25 +401,128 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  4. Exibir opção de cadastro de nova oportunidade.
 
  * Cenários secundários:
- 2. Usuário filtra oportunidades exibidas através do campo de busca.
- 3. Usuário adiciona nova oportunidade (OP-CSU1).
+ 1. Usuário filtra oportunidades exibidas através do campo de busca.
+ 2. Usuário adiciona nova oportunidade (OP-CSU3).
 
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU2%20-%20Listar%20-%20Filtrar%20-%20Detalhar%20-%20Cadastrar.png)
+ * Protótipos de tela:
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU1%20-%20Listar%20Sem%20Oportunidades.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU1%20-%20Listar%20Oportunidades%20(Web).png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta |Alta |
-| OP-RFUN 2.2 | Listar as primeiras oportunidades em uma lista "infinita", que carrega outras oportunidades de acordo com a busca, ao "descer" na página. | Evidente |Média|
-| OP-RFUN 2.3 | Exibir Título, Categoria e 100 caracteres da descrição de cada oportunidade. | Evidente |Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade (Título, Categoria e Descrição). | Evidente |Alta |
-| OP-RFUN 2.5 | Chamar tela de cadastro de um nova oportunidade. | Evidente |Alta |
-| OP-RFUN 2.6 | Chamar tela de edição da oportunidade, ao clicar em alguma da lista. | Evidente |Alta |
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta | Alta |
+| OP-RFUN 1.2 | Listar as primeiras oportunidades em uma lista "infinita", que carrega outras oportunidades de acordo com a busca, ao "descer" na página. | Evidente | Média|
+| OP-RFUN 1.3 | Exibir Título, Categoria e 100 caracteres da descrição de cada oportunidade. | Evidente | Alta |
+| OP-RFUN 1.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade (Título, Categoria e Descrição). | Evidente | Alta |
+| OP-RFUN 1.5 | Chamar tela de cadastro de uma nova oportunidade. | Evidente | Alta |
+| OP-RFUN 1.6 | Chamar tela de edição da oportunidade, ao clicar em alguma da lista. | Evidente | Alta |
+| OP-RFUN 1.7 | Mensagem de nenhuma oportunidade encontrada. Quando abrir a tela pela primeira vez ou quando a busca não retornar nenhuma oportunidade. | Evidente | Alta |
 
+**OP-CSU2**- Filtrar Oportunidades (Web)
 
-**OP-CSU3**- Listar Oportunidades - Usuário Deslogado (App)
+ * Identificador: OP-CSU2
+
+ * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+ * Pré-condições:
+ * Usuário deve estar conectado à internet.
+
+ * Pós-condições:
+ * O usuário abre o sistema Web.
+
+ * Cenário principal:
+ 1. Usuário abre o sistema Web.
+ 2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+ 3. Usuário pode filtrar as oportunidades por título.
+
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU7.png)
+
+**OP-CSU3**- Cadastrar Oportunidade (Web)
 
  * Identificador: OP-CSU3
+
+ * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+ * Pré-condições:
+ * Usuário deve estar conectado à internet.
+
+ * Pós-condições:
+ * Os campos Título, Descrição, Cursos, Categoria, Contratante e Contrato devem ser obrigatórios.
+
+ * Cenário principal:
+ 1. Usuário acessa o sistema.
+ 2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+ 3. Usuário clica no botão com o sinal de + para cadastrar uma oportunidade.
+ 4. Usuário preenche as informações necessárias no formulário.
+ 5. Usuário clica em Salvar.
+
+ * Cenários secundários:
+ 1. Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU3%20-%20Cadastrar%20Oportunidade%20(Web).png)
+
+| Ref. | Descrição | Categoria | Prioridade |
+|----------|------------------------------------------------------------|-----------|------------|
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta | Alta |
+
+**OP-CSU4**- Editar Oportunidade (Web)
+
+ * Identificador: OP-CSU4
+
+ * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+ * Pré-condições:
+ * Usuário deve estar conectado à internet.
+
+ * Pós-condições:
+ * Os campos cadastrados inicialmente (Título, Descrição, Cursos, Categoria, Contratante e Contato) devem ser obrigatórios.
+
+ * Cenário principal:
+ 1. Usuário acessa o sistema.
+ 2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+ 3. Usuário clica na oportunidade cadastrada que deseja editar.
+ 4. Usuário edita as informações que deseja e clica em Salvar.
+
+ * Cenários secundários:
+ 1. Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+* Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU4%20-%20Editar%20Oportunidade%20(Web).png)
+
+**OP-CSU5**- Excluir Oportunidade (Web)
+
+ * Identificador: OP-CSU5
+
+ * Atores envolvidos: Usuário com permissão 'Oportunidade'
+
+ * Pré-condições:
+ * Usuário deve estar conectado à internet.
+
+ * Pós-condições:
+ * Não possui pós condições.
+
+ * Cenário principal:
+ 1. Usuário acessa o sistema.
+ 2. Usuário clica no menu Oportunidades -> Listar Oportunidades.
+ 3. Usuário clica na oportunidade cadastrada que deseja deletar.
+ 4. Usuário clica no botão excluir no final da página.
+ 5. Usuário confirma o desejo de excluir a oportunidade.
+
+ * Cenários secundários:
+ 1. Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
+
+* Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU5%20-%20Excluir%20Oportunidade%20(Web).png)
+
+**OP-CSU6**- Listar Oportunidades - Usuário Deslogado (App)
+
+ * Identificador: OP-CSU6
 
  * Atores envolvidos: Usuários App
 
@@ -452,24 +534,25 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * O usuário abre o aplicativo.
 
  * Cenário principal:
- * Usuário abre o aplicativo.
- * Usuário clica no menu Oportunidades.
- * Usuário visualiza as oportunidades cadastradas.
+ 1. Usuário abre o aplicativo.
+ 2. Usuário clica no menu Oportunidades.
+ 3. Usuário visualiza as oportunidades cadastradas.
 
  * Cenários secundários:
- * Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
+ 1. Usuário utiliza o filtro para visualizar as oportunidades de seu interesse.
 
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades.png)
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/Oportunidades.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 3.1 | Listar todas oportunidades por ordem decrescente de data de inserção e sem filtro. | Evidente |Alta |
-| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente |Alta |
+| OP-RFUN 3.1 | Listar todas oportunidades por ordem decrescente de data de inserção e sem filtro. | Evidente | Alta |
+| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente | Alta |
 
-**OP-CSU4**- Listar Oportunidades - Usuário Logado (App)
+**OP-CSU7**- Listar Oportunidades - Usuário Logado (App)
 
- * Identificador: OP-CSU4
+ * Identificador: OP-CSU7
 
  * Atores envolvidos: Usuários App
 
@@ -481,80 +564,21 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * O usuário abre o aplicativo.
 
  * Cenário principal:
- * Usuário abre o aplicativo.
- * Usuário clica no menu Oportunidades.
- * Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
+ 1. Usuário abre o aplicativo.
+ 2. Usuário clica no menu Oportunidades.
+ 3. Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
 
  * Cenários secundários:
- * Usuário utiliza o filtro para visualizar outras oportunidades.
+ 1. Usuário utiliza o filtro para visualizar outras oportunidades.
 
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/Oportunidades_2.png)
+ * Protótipos de tela:
+
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/Oportunidades_2.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 4.1 | Listar oportunidades por ordem decrescente de data de inserção de acordo com perfil do usuário. | Evidente |Alta |
-| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente |Alta |
-
-**OP-CSU5**- Editar Oportunidade (Web)
-
- * Identificador: OP-CSU5
-
- * Atores envolvidos: Usuário com permissão 'Oportunidade'
-
- * Pré-condições: Usuário deve estar conectado à internet.
-
- * Pós-condições:
- * Os campos cadastrados inicialmente (Título, Descrição, Categoria, Contato e Cursos Relacionados) devem ser obrigatórios.
-
- * Cenário principal:
- * Usuário acessa o sistema.
- * Usuário clica no menu Oportunidades.
- * Usuário clica na oportunidade cadastrada e seleciona a opção editar.
- * Usuário edita as informações de um dos seguintes campos: Título, Empresa, Descrição, Horário / Carga Horária, Requisitos, Benefícios (Salário, Bolsa, Auxílio Transporte, Outros), Contato (Nome, Email e Telefone), Local, Cursos Relacionados, Categoria (CLT, PJ, Trainee, Estágio ou Freelancer).
-
- * Cenários secundários:
- * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
-
-**OP-CSU6**- Deletar Oportunidade (Web)
-
- * Identificador: OP-CSU6
-
- * Atores envolvidos: Usuário com permissão 'Oportunidade'
-
- * Pré-condições: Usuário deve estar conectado à internet.
-
- * Pós-condições: Não possui pós condições.
-
- * Cenário principal:
- * Usuário acessa o sistema.
- * Usuário clica no menu Oportunidades.
- * Usuário clica na oportunidade cadastrada e seleciona a opção deletar.
- * Usuário confirma o desejo de deletar a oportunidade.
-
- * Cenários secundários:
- * Usuário não possui permissão 'Oportunidade', então o menu Oportunidades não é exibido para ele.
-
-**OP-CSU7**- Filtrar Oportunidades (Web)
-
- * Identificador: OP-CSU7
-
- * Atores envolvidos: Usuário com permissão 'Oportunidade'
-
- * Pré-condições:
- * Usuário deve estar conectado à internet.
-
- * Pós-condições:
- * O usuário abre o sistema Web.
-
- * Cenário principal:
- * Usuário abre o sistema Web.
- * Usuário clica no menu Oportunidades.
- * Usuário pode filtrar as oportunidades por título.
-
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
-
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU7.png)
+| OP-RFUN 4.1 | Listar oportunidades por ordem decrescente de data de inserção de acordo com perfil do usuário. | Evidente | Alta |
+| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente | Alta |
 
 **OP-CSU8**- Filtrar Oportunidades (App)
 
@@ -569,26 +593,27 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * O usuário abre o aplicativo.
 
  * Cenário principal:
- * Usuário abre o aplicativo.
- * Usuário clica no menu Oportunidades.
- * Usuário pode filtrar as oportunidades por curso.
+ 1. Usuário abre o aplicativo.
+ 2. Usuário clica no menu Oportunidades.
+ 3. Usuário pode filtrar as oportunidades por curso.
 
- * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
+ * Protótipos de tela:
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP-CSU8.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU8.png)
 
 ### 3.3 Calendário
 
 #### 3.3.1 Diagramas de Caso de Uso e Lista de casos de uso
 
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/%5BCA%5DUseCases.png)
+![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DUseCases%20UPDATE.png)
 
 * CA-CSU1: Visualizar Regionais
 * CA-CSU2: Criar Eventos
 * CA-CSU3: Editar Eventos
 * CA-CSU4: Ver Notificação
-* CA-CSU5: Excluir Eventos
-* CA-CSU6: Pesquisar Eventos
+* CA-CSU5: Pesquisar Eventos
+
+#### 3.3.2 Descrição de Casos de Uso
 
 **CA-CSU1**- Visualizar Regionais
  * Identificador: CA-CSU1
@@ -625,6 +650,9 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
  * Atores envolvidos: Administrador.
 
  * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
+ Além disso, o administrador tem a possibilidade de ver a Lista de Eventos selecionando o calendário desejado.
+
+ * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
 
  * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
 
@@ -632,14 +660,14 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
-4. O Administrador seleciona a opção Criar (eventos).
+4. O Administrador seleciona a opção de Criar um novo evento.
  * a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
  * b. O Administrador deve inserir o nome do evento;
  * c. O Administrador deve inserir o local onde será realizado;
  * d. O Administrador deve selecionar o período que vai ser o evento;
  * e. O Administrador tem a possibilidade de inserir observações sobre o evento;
- * f. O Administrador pode limpar todo o cadastro e começar do zero inserindo novos dados, apertando o botão Limpar Cadastro;
- * g. O Administrador, após inserir todos os dados, deve clicar em Criar Evento para salvar os dados e, consequentemente, criar um novo evento;
+ * f. O Administrador pode cancelar o cadastro e começar do zero inserindo novos dados, apertando o botão cancelar;
+ * g. O Administrador, após inserir todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, criar um novo evento;
  * h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
 5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
 
@@ -647,21 +675,29 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
 2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código...), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
- * Protótipos de tela:
+ * Protótipos de tela: Criando um Novo Evento
 
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%201-Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png)
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1-Eventos.png)
 
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%202-Tela%20Calend%C3%A1rio.png)
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-2-Todos%20os%20Eventos.png)
 
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%203-Tela%20de%20Eventos.png)
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-3-Criar%20Evento.png)
 
  ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%204-Criar%20novo%20Evento.png)
 
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%205-Preencher%20todos%20os%20campos.png)
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-4-Preencher%20todos%20os%20campos%20do%20Evento.png)
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%206-Cadastro%20realizado.png)
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-5-Evento%20Salvo%20com%20sucesso.png)
 
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU02%20-%20Criar%20Evento%20-%207-Erro%20ao%20realizar%20cadastro.png)
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-6-Erro%20ao%20criar%20novo%20evento.%20copy.png)
+
+ Protótipos de tela: Lista de Eventos no Calendário
+
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.1-Tela%20inical.png)
+
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.2-Lista%20de%20Calend%C3%A1rios.png)
+
+ ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-Update%20-1.3-Calend%C3%A1rios.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -683,45 +719,37 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona a opção Calendário.
 3. O Administrador seleciona a opção Eventos.
-4. O Administrador seleciona a opção Editar (eventos).
-5. O Administrador seleciona o evento entre os Listados e clica em Editar:
+4. O Administrador lista o dia que vai ser alterado e entra dentro da edição.
  * a. O Administrador pode selecionar outra Regional, onde o evento vai acontecer;
  * b. O Administrador pode alterar o nome do evento;
  * c. O Administrador pode alterar o local do onde será realizado;
  * d. O Administrador pode alterar o período que vai ser o evento;
  * e. O Administrador tem a possibilidade de alterar as observações sobre o evento;
  * f. O Administrador pode cancelar as alterações, apertando o botão Cancelar, voltando para a página anterior;
- * g. O Administrador, após alterar todos os dados, deve clicar em Salvar Alerações para salvar os dados e, consequentemente, editar o evento que foi selecionado;
+ * g. O Administrador, após alterar todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, editar o evento que foi selecionado;
  * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos.
 6. Após editar um evento, o Administrador volta para a página anterior com um retorno de que as alterações sobre o evento foram salvas com sucesso.
+7. O Administrador tem a possibilidade de excluir o evento na página onde está editando. Abaixo tem um botão chamado EXCLUIR, onde pode eliminar aquele evento.
 
  * Cenários secundários:
-5. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
+1. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
  * O Administrador seleciona o filtro de pesquisa de evento. Exemplo: Pesquisar por Regional;
-5. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
-5. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código...), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
+2. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
+3. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código...), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%201.%20Tela%20inical%20com%20todos%20os%20Modulos.png)
+![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-1-Editar%20Evento.png)
 
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%202.%20Tela%20Calendario.png)
+![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-2-Escolher%20Evento.png)
 
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%203.%20Tela%20de%20Eventos.png)
+![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-3-Editar%20Evento%20Selecionado.png)
 
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.%20Listar%20Eventos.png)
+![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-4-Evento%20Editado%20com%20sucesso.png)
 
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1%20Pesquisar%20Eventos.png)
+![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-5-Evento%20exclu%C3%ADdo%20com%20sucesso.png)
 
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%204.1.1%20Pesquisar%20Eventos%20por%20Nome.png)
-
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.%20Salvar%20Alteracoes%20no%20Evento.png)
-
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%205.1%20Erro%20ao%20Salvar%20Alteracoes%20no%20Evento.png)
-
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%206.%20Alteracao%20de%20Evento%20realizado.png)
-
-![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU03%20-%20Editar%20Eventos%20-%207.%20Erro%20ao%20Editar%20Eventos.png)
+![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU3-Update%20-6-Erro%20ao%20editar%20evento.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -758,118 +786,36 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta |
 
-**CA-CSU5**- Excluir Eventos
- * Identificador: CA-CSU5
-
- * Atores envolvidos: Administrador
-
- * Pré-condições: O Administrador deve conseguir excluir um Evento no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Excluir Evento, deve escolher o(s) evento(s) para excluir e depois salvar as alterações feitas.
-
- * Pós-condições: O Administrador consegue excluir o evento desejado.
-
- * Cenário principal:
-1. O Administrador acessa a parte web com seu login e senha.
-2. O Administrador seleciona a opção Calendário.
-3. O Administrador seleciona a opção Eventos.
-4. O Administrador seleciona a opção Excluir (eventos).
-5. O Sistema exibe uma tela com opções de filtro, lista de eventos e um botão salvar:
- * a. O Administrador pode selecionar uma regional para filtrar;
- * b. O Administrador pode selecionar uma data para filtrar;
- * c. O Administrador pode selecionar um nome do evento para filtrar;
-   * d. O Administrador pode excluir um evento de cada vez ou todos ao mesmo tempo caso estejam selecionados estando filtrados ou não.
-6. Após excluir um ou vários eventos, o Administrador clica em "Salvar" e volta para a página anterior com um retorno de que as alterações feitas foram salvas com sucesso.
-
- * Cenários secundários:
-1. Não exibe botão "Excluir";
- * a. O usuário tenta acessar botão de "Excluir";
- * b. O sistema sempre verifica privilégios de categoria por usuário;
- * c. Cada categoria de usuário possui tipos de privilégios distintos.
-2. Ação de exclusão não permitida;
- * a. O usuário (administrador) tenta excluir um evento no calendário;
- * b. O sistema bloqueia ação;
- * c. O sistema exibe uma mensagem "Erro ao excluir evento. Contate o programador ou tente criar outro evento.".
-
- * Protótipos de tela:
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%201%20-%20Tela%20inical%20com%20todos%20os%20M%C3%B3dulos.png)
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%202%20-Tela%20Calend%C3%A1rio.png)
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%203%20-%20Tela%20de%20Eventos.png)
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%204%20-%20Excluir%20Evento.png)
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%205%20-%20Filtrar%20Informa%C3%A7%C3%A3o.png)
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%206%20-%20Erro%20ao%20excluir%20evento.png)
-
- ![](https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU05%20-%20Excuir%20Eventos%20-%207%20-%20Exclu%C3%ADdo%20com%20sucesso.png)
-
-| Ref. | Descrição | Categoria | Prioridade |
-|-------|----------------------------------------------------------|---------------|---------------|
-| CA-RFUN 5.1 | Excluir um evento no Calendário Acadêmico. | Evidente |Alta |
-| CA-RFUN 5.2 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta |
-| CA-RFUN 5.3 | Deve ter no mínimo um evento cadastrado.| Evidente |Alta |
-| CA-RFUN 5.4 | Administrador deve conseguir filtrar eventos através de um nome, data ou regional. Obs: deve ter um botão de filtrar e limpar filtro sendo que é opcional essas ações. | Evidente |Média |
-| CA-RFUN 5.5 | Administrador deve conseguir excluir qualquer evento um a um ou vários de uma vez (caso tenha selecionado os desejados). | Evidente |Alta |
-
-**CA-CSU6**- Pesquisar eventos
+**CA-CSU5**- Pesquisar eventos
 
  * Identificador:CA-CSU6
 
- * Atores envolvidos: Usuário
+ * Atores envolvidos: Consulente
 
  * Pré-condições:
- * O usuário está no contexto de pesquisa de eventos do calendário.
- * O calendário deverá estar baixado.
+ * O usuário está no contexto de Eventos do calendário.
+ * O usuário clica no botão de pesquisa de eventos
 
  * Pós-condições:
  * O Sistema apresenta os eventos
  * O usuário seleciona o evento que estava procurando
 
  * Fluxo principal:
- * O usuário abre a tela de pesquisa de eventos
- * O usuário digita o texto da pesquisa
- * A pesquisa é executada quando o usuário parar de digitar
- * O resultado da consulta é retornada para o usuário
-
- * Fluxo secundário: Pesquisa por regional
- * O usuário abre a tela de pesquisa de eventos
- * O usuário seleciona o filtro de Regional
- * A pesquisa é executada
- * O resultado da consulta é retornada para o usuário
-
- * Fluxo secundário: Pesquisa por Interessado
- * O usuário abre a tela de pesquisa de eventos
- * O usuário seleciona o filtro por interessado
- * A pesquisa é executada
- * O resultado da consulta é retornada para o usuário
- * O usuário seleciona o resultado de um determinado interessado
-
- * Fluxo secundário: Pesquisa por Periodo
- * O usuário abre a tela de pesquisa de eventos
- * O usuário seleciona o filtro por periodo
- * O usuário seleciona a data inicial e a data final
- * A pesquisa é executada
+ * Usuário clica no botão pesquisar
+ * Usuário digita o texto da pesquisa no campo de texto
+ * A pesquisa é executada assim que o usuário parar de digitar
+ * O Resultado da pesquisa é apresentado
 
  * Fluxo alternativo
- * O usuário abre a tela de pesquisa de eventos
- * O usuário digita o texto da pesquisa
- * A pesquisa é executada quando o usuário para de digitar
- * Nenhum resultado é retornado
+ * Usuário clica no botão de pesquisar
+ * O usuário digita o texto da pesquisa no campo de texto
+ * A pesquisa é executada assim que o usuário parar de digitar
+ * Nenhum resultado é encontrado
  * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
 
  * Protótipos de tela
 
-![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20Default.png)
-
-![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20interessado.png)
-
-![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20per%C3%ADodo.png)
-
-![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Filtro%20por%20regional.png)
-
-![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisar%20Eventos%20-%20Nenhum%20resultado.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio.png)
 
 ## 4. Requisitos e restrições não funcionais
 -----------------------------------------
@@ -879,11 +825,10 @@ Suponha que o domínio do problema seja a venda de produtos em um comércio vare
 | Ref. | Descrição | Caso de Uso |
 |------ |------------------------------------------------------------------- |----------------- |
 | RINF1 | O usuário deve estar localizado dentro da região metropolitana de goiânia | Todos de transporte |
-| RINF2 | Obrigatóriamente um dos pontos de origem ou de destino deverá ser em um campus da UFG | TR-CSU1 , TR-CSU3 |
-| RINF3 | Se a rota do usuário possuir **origem de dentro da UFG**, a lista de locais exibidos deverá conter: As preferências definidas previamente pelo usuário, uma lista com os locais do campus em que está presente e a posição atual do usuário com base no GPS (Se habilitado). | TR-CSU1 , TR-CSU3 |
-| RINF4 | Se a rota do usuário possuir **origem de fora da UFG**, a lista de locais exibidos deverá conter: As preferências definidas previamente pelo usuário, uma opção para inserir uma origem e a posição atual do usuário com base no GPS (Se habilitado). | TR-CSU1 , TR-CSU3 |
-| RINF5 | Se a rota do usuário possuir **destino de dentro da UFG**, a lista de locais exibidos deverá conter: As preferências definidas previamente pelo usuário e uma lista com os locais do campus em que está presente. | TR-CSU1 , TR-CSU3 |
-| RINF6 | Se a rota do usuário possuir **destino de fora da UFG**, a lista de locais exibidos deverá conter: As preferências definidas previamente pelo usuário e uma opção para inserir um destino. | TR-CSU1 , TR-CSU3 |
+| RINF2 | Obrigatóriamente um dos pontos de origem / destino deverá ser a UFG | TR-CSU1 |
+| RINF3 | Campo de pesquisa aparece no lugar da regional | CA-CSU6 |
+| RINF4 | Calendário some enquanto o usuário está com campo de pesquisa aberto | CA-CSU6 |
+| RINF5 | Pesquisa é executada quando detectado que o usuário parou de digitar, após 0.8 segundos | CA-CSU6 |
 
 ### 4.2 Requisitos e Restrições de Interface Homem Computador (RHIC)
 
@@ -970,11 +915,15 @@ No momento não há requisitos futuros.
 |TR-CSU7|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
 |TR-CSU8|TR-CSU5, TR-CSU6, TR-CSU7, TR-CSU8|
 
-## 7. Modelo de dominio
+## 7. Modelo de domínio
 
 ### 7.1 Modelo de domínio Transporte
 
-![](https://user-images.githubusercontent.com/9218555/31204209-1ebc51a0-a941-11e7-9524-7f74ff76192a.png)
+![](https://github.com/isaiastavares/minha-ufg/blob/Transporte/assets/Transporte/Modelo-de-dominio-TR.png)
+
+### 7.2 Modelo de domínio Oportunidades
+
+![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/%5BOP%5DOpportunities-ERD.png)
 
 ## 8. Aprovação Formal
 ---------------------------------------------
