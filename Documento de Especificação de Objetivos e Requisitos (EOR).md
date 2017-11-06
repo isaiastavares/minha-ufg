@@ -410,13 +410,13 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 2.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta | Alta |
-| OP-RFUN 2.2 | Listar as primeiras oportunidades em uma lista "infinita", que carrega outras oportunidades de acordo com a busca, ao "descer" na página. | Evidente | Média|
-| OP-RFUN 2.3 | Exibir Título, Categoria e 100 caracteres da descrição de cada oportunidade. | Evidente | Alta |
-| OP-RFUN 2.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade (Título, Categoria e Descrição). | Evidente | Alta |
-| OP-RFUN 2.5 | Chamar tela de cadastro de uma nova oportunidade. | Evidente | Alta |
-| OP-RFUN 2.6 | Chamar tela de edição da oportunidade, ao clicar em alguma da lista. | Evidente | Alta |
-| OP-RFUN 2.7 | Mensagem de nenhuma oportunidade encontrada. Quando abrir a tela pela primeira vez ou quando a busca não retornar nenhuma oportunidade. | Evidente | Alta |
+| OP-RFUN 1.1 | O menu de Oportunidades só deve ser exibido para o usuário que tiver permissão 'Oportunidades' | Oculta | Alta |
+| OP-RFUN 1.2 | Listar as primeiras oportunidades em uma lista "infinita", que carrega outras oportunidades de acordo com a busca, ao "descer" na página. | Evidente | Média|
+| OP-RFUN 1.3 | Exibir Título, Categoria e 100 caracteres da descrição de cada oportunidade. | Evidente | Alta |
+| OP-RFUN 1.4 | Filtrar de acordo com o campo de busca do(s) curso(s) relacionado(s) de cada oportunidade (Título, Categoria e Descrição). | Evidente | Alta |
+| OP-RFUN 1.5 | Chamar tela de cadastro de uma nova oportunidade. | Evidente | Alta |
+| OP-RFUN 1.6 | Chamar tela de edição da oportunidade, ao clicar em alguma da lista. | Evidente | Alta |
+| OP-RFUN 1.7 | Mensagem de nenhuma oportunidade encontrada. Quando abrir a tela pela primeira vez ou quando a busca não retornar nenhuma oportunidade. | Evidente | Alta |
 
 **OP-CSU2**- Filtrar Oportunidades (Web)
 
