@@ -637,7 +637,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 1. Consulente acessa o aplicativo Minha UFG;
 2. Consulente seleciona a opção Calendário;
 3. Consulente entra no Calendário e escolhe sua regional de interesse.
-4. Consulente seleciona a data que deseja consultar.
+4. Consulente tem acesso à todas as datas do mês que selecionou.
 
  * Cenários secundários:
 1. O consulente pode acessar as funções do calendário offline.
@@ -657,51 +657,81 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 **CA-CSU2**- Criar Eventos
  * Identificador: CA-CSU2
 
- * Atores envolvidos: Administrador.
-
- * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
- Além disso, o administrador tem a possibilidade de ver a Lista de Eventos selecionando o calendário desejado.
+  * Atores envolvidos: Administrador.
+  
+  * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Após acessar, o administrador entra no menu Calendário -> Calendário/Eventos, seleciona a Regional que deseja inserir um evento e depois clica em + para criar um novo evento.
+  Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados: Nome, local, data, descrição, categoria do evento (dia letivo, Feriado, Início e fim do semestre letivo, Eventos UFG, Recesso Acadêmico e matrícula) e a opção de marcar para enviar notificação aos usuários.
+ Além disso, antes de criar um novo evento, tem uma tela onde todos os eventos são listados a partir do mês que você pesquisou. Nesse dados, tem todas as informações que foram usadas para criar um novo evento.
+ Antes de criar um novo evento, o administrador tem a possibilidade de criar uma nova categoria entrando no menu Calendário -> Categorias e clicar em +. Depois, inserir o nome e a cor da categoria e depois salvar.  
 
  * Pré-condições: O Administrador deve conseguir criar um novo Evento para ser inserido no calendário acadêmico. O administrador deve acessar a parte web do Minha UFG e realizar o login. Depois que acessa a opção de Criar Evento, deve ter a possibilidade de inserir os dados pedidos e depois criar o novo evento.
 
  * Pós-condições: Se você não estiver conectado à internet, não consegue acessar a parte do Administrador do Minha UFG.
 
  * Cenário principal:
+ Evento
 1. O Administrador acessa a parte web com seu login e senha.
-2. O Administrador seleciona a opção Calendário.
-3. O Administrador seleciona a opção Eventos.
-4. O Administrador seleciona a opção de Criar um novo evento.
- * a. O Administrador deve selecionar alguma Regional, onde o evento vai ser cadastrado;
- * b. O Administrador deve inserir o nome do evento;
- * c. O Administrador deve inserir o local onde será realizado;
- * d. O Administrador deve selecionar o período que vai ser o evento;
- * e. O Administrador tem a possibilidade de inserir observações sobre o evento;
- * f. O Administrador pode cancelar o cadastro e começar do zero inserindo novos dados, apertando o botão cancelar;
- * g. O Administrador, após inserir todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, criar um novo evento;
- * h. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos.
-5. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento.
+2. O Administrador seleciona o menu Calendário.
+3. O Administrador seleciona o submenu Calendários/eventos.
+4. O Administrador seleciona a Regional em que deseja criar um novo evento.
+5. O administrador clicla em + para Criar um novo evento.
+   * a. O Administrador deve inserir o nome do evento;
+   * b. O Administrador deve inserir o local onde será realizado;
+   * c. O Administrador deve selecionar a data do evento;
+   * d. O Administrador tem a possibilidade de inserir uma descrição sobre o evento;
+   * e. O adminstrador selecional de qual categoria o evento pertence;
+   * f. O administrador tem a opção de selecionar a opção Eviar notificação para os usuários;
+   * g. O Administrador pode cancelar o cadastro, voltando para a página anterior e consequentemente não salvando nada que foi preenchido;
+   * h. O Administrador, após inserir todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, cria um novo evento;
+   * i. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos e o botão Salvar fica desabilitado.
+6. Após salvar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento cadastrado com sucesso.
+7. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código...), ocorreu um erro e o evento não foi salvo. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
 
  * Cenários secundários:
-1. Após criar um novo evento, o Administrador volta para a página anterior com um retorno de que o cadastro de um novo evento realizado com sucesso.
-2. Após criar um novo evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código...), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar novo evento. Contate o suporte técnico ou tenta criar um novo evento.
+ Categorias
+1. O Administrador acessa a parte web com seu login e senha.
+2. O Administrador seleciona o menu Calendário.
+3. O Administrador seleciona o submenu Categorias.
+4. O administrador clicla em + para Criar uma nova categoria.
+   * a. O Administrador deve inserir o nome da categoria;
+   * b. O Administrador deve inserir o código da cor que vai ser vinculada a categoria.
+   * c. O Administrador pode cancelar o cadastro, voltando para a página anterior e consequentemente não salvando nada que foi preenchido;
+   * h. O Administrador, após inserir todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, cria uma nova categoria;
+   * i. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos e o botão Salvar fica desabilitado.
+5. Após salvar uma nova Categoria, o Administrador volta para a página anterior com um retorno de que a Categoria salva com sucesso.
+6. Após criar uma nova categoria, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código...), ocorreu um erro e a categoria não foi salva. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao criar categoria. Contate o suporte técnico ou tenta criar uma nova categoria.
 
   * Protótipos de tela: Criando um Novo Evento
   
+   Criar Evento
+  
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.1-Tela%20inical.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.2-Lista%20de%20Calend%C3%A1rios.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.2-Lista%20de%20Calend%C3%A1rios.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.3-Todos%20os%20Eventos.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.3-Todos%20os%20Eventos.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.4-Informa%C3%A7%C3%B5es.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.4-Descri%C3%A7%C3%B5es.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.5-Criar%20Evento.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.5-Criar%20Evento.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.6-Preencher%20todos%20os%20campos%20do%20Evento.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.6-Preencher%20todos%20os%20campos%20do%20Evento.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.7-Evento%20salvo%20com%20sucesso.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.7-Evento%20salvo%20com%20sucesso.png" />
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-UPDATE-2.8-Erro%20ao%20Salvar%20evento.png" />
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.8-Erro%20ao%20Salvar%20evento.png" />
+  
+  Categoria
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.9%20-%20P%C3%A1gina%20Inical%20Categorias.png" />
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.10-Criar%20Categoria.png" />
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.11-Preencher%20todos%20os%20campos%20da%20Categoria.png" />
+  
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.12-Categoria%20salva%20com%20sucesso.png" />
+  
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU2-ADD-2.13-Erro%20ao%20Salvar%20categoria.png" />
     
  
 | Ref.     |                          Descrição                         | Categoria | Prioridade |
@@ -716,45 +746,41 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Atores envolvidos: Administrador.
 
- * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. Depois acessar a opção de Editar Evento, deve escolher o evento para ter a possibilidade de alterar os dados e depois salvar as alterações do evento.
+ * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. antes de criar um novo evento, tem uma tela onde todos os eventos são listados a partir do mês que você pesquisou. O administrador entra no evento deseja alterar, realiza as alterações necessárias e depois salva as alterações. Tem a possibilidade de excluir o evento nessa mesma tela.
 
  * Pós-condições: O Administrador consegue alterar o evento desejado.
 
  * Cenário principal:
 1. O Administrador acessa a parte web com seu login e senha.
-2. O Administrador seleciona a opção Calendário.
-3. O Administrador seleciona a opção Eventos.
-4. O Administrador lista o dia que vai ser alterado e entra dentro da edição.
- * a. O Administrador pode selecionar outra Regional, onde o evento vai acontecer;
- * b. O Administrador pode alterar o nome do evento;
- * c. O Administrador pode alterar o local do onde será realizado;
- * d. O Administrador pode alterar o período que vai ser o evento;
- * e. O Administrador tem a possibilidade de alterar as observações sobre o evento;
- * f. O Administrador pode cancelar as alterações, apertando o botão Cancelar, voltando para a página anterior;
- * g. O Administrador, após alterar todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, editar o evento que foi selecionado;
- * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos.
+2. O Administrador seleciona o menu Calendário.
+3. O Administrador seleciona o submenu Calendários/Eventos.
+4. O Administrador realiza a pesquisa do mês que deseja alterar.
+5. O administrador clica no evento que deseja alterar.
+   * b. O administrador pode alterar qualquer campo do evento escolhido;
+   * f. O Administrador pode cancelar as alterações, apertando o botão Cancelar, voltando para a página anterior;
+   * g. O Administrador, após alterar todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, editar o evento que foi selecionado;
+   * h. Se o Administrador não preencher ou deixar algum campo obrigatório sem preencher, a alteração não vai ser possível até que todos os campos estejam preenchidos, ficando desabilitado o botão Salvar.
 6. Após editar um evento, o Administrador volta para a página anterior com um retorno de que as alterações sobre o evento foram salvas com sucesso.
 7. O Administrador tem a possibilidade de excluir o evento na página onde está editando. Abaixo tem um botão chamado EXCLUIR, onde pode eliminar aquele evento.
 
- * Cenários secundários:
-1. O Administrador seleciona o botão de Pesquisar para localizar o evento que deseja alterar:
- * O Administrador seleciona o filtro de pesquisa de evento. Exemplo: Pesquisar por Regional;
-2. Após Salvar Alterções do evento, o sistema notifica que o Administrador esqueceu de preencher e/ou selecionar algum campo obrigatório. Solicitando para verificar os dados e depois clicar novamente em Salvar Alterações.
-3. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código...), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
+  * Cenários secundários: 
+1. O Administrador realiza a pesquisa do mês que deseja alterar.
+2. Após Salvar Alterções do evento, o sistema volta a página anterior com a mensagem de que o evento foi editado com sucesso.
+3. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.1-Editar%20Evento.png" />
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-ADD-3.1-Editar%20Evento.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.2-Selecionar%20Evento%20para%20Editar.png" />
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-ADD-3.2-Selecionar%20Evento%20para%20Editar.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.3-Editar_Excluir%20Evento.png" />
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-ADD-3.3-Editar_Excluir%20Evento.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.4-Evento%20alterado%20com%20sucesso.png" />
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-ADD-3.4-Evento%20alterado%20com%20sucesso.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.5-Evento%20Exclu%C3%ADdo%20com%20sucesso.png" />
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-ADD-3.5-Evento%20Exclu%C3%ADdo%20com%20sucesso.png" />
 
-<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-UPDATE-3.6-Erro%20ao%20Editar%20evento.png" />
+<img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU3-ADD-3.6-Erro%20ao%20Editar%20evento.png" />
 
 | Ref. | Descrição | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
@@ -818,9 +844,9 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
   
    * Protótipos de tela
 
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20informa%C3%A7%C3%B5es%20de%20eventos%20do%20calend%C3%A1rio.png">
   <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20pesquisar%20eventos%20do%20calend%C3%A1rio.png">
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20Eventos%20n%C3%A3o%20encontrados.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
    
        
 ## 4. Requisitos e restrições não funcionais
@@ -940,3 +966,5 @@ No momento não há requisitos futuros.
 ---------------------------------------------
 
 Por meio deste documento, confirmo que os requisitos aqui presentes abordam todas as áreas do sistema a ser desenvolvido e de requisitos futuros (sejam elas melhorias ou novas funcionalidades), de forma a desenvolver um software com qualidade e segurança. Confirmo também que este documento aborda todos os requisitos e funcionalidades de forma correta e clara ao que foi solicitado e ao que foi dito e pedido nas entrevistas, etnografias e questionários. Confirmo também que não há requisitos extras neste documento, todos os requisitos aqui citados foram requeridos e atendem à alguma funcionalidade necessária.
+
+
