@@ -520,7 +520,8 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU5%20-%20Excluir%20Oportunidade%20(Web).png)
 
-**OP-CSU6**- Listar Oportunidades
+
+**OP-CSU6**- Listar Oportunidades - (App)
 
  * Identificador: OP-CSU6
 
@@ -543,14 +544,19 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  
  * Protótipos de tela:
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem.png)  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem%20vazia.png) ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem%20sem%20internet.png) 
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
 | OP-RFUN 3.1 | Listar todas oportunidades por ordem decrescente de data de inserção e sem filtro. | Evidente | Alta |
-| OP-RFUN 3.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente | Alta |
+| OP-RFUN 3.2 | Listar oportunidades de acordo com o perfil do usuário, se este estiver logado. | Evidente | Alta |
+| OP-RFUN 3.3 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente | Alta |
+| OP-RFUN 3.4 | Mostrar tela de acordo com protótipo informando se não for encontrada nenhuma oportunidade. | Evidente | Alta |
+| OP-RFUN 3.5 | Mostrar tela informando se não houver conexão com a internet. | Evidente | Alta |
 
-**OP-CSU7**- Listar Oportunidades - Usuário Logado (App)
+
+
+**OP-CSU7**- Detalhe Oportunidade - (App)
 
  * Identificador: OP-CSU7
 
@@ -558,29 +564,26 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Pré-condições:
  * Usuário deve estar conectado à internet.
- * Usuário deve estar logado no app
+ * Usuário deve estar na listagem de oportunidades
 
  * Pós-condições:
- * O usuário abre o aplicativo.
+ * O usuário clica sobre uma oportunidade para ver mais detalhes sobre ela.
 
  * Cenário principal:
  1. Usuário abre o aplicativo.
  2. Usuário clica no menu Oportunidades.
- 3. Usuário visualiza as oportunidades cadastradas de acordo com seu perfil.
+ 3. Usuário visualiza as oportunidades.
+ 4. Usuário clica sobre uma oportunidade para ver mais detalhes sobre ela. 
 
  * Cenários secundários:
- 1. Usuário utiliza o filtro para visualizar outras oportunidades.
 
  * Protótipos de tela:
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/Oportunidades_2.png)
+ ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Detalhes.png)
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
-| OP-RFUN 4.1 | Listar oportunidades por ordem decrescente de data de inserção de acordo com perfil do usuário. | Evidente | Alta |
-| OP-RFUN 4.2 | Ir para tela detalhada da oportunidade ao clicar em uma oportunidade. | Evidente | Alta |
-
-**OP-CSU8**- Filtrar Oportunidades (App)
+| OP-RFUN 4.1 | Mostrar tela detalhada da oportunidade. | Evidente | Alta |**OP-CSU8**- Filtrar Oportunidades (App)
 
  * Identificador: OP-CSU8
 
