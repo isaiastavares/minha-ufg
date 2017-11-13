@@ -438,6 +438,8 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * Protótipos de tela:
 
  ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU7.png)
+ 
+ ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU2%20Filtrar%20Oportunidades%20(Web).png)
 
 **OP-CSU3**- Cadastrar Oportunidade (Web)
 
