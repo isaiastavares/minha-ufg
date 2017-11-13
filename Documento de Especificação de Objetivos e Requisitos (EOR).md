@@ -546,7 +546,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  
  * Protótipos de tela:
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem.png)  ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem%20vazia.png) ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem%20sem%20internet.png) 
+ <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem.png" width="250"> <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem%20vazia.png" width="250"> <img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Listagem%20sem%20internet.png" width="250">
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
@@ -580,8 +580,8 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
  * Cenários secundários:
 
  * Protótipos de tela:
-
- ![](https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Detalhes.png)
+ 
+<img src="https://github.com/isaiastavares/minha-ufg/blob/Opportunities/assets/oportunidades/OP%20-%20CSU6%20-%20Detalhes.png" width="600">
 
 | Ref. | Descrição | Categoria | Prioridade |
 |----------|------------------------------------------------------------|-----------|------------|
