@@ -845,9 +845,9 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
   
    * Protótipos de tela
 
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20informa%C3%A7%C3%B5es%20de%20eventos%20do%20calend%C3%A1rio.png">
   <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20pesquisar%20eventos%20do%20calend%C3%A1rio.png">
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20Eventos%20n%C3%A3o%20encontrados.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
    
        
 ## 4. Requisitos e restrições não funcionais
