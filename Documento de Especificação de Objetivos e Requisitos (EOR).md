@@ -588,7 +588,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 | OP-RFUN 4.1 | Mostrar tela detalhada da oportunidade. | Evidente | Alta |**OP-CSU8**- Filtrar Oportunidades (App)
 
 
-**OP-CSU2**- Filtrar Oportunidades (App)
+**OP-CSU8**- Filtrar Oportunidades (App)
 
  * Identificador: OP-CSU8
 
@@ -607,7 +607,6 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Protótipos de tela:
 
- ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU8.png)
  ![](https://github.com/isaiastavares/minha-ufg/blob/master/assets/oportunidades/OP-CSU8%20Filtrar%20Oportunidades%20(App).png)
 
 ### 3.3 Calendário
