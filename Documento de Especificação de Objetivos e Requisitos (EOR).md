@@ -646,7 +646,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
   
   <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU1-UPDATE-1.1-Escolher%20Regionais%201.png" width="550" height="500"/>
   
-  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU1-UPDATE-1.2-Escolher%20Regionais%202.png" width="550" height="500"/>
+  <img src="https://raw.githubusercontent.com/isaiastavares/minha-ufg/Calendar/assets/calendario/%5BCA%5DCSU1-ADD-1.2-Escolher%20Regionais%202.png" width="550" height="500"/>
 
  
 | Ref. | Descrição | Categoria | Prioridade |
