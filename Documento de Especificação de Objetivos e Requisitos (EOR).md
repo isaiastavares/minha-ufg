@@ -848,7 +848,49 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
   <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20pesquisar%20eventos%20do%20calend%C3%A1rio.png">
   <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
    
-       
+
+
+**CA-CSU5**- Pesquisar eventos
+
+   * Identificador:CA-CSU5
+
+ * Atores envolvidos: Consulente
+
+ * Pré-condições:
+ * O usuário está no contexto de Eventos do calendário.
+ * O usuário clica no botão de pesquisa de eventos
+
+ * Pós-condições:
+ * O Sistema apresenta os eventos
+ * O usuário seleciona o evento que estava procurando
+
+   1. Fluxo principal - Fazer pesquisa
+      1.1 Usuário clica no botão de pesquisa
+      1.2 Usuário digita os termos da pesquisa
+      1.3 Usuário seleciona enviar
+      1.4 A pesquisa é executada
+
+   2. Fluxo alternativo - Selecionar evento
+       1.1 Usuário clica em uma data em destaque do calendário
+       1.2 Os eventos da data selecionada são apresentados ao usuário
+
+   3. Fluxo alternativo - Nenhum resultado encontrado
+       1.1 Usuário clica no botão de pesquisar
+       1.2 O usuário digita o texto da pesquisa no campo de texto
+       1.3 A pesquisa é executada assim que o usuário parar de digitar
+       1.4 Nenhum resultado é encontrado
+       1.5 Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
+
+   4 - Fluxo alternativo - Visualizar tags dos eventos
+       1.1 Usuário clica no botão de visualizar tags
+       1.1 A listagem de tags é apresetada
+
+   * Protótipos de tela
+
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20informa%C3%A7%C3%B5es%20de%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20pesquisar%20eventos%20do%20calend%C3%A1rio.png">
+  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
+
 ## 4. Requisitos e restrições não funcionais
 -----------------------------------------
 
