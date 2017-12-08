@@ -831,17 +831,17 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
    * O Sistema apresenta os eventos
    * O usuário seleciona o evento que estava procurando
 
-   * 1. Fluxo principal - Fazer pesquisa
+   * 1 - Fluxo principal - Fazer pesquisa
       * 1.1 Usuário clica no botão de pesquisa
       * 1.2 Usuário digita os termos da pesquisa
       * 1.3 Usuário seleciona enviar
       * 1.4 A pesquisa é executada
 
-   * 2. Fluxo alternativo - Selecionar evento
+   * 2 - Fluxo alternativo - Selecionar evento
        * 1.1 Usuário clica em uma data em destaque do calendário
        * 1.2 Os eventos da data selecionada são apresentados ao usuário
 
-   * 3. Fluxo alternativo - Nenhum resultado encontrado
+   * 3 - Fluxo alternativo - Nenhum resultado encontrado
        * 1.1 Usuário clica no botão de pesquisar
        * 1.2 O usuário digita o texto da pesquisa no campo de texto
        * 1.3 A pesquisa é executada assim que o usuário parar de digitar
