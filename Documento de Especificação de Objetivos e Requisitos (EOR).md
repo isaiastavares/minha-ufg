@@ -673,13 +673,13 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 2. O Administrador seleciona o menu Calendário.
 3. O Administrador seleciona o submenu Calendários/eventos.
 4. O Administrador seleciona a Regional em que deseja criar um novo evento.
-5. O administrador clicla em + para Criar um novo evento.
+5. O administrador clica em + para Criar um novo evento.
    * a. O Administrador deve inserir o nome do evento;
    * b. O Administrador deve inserir o local onde será realizado;
    * c. O Administrador deve selecionar a data do evento;
    * d. O Administrador tem a possibilidade de inserir uma descrição sobre o evento;
-   * e. O adminstrador selecional de qual categoria o evento pertence;
-   * f. O administrador tem a opção de selecionar a opção Eviar notificação para os usuários;
+   * e. O administrador selecional de qual categoria o evento pertence;
+   * f. O administrador tem a opção de selecionar a opção Enviar notificação para os usuários;
    * g. O Administrador pode cancelar o cadastro, voltando para a página anterior e consequentemente não salvando nada que foi preenchido;
    * h. O Administrador, após inserir todos os dados, deve clicar em Salvar para salvar os dados e, consequentemente, cria um novo evento;
    * i. Se o Administrador não preencheu ou deixou algum campo obrigatório sem preencher, o cadastro não vai ser possível até que todos estejam preenchidos e o botão Salvar fica desabilitado.
@@ -691,7 +691,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 1. O Administrador acessa a parte web com seu login e senha.
 2. O Administrador seleciona o menu Calendário.
 3. O Administrador seleciona o submenu Categorias.
-4. O administrador clicla em + para Criar uma nova categoria.
+4. O administrador clica em + para Criar uma nova categoria.
    * a. O Administrador deve inserir o nome da categoria;
    * b. O Administrador deve inserir o código da cor que vai ser vinculada a categoria.
    * c. O Administrador pode cancelar o cadastro, voltando para a página anterior e consequentemente não salvando nada que foi preenchido;
@@ -745,7 +745,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
  * Atores envolvidos: Administrador.
 
- * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. antes de criar um novo evento, tem uma tela onde todos os eventos são listados a partir do mês que você pesquisou. O administrador entra no evento deseja alterar, realiza as alterações necessárias e depois salva as alterações. Tem a possibilidade de excluir o evento nessa mesma tela.
+ * Pré-condições: O Administrador deve conseguir editar um Evento para ser atualizado no calendário acadêmico. O administrador deve acessar o sistema web do Minha UFG e realizar o login. antes de criar um novo evento, tem uma tela onde todos os eventos são listados a partir do mês que você pesquisou. O administrador entra no evento que deseja alterar, realiza as alterações necessárias e depois salva as alterações. Tem a possibilidade de excluir o evento nessa mesma tela.
 
  * Pós-condições: O Administrador consegue alterar o evento desejado.
 
@@ -764,7 +764,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 
   * Cenários secundários: 
 1. O Administrador realiza a pesquisa do mês que deseja alterar.
-2. Após Salvar Alterções do evento, o sistema volta a página anterior com a mensagem de que o evento foi editado com sucesso.
+2. Após Salvar Alterações do evento, o sistema volta a página anterior com a mensagem de que o evento foi editado com sucesso.
 3. Após editar um evento, o Administrador volta para a página anterior, mas por algum motivo (banco de dados, código…), ocorreu um erro e o evento não foi cadastrado. Dessa forma, vai retornar uma mensagem de que ocorreu um erro ao editar evento. Contate o suporte técnico ou tenta editar outro evento.
 
  * Protótipos de tela: Protótipos de tela (interface homem-computador) relacionados ao caso de uso.
@@ -784,7 +784,7 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 | Ref. | Descrição | Categoria | Prioridade |
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 3.1 | Editar um evento no Calendário Acadêmico. | Evidente |Alta |
-| CA-RFUN 3.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deter ter dois botões, um para Candelar as alterações e outro para Salvar Alterações.| Evidente |Alta |
+| CA-RFUN 3.2 | Devem existir os seguintes campos: Selecionar regional do evento; Nome do evento; Local do evento; Data do evento; Observações gerais. Além disso, deverá ter dois botões, um para Cancelar as alterações e outro para Salvar Alterações.| Evidente |Alta |
 | CA-RNFUN 3.3 | Administrador deve conseguir acessar o sistema web. | Evidente |Alta |
 | CA-RNFUN 3.4 | Administrador deve conseguir inserir todos os dados para realizar o cadastro. Obs: Somente o campo Observações gerais não é obrigatório o preenchimento.| Evidente |Alta |
 
@@ -816,73 +816,41 @@ Tendo em vista a dificuldade de acesso aos serviços disponíveis na UFG, o apli
 |-------|----------------------------------------------------------|---------------|---------------|
 | CA-RFUN 4.1 | A postagem são eventos extraordinários em que o calendário acadêmico não estava prevendo. | Evidente |Alta |
 
+
 **CA-CSU5**- Pesquisar eventos
 
-   * Identificador:CA-CSU5
+ * Identificador:CA-CSU5
 
  * Atores envolvidos: Consulente
 
  * Pré-condições:
- * O usuário está no contexto de Eventos do calendário.
- * O usuário clica no botão de pesquisa de eventos
+   * O usuário está no contexto de Eventos do calendário.
+   * O usuário clica no botão de pesquisa de eventos
 
  * Pós-condições:
- * O Sistema apresenta os eventos
- * O usuário seleciona o evento que estava procurando
+   * O Sistema apresenta os eventos
+   * O usuário seleciona o evento que estava procurando
 
-   * Fluxo alternativo
-       * Usuário clica em uma data em destaque do calendário
-       * Os eventos da data selecionada são apresentados ao usuário
-   
-   * Fluxo alternativo 
-       * Usuário clica no botão de pesquisar
-       * O usuário digita o texto da pesquisa no campo de texto
-       * A pesquisa é executada assim que o usuário parar de digitar
-       * Nenhum resultado é encontrado
-       * Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
-  
-   * Protótipos de tela
+   * 1. Fluxo principal - Fazer pesquisa
+      * 1.1 Usuário clica no botão de pesquisa
+      * 1.2 Usuário digita os termos da pesquisa
+      * 1.3 Usuário seleciona enviar
+      * 1.4 A pesquisa é executada
 
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20informa%C3%A7%C3%B5es%20de%20eventos%20do%20calend%C3%A1rio.png">
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20pesquisar%20eventos%20do%20calend%C3%A1rio.png">
-  <img src="https://github.com/isaiastavares/minha-ufg/blob/Calendar/assets/calendario/%5BCA%5DCSU06%20-%20Pesquisa%20de%20eventos%20do%20canled%C3%A1rio%20-%20Tela%20de%20visualizar%20eventos%20do%20calend%C3%A1rio.png">
-   
+   * 2. Fluxo alternativo - Selecionar evento
+       * 1.1 Usuário clica em uma data em destaque do calendário
+       * 1.2 Os eventos da data selecionada são apresentados ao usuário
 
+   * 3. Fluxo alternativo - Nenhum resultado encontrado
+       * 1.1 Usuário clica no botão de pesquisar
+       * 1.2 O usuário digita o texto da pesquisa no campo de texto
+       * 1.3 A pesquisa é executada assim que o usuário parar de digitar
+       * 1.4 Nenhum resultado é encontrado
+       * 1.5 Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
 
-**CA-CSU5**- Pesquisar eventos
-
-   * Identificador:CA-CSU5
-
- * Atores envolvidos: Consulente
-
- * Pré-condições:
- * O usuário está no contexto de Eventos do calendário.
- * O usuário clica no botão de pesquisa de eventos
-
- * Pós-condições:
- * O Sistema apresenta os eventos
- * O usuário seleciona o evento que estava procurando
-
-   1. Fluxo principal - Fazer pesquisa
-      1.1 Usuário clica no botão de pesquisa
-      1.2 Usuário digita os termos da pesquisa
-      1.3 Usuário seleciona enviar
-      1.4 A pesquisa é executada
-
-   2. Fluxo alternativo - Selecionar evento
-       1.1 Usuário clica em uma data em destaque do calendário
-       1.2 Os eventos da data selecionada são apresentados ao usuário
-
-   3. Fluxo alternativo - Nenhum resultado encontrado
-       1.1 Usuário clica no botão de pesquisar
-       1.2 O usuário digita o texto da pesquisa no campo de texto
-       1.3 A pesquisa é executada assim que o usuário parar de digitar
-       1.4 Nenhum resultado é encontrado
-       1.5 Uma mensagem é mostrada para o usuário dizendo que não há nenhum resultado com o termo da pesquisa
-
-   4 - Fluxo alternativo - Visualizar tags dos eventos
-       1.1 Usuário clica no botão de visualizar tags
-       1.1 A listagem de tags é apresetada
+   * 4 - Fluxo alternativo - Visualizar tags dos eventos
+       * 1.1 Usuário clica no botão de visualizar tags
+       * 1.2 A listagem de tags é apresetada
 
    * Protótipos de tela
 
